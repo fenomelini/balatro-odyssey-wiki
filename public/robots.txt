@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fenomelini.github.io/balatro-odyssey-wiki/sitemap-index.xml
