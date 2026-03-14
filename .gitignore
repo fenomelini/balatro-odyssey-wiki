@@ -16,3 +16,32 @@ Thumbs.db
 
 # Misc
 *.Zone.Identifier
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Package manager
+.npm/
+.yarn/
+.pnp.*
+package-lock.json
+
+# Temp / cache
+.cache/
+*.tmp
+*.temp

@@ -3,6 +3,7 @@ import Layout from '../../components/layout/Layout.astro';
 import DeckCard from '../../components/cards/DeckCard.astro';
 import SearchBox from '../../components/ui/SearchBox.astro';
 import decks from '../../data/decks.json';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <Layout title="Decks" description="Browse all Balatro Odyssey Decks.">
@@ -14,6 +15,26 @@ import decks from '../../data/decks.json';
         <span class="lang-pt">Baralhos</span>
       </h1>
       <p class="text-muted">{decks.length} <span class="lang-en">decks total</span><span class="lang-pt">baralhos no total</span></p>
+    </div>
+
+    <!-- Lore intro -->
+    <div class="mb-8 rounded-2xl border p-6 flex gap-4 items-start" style="background: rgba(108,71,255,0.08); border-color: rgba(108,71,255,0.25);">
+      <div class="text-3xl mt-0.5 flex-shrink-0">🎴</div>
+      <div>
+        <p class="text-[0.78rem] font-black uppercase tracking-wider mb-2" style="color: var(--accent);">
+          <span class="lang-en">Lore</span><span class="lang-pt">Lore</span>
+        </p>
+        <p class="text-sm leading-relaxed lang-en" style="color: var(--muted);">
+          100 Decks, each one a vessel carrying a different corner of the Odyssey universe. Some decks were forged in the heart of a dying star, others emerged from the fractures between dimensions — each defines the shape of your personal journey through the cosmos.
+        </p>
+        <p class="text-sm leading-relaxed lang-pt" style="color: var(--muted);">
+          100 Baralhos, cada um um recipiente carregando um canto diferente do universo da Odisseia. Alguns foram forjados no coração de uma estrela moribunda, outros emergiram das fraturas entre dimensões — cada um define a forma da sua jornada pessoal pelo cosmos.
+        </p>
+        <a href={base + '/lore'} class="inline-block mt-3 text-xs font-semibold hover:underline" style="color: var(--primary);">
+          <span class="lang-en">Read the Odyssey narrative →</span>
+          <span class="lang-pt">Ler a narrativa da Odisseia →</span>
+        </a>
+      </div>
     </div>
 
     <SearchBox placeholder_en="Search decks..." placeholder_pt="Buscar baralhos..." />

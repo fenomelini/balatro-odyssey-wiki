@@ -1,6 +1,7 @@
 ---
 import Layout from '../../components/layout/Layout.astro';
 import allJokersRaw from '../../data/jokers.json';
+import { loreChapters } from '../../data/lore';
 
 const allJokers = [...allJokersRaw].sort((a, b) => {
   if (a.rarity !== b.rarity) return b.rarity - a.rarity; // DESC: 4→1 (Legendary first)
@@ -53,6 +54,26 @@ const GROUP_LABELS: Record<string, { en: string; pt: string }> = {
         <span class="lang-en">1,000 total — scroll to load more</span>
         <span class="lang-pt">1.000 no total — role para carregar mais</span>
       </p>
+    </div>
+
+    <!-- Lore intro -->
+    <div class="mb-8 rounded-2xl border p-6 flex gap-4 items-start" style="background: rgba(108,71,255,0.08); border-color: rgba(108,71,255,0.25);">
+      <div class="text-3xl mt-0.5 flex-shrink-0">🃏</div>
+      <div>
+        <p class="text-[0.78rem] font-black uppercase tracking-wider mb-2" style="color: var(--accent);">
+          <span class="lang-en">Lore</span><span class="lang-pt">Lore</span>
+        </p>
+        <p class="text-sm leading-relaxed lang-en" style="color: var(--muted);">
+          1,000 Jokers divided into 22 groups — each group a chapter in the grand Odyssey. From the first spark of the Singularity to the Final hands that seal the cosmos, every Joker carries a fragment of an ancient story written across space, time, and probability.
+        </p>
+        <p class="text-sm leading-relaxed lang-pt" style="color: var(--muted);">
+          1.000 Curingas divididos em 22 grupos — cada grupo um capítulo na grande Odisseia. Da primeira faísca da Singularidade às mãos Finais que selam o cosmos, cada Curinga carrega um fragmento de uma história antiga escrita pelo espaço, tempo e probabilidade.
+        </p>
+        <a href={base + '/lore'} class="inline-block mt-3 text-xs font-semibold hover:underline" style="color: var(--primary);">
+          <span class="lang-en">Read the Odyssey narrative →</span>
+          <span class="lang-pt">Ler a narrativa da Odisseia →</span>
+        </a>
+      </div>
     </div>
 
     <!-- Search -->
