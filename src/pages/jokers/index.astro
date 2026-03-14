@@ -1,8 +1,8 @@
 ---
 import Layout from '../../components/layout/Layout.astro';
 import allJokersRaw from '../../data/jokers.json';
-import { loreChapters } from '../../data/lore';
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const allJokers = [...allJokersRaw].sort((a, b) => {
   if (a.rarity !== b.rarity) return b.rarity - a.rarity; // DESC: 4→1 (Legendary first)
   if (a.group !== b.group) return a.group.localeCompare(b.group);
