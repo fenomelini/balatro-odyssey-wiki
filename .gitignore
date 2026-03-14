@@ -39,7 +39,6 @@ yarn-error.log*
 .npm/
 .yarn/
 .pnp.*
-package-lock.json
 
 # Temp / cache
 .cache/
