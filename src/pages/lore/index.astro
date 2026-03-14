@@ -1,0 +1,276 @@
+---
+import Layout from '../../components/layout/Layout.astro';
+import { loreChapters, consumableLoreByType } from '../../data/lore';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const acts = [
+  { num: 0, label_en: 'Prologue', label_pt: 'Prólogo', color: 'from-slate-800 to-slate-900', accent: '#9090b0', borderStyle: 'border-color: #9090b033;', accentStyle: 'color: #9090b0;' },
+  { num: 1, label_en: 'Act I',    label_pt: 'Ato I',   color: 'from-purple-900/60 to-dark2', accent: '#6c47ff', borderStyle: 'border-color: #6c47ff33;', accentStyle: 'color: #6c47ff;' },
+  { num: 2, label_en: 'Act II',   label_pt: 'Ato II',  color: 'from-blue-900/50 to-dark2',   accent: '#3b82f6', borderStyle: 'border-color: #3b82f633;', accentStyle: 'color: #3b82f6;' },
+  { num: 3, label_en: 'Act III',  label_pt: 'Ato III', color: 'from-red-900/50 to-dark2',    accent: '#ef4444', borderStyle: 'border-color: #ef444433;', accentStyle: 'color: #ef4444;' },
+  { num: 4, label_en: 'Act IV',   label_pt: 'Ato IV',  color: 'from-emerald-900/50 to-dark2',accent: '#10b981', borderStyle: 'border-color: #10b98133;', accentStyle: 'color: #10b981;' },
+  { num: 5, label_en: 'Act V',    label_pt: 'Ato V',   color: 'from-yellow-900/50 to-dark2', accent: '#f59e0b', borderStyle: 'border-color: #f59e0b33;', accentStyle: 'color: #f59e0b;' },
+  { num: 6, label_en: 'Epilogue', label_pt: 'Epílogo', color: 'from-slate-800 to-slate-900', accent: '#00d4aa', borderStyle: 'border-color: #00d4aa33;', accentStyle: 'color: #00d4aa;' },
+];
+
+const actSubtitles = {
+  0: { en: 'Before the First Card',          pt: 'Antes da Primeira Carta' },
+  1: { en: 'The Dawn of Singularity',         pt: 'A Aurora da Singularidade' },
+  2: { en: 'The Fracture',                    pt: 'A Fratura' },
+  3: { en: 'The War Between Worlds',          pt: 'A Guerra entre Mundos' },
+  4: { en: 'The Long Journey',                pt: 'A Longa Jornada' },
+  5: { en: 'Transformation & Transcendence', pt: 'Transformação e Transcendência' },
+  6: { en: 'After the Last Hand',             pt: 'Depois da Última Mão' },
+} as const;
+
+const groupIcons = {
+  singularity: '⬛', quantum: '🌀', celestial: '✦',
+  temporal: '⏳', dimensions: '🪟', paradox: '♾',
+  chaos: '🎲', corruption: '☠', glitch: '🔴', anomaly: '⚡',
+  economy: '💰', professions: '🔧', social: '👥', tribal: '🏡',
+  elemental: '🔥', luck_and_probability: '🍀', time: '🕐',
+  cond: '⚖', pos: '📍', hand_and_discard: '🃏',
+  transformations: '🦋', final: '🌟',
+};
+---
+
+<Layout
+  title="Lore — The Odyssey Narrative"
+  description="The complete story of the Balatro Odyssey — a five-act cosmic epic told through every Joker, Deck, Consumable, and Blind.">
+
+  <!-- ══════════════════ HERO ══════════════════ -->
+  <div class="relative overflow-hidden" style="background: radial-gradient(ellipse 90% 70% at 50% 0%, rgba(108,71,255,0.22) 0%, transparent 65%);">
+    <div class="max-w-[900px] mx-auto px-[5%] py-20 text-center">
+      <p class="text-[0.8rem] font-bold uppercase tracking-[0.12em] mb-4" style="color: var(--accent);">
+        <span class="lang-en">The Grand Narrative</span>
+        <span class="lang-pt">A Grande Narrativa</span>
+      </p>
+      <h1 class="font-black text-white leading-[1.1] mb-6" style="font-size: clamp(2.4rem, 6vw, 4rem);">
+        <span class="lang-en">The Odyssey</span>
+        <span class="lang-pt">A Odisseia</span>
+      </h1>
+      <p class="text-muted text-lg leading-relaxed max-w-[660px] mx-auto mb-8">
+        <span class="lang-en">
+          From the Singularity that sparked creation to the Final Jokers that end the cosmos — 
+          the complete lore behind every card, every group, every Blind, and every Spectral 
+          in the Balatro Odyssey mod.
+        </span>
+        <span class="lang-pt">
+          Da Singularidade que acendeu a criação aos Curingas Finais que encerram o cosmos — 
+          a lore completa por trás de cada carta, cada grupo, cada Blind e cada Espectral 
+          do mod Balatro Odyssey.
+        </span>
+      </p>
+
+      <!-- Act timeline pills -->
+      <div class="flex flex-wrap justify-center gap-2 mt-8">
+        {acts.map(act => (
+          <a
+            href={"#act-" + act.num}
+            class="px-4 py-1.5 rounded-full text-[0.8rem] font-bold border transition-all hover:scale-105"
+            style={`border-color: ${act.accent}44; color: ${act.accent}; background: ${act.accent}15;`}
+          >
+            <span class="lang-en">{act.label_en}</span>
+            <span class="lang-pt">{act.label_pt}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ WHAT IS THE ODYSSEY — short intro ══════════════════ -->
+  <div class="max-w-[800px] mx-auto px-[5%] py-10">
+    <div class="rounded-2xl border p-8" style="background: var(--card); border-color: var(--border);">
+      <p class="text-[0.78rem] font-bold uppercase tracking-widest mb-3" style="color: var(--accent);">About This Lore</p>
+      <p class="text-muted leading-relaxed lang-en">
+        This is the story of the Balatro Odyssey mod — not a mechanical guide, but a narrative 
+        companion. Every one of the 22 Joker groups, 100 Tarots, 100 Planets, 100 Spectrals, 
+        100 Decks, 100 Blinds, and 200 Vouchers has been woven into a single five-act epic. 
+        Read it as a story. Play it as a game. Both are the same Odyssey.
+      </p>
+      <p class="text-muted leading-relaxed lang-pt">
+        Esta é a história do mod Balatro Odyssey — não um guia mecânico, mas um companheiro narrativo. 
+        Cada um dos 22 grupos de Curingas, 100 Tarôs, 100 Planetas, 100 Espectrais, 100 Baralhos, 
+        100 Blinds e 200 Cupons foi tecido em um único épico de cinco atos. 
+        Leia como uma história. Jogue como um jogo. Ambos são a mesma Odisseia.
+      </p>
+    </div>
+  </div>
+
+  <!-- ══════════════════ CHAPTERS ══════════════════ -->
+  <div class="max-w-[900px] mx-auto px-[5%] pb-24">
+
+    {acts.map(act => {
+      const chapters = loreChapters.filter(c => c.act === act.num);
+      const sub = actSubtitles[act.num as keyof typeof actSubtitles] ?? { en: '', pt: '' };
+      return (
+        <section id={"act-" + act.num} class="mb-16 scroll-mt-20">
+          <!-- Act header -->
+          <div class={"rounded-2xl p-8 mb-8 bg-gradient-to-br " + act.color + " border"} style={act.borderStyle}>
+            <p class="text-[0.75rem] font-black uppercase tracking-[0.15em] mb-1" style={act.accentStyle}>
+              <span class="lang-en">{act.label_en}</span>
+              <span class="lang-pt">{act.label_pt}</span>
+            </p>
+            <h2 class="font-black text-white mb-2" style="font-size: clamp(1.5rem, 4vw, 2.2rem);">
+              <span class="lang-en">{sub.en}</span>
+              <span class="lang-pt">{sub.pt}</span>
+            </h2>
+            <p class="text-muted text-sm">
+              <span class="lang-en">
+                {chapters.map(c => c.groups).flat().map(g => groupIcons[g] ?? '').join(' ')}
+                {chapters.length > 0 && (
+                  <span> — {chapters.length} chapter{chapters.length !== 1 ? 's' : ''}</span>
+                )}
+              </span>
+              <span class="lang-pt">
+                {chapters.map(c => c.groups).flat().map(g => groupIcons[g] ?? '').join(' ')}
+                {chapters.length > 0 && (
+                  <span> — {chapters.length} capítulo{chapters.length !== 1 ? 's' : ''}</span>
+                )}
+              </span>
+            </p>
+          </div>
+
+          <!-- Chapters within this act -->
+          {chapters.map((chapter, idx) => (
+            <article id={chapter.id} class="mb-10 scroll-mt-20">
+              <div class="rounded-2xl border overflow-hidden" style="background: var(--card); border-color: var(--border);">
+                <!-- Chapter header -->
+                <div class="px-8 pt-7 pb-4 border-b" style="border-color: var(--border);">
+                  <div class="flex items-start justify-between gap-4 flex-wrap">
+                    <div>
+                      <h3 class="font-bold text-white text-xl mb-1">
+                        <span class="lang-en">{chapter.title_en}</span>
+                        <span class="lang-pt">{chapter.title_pt}</span>
+                      </h3>
+                      <p class="text-sm" style="color: var(--muted);">
+                        <span class="lang-en">{chapter.subtitle_en}</span>
+                        <span class="lang-pt">{chapter.subtitle_pt}</span>
+                      </p>
+                    </div>
+                    <!-- Group pills -->
+                    {chapter.groups.length > 0 && (
+                      <div class="flex flex-wrap gap-1.5 mt-1">
+                        {chapter.groups.map(g => (
+                          <a
+                            href={base + "/lore/" + g}
+                            class="flex items-center gap-1 px-2.5 py-1 rounded-lg text-[0.7rem] font-bold border transition-all hover:scale-105 hover:border-[var(--accent)]"
+                            style="background: rgba(0,212,170,0.08); border-color: rgba(0,212,170,0.22); color: var(--accent);"
+                          >
+                            <span>{groupIcons[g] ?? '✦'}</span>
+                            <span style="text-transform: capitalize;">{g.replace(/_/g, ' ')}</span>
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                <!-- Quote -->
+                <blockquote class="mx-8 my-6 pl-5 italic text-[0.95rem] leading-relaxed border-l-4" style="color: var(--muted); border-color: var(--primary);">
+                  <span class="lang-en">{chapter.quote_en}</span>
+                  <span class="lang-pt">{chapter.quote_pt}</span>
+                </blockquote>
+
+                <!-- Body -->
+                <div class="px-8 pb-8 space-y-4">
+                  <div class="lang-en space-y-4">
+                    {chapter.body_en.map(para => (
+                      <p class="text-[0.95rem] leading-[1.75]" style="color: var(--text);">{para}</p>
+                    ))}
+                  </div>
+                  <div class="lang-pt space-y-4">
+                    {chapter.body_pt.map(para => (
+                      <p class="text-[0.95rem] leading-[1.75]" style="color: var(--text);">{para}</p>
+                    ))}
+                  </div>
+
+                  <!-- Read more link if groups exist -->
+                  {chapter.groups.length === 1 && (
+                    <div class="pt-2">
+                      <a
+                        href={base + "/lore/" + chapter.groups[0]}
+                        class="inline-flex items-center gap-1.5 text-sm font-semibold transition-colors hover:underline"
+                        style="color: var(--primary);"
+                      >
+                        <span class="lang-en">Deep dive: {chapter.groups[0].replace(/_/g, ' ')} →</span>
+                        <span class="lang-pt">Explorar em detalhe: {chapter.groups[0].replace(/_/g, ' ')} →</span>
+                      </a>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </article>
+          ))}
+        </section>
+      );
+    })}
+
+    <!-- ══  Consumable lore intros  ══ -->
+    <section id="consumables" class="mb-16 scroll-mt-20">
+      <div class="mb-8 rounded-2xl p-8 bg-gradient-to-br from-cyan-900/40 to-dark2 border" style="border-color: rgba(0,212,170,0.25);">
+        <p class="text-[0.75rem] font-black uppercase tracking-[0.15em] mb-1" style="color: var(--accent);">
+          <span class="lang-en">The Consumables</span>
+          <span class="lang-pt">Os Consumíveis</span>
+        </p>
+        <h2 class="font-black text-white mb-2" style="font-size: clamp(1.5rem, 4vw, 2.2rem);">
+          <span class="lang-en">Oracles, Planets & Ghosts</span>
+          <span class="lang-pt">Oráculos, Planetas e Fantasmas</span>
+        </h2>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        {(['tarot', 'planet', 'spectral'] as const).map(type => {
+          const lore = consumableLoreByType[type];
+          const href = base + '/' + type + 's';
+          const icons = { tarot: '🔮', planet: '🪐', spectral: '👻' };
+          const names_en = { tarot: 'Tarots', planet: 'Planets', spectral: 'Spectrals' };
+          const names_pt = { tarot: 'Tarôs', planet: 'Planetas', spectral: 'Espectrais' };
+          return (
+            <div class="rounded-2xl border p-6 flex flex-col gap-4 transition-all hover:-translate-y-1 hover:border-[var(--accent)]" style="background: var(--card); border-color: var(--border);">
+              <div class="text-3xl">{icons[type]}</div>
+              <h3 class="font-bold text-white text-lg">
+                <span class="lang-en">{names_en[type]}</span>
+                <span class="lang-pt">{names_pt[type]}</span>
+              </h3>
+              <p class="text-sm leading-relaxed lang-en flex-1" style="color: var(--muted);">{lore.intro_en}</p>
+              <p class="text-sm leading-relaxed lang-pt flex-1" style="color: var(--muted);">{lore.intro_pt}</p>
+              <a href={href} class="mt-auto text-sm font-semibold transition-colors hover:underline" style="color: var(--accent);">
+                <span class="lang-en">Browse {names_en[type]} →</span>
+                <span class="lang-pt">Ver {names_pt[type]} →</span>
+              </a>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- ══  Bottom CTA  ══ -->
+    <div class="rounded-2xl p-10 text-center border" style="background: linear-gradient(135deg, rgba(108,71,255,0.15) 0%, rgba(0,212,170,0.08) 100%); border-color: var(--border);">
+      <h3 class="font-black text-white text-2xl mb-3">
+        <span class="lang-en">Begin the Odyssey</span>
+        <span class="lang-pt">Comece a Odisseia</span>
+      </h3>
+      <p class="text-muted mb-6 max-w-md mx-auto">
+        <span class="lang-en">Now that you know the story — find the cards that tell it.</span>
+        <span class="lang-pt">Agora que você conhece a história — encontre as cartas que a contam.</span>
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href={base + "/jokers"} class="px-6 py-3 rounded-xl font-bold text-white transition-all hover:-translate-y-1" style="background: var(--primary);">
+          <span class="lang-en">Explore Jokers</span>
+          <span class="lang-pt">Explorar Curingas</span>
+        </a>
+        <a href={base + "/decks"} class="px-6 py-3 rounded-xl font-bold border transition-all hover:-translate-y-1 hover:bg-[rgba(108,71,255,0.1)]" style="border-color: var(--border); color: var(--text);">
+          <span class="lang-en">Explore Decks</span>
+          <span class="lang-pt">Explorar Baralhos</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</Layout>
+
+<style>
+  html { scroll-behavior: smooth; }
+</style>

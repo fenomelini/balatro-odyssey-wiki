@@ -1,0 +1,217 @@
+---
+import Layout from '../../components/layout/Layout.astro';
+import JokerCard from '../../components/cards/JokerCard.astro';
+import { loreChapters, groupToChapter } from '../../data/lore';
+import allJokers from '../../data/jokers.json';
+
+const GROUP_LABELS: Record<string, { en: string; pt: string; desc_en: string; desc_pt: string }> = {
+  singularity:          { en: 'Singularity',       pt: 'Singularidade',         desc_en: 'Manipulation of isolated states and "Black Holes" that consume resources to generate massive power.', desc_pt: 'Manipulação de estados isolados e "Buracos Negros" que consomem recursos para gerar poder massivo.' },
+  quantum:              { en: 'Quantum',            pt: 'Quântico',              desc_en: 'Superposition, uncertainty and quantum probability — effects that exist in multiple states at once.', desc_pt: 'Superposição, incerteza e probabilidade quântica — efeitos em múltiplos estados ao mesmo tempo.' },
+  temporal:             { en: 'Temporal',           pt: 'Temporal',              desc_en: 'Control over the run\'s time — retriggering effects from past rounds and Ante manipulation.', desc_pt: 'Controle sobre o tempo da run — reativando efeitos de rodadas passadas e manipulação de Ante.' },
+  dimensions:           { en: 'Dimensions',         pt: 'Dimensões',             desc_en: 'Cross-dimensional powers interacting with parallel game states and alternate realities.', desc_pt: 'Poderes além de dimensões que interagem com estados de jogo paralelos e realidades alternativas.' },
+  corruption:           { en: 'Corruption',         pt: 'Corrupção',             desc_en: 'High-risk, high-reward mechanics that can offer astronomical Mults in exchange for instability.', desc_pt: 'Mecânicas de alto risco e alta recompensa que podem oferecer Mults astronômicos.' },
+  chaos:                { en: 'Chaos',              pt: 'Caos',                  desc_en: 'Purely random and unpredictable — every hand can be a surprise, for better or worse.', desc_pt: 'Puramente aleatório e imprevisível — cada mão pode ser uma surpresa.' },
+  economy:              { en: 'Economy',            pt: 'Economia',              desc_en: 'Money generation, interest mechanics, shop bonuses and gold-to-power conversions.', desc_pt: 'Geração de dinheiro, mecânicas de juros, bônus de loja e conversão de ouro em poder.' },
+  transformations:      { en: 'Transformations',   pt: 'Transformações',        desc_en: 'Jokers that evolve, change or permanently transform other cards over time.', desc_pt: 'Curingas que evoluem, mudam ou transformam permanentemente outras cartas.' },
+  luck_and_probability: { en: 'Luck & Probability',pt: 'Sorte e Probabilidade', desc_en: 'Chance-based triggers, lucky coin flips and probability manipulation mechanics.', desc_pt: 'Gatilhos baseados em chance, sorteios e mecânicas de manipulação de probabilidade.' },
+  pos:                  { en: 'Positioning',        pt: 'Posicionamento',        desc_en: 'Card order, hand position and deck placement effects that reward precise play.', desc_pt: 'Ordem das cartas, posição na mão e efeitos que recompensam jogadas precisas.' },
+  hand_and_discard:     { en: 'Hand & Discard',    pt: 'Mão e Descarte',        desc_en: 'Hand size, discard count, draw mechanics and card cycling strategies.', desc_pt: 'Tamanho da mão, quantidade de descarte, mecânicas de compra e ciclo de cartas.' },
+  elemental:            { en: 'Elemental',          pt: 'Elemental',             desc_en: 'Fire, ice, lightning and elemental affinities that synergize with card suits and hand types.', desc_pt: 'Fogo, gelo, raio e afinidades elementais que fazem sinergia com naipes e tipos de mão.' },
+  tribal:               { en: 'Tribal',             pt: 'Tribal',                desc_en: 'Classes, professions and tribal synergies — power scales with how many of the same tribe you own.', desc_pt: 'Classes, profissões e sinergias tribais — o poder escala com quantos da mesma tribo você possui.' },
+  social:               { en: 'Social',             pt: 'Social',                desc_en: 'Effects that scale with the total number of Jokers you own — the bigger the crowd, the bigger the bonus.', desc_pt: 'Efeitos que escalam com o total de Curingas que você possui — quanto mais, melhor.' },
+  cond:                 { en: 'Conditions',         pt: 'Condições',             desc_en: 'Conditional bonuses that activate only under specific game states — high risk, high reward.', desc_pt: 'Bônus condicionais que ativam apenas em estados específicos do jogo.' },
+  time:                 { en: 'Time',               pt: 'Tempo',                 desc_en: 'Round counters, Ante progression and clock mechanics that grow stronger over a long run.', desc_pt: 'Contadores de rodada, progressão de Ante e mecânicas de relógio que crescem em runs longas.' },
+  paradox:              { en: 'Paradoxes',          pt: 'Paradoxos',             desc_en: 'Self-contradictory effects that bend game logic — impossibly strong under the right conditions.', desc_pt: 'Efeitos auto-contraditórios que dobram a lógica do jogo.' },
+  celestial:            { en: 'Celestial',          pt: 'Celestial',             desc_en: 'Stars, galaxies and cosmic-scale effects — slow to build, but capable of astronomical scores.', desc_pt: 'Estrelas, galáxias e efeitos em escala cósmica — lentos de construir, mas astronômicos.' },
+  anomaly:              { en: 'Anomaly',             pt: 'Anomalia',              desc_en: 'Unusual, game-bending Jokers that break conventional rules and introduce unexpected mechanics.', desc_pt: 'Curingas incomuns que quebram regras convencionais e introduzem mecânicas inesperadas.' },
+  glitch:               { en: 'Glitch',              pt: 'Glitch',                desc_en: 'Digital glitches, game errors and corrupted data — unstable but extraordinarily powerful.', desc_pt: 'Glitches digitais, erros do jogo e dados corrompidos — instáveis, mas poderosos.' },
+  professions:          { en: 'Professions',        pt: 'Profissões',            desc_en: 'Real-world jobs and skill classes that each bring a unique playstyle to the table.', desc_pt: 'Profissões e classes do mundo real, cada uma com estilo de jogo único.' },
+  final:                { en: 'Final',              pt: 'Final',                 desc_en: 'The most powerful game-ending Jokers in Odyssey — reserved for endgame moments of glory.', desc_pt: 'Os Curingas mais poderosos do fim de jogo — reservados para momentos de glória.' },
+};
+
+const groupIcons: Record<string, string> = {
+  singularity: '⬛', quantum: '🌀', celestial: '✦',
+  temporal: '⏳', dimensions: '🪟', paradox: '♾',
+  chaos: '🎲', corruption: '☠', glitch: '🔴', anomaly: '⚡',
+  economy: '💰', professions: '🔧', social: '👥', tribal: '🏡',
+  elemental: '🔥', luck_and_probability: '🍀', time: '🕐',
+  cond: '⚖', pos: '📍', hand_and_discard: '🃏',
+  transformations: '🦋', final: '🌟',
+};
+
+const actColors: Record<number, string> = {
+  1: 'rgba(108,71,255,0.18)',
+  2: 'rgba(59,130,246,0.18)',
+  3: 'rgba(239,68,68,0.18)',
+  4: 'rgba(16,185,129,0.18)',
+  5: 'rgba(245,158,11,0.18)',
+};
+
+export async function getStaticPaths() {
+  const groups = [...new Set(allJokers.map((j: any) => j.group))];
+  return groups.map(group => ({ params: { group } }));
+}
+
+const { group } = Astro.params as { group: string };
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const label = GROUP_LABELS[group] ?? { en: group, pt: group, desc_en: '', desc_pt: '' };
+const icon = groupIcons[group] ?? '✦';
+
+// Find the chapter for this group
+const chapterId = groupToChapter[group];
+const chapter = loreChapters.find(c => c.id === chapterId);
+
+// Jokers in this group, sorted rarity DESC
+const groupJokers = allJokers
+  .filter((j: any) => j.group === group)
+  .sort((a: any, b: any) => b.rarity - a.rarity || a.key.localeCompare(b.key));
+
+const actGlow = chapter ? (actColors[chapter.act] ?? 'rgba(108,71,255,0.18)') : 'rgba(108,71,255,0.18)';
+
+// Rarity breakdown
+const rarityCount = [1,2,3,4].map(r => ({
+  r,
+  count: groupJokers.filter((j: any) => j.rarity === r).length,
+  labels: ['','Common','Uncommon','Rare','Legendary'],
+  labels_pt: ['','Comum','Incomum','Raro','Lendário'],
+  colors: ['','#60a5fa','#4ade80','#f87171','#fbbf24'],
+}));
+---
+
+<Layout title={`${label.en} — Lore`} description={`Lore and Jokers for the ${label.en} group in Balatro Odyssey.`}>
+
+  <!-- Hero gradient based on act -->
+  <div class="relative" style={`background: radial-gradient(ellipse 80% 50% at 50% 0%, ${actGlow} 0%, transparent 60%);`}>
+    <div class="max-w-[1200px] mx-auto px-[5%] py-14">
+
+      <!-- Breadcrumb -->
+      <div class="flex items-center gap-2 text-sm mb-6" style="color: var(--muted);">
+        <a href={`${base}/lore`} class="hover:text-white transition-colors">
+          <span class="lang-en">Lore</span>
+          <span class="lang-pt">Lore</span>
+        </a>
+        <span>›</span>
+        <span class="text-white">{icon} {label.en}</span>
+      </div>
+
+      <div class="flex flex-col md:flex-row md:items-end gap-6 mb-8">
+        <div class="flex-1">
+          <p class="text-[0.78rem] font-black uppercase tracking-[0.12em] mb-2" style="color: var(--accent);">
+            <span class="lang-en">Group Lore</span>
+            <span class="lang-pt">Lore do Grupo</span>
+          </p>
+          <h1 class="font-black text-white leading-none mb-3" style="font-size: clamp(2rem, 5vw, 3.2rem);">
+            <span class="mr-3 text-[0.7em]">{icon}</span>
+            <span class="lang-en">{label.en}</span>
+            <span class="lang-pt">{label.pt}</span>
+          </h1>
+          <p class="text-muted text-base leading-relaxed max-w-[600px]">
+            <span class="lang-en">{label.desc_en}</span>
+            <span class="lang-pt">{label.desc_pt}</span>
+          </p>
+        </div>
+
+        <!-- Stats panel -->
+        <div class="flex gap-4 flex-wrap">
+          <div class="rounded-xl px-5 py-3 border text-center" style="background: var(--card); border-color: var(--border);">
+            <div class="text-2xl font-black text-white">{groupJokers.length}</div>
+            <div class="text-xs text-muted uppercase tracking-wide mt-0.5">
+              <span class="lang-en">Jokers</span>
+              <span class="lang-pt">Curingas</span>
+            </div>
+          </div>
+          {rarityCount.filter(r => r.count > 0).map(r => (
+            <div class="rounded-xl px-4 py-3 border text-center" style="background: var(--card); border-color: var(--border);">
+              <div class="text-xl font-black" style={`color: ${r.colors[r.r]};`}>{r.count}</div>
+              <div class="text-xs text-muted uppercase tracking-wide mt-0.5">
+                <span class="lang-en">{r.labels[r.r]}</span>
+                <span class="lang-pt">{r.labels_pt[r.r]}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-[1200px] mx-auto px-[5%] pb-20">
+
+    <!-- ══ LORE CHAPTER ══ -->
+    {chapter && (
+      <section class="mb-14">
+        <div class="rounded-2xl border overflow-hidden" style="background: var(--card); border-color: var(--border);">
+          <div class="px-8 pt-7 pb-5 border-b" style="border-color: var(--border);">
+            <p class="text-[0.75rem] font-black uppercase tracking-[0.13em] mb-1" style="color: var(--accent);">
+              <span class="lang-en">The Story</span>
+              <span class="lang-pt">A História</span>
+            </p>
+            <h2 class="font-black text-white text-2xl mb-1">
+              <span class="lang-en">{chapter.title_en}</span>
+              <span class="lang-pt">{chapter.title_pt}</span>
+            </h2>
+            <p class="text-sm" style="color: var(--muted);">
+              <span class="lang-en">{chapter.subtitle_en}</span>
+              <span class="lang-pt">{chapter.subtitle_pt}</span>
+            </p>
+          </div>
+
+          <blockquote class="mx-8 my-6 pl-5 italic text-base leading-relaxed border-l-4" style="color: var(--muted); border-color: var(--primary);">
+            <span class="lang-en">{chapter.quote_en}</span>
+            <span class="lang-pt">{chapter.quote_pt}</span>
+          </blockquote>
+
+          <div class="px-8 pb-8">
+            <div class="lang-en space-y-4">
+              {chapter.body_en.map(para => (
+                <p class="text-[0.95rem] leading-[1.8]" style="color: var(--text);">{para}</p>
+              ))}
+            </div>
+            <div class="lang-pt space-y-4">
+              {chapter.body_pt.map(para => (
+                <p class="text-[0.95rem] leading-[1.8]" style="color: var(--text);">{para}</p>
+              ))}
+            </div>
+
+            <div class="mt-6 pt-5 border-t flex items-center justify-between flex-wrap gap-3" style="border-color: var(--border);">
+              <a href={`${base}/lore#${chapter.id}`} class="text-sm font-semibold transition-colors hover:underline" style="color: var(--primary);">
+                <span class="lang-en">← Read in full Odyssey narrative</span>
+                <span class="lang-pt">← Ler na narrativa completa da Odisseia</span>
+              </a>
+              <a href={`${base}/jokers?group=${group}`} class="text-sm font-semibold transition-colors hover:underline" style="color: var(--accent);">
+                <span class="lang-en">Filter joker gallery →</span>
+                <span class="lang-pt">Filtrar galeria de curingas →</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- ══ JOKER GRID ══ -->
+    <section>
+      <div class="flex items-center justify-between mb-5 flex-wrap gap-3">
+        <div>
+          <p class="text-[0.77rem] font-black uppercase tracking-[0.12em] mb-0.5" style="color: var(--accent);">
+            <span class="lang-en">Cards in this group</span>
+            <span class="lang-pt">Cartas neste grupo</span>
+          </p>
+          <h2 class="text-xl font-bold text-white">
+            {groupJokers.length}
+            <span class="lang-en ml-1">{label.en} Jokers</span>
+            <span class="lang-pt ml-1">Curingas {label.pt}</span>
+          </h2>
+        </div>
+        <a href={`${base}/jokers`} class="text-sm text-muted hover:text-white transition-colors">
+          <span class="lang-en">← All Jokers</span>
+          <span class="lang-pt">← Todos os Curingas</span>
+        </a>
+      </div>
+
+      <div class="grid gap-3" style="grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));">
+        {groupJokers.map((joker: any) => <JokerCard joker={joker} />)}
+      </div>
+    </section>
+
+  </div>
+</Layout>

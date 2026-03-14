@@ -8,6 +8,7 @@ export const ui = {
     spectrals: "Espectrais",
     vouchers: "Cupons",
     blinds: "Blinds",
+    lore: "Lore",
     changelog: "Changelog",
   },
   filters: {

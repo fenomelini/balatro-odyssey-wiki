@@ -4,6 +4,7 @@ import RarityBadge from '../../components/ui/RarityBadge.astro';
 import { formatDescription } from '../../utils/formatDescription';
 import { getRarityStyle } from '../../utils/rarityColors';
 import allJokers from '../../data/jokers.json';
+import { loreChapters, groupToChapter } from '../../data/lore';
 
 export async function getStaticPaths() {
   return allJokers.map(joker => ({
@@ -48,6 +49,10 @@ const GROUP_LABELS: Record<string, { en: string; pt: string }> = {
 
 const groupLabel = GROUP_LABELS[joker.group] ?? { en: joker.group, pt: joker.group };
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Find lore chapter for this group
+const chapterId = groupToChapter[joker.group];
+const loreChapter = loreChapters.find(c => c.id === chapterId);
 // Same-group jokers (up to 6, excluding self)
 const sameGroup = allJokers
   .filter(j => j.group === joker.group && j.key !== joker.key)
@@ -203,6 +208,41 @@ const sameGroup = allJokers
               </a>
             );
           })}
+        </div>
+      </div>
+    )}
+
+    <!-- Group Lore block -->
+    {loreChapter && (
+      <div class="mt-10 rounded-2xl border overflow-hidden" style="background: rgba(108,71,255,0.06); border-color: rgba(108,71,255,0.22);">
+        <div class="px-7 pt-6 pb-4 border-b" style="border-color: rgba(108,71,255,0.15);">
+          <p class="text-[0.72rem] font-black uppercase tracking-[0.12em] mb-1" style="color: var(--accent);"
+            ><span class="lang-en">Group Lore</span
+            ><span class="lang-pt">Lore do Grupo</span></p>
+          <h2 class="font-bold text-white text-lg">
+            <span class="lang-en">{loreChapter.title_en}</span>
+            <span class="lang-pt">{loreChapter.title_pt}</span>
+          </h2>
+        </div>
+        <blockquote class="mx-7 my-5 pl-4 italic text-sm leading-relaxed border-l-4 text-muted" style="border-color: var(--primary);">
+          <span class="lang-en">{loreChapter.quote_en}</span>
+          <span class="lang-pt">{loreChapter.quote_pt}</span>
+        </blockquote>
+        <div class="px-7 pb-6">
+          <div class="lang-en space-y-3">
+            {loreChapter.body_en.slice(0, 2).map((para: string) => (
+              <p class="text-[0.88rem] leading-[1.75]" style="color: var(--muted);">{para}</p>
+            ))}
+          </div>
+          <div class="lang-pt space-y-3">
+            {loreChapter.body_pt.slice(0, 2).map((para: string) => (
+              <p class="text-[0.88rem] leading-[1.75]" style="color: var(--muted);">{para}</p>
+            ))}
+          </div>
+          <a href={`${base}/lore/${joker.group}`} class="inline-block mt-4 text-sm font-semibold hover:underline" style="color: var(--primary);">
+            <span class="lang-en">Read full {groupLabel.en} lore →</span>
+            <span class="lang-pt">Ler lore completa de {groupLabel.pt} →</span>
+          </a>
         </div>
       </div>
     )}
