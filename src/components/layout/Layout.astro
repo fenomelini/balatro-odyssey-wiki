@@ -24,6 +24,7 @@ const navItems = [
   { href: base + '/enhancements',  icon: '✨', label_en: 'Enhancements', label_pt: 'Aprimoramentos', count: '17' },
   { href: null,                    icon: '🏷️', label_en: 'Tags',         label_pt: 'Tags',           count: '', disabled: true, soon: true },
   { href: base + '/changelog',   icon: '📋', label_en: 'Changelog',  label_pt: 'Changelog',  count: '' },
+  { href: base + '/lore',        icon: '✦',  label_en: 'Lore',       label_pt: 'Lore',       count: '', lore: true },
 ];
 
 function isActive(href: string) {
@@ -204,7 +205,7 @@ function isActive(href: string) {
                 href={item.href as string}
                 class:list={[
                   'flex items-center justify-between px-3 py-2 rounded-lg text-[0.88rem] no-underline transition-all duration-150 group',
-                  active ? 'bg-primary/20 text-white font-semibold' : 'text-muted hover:bg-dark3 hover:text-white'
+                  active ? 'bg-primary/20 text-white font-semibold' : (item.lore ? 'text-accent hover:bg-dark3 hover:brightness-110 font-semibold' : 'text-muted hover:bg-dark3 hover:text-white')
                 ]}
               >
                 <span class="flex items-center gap-2.5">
