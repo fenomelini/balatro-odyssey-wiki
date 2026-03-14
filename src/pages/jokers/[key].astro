@@ -22,6 +22,15 @@ const jokerVars = (joker as any).vars as (number | string | null)[] | undefined;
 const descEnHtml = formatDescription(joker.desc_en, jokerVars);
 const descPtHtml = formatDescription(joker.desc_pt, jokerVars);
 
+// Show "? = dynamic" note only when some placeholders are unresolved
+const hasUnresolved = joker.desc_en.concat(joker.desc_pt).some(line => {
+  const matches = [...line.matchAll(/#(\d+)#/g)];
+  return matches.some(m => {
+    const n = parseInt(m[1], 10);
+    return !jokerVars || jokerVars[n - 1] == null;
+  });
+});
+
 const GROUP_LABELS: Record<string, { en: string; pt: string }> = {
   singularity:          { en: 'Singularity', pt: 'Singularidade' },
   quantum:              { en: 'Quantum', pt: 'Quântico' },
@@ -102,8 +111,8 @@ const sameGroup = allJokers
           <div class="lang-en" set:html={descEnHtml} />
           <div class="lang-pt" set:html={descPtHtml} />
         </div>
-        <!-- ? placeholder note -->
-        {(joker.desc_en.some(l => l.includes('#')) || joker.desc_pt.some(l => l.includes('#'))) && (
+        <!-- ? placeholder note — only when vars are unresolved -->
+        {hasUnresolved && (
           <p class="text-muted text-[0.78rem] mb-6 px-1">
             <span class="lang-en">
               <span class="text-yellow-300 font-bold">?</span> = Dynamic value — changes based on game state.
@@ -113,7 +122,7 @@ const sameGroup = allJokers
             </span>
           </p>
         )}
-        {!(joker.desc_en.some(l => l.includes('#')) || joker.desc_pt.some(l => l.includes('#'))) && (
+        {!hasUnresolved && (
           <div class="mb-6" />
         )}
 

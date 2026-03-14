@@ -174,7 +174,9 @@ def extract_config_extra(block: str) -> dict:
 def extract_loc_vars_order(block: str) -> list:
     """
     Parse loc_vars function to get the ordered list of extra field names.
+    Handles both simple ('extra.field') and guarded ('((expr)).field') patterns.
     e.g. 'return { vars = { extra.mult, extra.chips } }' → ['mult', 'chips']
+    e.g. 'return { vars = { ((...or self.config.extra)).x_mult } }' → ['x_mult']
     """
     # Find loc_vars function body
     lv_m = re.search(r'\bloc_vars\s*=\s*function\b', block)
@@ -186,7 +188,18 @@ def extract_loc_vars_order(block: str) -> list:
     if not vars_m:
         return []
     vars_str = vars_m.group(1)
-    return re.findall(r'\bextra\.(\w+)', vars_str)
+    # Try simple pattern first: extra.field_name
+    fields = re.findall(r'\bextra\.(\w+)', vars_str)
+    if fields:
+        return fields
+    # Fallback: guarded expressions like ((card.ability.extra or self.config.extra)).field_name
+    # Each comma-separated element ends with .field_name
+    fields = []
+    for expr in vars_str.split(','):
+        m = re.search(r'\.(\w+)\s*$', expr.strip())
+        if m:
+            fields.append(m.group(1))
+    return fields
 
 
 def extract_joker_metadata(joker_dir: Path) -> dict:

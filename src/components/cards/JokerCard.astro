@@ -21,8 +21,8 @@ interface Props {
 
 const { joker } = Astro.props;
 const style = getRarityStyle(joker.rarity);
-const descEn = stripDescription(joker.desc_en);
-const descPt = stripDescription(joker.desc_pt);
+const descEn = stripDescription(joker.desc_en, joker.vars);
+const descPt = stripDescription(joker.desc_pt, joker.vars);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
