@@ -74,7 +74,7 @@ function isActive(href: string) {
       --dark3:        #1c1c3a;
       --card:         #18183a;
       --text:         #e8e8f0;
-      --muted:        #9090b0;
+      --muted:        #a8a8c8;
       --border:       rgba(108,71,255,0.25);
       --sidebar-w:    260px;
     }
@@ -83,6 +83,7 @@ function isActive(href: string) {
 
     html {
       font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 16px;
       background: var(--dark);
       color: var(--text);
       line-height: 1.6;
@@ -99,6 +100,22 @@ function isActive(href: string) {
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: var(--dark2); }
     ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
+
+    /* Focus visible — acessibilidade para teclado */
+    :focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    /* Respeita preferência de movimento reduzido */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+      html { scroll-behavior: auto; }
+    }
 
     /* Sprites */
     img { image-rendering: pixelated; }
@@ -195,7 +212,7 @@ function isActive(href: string) {
 
     <!-- Nav -->
     <nav class="flex-1 overflow-y-auto py-3 px-2">
-      <p class="text-[0.65rem] font-bold uppercase tracking-widest text-muted px-3 mb-2 mt-1">
+      <p class="text-[0.7rem] font-bold uppercase tracking-widest text-muted px-3 mb-2 mt-1">
         <span class="lang-en">Content</span>
         <span class="lang-pt">Conteúdo</span>
       </p>
@@ -214,7 +231,7 @@ function isActive(href: string) {
                     </span>
                   </span>
                   {item.soon && (
-                    <span class="text-[0.6rem] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded border border-[var(--border)] text-muted">
+                    <span class="text-[0.7rem] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded border border-[var(--border)] text-muted">
                       <span class="lang-en">Soon</span>
                       <span class="lang-pt">Em Breve</span>
                     </span>
@@ -241,7 +258,7 @@ function isActive(href: string) {
                 </span>
                 {item.count && (
                   <span class:list={[
-                    'text-[0.68rem] font-bold px-1.5 py-0.5 rounded-full shrink-0',
+                    'text-[0.72rem] font-bold px-1.5 py-0.5 rounded-full shrink-0',
                     active ? 'bg-primary text-white' : 'bg-dark3 text-muted group-hover:bg-dark3'
                   ]}>{item.count}</span>
                 )}
@@ -253,7 +270,7 @@ function isActive(href: string) {
 
       <hr class="my-4 border-[var(--border)]" />
 
-      <p class="text-[0.65rem] font-bold uppercase tracking-widest text-muted px-3 mb-2">Links</p>
+      <p class="text-[0.7rem] font-bold uppercase tracking-widest text-muted px-3 mb-2">Links</p>
       <ul class="list-none space-y-0.5">
         <li>
           <a href="https://github.com/fenomelini/balatro-odyssey" target="_blank" rel="noopener"

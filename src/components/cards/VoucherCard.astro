@@ -42,7 +42,7 @@ const tierColor = voucher.tier === 2 ? 'text-yellow-400 bg-yellow-400/10 border-
 
   <!-- Tier badge -->
   <div class="flex justify-center mb-2 gap-2">
-    <span class={`text-[0.72rem] font-bold uppercase tracking-wide px-2 py-0.5 rounded-full border ${tierColor}`}>
+    <span class={`text-xs font-bold uppercase tracking-wide px-2 py-0.5 rounded-full border ${tierColor}`}>
       <span class="lang-en">{voucher.tier === 1 ? 'Base' : 'Upgrade'}</span>
       <span class="lang-pt">{voucher.tier === 1 ? 'Base' : 'Melhoria'}</span>
     </span>
@@ -55,7 +55,7 @@ const tierColor = voucher.tier === 2 ? 'text-yellow-400 bg-yellow-400/10 border-
   </div>
 
   <!-- Description -->
-  <div class="rounded-lg p-3 bg-dark3/70 border border-[rgba(108,71,255,0.15)] text-[0.82rem] text-muted leading-snug mb-4">
+  <div class="rounded-lg p-3 bg-dark3/70 border border-[rgba(108,71,255,0.15)] text-sm text-muted leading-relaxed mb-4">
     <span class="lang-en">{descEn}</span>
     <span class="lang-pt">{descPt}</span>
   </div>
@@ -63,11 +63,11 @@ const tierColor = voucher.tier === 2 ? 'text-yellow-400 bg-yellow-400/10 border-
   <!-- Footer: pair + cost -->
   <div class="flex items-center justify-between">
     {voucher.pair_key && (
-      <span class="text-[0.72rem] text-muted truncate max-w-[60%]">
+      <span class="text-xs text-muted truncate max-w-[60%]">
         <span class="lang-en">Pairs: {voucher.pair_key.replace(/_/g, ' ')}</span>
         <span class="lang-pt">Par: {voucher.pair_key.replace(/_/g, ' ')}</span>
       </span>
     )}
-    <span class="text-muted text-[0.82rem] font-bold ml-auto">${voucher.cost}</span>
+    <span class="text-muted text-sm font-bold ml-auto">${voucher.cost}</span>
   </div>
 </div>
