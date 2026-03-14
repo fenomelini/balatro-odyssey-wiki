@@ -263,6 +263,76 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </div>
   </section>
 
+  <!-- ── LORE TEASER ── -->
+  <section class="px-8 py-20 relative overflow-hidden border-t border-[var(--border)]"
+           style="background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(108,71,255,0.12) 0%, transparent 70%);">
+    <div class="max-w-[1100px] mx-auto">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+
+        <!-- Text side -->
+        <div class="flex-1 text-center lg:text-left">
+          <p class="text-accent text-[0.78rem] font-bold uppercase tracking-[0.12em] mb-3">
+            <span class="lang-en">✦ The Grand Narrative</span>
+            <span class="lang-pt">✦ A Grande Narrativa</span>
+          </p>
+          <h2 class="font-extrabold text-white mb-4" style="font-size: clamp(1.6rem, 3vw, 2.6rem);">
+            <span class="lang-en">The Odyssey Lore</span>
+            <span class="lang-pt">A Lore da Odisseia</span>
+          </h2>
+          <p class="text-muted text-[0.95rem] leading-relaxed mb-4 max-w-[540px] mx-auto lg:mx-0">
+            <span class="lang-en">
+              From the Singularity that sparked creation to the Final Jokers that seal the cosmos —
+              a five-act epic woven through all 22 Joker groups, 100 Tarots, Planets, Spectrals and every Boss Blind.
+            </span>
+            <span class="lang-pt">
+              Da Singularidade que acendeu a criação aos Curingas Finais que selam o cosmos —
+              um épico de cinco atos tecido pelos 22 grupos de Curingas, 100 Tarôs, Planetas, Espectrais e cada Boss Blind.
+            </span>
+          </p>
+          <p class="italic text-muted/70 text-[0.85rem] mb-8 max-w-[480px] mx-auto lg:mx-0">
+            <span class="lang-en">"Every card tells a story. Together, they tell the Odyssey."</span>
+            <span class="lang-pt">"Cada carta conta uma história. Juntas, elas contam a Odisseia."</span>
+          </p>
+          <a href={base + '/lore'}
+             class="inline-flex items-center gap-2 px-7 py-3.5 rounded-[10px] font-bold text-white text-[1rem] transition-all hover:-translate-y-0.5 hover:brightness-110 shadow-lg"
+             style="background: linear-gradient(135deg, var(--primary), #4f2fe0); box-shadow: 0 8px 28px rgba(108,71,255,0.35);">
+            <span class="lang-en">Read the Lore →</span>
+            <span class="lang-pt">Ler a Lore →</span>
+          </a>
+        </div>
+
+        <!-- Acts visual side -->
+        <div class="flex flex-col gap-2.5 w-full max-w-[380px] shrink-0">
+          {[
+            { num: 'Prologue', num_pt: 'Prólogo',   sub_en: 'Before the First Card',           sub_pt: 'Antes da Primeira Carta',            color: '#9090b0', anchor: 'act-0' },
+            { num: 'Act I',    num_pt: 'Ato I',      sub_en: 'The Dawn of Singularity',          sub_pt: 'A Aurora da Singularidade',           color: '#6c47ff', anchor: 'act-1' },
+            { num: 'Act II',   num_pt: 'Ato II',     sub_en: 'The Fracture',                     sub_pt: 'A Fratura',                           color: '#3b82f6', anchor: 'act-2' },
+            { num: 'Act III',  num_pt: 'Ato III',    sub_en: 'The War Between Worlds',           sub_pt: 'A Guerra entre Mundos',               color: '#ef4444', anchor: 'act-3' },
+            { num: 'Act IV',   num_pt: 'Ato IV',     sub_en: 'The Long Journey',                 sub_pt: 'A Longa Jornada',                     color: '#10b981', anchor: 'act-4' },
+            { num: 'Act V',    num_pt: 'Ato V',      sub_en: 'Transformation & Transcendence',   sub_pt: 'Transformação e Transcendência',       color: '#f59e0b', anchor: 'act-5' },
+            { num: 'Epilogue', num_pt: 'Epílogo',    sub_en: 'After the Last Hand',              sub_pt: 'Depois da Última Mão',                color: '#00d4aa', anchor: 'act-6' },
+          ].map(act => (
+            <a href={base + '/lore#' + act.anchor}
+               class="flex items-center gap-4 px-4 py-3 rounded-xl border transition-all hover:-translate-x-1 no-underline group"
+               style={"background: " + act.color + "0d; border-color: " + act.color + "30;"}>
+              <span class="text-[0.72rem] font-black uppercase tracking-wider shrink-0 w-14"
+                    style={"color: " + act.color + ";"}>
+                <span class="lang-en">{act.num}</span>
+                <span class="lang-pt">{act.num_pt}</span>
+              </span>
+              <span class="text-[0.82rem] text-muted group-hover:text-white transition-colors truncate">
+                <span class="lang-en">{act.sub_en}</span>
+                <span class="lang-pt">{act.sub_pt}</span>
+              </span>
+              <span class="ml-auto text-muted/40 group-hover:text-white/60 transition-colors text-xs">→</span>
+            </a>
+          ))}
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ── CONTENT OVERVIEW ── -->
   <section id="categories" class="px-8 py-20 border-t border-[var(--border)]"
            style="background: linear-gradient(180deg, rgba(108,71,255,0.06) 0%, transparent 100%);">
