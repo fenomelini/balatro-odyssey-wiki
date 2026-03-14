@@ -45,3 +45,9 @@ package-lock.json
 .cache/
 *.tmp
 *.temp
+
+# Scripts (dev tooling, not needed in deploy)
+scripts/
+
+# AI instructions
+.github/copilot-instructions.md

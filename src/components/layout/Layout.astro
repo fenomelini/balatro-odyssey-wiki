@@ -121,10 +121,10 @@ function isActive(href: string) {
       }
       #sidebar-overlay.open { display: block; }
       #main-area { padding-top: 3.5rem; }
-      #mobile-topbar { display: flex; }
+      #mobile-topbar { display: flex !important; }
     }
     @media (min-width: 768px) {
-      #mobile-topbar { display: none; }
+      #mobile-topbar { display: none !important; }
       #sidebar-overlay { display: none !important; }
     }
   </style>
@@ -138,7 +138,7 @@ function isActive(href: string) {
 <body class="bg-dark text-[var(--text)]">
 
   <!-- Mobile top bar -->
-  <div id="mobile-topbar" class="fixed top-0 left-0 right-0 z-50 h-14 hidden items-center justify-between px-4 border-b border-[var(--border)]"
+  <div id="mobile-topbar" class="fixed top-0 left-0 right-0 z-50 h-14 items-center justify-between px-4 border-b border-[var(--border)]"
        style="background: rgba(13,13,26,0.96); backdrop-filter: blur(12px);">
     <a href={base + '/'} class="font-black text-white flex items-center gap-1.5 no-underline text-sm">
       <span class="text-primary">✦</span>
@@ -284,6 +284,10 @@ function isActive(href: string) {
     }
     toggle?.addEventListener('click', openSidebar);
     overlay?.addEventListener('click', closeSidebar);
+    // Close sidebar when a nav link is tapped on mobile
+    sidebar?.querySelectorAll('a[href]').forEach(function(link) {
+      link.addEventListener('click', closeSidebar);
+    });
   </script>
 </body>
 </html>
