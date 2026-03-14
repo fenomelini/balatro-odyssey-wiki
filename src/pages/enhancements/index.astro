@@ -1,0 +1,101 @@
+---
+import Layout from '../../components/layout/Layout.astro';
+import SearchBox from '../../components/ui/SearchBox.astro';
+import enhancements from '../../data/enhancements.json';
+
+// Sort alphabetically by EN name
+const sorted = [...enhancements].sort((a, b) => a.name_en.localeCompare(b.name_en));
+---
+
+<Layout title="Enhancements" description="Browse all 17 card enhancements added by Balatro Odyssey.">
+  <div class="px-[5%] py-12 max-w-[1400px] mx-auto">
+
+    <!-- Header -->
+    <div class="mb-8">
+      <p class="text-accent text-[0.8rem] font-bold uppercase tracking-[0.1em] mb-2">Browse</p>
+      <h1 class="font-extrabold text-white mb-1" style="font-size: clamp(1.8rem, 3vw, 2.6rem);">
+        <span class="lang-en">Card Enhancements</span>
+        <span class="lang-pt">Aprimoramentos de Carta</span>
+      </h1>
+      <p class="text-muted">
+        {sorted.length}
+        <span class="lang-en">enhancements</span>
+        <span class="lang-pt">aprimoramentos</span>
+      </p>
+    </div>
+
+    <SearchBox placeholder_en="Search enhancements..." placeholder_pt="Buscar aprimoramentos..." />
+
+    <!-- Grid -->
+    <div id="enhancements-grid" class="grid gap-4 mt-6" style="grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));">
+      {sorted.map(enh => {
+        const shortKey = enh.key.replace('m_odyssey_', '');
+        return (
+          <div
+            class="enh-card bg-card border border-[var(--border)] rounded-2xl p-4 flex flex-col items-center gap-3 transition-all duration-200 hover:-translate-y-1 hover:border-[var(--accent)]"
+            data-name-en={enh.name_en.toLowerCase()}
+            data-name-pt={enh.name_pt.toLowerCase()}
+          >
+            <!-- Sprite -->
+            <div class="flex items-center justify-center">
+              <img
+                src={`/assets/${enh.sprite}`}
+                width="142"
+                height="190"
+                alt={enh.name_en}
+                loading="lazy"
+                style="filter: drop-shadow(0 4px 12px rgba(0,212,170,0.25));"
+                onerror="this.style.opacity='0.2'"
+              />
+            </div>
+
+            <!-- Name -->
+            <div class="font-bold text-white text-[1rem] text-center leading-tight">
+              <span class="lang-en">{enh.name_en}</span>
+              <span class="lang-pt">{enh.name_pt}</span>
+            </div>
+
+            <!-- Description -->
+            <div class="text-muted text-[0.78rem] leading-snug text-center mt-auto w-full">
+              <span class="lang-en" set:html={enh.desc_en.map(l => l
+                .replace(/\{X:mult,C:white\}(.*?)\{\}/g, '<span class="bg-red-600 text-white px-1 rounded text-xs font-bold">$1</span>')
+                .replace(/\{C:mult\}(.*?)\{\}/g, '<span class="text-red-400">$1</span>')
+                .replace(/\{C:chips\}(.*?)\{\}/g, '<span class="text-orange-400">$1</span>')
+                .replace(/\{C:money\}(.*?)\{\}/g, '<span class="text-yellow-400">$1</span>')
+                .replace(/\{C:attention\}(.*?)\{\}/g, '<span class="text-yellow-300">$1</span>')
+                .replace(/\{C:green\}(.*?)\{\}/g, '<span class="text-green-400">$1</span>')
+                .replace(/\{C:inactive\}(.*?)\{\}/g, '<span class="text-gray-400">$1</span>')
+                .replace(/\{C:tarot\}(.*?)\{\}/g, '<span class="text-purple-400">$1</span>')
+                .replace(/#\d+#/g, '<span class="text-yellow-300">?</span>')
+              ).join('<br/>')} />
+              <span class="lang-pt" set:html={enh.desc_pt.map(l => l
+                .replace(/\{X:mult,C:white\}(.*?)\{\}/g, '<span class="bg-red-600 text-white px-1 rounded text-xs font-bold">$1</span>')
+                .replace(/\{C:mult\}(.*?)\{\}/g, '<span class="text-red-400">$1</span>')
+                .replace(/\{C:chips\}(.*?)\{\}/g, '<span class="text-orange-400">$1</span>')
+                .replace(/\{C:money\}(.*?)\{\}/g, '<span class="text-yellow-400">$1</span>')
+                .replace(/\{C:attention\}(.*?)\{\}/g, '<span class="text-yellow-300">$1</span>')
+                .replace(/\{C:green\}(.*?)\{\}/g, '<span class="text-green-400">$1</span>')
+                .replace(/\{C:inactive\}(.*?)\{\}/g, '<span class="text-gray-400">$1</span>')
+                .replace(/\{C:tarot\}(.*?)\{\}/g, '<span class="text-purple-400">$1</span>')
+                .replace(/#\d+#/g, '<span class="text-yellow-300">?</span>')
+              ).join('<br/>')} />
+            </div>
+          </div>
+        );
+      })}
+    </div>
+
+  </div>
+</Layout>
+
+<script>
+  const searchBox = document.getElementById('search-box') as HTMLInputElement | null;
+  searchBox?.addEventListener('input', () => {
+    const q = searchBox.value.toLowerCase();
+    const lang = document.documentElement.getAttribute('data-lang') || 'en';
+    document.querySelectorAll<HTMLElement>('.enh-card').forEach(card => {
+      const name = (lang === 'pt' ? card.dataset.namePt : card.dataset.nameEn) ?? '';
+      card.style.display = !q || name.includes(q) ? '' : 'none';
+    });
+  });
+</script>

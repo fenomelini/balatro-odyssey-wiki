@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 1,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_1.png",
+    "name_en": "Mercury",
+    "name_pt": "Mercúrio",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Pair"
+  },
+  {
+    "id": 2,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_2.png",
+    "name_en": "Venus",
+    "name_pt": "Vênus",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Three of a Kind"
+  },
+  {
+    "id": 3,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_3.png",
+    "name_en": "Earth",
+    "name_pt": "Terra",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Full House"
+  },
+  {
+    "id": 4,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_4.png",
+    "name_en": "Mars",
+    "name_pt": "Marte",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Four of a Kind"
+  },
+  {
+    "id": 5,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_5.png",
+    "name_en": "Jupiter",
+    "name_pt": "Júpiter",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Flush"
+  },
+  {
+    "id": 6,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_6.png",
+    "name_en": "Saturn",
+    "name_pt": "Saturno",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Straight"
+  },
+  {
+    "id": 7,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_7.png",
+    "name_en": "Uranus",
+    "name_pt": "Urano",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Two Pair"
+  },
+  {
+    "id": 8,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_8.png",
+    "name_en": "Neptune",
+    "name_pt": "Netuno",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Straight Flush"
+  },
+  {
+    "id": 9,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_9.png",
+    "name_en": "Pluto",
+    "name_pt": "Plutão",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "High Card"
+  },
+  {
+    "id": 10,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_10.png",
+    "name_en": "Planet X",
+    "name_pt": "Planeta X",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Five of a Kind"
+  },
+  {
+    "id": 11,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_11.png",
+    "name_en": "Ceres",
+    "name_pt": "Ceres",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Flush House"
+  },
+  {
+    "id": 12,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_12.png",
+    "name_en": "Eris",
+    "name_pt": "Eris",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Flush Five"
+  },
+  {
+    "id": 13,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_13.png",
+    "name_en": "Titan",
+    "name_pt": "Titã",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Two Pair"
+  },
+  {
+    "id": 14,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_14.png",
+    "name_en": "Europa",
+    "name_pt": "Europa",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Three of a Kind"
+  },
+  {
+    "id": 15,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_15.png",
+    "name_en": "Io",
+    "name_pt": "Io",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Straight"
+  },
+  {
+    "id": 16,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_16.png",
+    "name_en": "Ganymede",
+    "name_pt": "Ganimedes",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Flush"
+  },
+  {
+    "id": 17,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_17.png",
+    "name_en": "Callisto",
+    "name_pt": "Calisto",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Full House"
+  },
+  {
+    "id": 18,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_18.png",
+    "name_en": "Phobos",
+    "name_pt": "Fobos",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Four of a Kind"
+  },
+  {
+    "id": 19,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_19.png",
+    "name_en": "Deimos",
+    "name_pt": "Deimos",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Straight Flush"
+  },
+  {
+    "id": 20,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_20.png",
+    "name_en": "Charon",
+    "name_pt": "Caronte",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Royal Flush"
+  },
+  {
+    "id": 21,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_21.png",
+    "name_en": "Makemake",
+    "name_pt": "Makemake",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Wrap Around Straight"
+  },
+  {
+    "id": 22,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_22.png",
+    "name_en": "Haumea",
+    "name_pt": "Haumea",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Jump Straight"
+  },
+  {
+    "id": 23,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_23.png",
+    "name_en": "Sedna",
+    "name_pt": "Sedna",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Alternating Straight"
+  },
+  {
+    "id": 24,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_24.png",
+    "name_en": "Quaoar",
+    "name_pt": "Quaoar",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Spectrum"
+  },
+  {
+    "id": 25,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_25.png",
+    "name_en": "Orcus",
+    "name_pt": "Orcus",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Corner Hand"
+  },
+  {
+    "id": 26,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_26.png",
+    "name_en": "Salacia",
+    "name_pt": "Salacia",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Middle Hand"
+  },
+  {
+    "id": 27,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_27.png",
+    "name_en": "Varda",
+    "name_pt": "Varda",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Prime Hand"
+  },
+  {
+    "id": 28,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_28.png",
+    "name_en": "Ixion",
+    "name_pt": "Ixion",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Fibonacci Hand"
+  },
+  {
+    "id": 29,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_29.png",
+    "name_en": "Varuna",
+    "name_pt": "Varuna",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Even Hand"
+  },
+  {
+    "id": 30,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_30.png",
+    "name_en": "Chaos",
+    "name_pt": "Caos",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Odd Hand"
+  },
+  {
+    "id": 31,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_31.png",
+    "name_en": "Proxima",
+    "name_pt": "Proxima",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Red Hand"
+  },
+  {
+    "id": 32,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_32.png",
+    "name_en": "Alpha",
+    "name_pt": "Alpha",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Black Hand"
+  },
+  {
+    "id": 33,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_33.png",
+    "name_en": "Sirius",
+    "name_pt": "Sirius",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Face Hand"
+  },
+  {
+    "id": 34,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_34.png",
+    "name_en": "Vega",
+    "name_pt": "Vega",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Number Hand"
+  },
+  {
+    "id": 35,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_35.png",
+    "name_en": "Betelgeuse",
+    "name_pt": "Betelgeuse",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Low Hand"
+  },
+  {
+    "id": 36,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_36.png",
+    "name_en": "Rigel",
+    "name_pt": "Rigel",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "High Hand"
+  },
+  {
+    "id": 37,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_37.png",
+    "name_en": "Antares",
+    "name_pt": "Antares",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Mega Straight"
+  },
+  {
+    "id": 38,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_38.png",
+    "name_en": "Aldebaran",
+    "name_pt": "Aldebaran",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Mega Flush"
+  },
+  {
+    "id": 39,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_39.png",
+    "name_en": "Spica",
+    "name_pt": "Spica",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Mega Full House"
+  },
+  {
+    "id": 40,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_40.png",
+    "name_en": "Pollux",
+    "name_pt": "Pollux",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Double Three Of A Kind"
+  },
+  {
+    "id": 41,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_41.png",
+    "name_en": "Castor",
+    "name_pt": "Castor",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Triple Pair"
+  },
+  {
+    "id": 42,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_42.png",
+    "name_en": "Deneb",
+    "name_pt": "Deneb",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Quadruple Pair"
+  },
+  {
+    "id": 43,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_43.png",
+    "name_en": "Altair",
+    "name_pt": "Altair",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Quintuple Pair"
+  },
+  {
+    "id": 44,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_44.png",
+    "name_en": "Fomalhaut",
+    "name_pt": "Fomalhaut",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Six Of A Kind"
+  },
+  {
+    "id": 45,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_45.png",
+    "name_en": "Regulus",
+    "name_pt": "Regulus",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Seven Of A Kind"
+  },
+  {
+    "id": 46,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_46.png",
+    "name_en": "Canopus",
+    "name_pt": "Canopus",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Eight Of A Kind"
+  },
+  {
+    "id": 47,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_47.png",
+    "name_en": "Arcturus",
+    "name_pt": "Arcturus",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Nine Of A Kind"
+  },
+  {
+    "id": 48,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_48.png",
+    "name_en": "Capella",
+    "name_pt": "Capella",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Ten Of A Kind"
+  },
+  {
+    "id": 49,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_49.png",
+    "name_en": "Achernar",
+    "name_pt": "Achernar",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Flush Pair"
+  },
+  {
+    "id": 50,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_50.png",
+    "name_en": "Hadar",
+    "name_pt": "Hadar",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Flush Two Pair"
+  },
+  {
+    "id": 51,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_51.png",
+    "name_en": "Acrux",
+    "name_pt": "Acrux",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Flush Three Of A Kind"
+  },
+  {
+    "id": 52,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_52.png",
+    "name_en": "Mimosa",
+    "name_pt": "Mimosa",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Flush Four Of A Kind"
+  },
+  {
+    "id": 53,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_53.png",
+    "name_en": "Gacrux",
+    "name_pt": "Gacrux",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Flush Six Of A Kind"
+  },
+  {
+    "id": 54,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_54.png",
+    "name_en": "Bellatrix",
+    "name_pt": "Bellatrix",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Flush Seven Of A Kind"
+  },
+  {
+    "id": 55,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_55.png",
+    "name_en": "Elnath",
+    "name_pt": "Elnath",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Flush Eight Of A Kind"
+  },
+  {
+    "id": 56,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_56.png",
+    "name_en": "Alnilam",
+    "name_pt": "Alnilam",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Flush Nine Of A Kind"
+  },
+  {
+    "id": 57,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_57.png",
+    "name_en": "Alnitak",
+    "name_pt": "Alnitak",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Flush Ten Of A Kind"
+  },
+  {
+    "id": 58,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_58.png",
+    "name_en": "Mintaka",
+    "name_pt": "Mintaka",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Super Royal Flush"
+  },
+  {
+    "id": 59,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_59.png",
+    "name_en": "Saiph",
+    "name_pt": "Saiph",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Ultimate Flush"
+  },
+  {
+    "id": 60,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_60.png",
+    "name_en": "Kepler",
+    "name_pt": "Kepler",
+    "desc_en": [
+      "Levels up {C:attention}All Hands{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}Todas as Mãos{}"
+    ],
+    "hand": "All Hands"
+  },
+  {
+    "id": 61,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_61.png",
+    "name_en": "Kepler-22b",
+    "name_pt": "Kepler-22b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Pair"
+  },
+  {
+    "id": 62,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_62.png",
+    "name_en": "Kepler-186f",
+    "name_pt": "Kepler-186f",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Three of a Kind"
+  },
+  {
+    "id": 63,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_63.png",
+    "name_en": "Kepler-452b",
+    "name_pt": "Kepler-452b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Full House"
+  },
+  {
+    "id": 64,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_64.png",
+    "name_en": "Kepler-62f",
+    "name_pt": "Kepler-62f",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Four of a Kind"
+  },
+  {
+    "id": 65,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_65.png",
+    "name_en": "TRAPPIST-1d",
+    "name_pt": "TRAPPIST-1d",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Flush"
+  },
+  {
+    "id": 66,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_66.png",
+    "name_en": "TRAPPIST-1e",
+    "name_pt": "TRAPPIST-1e",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Straight"
+  },
+  {
+    "id": 67,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_67.png",
+    "name_en": "TRAPPIST-1f",
+    "name_pt": "TRAPPIST-1f",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Two Pair"
+  },
+  {
+    "id": 68,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_68.png",
+    "name_en": "TRAPPIST-1g",
+    "name_pt": "TRAPPIST-1g",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Straight Flush"
+  },
+  {
+    "id": 69,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_69.png",
+    "name_en": "Gliese 581g",
+    "name_pt": "Gliese 581g",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "High Card"
+  },
+  {
+    "id": 70,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_70.png",
+    "name_en": "Gliese 667Cc",
+    "name_pt": "Gliese 667Cc",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Five of a Kind"
+  },
+  {
+    "id": 71,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_71.png",
+    "name_en": "HD 40307g",
+    "name_pt": "HD 40307g",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Flush House"
+  },
+  {
+    "id": 72,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_72.png",
+    "name_en": "HD 85512b",
+    "name_pt": "HD 85512b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Flush Five"
+  },
+  {
+    "id": 73,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_73.png",
+    "name_en": "Tau Ceti e",
+    "name_pt": "Tau Ceti e",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Royal Flush"
+  },
+  {
+    "id": 74,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_74.png",
+    "name_en": "Kapteyn b",
+    "name_pt": "Kapteyn b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 1"
+  },
+  {
+    "id": 75,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_75.png",
+    "name_en": "Wolf 1061c",
+    "name_pt": "Wolf 1061c",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 2"
+  },
+  {
+    "id": 76,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_76.png",
+    "name_en": "GJ 357 d",
+    "name_pt": "GJ 357 d",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 3"
+  },
+  {
+    "id": 77,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_77.png",
+    "name_en": "LHS 1140 b",
+    "name_pt": "LHS 1140 b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 4"
+  },
+  {
+    "id": 78,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_78.png",
+    "name_en": "Teegarden b",
+    "name_pt": "Teegarden b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 5"
+  },
+  {
+    "id": 79,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_79.png",
+    "name_en": "Ross 128 b",
+    "name_pt": "Ross 128 b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 6"
+  },
+  {
+    "id": 80,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_80.png",
+    "name_en": "Luyten b",
+    "name_pt": "Luyten b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 7"
+  },
+  {
+    "id": 81,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_81.png",
+    "name_en": "K2-18b",
+    "name_pt": "K2-18b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 8"
+  },
+  {
+    "id": 82,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_82.png",
+    "name_en": "TOI-700 d",
+    "name_pt": "TOI-700 d",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 9"
+  },
+  {
+    "id": 83,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_83.png",
+    "name_en": "Kepler-1649c",
+    "name_pt": "Kepler-1649c",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 10"
+  },
+  {
+    "id": 84,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_84.png",
+    "name_en": "Kepler-442b",
+    "name_pt": "Kepler-442b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 11"
+  },
+  {
+    "id": 85,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_85.png",
+    "name_en": "Kepler-1638b",
+    "name_pt": "Kepler-1638b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 12"
+  },
+  {
+    "id": 86,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_86.png",
+    "name_en": "Kepler-296f",
+    "name_pt": "Kepler-296f",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 13"
+  },
+  {
+    "id": 87,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_87.png",
+    "name_en": "Kepler-174d",
+    "name_pt": "Kepler-174d",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 14"
+  },
+  {
+    "id": 88,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_88.png",
+    "name_en": "Kepler-62e",
+    "name_pt": "Kepler-62e",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 15"
+  },
+  {
+    "id": 89,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_89.png",
+    "name_en": "Kepler-1229b",
+    "name_pt": "Kepler-1229b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 16"
+  },
+  {
+    "id": 90,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_90.png",
+    "name_en": "Kepler-1544b",
+    "name_pt": "Kepler-1544b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 17"
+  },
+  {
+    "id": 91,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_91.png",
+    "name_en": "Kepler-1652b",
+    "name_pt": "Kepler-1652b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 18"
+  },
+  {
+    "id": 92,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_92.png",
+    "name_en": "Kepler-1410b",
+    "name_pt": "Kepler-1410b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 19"
+  },
+  {
+    "id": 93,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_93.png",
+    "name_en": "Kepler-155c",
+    "name_pt": "Kepler-155c",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 20"
+  },
+  {
+    "id": 94,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_94.png",
+    "name_en": "Kepler-283c",
+    "name_pt": "Kepler-283c",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 21"
+  },
+  {
+    "id": 95,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_95.png",
+    "name_en": "Kepler-438b",
+    "name_pt": "Kepler-438b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 22"
+  },
+  {
+    "id": 96,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_96.png",
+    "name_en": "Kepler-440b",
+    "name_pt": "Kepler-440b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 23"
+  },
+  {
+    "id": 97,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_97.png",
+    "name_en": "Kepler-443b",
+    "name_pt": "Kepler-443b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 24"
+  },
+  {
+    "id": 98,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_98.png",
+    "name_en": "Kepler-296e",
+    "name_pt": "Kepler-296e",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 25"
+  },
+  {
+    "id": 99,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_99.png",
+    "name_en": "Kepler-1653b",
+    "name_pt": "Kepler-1653b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 26"
+  },
+  {
+    "id": 100,
+    "type": "planet",
+    "sprite": "planets/odyssey_planet_100.png",
+    "name_en": "Kepler-1512b",
+    "name_pt": "Kepler-1512b",
+    "desc_en": [
+      "Levels up {C:attention}#1#{}"
+    ],
+    "desc_pt": [
+      "Melhora o nível de {C:attention}#1#{}"
+    ],
+    "hand": "Secret Hand 27"
+  }
+]

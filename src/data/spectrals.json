@@ -1,0 +1,1759 @@
+[
+  {
+    "id": 1,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_1.png",
+    "name_en": "Supernova",
+    "name_pt": "Supernova",
+    "desc_en": [
+      "Destroy all cards in your hand",
+      "and gain {X:mult,C:white} X3 {} Mult{}",
+      "Mult for this round."
+    ],
+    "desc_pt": [
+      "Destrói todas as cartas na sua",
+      "mão e concede {X:mult,C:white} X3 Multi nesta rodada.{}"
+    ]
+  },
+  {
+    "id": 2,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_2.png",
+    "name_en": "Black Hole",
+    "name_pt": "Buraco Negro",
+    "desc_en": [
+      "Destroy all cards in your hand",
+      "and gain {C:attention}+1{} Hand{}",
+      "Size permanently."
+    ],
+    "desc_pt": [
+      "Destrói todas as cartas na sua",
+      "mão e concede {C:attention}+1{}",
+      "de Tamanho de Mão",
+      "permanentemente."
+    ]
+  },
+  {
+    "id": 3,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_3.png",
+    "name_en": "Quasar",
+    "name_pt": "Quasar",
+    "desc_en": [
+      "Add {C:dark_edition}Polychrome{}",
+      "Edition to a random Joker and",
+      "destroy all other Jokers."
+    ],
+    "desc_pt": [
+      "Adiciona a Edição",
+      "{C:dark_edition}Policromática{}",
+      "a um Curinga aleatório e destrói",
+      "todos os outros Curingas."
+    ]
+  },
+  {
+    "id": 4,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_4.png",
+    "name_en": "Pulsar",
+    "name_pt": "Pulsar",
+    "desc_en": [
+      "Add {C:dark_edition}Foil{}",
+      "Edition to all cards in your",
+      "hand, but reduce Hand Size by",
+      "{C:attention}1{}.{}"
+    ],
+    "desc_pt": [
+      "Adiciona a Edição",
+      "{C:dark_edition}Foil{} a todas{}",
+      "as cartas na sua mão, mas reduz",
+      "o Tamanho de Mão em",
+      "{C:attention}1{}.{}"
+    ]
+  },
+  {
+    "id": 5,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_5.png",
+    "name_en": "Nebula",
+    "name_pt": "Nebulosa",
+    "desc_en": [
+      "Add",
+      "{C:dark_edition}Holographic{}",
+      "Edition to all cards in your",
+      "hand, but reduce Discard by",
+      "{C:attention}1{}.{}"
+    ],
+    "desc_pt": [
+      "Adiciona a Edição",
+      "{C:dark_edition}Holográfica{} a{}",
+      "todas as cartas na sua mão, mas",
+      "reduz o número de Descartes em",
+      "{C:attention}1{}.{}"
+    ]
+  },
+  {
+    "id": 6,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_6.png",
+    "name_en": "Gamma Ray",
+    "name_pt": "Raio Gama",
+    "desc_en": [
+      "Enhance all cards in hand to",
+      "{C:attention}Diamond Cards{}, but{}",
+      "set your money to {C:money}$0{} .{}"
+    ],
+    "desc_pt": [
+      "Transforma todas as cartas na",
+      "sua mão em {C:attention}Cartas de{}",
+      "Diamante{}, mas define seu",
+      "dinheiro para {C:money}$0{} .{}"
+    ]
+  },
+  {
+    "id": 7,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_7.png",
+    "name_en": "X-Ray",
+    "name_pt": "Raio X",
+    "desc_en": [
+      "Enhance all cards in hand to",
+      "{C:attention}Ceramic Cards{}, but{}",
+      "remove all your Discards this",
+      "round."
+    ],
+    "desc_pt": [
+      "Transforma todas as cartas na",
+      "sua mão em {C:attention}Cartas de{}",
+      "Cerâmica{}, mas remove todos os",
+      "seus Descartes nesta rodada."
+    ]
+  },
+  {
+    "id": 8,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_8.png",
+    "name_en": "Cosmic Ray",
+    "name_pt": "Raio Cósmico",
+    "desc_en": [
+      "Enhance all cards in hand to",
+      "{C:attention}Rubber Cards{}, but{}",
+      "grants only {C:attention}1{}",
+      "Hand this round."
+    ],
+    "desc_pt": [
+      "Transforma todas as cartas na",
+      "sua mão em {C:attention}Cartas de{}",
+      "Borracha{}, mas concede apenas",
+      "{C:attention}1{} Mão nesta{}",
+      "rodada."
+    ]
+  },
+  {
+    "id": 9,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_9.png",
+    "name_en": "Void Ray",
+    "name_pt": "Raio Vazio",
+    "desc_en": [
+      "Enhance all cards in hand to",
+      "{C:attention}Platinum Cards{}, but{}",
+      "destroy all your Jokers."
+    ],
+    "desc_pt": [
+      "Transforma todas as cartas na",
+      "sua mão em {C:attention}Cartas de{}",
+      "Platina{}, mas destrói todos os",
+      "seus Curingas."
+    ]
+  },
+  {
+    "id": 10,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_10.png",
+    "name_en": "Antimatter",
+    "name_pt": "Antimatéria",
+    "desc_en": [
+      "Add {C:dark_edition}Negative{}",
+      "Edition to a random Joker and",
+      "set your money to {C:money}$0{} .{}"
+    ],
+    "desc_pt": [
+      "Adiciona a Edição",
+      "{C:dark_edition}Negativa{} a um{}",
+      "Curinga aleatório e define seu",
+      "dinheiro para {C:money}$0{} .{}"
+    ]
+  },
+  {
+    "id": 11,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_11.png",
+    "name_en": "Dark Matter",
+    "name_pt": "Matéria Escura",
+    "desc_en": [
+      "Add {C:dark_edition}Negative{}",
+      "Edition to a random consumable,",
+      "but destroy all your Jokers."
+    ],
+    "desc_pt": [
+      "Adiciona a Edição",
+      "{C:dark_edition}Negativa{} a um{}",
+      "consumível aleatório, mas",
+      "destrói todos os seus Curingas."
+    ]
+  },
+  {
+    "id": 12,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_12.png",
+    "name_en": "Entropy",
+    "name_pt": "Entropia",
+    "desc_en": [
+      "Randomize the ranks of all cards",
+      "in your deck and gain",
+      "{C:money}$20{} .{}"
+    ],
+    "desc_pt": [
+      "Randomiza os ranks de todas as",
+      "cartas no baralho e ganha",
+      "{C:money}$20{} .{}"
+    ]
+  },
+  {
+    "id": 13,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_13.png",
+    "name_en": "Enthalpy",
+    "name_pt": "Entalpia",
+    "desc_en": [
+      "Randomize the suits of all cards",
+      "in your deck and gain",
+      "{C:money}$20{} .{}"
+    ],
+    "desc_pt": [
+      "Randomiza os naipes de todas as",
+      "cartas no baralho e ganha",
+      "{C:money}$20{} .{}"
+    ]
+  },
+  {
+    "id": 14,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_14.png",
+    "name_en": "Absolute Zero",
+    "name_pt": "Zero Absoluto",
+    "desc_en": [
+      "Freezes your deck (no more",
+      "modifications), but gain",
+      "{X:mult,C:white} X5 {} Mult{}",
+      "permanently."
+    ],
+    "desc_pt": [
+      "Impede que as cartas do baralho",
+      "sejam modificadas, mas concede",
+      "{X:mult,C:white} X5 Multi{}",
+      "permanentemente."
+    ]
+  },
+  {
+    "id": 15,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_15.png",
+    "name_en": "Planck",
+    "name_pt": "Planck",
+    "desc_en": [
+      "Set Hand Size to",
+      "{C:attention}1{}, but gain{}",
+      "{X:mult,C:white} X10 {} Mult{}",
+      "permanently."
+    ],
+    "desc_pt": [
+      "Define o Tamanho de Mão para",
+      "{C:attention}1{}, mas concede{}",
+      "{X:mult,C:white} X10 Multi{}",
+      "permanentemente."
+    ]
+  },
+  {
+    "id": 16,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_16.png",
+    "name_en": "Light",
+    "name_pt": "Luz",
+    "desc_en": [
+      "Remove all your Discards, but",
+      "gain {C:blue}+5{} Hands per{}",
+      "round."
+    ],
+    "desc_pt": [
+      "Remove todos os seus Descartes,",
+      "mas concede {C:blue}+5{} Mãos{}",
+      "por rodada."
+    ]
+  },
+  {
+    "id": 17,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_17.png",
+    "name_en": "Warp",
+    "name_pt": "Dobra",
+    "desc_en": [
+      "Skips the next Blind and gain",
+      "Tags, but receive no money",
+      "rewards."
+    ],
+    "desc_pt": [
+      "Pula o próximo Blind e ganha as",
+      "Tags, mas não recebe nenhuma",
+      "recompensa em dinheiro."
+    ]
+  },
+  {
+    "id": 18,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_18.png",
+    "name_en": "Wormhole",
+    "name_pt": "Minhoca",
+    "desc_en": [
+      "Skips to the next Ante, but set",
+      "your money to {C:money}$0{} .{}"
+    ],
+    "desc_pt": [
+      "Pula para o próximo Aposta, mas",
+      "define seu dinheiro para",
+      "{C:money}$0{} .{}"
+    ]
+  },
+  {
+    "id": 19,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_19.png",
+    "name_en": "Mult iverse",
+    "name_pt": "Multi verso",
+    "desc_en": [
+      "Create a copy of up to 2",
+      "selected Jokers, but copies",
+      "become",
+      "{C:attention}Perishable{}.{}"
+    ],
+    "desc_pt": [
+      "Cria uma cópia de até 2 Curingas",
+      "selecionados, mas as cópias",
+      "tornam-se",
+      "{C:attention}Perecíveis{}.{}"
+    ]
+  },
+  {
+    "id": 20,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_20.png",
+    "name_en": "Paradox",
+    "name_pt": "Paradoxo",
+    "desc_en": [
+      "Swap your current money with",
+      "your total score from previous",
+      "round (capped at $100)."
+    ],
+    "desc_pt": [
+      "Troca o seu dinheiro atual pela",
+      "sua pontuação total da rodada",
+      "anterior (limitado a $100)."
+    ]
+  },
+  {
+    "id": 21,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_21.png",
+    "name_en": "Singularity",
+    "name_pt": "Singularidade",
+    "desc_en": [
+      "Merge two selected Jokers into",
+      "one, summing their base effects."
+    ],
+    "desc_pt": [
+      "Funde dois Curingas selecionados",
+      "em um só, somando seus efeitos",
+      "base."
+    ]
+  },
+  {
+    "id": 22,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_22.png",
+    "name_en": "Big Bang",
+    "name_pt": "Big Bang",
+    "desc_en": [
+      "Restores your {C:blue}Hands{} and {C:red}Discards{}",
+      "to this round's maximum and",
+      "permanently grants",
+      "{X:mult,C:white} X2 {} Mult."
+    ],
+    "desc_pt": [
+      "Restaura suas {C:blue}Mãos{} e {C:red}Descartes{}",
+      "ao máximo desta rodada e concede",
+      "{X:mult,C:white} X2 Multi{} permanentemente."
+    ]
+  },
+  {
+    "id": 23,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_23.png",
+    "name_en": "Jump",
+    "name_pt": "Salto",
+    "desc_en": [
+      "Jump immediately to Ante 8, but",
+      "set your money to {C:money}$0{} .{}"
+    ],
+    "desc_pt": [
+      "Salta imediatamente para o Aposta",
+      "8, mas define seu dinheiro para",
+      "{C:money}$0{} .{}"
+    ]
+  },
+  {
+    "id": 24,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_24.png",
+    "name_en": "Horizon",
+    "name_pt": "Horizonte",
+    "desc_en": [
+      "Destroy all Face cards in your",
+      "deck and gain {C:attention}+1{}",
+      "Joker slot."
+    ],
+    "desc_pt": [
+      "Destrói todas as cartas de",
+      "Figura no seu baralho e concede",
+      "{C:attention}+1{} espaço de{}",
+      "Curinga."
+    ]
+  },
+  {
+    "id": 25,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_25.png",
+    "name_en": "The Well",
+    "name_pt": "Poço",
+    "desc_en": [
+      "Destroy all Number cards in your",
+      "deck and gain {C:attention}+1{}",
+      "Consumable slot."
+    ],
+    "desc_pt": [
+      "Destrói todas as cartas",
+      "Numéricas no seu baralho e",
+      "concede {C:attention}+1{} espaço{}",
+      "de Consumível."
+    ]
+  },
+  {
+    "id": 26,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_26.png",
+    "name_en": "Energy",
+    "name_pt": "Energia",
+    "desc_en": [
+      "Transform all cards in your hand",
+      "to {C:dark_edition}Negative{}.{}"
+    ],
+    "desc_pt": [
+      "Transforma todas as cartas na",
+      "sua mão em",
+      "{C:dark_edition}Negativas{}.{}"
+    ]
+  },
+  {
+    "id": 27,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_27.png",
+    "name_en": "The Vacuum",
+    "name_pt": "Vácuo",
+    "desc_en": [
+      "Removes all",
+      "{C:attention}Enhancements{} and{}",
+      "{C:attention}Editions{} from all{}",
+      "cards in your deck and gain",
+      "{C:money}$50{} .{}"
+    ],
+    "desc_pt": [
+      "Remove todos os",
+      "{C:attention}Aprimoramentos{} e{}",
+      "{C:attention}Edições{} de todas{}",
+      "as cartas no baralho e ganha",
+      "{C:money}$50{} .{}"
+    ]
+  },
+  {
+    "id": 28,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_28.png",
+    "name_en": "Strings",
+    "name_pt": "Cordas",
+    "desc_en": [
+      "{C:attention}-2{} Hand Size and",
+      "levels up {C:attention}all hands{}",
+      "by {C:attention}1{}."
+    ],
+    "desc_pt": [
+      "{C:attention}-2{} de Tamanho de Mão e",
+      "aumenta o nível de",
+      "{C:attention}todas as mãos{} em {C:attention}1{}."
+    ]
+  },
+  {
+    "id": 29,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_29.png",
+    "name_en": "Chaos",
+    "name_pt": "Caos",
+    "desc_en": [
+      "Randomizes the",
+      "{C:dark_edition}Editions{} of{}",
+      "all your current",
+      "{C:attention}Jokers{}.{}"
+    ],
+    "desc_pt": [
+      "Randomiza as",
+      "{C:dark_edition}Edições{} de{}",
+      "todos os seus",
+      "{C:attention}Curingas{} atuais.{}"
+    ]
+  },
+  {
+    "id": 30,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_30.png",
+    "name_en": "Butterfly",
+    "name_pt": "Borboleta",
+    "desc_en": [
+      "Transforms a selected card into",
+      "a random card with a completely",
+      "new {C:attention}Rank{} and{}",
+      "{C:attention}Suit{}.{}"
+    ],
+    "desc_pt": [
+      "Transforma uma carta selecionada",
+      "em uma carta aleatória, com",
+      "{C:attention}Rank{} e{}",
+      "{C:attention}Naipe{} totalmente{}",
+      "novos."
+    ]
+  },
+  {
+    "id": 31,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_31.png",
+    "name_en": "Schrodinger",
+    "name_pt": "Schrodinger",
+    "desc_en": [
+      "{C:green}50%{} chance to{}",
+      "{C:money}$double{} your money,{}",
+      "{C:red}50%{} chance to lose all{}",
+      "your money."
+    ],
+    "desc_pt": [
+      "{C:green}50%{} de chance de{}",
+      "{C:money}$dobrar{} seu dinheiro,{}",
+      "{C:red}50%{} de chance de perder{}",
+      "todo o seu dinheiro."
+    ]
+  },
+  {
+    "id": 32,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_32.png",
+    "name_en": "Heisenberg",
+    "name_pt": "Heisenberg",
+    "desc_en": [
+      "Gain {C:money}$30{} and hide the",
+      "required {C:attention}Blind{}",
+      "score this round."
+    ],
+    "desc_pt": [
+      "Ganha {C:money}$30{} e oculta a",
+      "pontuação necessária do",
+      "{C:attention}Blind{} nesta rodada."
+    ]
+  },
+  {
+    "id": 33,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_33.png",
+    "name_en": "Pauli",
+    "name_pt": "Pauli",
+    "desc_en": [
+      "If there are no pairs in your",
+      "current hand, gain",
+      "{C:money}$20{} immediately.{}"
+    ],
+    "desc_pt": [
+      "Se não houver pares na sua mão",
+      "atual, ganha {C:money}$20{} {}",
+      "imediatamente."
+    ]
+  },
+  {
+    "id": 34,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_34.png",
+    "name_en": "Fermi",
+    "name_pt": "Fermi",
+    "desc_en": [
+      "Creates a random",
+      "{C:attention}Alien Joker{} with{}",
+      "the {C:dark_edition}Negative{}",
+      "edition."
+    ],
+    "desc_pt": [
+      "Cria um {C:attention}Curinga{}",
+      "Alienígena{} aleatório com a",
+      "edição",
+      "{C:dark_edition}Negativa{}.{}"
+    ]
+  },
+  {
+    "id": 35,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_35.png",
+    "name_en": "Drake",
+    "name_pt": "Drake",
+    "desc_en": [
+      "While active, each hand played",
+      "grants {X:mult,C:white} X2 {} Mult",
+      "this round."
+    ],
+    "desc_pt": [
+      "Enquanto ativo, cada mão jogada",
+      "concede {X:mult,C:white} X2 Multi{}",
+      "nesta rodada."
+    ]
+  },
+  {
+    "id": 36,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_36.png",
+    "name_en": "Hubble",
+    "name_pt": "Hubble",
+    "desc_en": [
+      "Permanently reveals the order of",
+      "all cards in your deck."
+    ],
+    "desc_pt": [
+      "Revela a ordem de todas as",
+      "cartas no seu baralho",
+      "permanentemente."
+    ]
+  },
+  {
+    "id": 37,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_37.png",
+    "name_en": "Webb",
+    "name_pt": "Webb",
+    "desc_en": [
+      "Reveals the effect and score of",
+      "all future {C:attention}Boss{}",
+      "Blinds{} in this run."
+    ],
+    "desc_pt": [
+      "Revela o efeito e a pontuação de",
+      "todos os {C:attention}Boss{}",
+      "Blinds{} futuros nesta partida."
+    ]
+  },
+  {
+    "id": 38,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_38.png",
+    "name_en": "Kepler",
+    "name_pt": "Kepler",
+    "desc_en": [
+      "{C:attention}Doubles{} the level{}",
+      "of all poker hands upgraded by",
+      "{C:planet}Planets{} this round.{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Dobra{} o nível de{}",
+      "todas as mãos de poker upadas",
+      "por {C:planet}Planetas{} nesta{}",
+      "rodada."
+    ]
+  },
+  {
+    "id": 39,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_39.png",
+    "name_en": "Galileo",
+    "name_pt": "Galileu",
+    "desc_en": [
+      "Creates {C:attention}2{} random",
+      "{C:tarot}Tarot{} cards immediately."
+    ],
+    "desc_pt": [
+      "Cria {C:attention}2{} cartas de",
+      "{C:tarot}Tarô{} aleatórias",
+      "imediatamente."
+    ]
+  },
+  {
+    "id": 40,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_40.png",
+    "name_en": "Newton",
+    "name_pt": "Newton",
+    "desc_en": [
+      "Played cards that do not score",
+      "grant {C:blue}+1 Hand{} each."
+    ],
+    "desc_pt": [
+      "Cartas jogadas que não pontuarem",
+      "concedem {C:blue}+1 Mão{} cada."
+    ]
+  },
+  {
+    "id": 41,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_41.png",
+    "name_en": "Einstein",
+    "name_pt": "Einstein",
+    "desc_en": [
+      "Applies the theory of relativity:",
+      "Converts {C:chips}Chips{} to",
+      "{C:mult}Mult{} on the next hand."
+    ],
+    "desc_pt": [
+      "Aplica a teoria da relatividade:",
+      "Converte {C:chips}Fichas{} em",
+      "{C:mult}Multi{} na próxima mão."
+    ]
+  },
+  {
+    "id": 42,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_42.png",
+    "name_en": "Hawking",
+    "name_pt": "Hawking",
+    "desc_en": [
+      "Creates {C:attention}2{} random",
+      "{C:spectral}Spectral{} cards",
+      "immediately."
+    ],
+    "desc_pt": [
+      "Cria {C:attention}2{} cartas",
+      "{C:spectral}Espectrais{} aleatórias",
+      "imediatamente."
+    ]
+  },
+  {
+    "id": 43,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_43.png",
+    "name_en": "Sagan",
+    "name_pt": "Sagan",
+    "desc_en": [
+      "Gain {C:money}$1{} for each card{}",
+      "in your deck that has a",
+      "{C:attention}Seal{} or{}",
+      "{C:dark_edition}Edition{}.{}"
+    ],
+    "desc_pt": [
+      "Ganha {C:money}$1{} para cada{}",
+      "carta no seu baralho que possua",
+      "um {C:attention}Selo{} ou{}",
+      "{C:dark_edition}Edição{}.{}"
+    ]
+  },
+  {
+    "id": 44,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_44.png",
+    "name_en": "Tyson",
+    "name_pt": "Tyson",
+    "desc_en": [
+      "Levels up {C:attention}all poker",
+      "hands{} by {C:attention}1{}."
+    ],
+    "desc_pt": [
+      "Aumenta o nível de",
+      "{C:attention}todas as mãos{} de",
+      "poker em {C:attention}1{}."
+    ]
+  },
+  {
+    "id": 45,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_45.png",
+    "name_en": "Kaku",
+    "name_pt": "Kaku",
+    "desc_en": [
+      "Levels up {C:attention}all hands{}",
+      "by {C:attention}2{} and grants",
+      "{C:attention}+2{} Hand Size."
+    ],
+    "desc_pt": [
+      "Aumenta o nível de",
+      "{C:attention}todas as mãos{} em",
+      "{C:attention}2{} e concede",
+      "{C:attention}+2{} de Tamanho de Mão."
+    ]
+  },
+  {
+    "id": 46,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_46.png",
+    "name_en": "Greene",
+    "name_pt": "Greene",
+    "desc_en": [
+      "Creates a random",
+      "{C:attention}Joker{} from a{}",
+      "parallel dimension."
+    ],
+    "desc_pt": [
+      "Cria um {C:attention}Curinga{}",
+      "aleatório de uma dimensão",
+      "paralela."
+    ]
+  },
+  {
+    "id": 47,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_47.png",
+    "name_en": "Penrose",
+    "name_pt": "Penrose",
+    "desc_en": [
+      "Each played card has a",
+      "{C:green}25%{} chance to be",
+      "retriggered."
+    ],
+    "desc_pt": [
+      "Cada carta jogada tem",
+      "{C:green}25%{} de chance de ser",
+      "contabilizada {C:attention}2 vezes{}."
+    ]
+  },
+  {
+    "id": 48,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_48.png",
+    "name_en": "Godel",
+    "name_pt": "Godel",
+    "desc_en": [
+      "Doubles the required",
+      "{C:attention}Blind{} score, but",
+      "permanently grants",
+      "{X:mult,C:white} X3 {} Mult."
+    ],
+    "desc_pt": [
+      "Dobra a pontuação necessária do",
+      "{C:attention}Blind{} atual e concede",
+      "{X:mult,C:white} X3 Multi{}",
+      "permanentemente."
+    ]
+  },
+  {
+    "id": 49,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_49.png",
+    "name_en": "Turing",
+    "name_pt": "Turing",
+    "desc_en": [
+      "Creates a random",
+      "{C:attention}Joker{} and grants",
+      "{C:money}+$20{}."
+    ],
+    "desc_pt": [
+      "Cria um {C:attention}Curinga{}",
+      "aleatório e concede {C:money}+$20{}."
+    ]
+  },
+  {
+    "id": 50,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_50.png",
+    "name_en": "Oppenheimer",
+    "name_pt": "Oppenheimer",
+    "desc_en": [
+      "Destroys {C:attention}5{} random{}",
+      "cards, but grants",
+      "{X:mult,C:white} X10 {} Mult on{}",
+      "the next hand."
+    ],
+    "desc_pt": [
+      "Destrói {C:attention}5{} cartas{}",
+      "aleatórias, mas concede",
+      "{X:mult,C:white} X10 Multi na{}",
+      "próxima mão."
+    ]
+  },
+  {
+    "id": 51,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_51.png",
+    "name_en": "Feynman",
+    "name_pt": "Feynman",
+    "desc_en": [
+      "All your {C:attention}Jokers{}",
+      "permanently gain",
+      "{C:mult}+10 Mult{}."
+    ],
+    "desc_pt": [
+      "Todos os seus {C:attention}Curingas{}",
+      "recebem {C:mult}+10 Multi{}",
+      "permanentemente."
+    ]
+  },
+  {
+    "id": 52,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_52.png",
+    "name_en": "Bohr",
+    "name_pt": "Bohr",
+    "desc_en": [
+      "Randomly shuffles the cards",
+      "in your current hand."
+    ],
+    "desc_pt": [
+      "Embaralha aleatoriamente as",
+      "cartas na sua mão atual."
+    ]
+  },
+  {
+    "id": 53,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_53.png",
+    "name_en": "Curie",
+    "name_pt": "Curie",
+    "desc_en": [
+      "All your cards become",
+      "{C:attention}Radioactive{}",
+      "(change Rank every round)."
+    ],
+    "desc_pt": [
+      "Todas as suas cartas tornam-se",
+      "{C:attention}Radioativas{}",
+      "(mudam de Rank a cada rodada)."
+    ]
+  },
+  {
+    "id": 54,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_54.png",
+    "name_en": "Darwin",
+    "name_pt": "Darwin",
+    "desc_en": [
+      "Each scored card grants",
+      "{C:chips}+1 Chip{} per play."
+    ],
+    "desc_pt": [
+      "Cada carta que pontua concede",
+      "{C:chips}+1 Ficha{} por jogada."
+    ]
+  },
+  {
+    "id": 55,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_55.png",
+    "name_en": "Mendel",
+    "name_pt": "Mendel",
+    "desc_en": [
+      "All deck cards gain a random",
+      "{C:dark_edition}Edition{}",
+      "({C:dark_edition}Foil{},",
+      "{C:dark_edition}Holo{}, or",
+      "{C:dark_edition}Polychrome{})."
+    ],
+    "desc_pt": [
+      "Todas as cartas do baralho",
+      "recebem uma {C:dark_edition}Edição{} aleatória",
+      "({C:dark_edition}Foil{}, {C:dark_edition}Holo{}",
+      "ou {C:dark_edition}Policromática{})."
+    ]
+  },
+  {
+    "id": 56,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_56.png",
+    "name_en": "Pasteur",
+    "name_pt": "Pasteur",
+    "desc_en": [
+      "Your cards become",
+      "{C:green}Immune{} to Boss Blind{}",
+      "Debuff effects."
+    ],
+    "desc_pt": [
+      "Suas cartas tornam-se",
+      "{C:green}Imunes{} a efeitos de{}",
+      "Debuff de Boss Blinds."
+    ]
+  },
+  {
+    "id": 57,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_57.png",
+    "name_en": "Fleming",
+    "name_pt": "Fleming",
+    "desc_en": [
+      "Removes all current",
+      "{C:red}Debuff{} effects from all{}",
+      "cards in your deck."
+    ],
+    "desc_pt": [
+      "Remove todos os efeitos de",
+      "{C:red}Debuff{} atuais de todas{}",
+      "as cartas no seu baralho."
+    ]
+  },
+  {
+    "id": 58,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_58.png",
+    "name_en": "Tesla",
+    "name_pt": "Tesla",
+    "desc_en": [
+      "Permanently grants",
+      "{C:attention}+2{} consumable slots."
+    ],
+    "desc_pt": [
+      "Concede {C:attention}+2{} espaços de",
+      "consumíveis permanentemente."
+    ]
+  },
+  {
+    "id": 59,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_59.png",
+    "name_en": "Edison",
+    "name_pt": "Edison",
+    "desc_en": [
+      "Creates a random",
+      "{C:attention}Joker{} you have{}",
+      "never owned before."
+    ],
+    "desc_pt": [
+      "Cria um {C:attention}Curinga{}",
+      "aleatório que você nunca possuiu",
+      "apostas."
+    ]
+  },
+  {
+    "id": 60,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_60.png",
+    "name_en": "Bell",
+    "name_pt": "Bell",
+    "desc_en": [
+      "Allows you to",
+      "{C:attention}call{} any{}",
+      "consumable from the collection",
+      "immediately."
+    ],
+    "desc_pt": [
+      "Permite que você",
+      "{C:attention}chame{} um{}",
+      "consumível qualquer da coleção",
+      "imediatamente."
+    ]
+  },
+  {
+    "id": 61,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_61.png",
+    "name_en": "Marconi",
+    "name_pt": "Marconi",
+    "desc_en": [
+      "Cards sharing a {C:attention}Rank{}",
+      "with another scored card are",
+      "retriggered."
+    ],
+    "desc_pt": [
+      "Cartas com o mesmo {C:attention}Rank{}",
+      "de outra carta pontuada são",
+      "retrigadas."
+    ]
+  },
+  {
+    "id": 62,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_62.png",
+    "name_en": "Wright",
+    "name_pt": "Wright",
+    "desc_en": [
+      "All deck cards become",
+      "{C:green}Immune{} to {C:red}Debuff{}",
+      "effects from Boss Blinds."
+    ],
+    "desc_pt": [
+      "Todas as cartas do baralho",
+      "tornam-se {C:green}Imunes{} a",
+      "efeitos de {C:red}Debuff{} de",
+      "Boss Blinds."
+    ]
+  },
+  {
+    "id": 63,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_63.png",
+    "name_en": "Ford",
+    "name_pt": "Ford",
+    "desc_en": [
+      "Doubles your",
+      "{C:attention}Speed{} (animations{}",
+      "and score processing happen",
+      "instantly)."
+    ],
+    "desc_pt": [
+      "Dobra a sua",
+      "{C:attention}Velocidade{}",
+      "(animações e processamento de",
+      "pontos acontecem",
+      "instantaneamente)."
+    ]
+  },
+  {
+    "id": 64,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_64.png",
+    "name_en": "Babbage",
+    "name_pt": "Babbage",
+    "desc_en": [
+      "Grants {X:mult,C:white} X5 {} Mult on",
+      "the next hand played."
+    ],
+    "desc_pt": [
+      "Concede {X:mult,C:white} X5 Multi{} na",
+      "próxima mão jogada."
+    ]
+  },
+  {
+    "id": 65,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_65.png",
+    "name_en": "Lovelace",
+    "name_pt": "Lovelace",
+    "desc_en": [
+      "Sorts all deck cards by",
+      "{C:attention}Rank{}",
+      "(lowest to highest)."
+    ],
+    "desc_pt": [
+      "Organiza todas as cartas do",
+      "baralho por {C:attention}Rank{}",
+      "(do menor ao maior)."
+    ]
+  },
+  {
+    "id": 66,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_66.png",
+    "name_en": "Hopper",
+    "name_pt": "Hopper",
+    "desc_en": [
+      "Introduces a favorable",
+      "{C:red}Bug{}: 10% chance for any{}",
+      "hand to score {X:mult,C:white} X100 {} Mult.{}"
+    ],
+    "desc_pt": [
+      "Introduz um {C:red}Bug{}",
+      "favorável: 10% de chance de",
+      "qualquer mão pontuar",
+      "{X:mult,C:white} X100 Multi.{}"
+    ]
+  },
+  {
+    "id": 67,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_67.png",
+    "name_en": "Berners-Lee",
+    "name_pt": "Berners-Lee",
+    "desc_en": [
+      "All your {C:attention}Jokers{}",
+      "permanently gain",
+      "{C:mult}+5 Mult{}."
+    ],
+    "desc_pt": [
+      "Todos os seus {C:attention}Curingas{}",
+      "recebem {C:mult}+5 Multi{}",
+      "permanentemente."
+    ]
+  },
+  {
+    "id": 68,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_68.png",
+    "name_en": "Jobs",
+    "name_pt": "Jobs",
+    "desc_en": [
+      "Allows you to",
+      "{C:attention}touch{} any card to{}",
+      "transform it into another random",
+      "card."
+    ],
+    "desc_pt": [
+      "Permite que você",
+      "{C:attention}toque{} em qualquer{}",
+      "carta para transformá-la em",
+      "outra aleatória."
+    ]
+  },
+  {
+    "id": 69,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_69.png",
+    "name_en": "Gates",
+    "name_pt": "Gates",
+    "desc_en": [
+      "Opens a {C:attention}Window{} of{}",
+      "opportunity: You can see the",
+      "next 5 cards in your deck."
+    ],
+    "desc_pt": [
+      "Abre uma {C:attention}Janela{}",
+      "de oportunidade: Você pode ver",
+      "as próximas 5 cartas do baralho."
+    ]
+  },
+  {
+    "id": 70,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_70.png",
+    "name_en": "Musk",
+    "name_pt": "Musk",
+    "desc_en": [
+      "Levels up all",
+      "{C:attention}5 Flush variants{}",
+      "by {C:attention}5{}."
+    ],
+    "desc_pt": [
+      "Aumenta o nível das",
+      "{C:attention}5 variações de Flush{}",
+      "em {C:attention}5{}."
+    ]
+  },
+  {
+    "id": 71,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_71.png",
+    "name_en": "Bezos",
+    "name_pt": "Bezos",
+    "desc_en": [
+      "Delivers a {C:attention}Special{}",
+      "Pack{} containing 3 random items",
+      "from the Shop."
+    ],
+    "desc_pt": [
+      "Entrega um {C:attention}Pacote{}",
+      "Especial{} contendo 3 itens",
+      "aleatórios da Loja."
+    ]
+  },
+  {
+    "id": 72,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_72.png",
+    "name_en": "Zuckerberg",
+    "name_pt": "Zuckerberg",
+    "desc_en": [
+      "Creates a {C:attention}Social Network{}",
+      "between your Jokers. Each Joker",
+      "gains {C:mult}+3 Mult{} per adjacent",
+      "non-debuffed Joker."
+    ],
+    "desc_pt": [
+      "Cria uma {C:attention}Rede Social{}",
+      "entre seus Curingas. Cada Curinga",
+      "ganha {C:mult}+3 Multi{} por Curinga",
+      "adjacente não suprimido."
+    ]
+  },
+  {
+    "id": 73,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_73.png",
+    "name_en": "Nakamoto",
+    "name_pt": "Nakamoto",
+    "desc_en": [
+      "Your money fluctuates randomly",
+      "between {C:red}-50%{} and{}",
+      "{C:green}+50%{} for each hand{}",
+      "played."
+    ],
+    "desc_pt": [
+      "Seu dinheiro flutua",
+      "aleatoriamente entre",
+      "{C:red}-50%{} e {}{C:green}+50%{}",
+      "a cada mão jogada."
+    ]
+  },
+  {
+    "id": 74,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_74.png",
+    "name_en": "Vitalik",
+    "name_pt": "Vitalik",
+    "desc_en": [
+      "If you win in 1 hand, gain",
+      "{C:money}$50{} . If you need more{}",
+      "hands, lose {C:money}$20{} .{}"
+    ],
+    "desc_pt": [
+      "Se vencer em 1 mão, ganha",
+      "{C:money}$50{} . Se precisar de{}",
+      "mais mãos, perde {C:money}$20{} .{}"
+    ]
+  },
+  {
+    "id": 75,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_75.png",
+    "name_en": "Armstrong",
+    "name_pt": "Armstrong",
+    "desc_en": [
+      "Takes a {C:attention}giant{}",
+      "leap{} for mankind: You advance",
+      "2 Antes immediately."
+    ],
+    "desc_pt": [
+      "Dá um {C:attention}grande{}",
+      "passo{} para a humanidade: Você",
+      "avança 2 Antes imediatamente."
+    ]
+  },
+  {
+    "id": 76,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_76.png",
+    "name_en": "Aldrin",
+    "name_pt": "Aldrin",
+    "desc_en": [
+      "The second man on the Moon:",
+      "Creates an {C:attention}exact{}",
+      "copy{} of your best Joker."
+    ],
+    "desc_pt": [
+      "O segundo homem na Lua: Cria uma",
+      "{C:attention}cópia exata{} do{}",
+      "seu melhor Curinga."
+    ]
+  },
+  {
+    "id": 77,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_77.png",
+    "name_en": "Collins",
+    "name_pt": "Collins",
+    "desc_en": [
+      "Duplicates all your current",
+      "{C:spectral}Consumables{}."
+    ],
+    "desc_pt": [
+      "Duplica todos os seus",
+      "{C:spectral}Consumíveis{} atuais."
+    ]
+  },
+  {
+    "id": 78,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_78.png",
+    "name_en": "Gagarin",
+    "name_pt": "Gagarin",
+    "desc_en": [
+      "The first in Space: Grants you",
+      "the first {C:attention}Tier 3{}",
+      "Voucher{} in the game."
+    ],
+    "desc_pt": [
+      "O primeiro no Espaço: Concede a",
+      "você o primeiro",
+      "{C:attention}Cupom Tier 3{} do{}",
+      "jogo."
+    ]
+  },
+  {
+    "id": 79,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_79.png",
+    "name_en": "Tereshkova",
+    "name_pt": "Tereshkova",
+    "desc_en": [
+      "The first woman in Space:",
+      "Converts all your Queens to",
+      "{C:dark_edition}Polychrome{}.{}"
+    ],
+    "desc_pt": [
+      "A primeira mulher no Espaço:",
+      "Transforma todas as suas Damas",
+      "em {C:dark_edition}Policromática{}",
+      "s{}."
+    ]
+  },
+  {
+    "id": 80,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_80.png",
+    "name_en": "Laika",
+    "name_pt": "Laika",
+    "desc_en": [
+      "All your {C:attention}Jokers{}",
+      "become {C:attention}Eternal{}."
+    ],
+    "desc_pt": [
+      "Todos os seus {C:attention}Curingas{}",
+      "tornam-se {C:attention}Eternos{}."
+    ]
+  },
+  {
+    "id": 81,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_81.png",
+    "name_en": "Ham",
+    "name_pt": "Ham",
+    "desc_en": [
+      "All your {C:attention}Jokers{}",
+      "permanently gain",
+      "{C:chips}+100 Chips{}."
+    ],
+    "desc_pt": [
+      "Todos os seus {C:attention}Curingas{}",
+      "recebem {C:chips}+100 Fichas{}",
+      "permanentemente."
+    ]
+  },
+  {
+    "id": 82,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_82.png",
+    "name_en": "Shepard",
+    "name_pt": "Shepard",
+    "desc_en": [
+      "Play Golf in Space: Launches",
+      "your weakest card out of the",
+      "deck and gain {C:money}$10{} .{}"
+    ],
+    "desc_pt": [
+      "Joga Golf no Espaço: Lança sua",
+      "carta mais fraca para fora do",
+      "baralho e ganha {C:money}$10{} .{}"
+    ]
+  },
+  {
+    "id": 83,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_83.png",
+    "name_en": "Glenn",
+    "name_pt": "Glenn",
+    "desc_en": [
+      "Completes an orbit on Earth:",
+      "Resets all hand levels to level",
+      "1 and gain {C:money}$100{} .{}"
+    ],
+    "desc_pt": [
+      "Completa uma órbita na Terra:",
+      "Reinicia os níveis de todas as",
+      "mãos para o nível 1 e ganha",
+      "{C:money}$100{} .{}"
+    ]
+  },
+  {
+    "id": 84,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_84.png",
+    "name_en": "Leonov",
+    "name_pt": "Leonov",
+    "desc_en": [
+      "Perform a",
+      "{C:attention}Spacewalk{}: Select{}",
+      "2 cards to float (be kept) for",
+      "the next round."
+    ],
+    "desc_pt": [
+      "Realiza uma",
+      "{C:attention}Caminhada{}",
+      "Espacial{}: Selecione 2 cartas",
+      "para flutuarem (serem mantidas)",
+      "para a próxima rodada."
+    ]
+  },
+  {
+    "id": 85,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_85.png",
+    "name_en": "Ride",
+    "name_pt": "Ride",
+    "desc_en": [
+      "First American woman in space:",
+      "Grants a {C:attention}Coupon{}",
+      "Tag{} and an",
+      "{C:attention}Investment Tag{}.{}"
+    ],
+    "desc_pt": [
+      "Primeira americana no espaço:",
+      "Concede uma {C:attention}Tag de{}",
+      "Cupom{} e uma {C:attention}Tag{}",
+      "de Investimento{}."
+    ]
+  },
+  {
+    "id": 86,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_86.png",
+    "name_en": "Hadfield",
+    "name_pt": "Hadfield",
+    "desc_en": [
+      "Grants {X:mult,C:white} X2 {} Mult on",
+      "the next hand played."
+    ],
+    "desc_pt": [
+      "Concede {X:mult,C:white} X2 Multi{} na",
+      "próxima mão jogada."
+    ]
+  },
+  {
+    "id": 87,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_87.png",
+    "name_en": "Kelly",
+    "name_pt": "Kelly",
+    "desc_en": [
+      "Adds a random {C:attention}Seal{}",
+      "to every card in your deck."
+    ],
+    "desc_pt": [
+      "Adiciona um {C:attention}Selo{}",
+      "aleatório a cada carta do",
+      "baralho."
+    ]
+  },
+  {
+    "id": 88,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_88.png",
+    "name_en": "Pesquet",
+    "name_pt": "Pesquet",
+    "desc_en": [
+      "French perspective: Converts all",
+      "Heart cards into",
+      "{C:attention}Ceramic Cards{}.{}"
+    ],
+    "desc_pt": [
+      "Perspectiva da França:",
+      "Transforma todas as cartas de",
+      "Copas em {C:attention}Cartas de{}",
+      "Cerâmica{}."
+    ]
+  },
+  {
+    "id": 89,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_89.png",
+    "name_en": "Cristoforetti",
+    "name_pt": "Cristoforetti",
+    "desc_en": [
+      "Gain {C:mult}+5 Mult{} stacking",
+      "per hand played this round."
+    ],
+    "desc_pt": [
+      "{C:mult}+5 Multi{} acumulado por",
+      "cada mão jogada nesta rodada."
+    ]
+  },
+  {
+    "id": 90,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_90.png",
+    "name_en": "Gerst",
+    "name_pt": "Gerst",
+    "desc_en": [
+      "German perspective: Converts all",
+      "Club cards into",
+      "{C:attention}Rubber Cards{}.{}"
+    ],
+    "desc_pt": [
+      "Perspectiva da Alemanha:",
+      "Transforma todas as cartas de",
+      "Paus em {C:attention}Cartas de{}",
+      "Borracha{}."
+    ]
+  },
+  {
+    "id": 91,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_91.png",
+    "name_en": "Peake",
+    "name_pt": "Peake",
+    "desc_en": [
+      "UK perspective: Converts all",
+      "{C:spades}Spade{} cards into",
+      "{C:attention}Ruby Cards{}."
+    ],
+    "desc_pt": [
+      "Perspectiva do Reino Unido:",
+      "Transforma todas as cartas de",
+      "{C:spades}Espadas{} em",
+      "{C:attention}Cartas de Rubi{}."
+    ]
+  },
+  {
+    "id": 92,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_92.png",
+    "name_en": "Hoshide",
+    "name_pt": "Hoshide",
+    "desc_en": [
+      "Japanese perspective: Converts",
+      "all Diamond cards into",
+      "{C:attention}Diamond Cards{}.{}"
+    ],
+    "desc_pt": [
+      "Perspectiva do Japão: Transforma",
+      "todas as cartas de Ouros em",
+      "{C:attention}Cartas de{}",
+      "Diamante{}."
+    ]
+  },
+  {
+    "id": 93,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_93.png",
+    "name_en": "Yi",
+    "name_pt": "Yi",
+    "desc_en": [
+      "Korean perspective: Increases",
+      "your 3 most played hands by",
+      "{C:attention}2{} levels.{}"
+    ],
+    "desc_pt": [
+      "Perspectiva da Coreia: Aumenta o",
+      "nível das suas 3 mãos mais",
+      "jogadas em {C:attention}2{}",
+      "níveis."
+    ]
+  },
+  {
+    "id": 94,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_94.png",
+    "name_en": "Yang",
+    "name_pt": "Yang",
+    "desc_en": [
+      "Chinese perspective: Mult iplies",
+      "all {C:attention}5-card hand{}",
+      "scores by {X:mult,C:white} X1.5 Mult{} .{}"
+    ],
+    "desc_pt": [
+      "Perspectiva da China: Multi plica",
+      "a pontuação de todas as suas",
+      "mãos de {C:attention}5 cartas{}",
+      "por {X:mult,C:white} X1.5 Multi.{}"
+    ]
+  },
+  {
+    "id": 95,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_95.png",
+    "name_en": "Sharma",
+    "name_pt": "Sharma",
+    "desc_en": [
+      "Indian perspective: Grants",
+      "{C:money}$1{} for each{}",
+      "{C:attention}Joker{} you own for{}",
+      "every hand played."
+    ],
+    "desc_pt": [
+      "Perspectiva da Índia: Concede",
+      "{C:money}$1{} por cada{}",
+      "{C:attention}Curinga{} que você{}",
+      "possui a cada mão jogada."
+    ]
+  },
+  {
+    "id": 96,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_96.png",
+    "name_en": "Al Mansoori",
+    "name_pt": "Al Mansoori",
+    "desc_en": [
+      "UAE perspective: Sets your money",
+      "to {C:money}$100{} and removes{}",
+      "all your",
+      "{C:attention}Vouchers{}.{}"
+    ],
+    "desc_pt": [
+      "Perspectiva dos Emirados: Define",
+      "seu dinheiro para",
+      "{C:money}$100{} e remove todos{}",
+      "os seus {C:attention}Vouchers{}.{}"
+    ]
+  },
+  {
+    "id": 97,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_97.png",
+    "name_en": "Pontes",
+    "name_pt": "Pontes",
+    "desc_en": [
+      "Brazilian perspective: Converts",
+      "all your cards into",
+      "{C:attention}Cloth Cards{} and{}",
+      "gain {C:money}$15{} .{}"
+    ],
+    "desc_pt": [
+      "Perspectiva do Brasil:",
+      "Transforma todas as suas cartas",
+      "em {C:attention}Cartas de{}",
+      "Tecido{} e ganha {C:money}$15{} .{}"
+    ]
+  },
+  {
+    "id": 98,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_98.png",
+    "name_en": "Vostok",
+    "name_pt": "Vostok",
+    "desc_en": [
+      "Levels up {C:attention}Flush{} and",
+      "{C:attention}Flush Five{} by",
+      "{C:attention}3{}."
+    ],
+    "desc_pt": [
+      "Aumenta o nível de",
+      "{C:attention}Flush{} e {C:attention}Flush Five{}",
+      "em {C:attention}3{}."
+    ]
+  },
+  {
+    "id": 99,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_99.png",
+    "name_en": "Mercury",
+    "name_pt": "Mercury",
+    "desc_en": [
+      "Levels up {C:attention}Straight{} and",
+      "{C:attention}Straight Flush{} by",
+      "{C:attention}3{}."
+    ],
+    "desc_pt": [
+      "Aumenta o nível de",
+      "{C:attention}Sequência{} e",
+      "{C:attention}Straight Flush{}",
+      "em {C:attention}3{}."
+    ]
+  },
+  {
+    "id": 100,
+    "type": "spectral",
+    "sprite": "spectrals/odyssey_spectral_100.png",
+    "name_en": "Gemini",
+    "name_pt": "Gemini",
+    "desc_en": [
+      "Levels up {C:attention}Pair{} and",
+      "{C:attention}Two Pair{} by",
+      "{C:attention}3{}."
+    ],
+    "desc_pt": [
+      "Aumenta o nível de",
+      "{C:attention}Par{} e {C:attention}Dois Pares{}",
+      "em {C:attention}3{}."
+    ]
+  }
+]

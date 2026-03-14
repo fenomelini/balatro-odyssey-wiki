@@ -1,0 +1,63 @@
+---
+// LangToggle — pill style [ EN | PT ]
+// Uses data-lang-toggle attribute (not ID) so multiple instances work correctly.
+---
+<button
+  data-lang-toggle
+  aria-label="Toggle language"
+  class="flex items-center rounded-full border border-[var(--border)] overflow-hidden text-[0.8rem] font-bold cursor-pointer bg-[var(--dark3)] hover:border-[var(--primary)] transition-colors"
+>
+  <span class="lt-en px-3 py-1 transition-colors">EN</span>
+  <span class="text-[var(--border)] select-none">|</span>
+  <span class="lt-pt px-3 py-1 transition-colors">PT</span>
+</button>
+
+<script>
+  const STORAGE_KEY = 'wiki_lang';
+
+  function highlightAll(lang: string) {
+    document.querySelectorAll<HTMLElement>('[data-lang-toggle]').forEach(btn => {
+      const en = btn.querySelector<HTMLElement>('.lt-en')!;
+      const pt = btn.querySelector<HTMLElement>('.lt-pt')!;
+      if (lang === 'en') {
+        en.style.color = '#fff';     en.style.background = 'var(--primary)';
+        pt.style.color = 'var(--muted)'; pt.style.background = 'transparent';
+      } else {
+        pt.style.color = '#fff';     pt.style.background = 'var(--primary)';
+        en.style.color = 'var(--muted)'; en.style.background = 'transparent';
+      }
+    });
+  }
+
+  function applyLang(lang: string) {
+    document.documentElement.setAttribute('data-lang', lang);
+    localStorage.setItem(STORAGE_KEY, lang);
+    highlightAll(lang);
+  }
+
+  function init() {
+    const initial = localStorage.getItem(STORAGE_KEY) || 'en';
+    highlightAll(initial);
+
+    document.querySelectorAll('[data-lang-toggle]').forEach(btn => {
+      // Avoid attaching duplicate listeners on Astro script re-runs
+      if ((btn as any).__langToggleInit) return;
+      (btn as any).__langToggleInit = true;
+      btn.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-lang') || 'en';
+        applyLang(current === 'en' ? 'pt' : 'en');
+      });
+    });
+  }
+
+  // Run after DOM is ready (handles Astro's deferred script execution)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+  window.addEventListener('storage', (e) => {
+    if (e.key === STORAGE_KEY && e.newValue) applyLang(e.newValue);
+  });
+</script>

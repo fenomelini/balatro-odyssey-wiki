@@ -1,0 +1,52 @@
+---
+import Layout from '../../components/layout/Layout.astro';
+import { formatDescription } from '../../utils/formatDescription';
+import allDecks from '../../data/decks.json';
+
+export async function getStaticPaths() {
+  return allDecks.map(deck => ({
+    params: { key: deck.key },
+    props: { deck },
+  }));
+}
+
+interface Props {
+  deck: typeof allDecks[0];
+}
+
+const { deck } = Astro.props;
+const descEnHtml = formatDescription(deck.desc_en);
+const descPtHtml = formatDescription(deck.desc_pt);
+---
+
+<Layout title={deck.name_en} description={deck.desc_en.join(' ')}>
+  <div class="px-[5%] py-12 max-w-[900px] mx-auto">
+    <a href="/decks" class="inline-flex items-center gap-2 text-muted hover:text-white transition-colors mb-8 text-[0.9rem]">
+      ← <span class="lang-en">Back to Decks</span>
+      <span class="lang-pt">Voltar aos Baralhos</span>
+    </a>
+
+    <div class="flex flex-col md:flex-row gap-10">
+      <div class="flex-shrink-0 flex justify-center">
+        <img
+          src={`/assets/${deck.sprite}`}
+          alt={deck.name_en}
+          width="142"
+          height="190"
+          class="drop-shadow-[0_8px_24px_rgba(0,212,170,0.4)]"
+          onerror="this.classList.add('sprite-error')"
+        />
+      </div>
+      <div class="flex-1">
+        <h1 class="font-black text-white mb-4" style="font-size: clamp(1.6rem, 3vw, 2.2rem);">
+          <span class="lang-en">{deck.name_en}</span>
+          <span class="lang-pt">{deck.name_pt}</span>
+        </h1>
+        <div class="rounded-xl p-4 bg-dark2 border border-[var(--border)] text-[0.95rem] leading-relaxed">
+          <div class="lang-en" set:html={descEnHtml} />
+          <div class="lang-pt" set:html={descPtHtml} />
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,151 @@
+---
+import Layout from '../../components/layout/Layout.astro';
+import SearchBox from '../../components/ui/SearchBox.astro';
+import hands from '../../data/hands.json';
+
+const visible = hands.filter(h => !h.secret);
+const secret  = hands.filter(h => h.secret);
+---
+
+<Layout title="Hands" description="Browse all poker hands added by Balatro Odyssey.">
+  <div class="px-[5%] py-12 max-w-[1400px] mx-auto">
+
+    <!-- Header -->
+    <div class="mb-8">
+      <p class="text-accent text-[0.8rem] font-bold uppercase tracking-[0.1em] mb-2">Browse</p>
+      <h1 class="font-extrabold text-white mb-1" style="font-size: clamp(1.8rem, 3vw, 2.6rem);">
+        <span class="lang-en">Poker Hands</span>
+        <span class="lang-pt">Mãos de Poker</span>
+      </h1>
+      <p class="text-muted">
+        {visible.length} <span class="lang-en">hands</span><span class="lang-pt">mãos</span>
+        &nbsp;+&nbsp;
+        {secret.length} <span class="lang-en">secret hands</span><span class="lang-pt">mãos secretas</span>
+      </p>
+    </div>
+
+    <SearchBox placeholder_en="Search hands..." placeholder_pt="Buscar mãos..." />
+
+    <!-- Visible Hands -->
+    <div id="hands-grid" class="grid gap-4 mt-6" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));">
+      {visible.map(hand => (
+        <div
+          class="hand-card bg-card border border-[var(--border)] rounded-2xl p-4 flex flex-col gap-2 transition-all duration-200 hover:-translate-y-1 hover:border-[var(--primary)]"
+          data-name-en={hand.name_en.toLowerCase()}
+          data-name-pt={hand.name_pt.toLowerCase()}
+        >
+          <!-- Name -->
+          <div class="font-bold text-white text-[1rem] leading-tight">
+            <span class="lang-en">{hand.name_en}</span>
+            <span class="lang-pt">{hand.name_pt}</span>
+          </div>
+
+          <!-- Base stats row -->
+          <div class="flex gap-3 text-[0.8rem] font-semibold mt-0.5">
+            <span class="flex items-center gap-1">
+              <span class="text-orange-300">Chips</span>
+              <span class="text-white">{hand.chips}</span>
+            </span>
+            <span class="text-muted">·</span>
+            <span class="flex items-center gap-1">
+              <span class="text-red-400">Mult</span>
+              <span class="text-white">{hand.mult}</span>
+            </span>
+          </div>
+
+          <!-- Level bonus row -->
+          {(hand.l_chips > 0 || hand.l_mult > 0) && (
+            <div class="flex flex-wrap gap-2 text-[0.75rem] text-muted border-t border-[var(--border)] pt-1.5 mt-0.5">
+              <span class="lang-en">Per level:</span>
+              <span class="lang-pt">Por nível:</span>
+              {hand.l_chips > 0 && <span class="text-orange-300">+{hand.l_chips} Chips</span>}
+              {hand.l_chips > 0 && hand.l_mult > 0 && <span class="text-muted">/</span>}
+              {hand.l_mult > 0 && <span class="text-red-400">+{hand.l_mult} Mult</span>}
+            </div>
+          )}
+
+          <!-- Description -->
+          <div class="text-muted text-[0.8rem] leading-snug mt-auto pt-1">
+            <span class="lang-en">{hand.desc_en.join(' ')}</span>
+            <span class="lang-pt">{hand.desc_pt.join(' ')}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Secret Hands Section -->
+    <div class="mt-14">
+      <div class="flex items-center gap-3 mb-3">
+        <h2 class="text-white font-extrabold" style="font-size: clamp(1.2rem, 2.5vw, 1.8rem);">
+          <span class="lang-en">Secret Hands</span>
+          <span class="lang-pt">Mãos Secretas</span>
+        </h2>
+        <span class="text-[0.7rem] font-bold uppercase tracking-wider px-2 py-0.5 rounded border border-yellow-500/40 text-yellow-400 bg-yellow-500/10">
+          {secret.length}
+        </span>
+      </div>
+      <p class="text-muted text-[0.9rem] mb-6 max-w-xl">
+        <span class="lang-en">These hands have hidden conditions — discover them in-game to unlock them.</span>
+        <span class="lang-pt">Essas mãos têm condições ocultas — descubra-as no jogo para desbloqueá-las.</span>
+      </p>
+
+      <div class="grid gap-4" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));">
+        {secret.map(hand => (
+          <div class="bg-card border border-yellow-500/20 rounded-2xl p-4 flex flex-col gap-2 opacity-75">
+            <!-- Name + badge -->
+            <div class="flex items-start justify-between gap-2">
+              <div class="font-bold text-white text-[1rem] leading-tight">
+                <span class="lang-en">{hand.name_en}</span>
+                <span class="lang-pt">{hand.name_pt}</span>
+              </div>
+              <span class="text-[0.6rem] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded border border-yellow-500/40 text-yellow-400 bg-yellow-500/10 shrink-0">
+                <span class="lang-en">Secret</span>
+                <span class="lang-pt">Secreta</span>
+              </span>
+            </div>
+
+            <!-- Stats -->
+            <div class="flex gap-3 text-[0.8rem] font-semibold mt-0.5">
+              <span class="flex items-center gap-1">
+                <span class="text-orange-300">Chips</span>
+                <span class="text-white">{hand.chips}</span>
+              </span>
+              <span class="text-muted">·</span>
+              <span class="flex items-center gap-1">
+                <span class="text-red-400">Mult</span>
+                <span class="text-white">{hand.mult}</span>
+              </span>
+            </div>
+
+            <!-- Level bonus -->
+            {(hand.l_chips > 0 || hand.l_mult > 0) && (
+              <div class="flex flex-wrap gap-2 text-[0.75rem] text-muted border-t border-[var(--border)] pt-1.5 mt-0.5">
+                <span class="lang-en">Per level:</span>
+                <span class="lang-pt">Por nível:</span>
+                {hand.l_chips > 0 && <span class="text-orange-300">+{hand.l_chips} Chips</span>}
+                {hand.l_chips > 0 && hand.l_mult > 0 && <span class="text-muted">/</span>}
+                {hand.l_mult > 0 && <span class="text-red-400">+{hand.l_mult} Mult</span>}
+              </div>
+            )}
+
+            <!-- Hidden description -->
+            <div class="text-muted text-[0.8rem] leading-snug mt-auto pt-1 italic opacity-60">?????</div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</Layout>
+
+<script>
+  const searchBox = document.getElementById('search-box') as HTMLInputElement | null;
+  searchBox?.addEventListener('input', () => {
+    const q = searchBox.value.toLowerCase();
+    const lang = document.documentElement.getAttribute('data-lang') || 'en';
+    document.querySelectorAll<HTMLElement>('.hand-card').forEach(card => {
+      const name = (lang === 'pt' ? card.dataset.namePt : card.dataset.nameEn) ?? '';
+      card.style.display = !q || name.includes(q) ? '' : 'none';
+    });
+  });
+</script>

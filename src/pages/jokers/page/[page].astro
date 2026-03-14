@@ -1,0 +1,121 @@
+---
+import Layout from '../../../components/layout/Layout.astro';
+import JokerCard from '../../../components/cards/JokerCard.astro';
+import FilterBar from '../../../components/ui/FilterBar.astro';
+import SearchBox from '../../../components/ui/SearchBox.astro';
+import allJokers from '../../../data/jokers.json';
+
+export async function getStaticPaths() {
+  const PAGE_SIZE = 50;
+  const totalPages = Math.ceil(allJokers.length / PAGE_SIZE);
+  return Array.from({ length: totalPages }, (_, i) => ({
+    params: { page: String(i + 1) },
+    props: {
+      page: i + 1,
+      totalPages,
+      jokers: allJokers.slice(i * PAGE_SIZE, (i + 1) * PAGE_SIZE),
+    },
+  }));
+}
+
+interface Props {
+  page: number;
+  totalPages: number;
+  jokers: typeof allJokers;
+}
+
+const { page, totalPages, jokers } = Astro.props;
+
+// All unique groups for the filter
+const allGroups = [...new Set(allJokers.map(j => j.group))].sort();
+---
+
+<Layout title={`Jokers — Page ${page}`} description="Browse all Balatro Odyssey Jokers.">
+  <div class="px-[5%] py-12 max-w-[1400px] mx-auto">
+    <!-- Header -->
+    <div class="mb-8">
+      <p class="text-accent text-[0.8rem] font-bold uppercase tracking-[0.1em] mb-2">
+        <span class="lang-en">Browse</span>
+        <span class="lang-pt">Navegar</span>
+      </p>
+      <h1 class="font-extrabold text-white mb-1" style="font-size: clamp(1.8rem, 3vw, 2.6rem);">
+        <span class="lang-en">Jokers</span>
+        <span class="lang-pt">Curingas</span>
+      </h1>
+      <p class="text-muted">
+        <span class="lang-en">{allJokers.length} total — page {page} of {totalPages}</span>
+        <span class="lang-pt">{allJokers.length} no total — página {page} de {totalPages}</span>
+      </p>
+    </div>
+
+    <!-- Search -->
+    <SearchBox placeholder_en="Search jokers..." placeholder_pt="Buscar curingas..." />
+
+    <!-- Filters -->
+    <FilterBar groups={allGroups} />
+
+    <!-- Grid -->
+    <div
+      id="joker-grid"
+      class="grid gap-4"
+      style="grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));"
+    >
+      {jokers.map(joker => (
+        <JokerCard joker={joker} />
+      ))}
+    </div>
+
+    <!-- No results message -->
+    <p id="no-results" class="hidden text-center text-muted py-12">
+      <span class="lang-en">No results found.</span>
+      <span class="lang-pt">Nenhum resultado encontrado.</span>
+    </p>
+
+    <!-- Pagination -->
+    <nav class="flex items-center justify-center gap-4 mt-12">
+      {page > 1 ? (
+        <a href={`/jokers/page/${page - 1}`}
+           class="px-5 py-2 rounded-lg border border-[var(--border)] text-white font-semibold hover:bg-primary/10 transition-colors">
+          <span class="lang-en">← Previous</span>
+          <span class="lang-pt">← Anterior</span>
+        </a>
+      ) : (
+        <span class="px-5 py-2 rounded-lg border border-[var(--border)] text-muted cursor-not-allowed opacity-40">
+          <span class="lang-en">← Previous</span>
+          <span class="lang-pt">← Anterior</span>
+        </span>
+      )}
+
+      <span class="text-muted text-[0.9rem]">
+        <span class="lang-en">Page {page} of {totalPages}</span>
+        <span class="lang-pt">Página {page} de {totalPages}</span>
+      </span>
+
+      {page < totalPages ? (
+        <a href={`/jokers/page/${page + 1}`}
+           class="px-5 py-2 rounded-lg border border-[var(--border)] text-white font-semibold hover:bg-primary/10 transition-colors">
+          <span class="lang-en">Next →</span>
+          <span class="lang-pt">Próxima →</span>
+        </a>
+      ) : (
+        <span class="px-5 py-2 rounded-lg border border-[var(--border)] text-muted cursor-not-allowed opacity-40">
+          <span class="lang-en">Next →</span>
+          <span class="lang-pt">Próxima →</span>
+        </span>
+      )}
+    </nav>
+  </div>
+
+  <script>
+    // Watch for filter changes to show/hide no-results message
+    const noResults = document.getElementById('no-results')!;
+    const grid = document.getElementById('joker-grid')!;
+    if (grid && noResults) {
+      const obs = new MutationObserver(() => {
+        const visible = grid.querySelectorAll<HTMLElement>('.joker-card:not([style*="display: none"])').length;
+        noResults.style.display = visible === 0 ? 'block' : 'none';
+      });
+      obs.observe(grid, { subtree: true, attributes: true, attributeFilter: ['style'] });
+    }
+  </script>
+</Layout>

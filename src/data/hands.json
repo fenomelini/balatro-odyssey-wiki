@@ -1,0 +1,1074 @@
+[
+  {
+    "key": "alternating_straight",
+    "name_en": "Alternating Straight",
+    "name_pt": "Sequência Alternada",
+    "desc_en": [
+      "A Straight that alternates colors between cards (Red, Black...)"
+    ],
+    "desc_pt": [
+      "Uma Sequência que alterna cores entre cada carta (Vermelho, Preto...)"
+    ],
+    "chips": 49,
+    "mult": 5,
+    "l_chips": 33,
+    "l_mult": 3,
+    "secret": false
+  },
+  {
+    "key": "black_hand",
+    "name_en": "Black Hand",
+    "name_pt": "Mão Preta",
+    "desc_en": [
+      "Five cards of Spades or Clubs suits"
+    ],
+    "desc_pt": [
+      "Cinco cartas dos naipes Espadas ou Paus"
+    ],
+    "chips": 21,
+    "mult": 2,
+    "l_chips": 17,
+    "l_mult": 2,
+    "secret": false
+  },
+  {
+    "key": "corner_hand",
+    "name_en": "Corner Hand",
+    "name_pt": "Mão de Canto",
+    "desc_en": [
+      "Four or more cards being only Aces or 2s"
+    ],
+    "desc_pt": [
+      "Quatro ou mais cartas sendo apenas Ases ou 2s"
+    ],
+    "chips": 39,
+    "mult": 4,
+    "l_chips": 26,
+    "l_mult": 3,
+    "secret": false
+  },
+  {
+    "key": "double_three_of_a_kind",
+    "name_en": "Double Three of a Kind",
+    "name_pt": "Duas Trincas",
+    "desc_en": [
+      "Two sets of Three of a Kind with different ranks"
+    ],
+    "desc_pt": [
+      "Duas Trincas de diferentes valores"
+    ],
+    "chips": 107,
+    "mult": 11,
+    "l_chips": 62,
+    "l_mult": 6,
+    "secret": false
+  },
+  {
+    "key": "eight_of_a_kind",
+    "name_en": "Eight of a Kind",
+    "name_pt": "Oito de uma Classe",
+    "desc_en": [
+      "Eight cards with the same rank"
+    ],
+    "desc_pt": [
+      "Oito cartas com o mesmo valor numérico"
+    ],
+    "chips": 192,
+    "mult": 21,
+    "l_chips": 86,
+    "l_mult": 10,
+    "secret": false
+  },
+  {
+    "key": "even_hand",
+    "name_en": "Even Hand",
+    "name_pt": "Mão Par",
+    "desc_en": [
+      "Five cards with even numerical ranks"
+    ],
+    "desc_pt": [
+      "Cinco cartas com valores numéricos pares"
+    ],
+    "chips": 26,
+    "mult": 2,
+    "l_chips": 17,
+    "l_mult": 2,
+    "secret": false
+  },
+  {
+    "key": "face_hand",
+    "name_en": "Face Hand",
+    "name_pt": "Mão Figura",
+    "desc_en": [
+      "Five face cards (Jack, Queen, King)"
+    ],
+    "desc_pt": [
+      "Cinco cartas de realeza (Valete, Dama, Rei)"
+    ],
+    "chips": 34,
+    "mult": 3,
+    "l_chips": 23,
+    "l_mult": 2,
+    "secret": false
+  },
+  {
+    "key": "fibonacci_hand",
+    "name_en": "Fibonacci Hand",
+    "name_pt": "Mão Fibonacci",
+    "desc_en": [
+      "Five cards with Fibonacci sequence ranks (A, 2, 3, 5, 8)"
+    ],
+    "desc_pt": [
+      "Cinco cartas com números da sequência Fibonacci (A, 2, 3, 5, 8)"
+    ],
+    "chips": 41,
+    "mult": 4,
+    "l_chips": 26,
+    "l_mult": 3,
+    "secret": false
+  },
+  {
+    "key": "flush_eight_of_a_kind",
+    "name_en": "Flush Eight of a Kind",
+    "name_pt": "Flush de Oito",
+    "desc_en": [
+      "Eight cards with the same rank and same suit"
+    ],
+    "desc_pt": [
+      "Oito cartas com o mesmo valor e o mesmo naipe"
+    ],
+    "chips": 376,
+    "mult": 43,
+    "l_chips": 114,
+    "l_mult": 15,
+    "secret": false
+  },
+  {
+    "key": "flush_four_of_a_kind",
+    "name_en": "Flush Four of a Kind",
+    "name_pt": "Quadra com Flush",
+    "desc_en": [
+      "Four of a Kind where all cards in hand share the same suit"
+    ],
+    "desc_pt": [
+      "Uma Quadra onde todas as cartas da mão têm o mesmo naipe"
+    ],
+    "chips": 103,
+    "mult": 11,
+    "l_chips": 63,
+    "l_mult": 8,
+    "secret": false
+  },
+  {
+    "key": "flush_nine_of_a_kind",
+    "name_en": "Flush Nine of a Kind",
+    "name_pt": "Flush de Nove",
+    "desc_en": [
+      "Nine cards with the same rank and same suit"
+    ],
+    "desc_pt": [
+      "Nove cartas com o mesmo valor e o mesmo naipe"
+    ],
+    "chips": 489,
+    "mult": 57,
+    "l_chips": 117,
+    "l_mult": 15,
+    "secret": false
+  },
+  {
+    "key": "flush_pair",
+    "name_en": "Flush Pair",
+    "name_pt": "Par com Flush",
+    "desc_en": [
+      "A Pair where all cards in hand share the same suit"
+    ],
+    "desc_pt": [
+      "Um Par onde todas as cartas da mão têm o mesmo naipe"
+    ],
+    "chips": 43,
+    "mult": 4,
+    "l_chips": 27,
+    "l_mult": 3,
+    "secret": false
+  },
+  {
+    "key": "flush_seven_of_a_kind",
+    "name_en": "Flush Seven of a Kind",
+    "name_pt": "Flush de Sete",
+    "desc_en": [
+      "Seven cards with the same rank and same suit"
+    ],
+    "desc_pt": [
+      "Sete cartas com o mesmo valor e o mesmo naipe"
+    ],
+    "chips": 287,
+    "mult": 31,
+    "l_chips": 111,
+    "l_mult": 15,
+    "secret": false
+  },
+  {
+    "key": "flush_six_of_a_kind",
+    "name_en": "Flush Six of a Kind",
+    "name_pt": "Flush de Seis",
+    "desc_en": [
+      "Six cards with the same rank and same suit"
+    ],
+    "desc_pt": [
+      "Seis cartas com o mesmo valor e o mesmo naipe"
+    ],
+    "chips": 201,
+    "mult": 21,
+    "l_chips": 108,
+    "l_mult": 15,
+    "secret": false
+  },
+  {
+    "key": "flush_ten_of_a_kind",
+    "name_en": "Flush Ten of a Kind",
+    "name_pt": "Flush de Dez",
+    "desc_en": [
+      "Ten cards with the same rank and same suit"
+    ],
+    "desc_pt": [
+      "Dez cartas com o mesmo valor e o mesmo naipe"
+    ],
+    "chips": 612,
+    "mult": 73,
+    "l_chips": 120,
+    "l_mult": 15,
+    "secret": false
+  },
+  {
+    "key": "flush_three_of_a_kind",
+    "name_en": "Flush Three of a Kind",
+    "name_pt": "Trinca com Flush",
+    "desc_en": [
+      "Three of a Kind where all cards in hand share the same suit"
+    ],
+    "desc_pt": [
+      "Uma Trinca onde todas as cartas da mão têm o mesmo naipe"
+    ],
+    "chips": 67,
+    "mult": 7,
+    "l_chips": 43,
+    "l_mult": 5,
+    "secret": false
+  },
+  {
+    "key": "flush_two_pair",
+    "name_en": "Flush Two Pair",
+    "name_pt": "Dois Pares com Flush",
+    "desc_en": [
+      "Two Pairs where all cards in hand share the same suit"
+    ],
+    "desc_pt": [
+      "Dois Pares onde todas as cartas da mão têm o mesmo naipe"
+    ],
+    "chips": 56,
+    "mult": 6,
+    "l_chips": 37,
+    "l_mult": 4,
+    "secret": false
+  },
+  {
+    "key": "high_hand",
+    "name_en": "High Hand",
+    "name_pt": "Mão Alta",
+    "desc_en": [
+      "Five cards with rank 10 or higher"
+    ],
+    "desc_pt": [
+      "Cinco cartas com valor 10 ou maior"
+    ],
+    "chips": 36,
+    "mult": 3,
+    "l_chips": 21,
+    "l_mult": 2,
+    "secret": false
+  },
+  {
+    "key": "jump_straight",
+    "name_en": "Jump Straight",
+    "name_pt": "Sequência Salteada",
+    "desc_en": [
+      "A Straight where ranks jump by 2 (e.g. 2-4-6-8-10)"
+    ],
+    "desc_pt": [
+      "Uma Sequência onde os valores pulam de 2 em 2 (ex: 2-4-6-8-10)"
+    ],
+    "chips": 33,
+    "mult": 4,
+    "l_chips": 22,
+    "l_mult": 2,
+    "secret": false
+  },
+  {
+    "key": "low_hand",
+    "name_en": "Low Hand",
+    "name_pt": "Mão Baixa",
+    "desc_en": [
+      "Four or more cards with rank 5 or lower"
+    ],
+    "desc_pt": [
+      "Quatro ou mais cartas com valor 5 ou menor"
+    ],
+    "chips": 17,
+    "mult": 1,
+    "l_chips": 11,
+    "l_mult": 1,
+    "secret": false
+  },
+  {
+    "key": "mega_flush",
+    "name_en": "Mega Flush",
+    "name_pt": "Mega Flush",
+    "desc_en": [
+      "A Flush containing 6 or more cards"
+    ],
+    "desc_pt": [
+      "Um Flush contendo 6 ou mais cartas"
+    ],
+    "chips": 82,
+    "mult": 8,
+    "l_chips": 53,
+    "l_mult": 5,
+    "secret": false
+  },
+  {
+    "key": "mega_full_house",
+    "name_en": "Mega Full House",
+    "name_pt": "Mega Full House",
+    "desc_en": [
+      "Three of a Kind and another Three of a Kind in the same hand"
+    ],
+    "desc_pt": [
+      "Uma Trinca e outra Trinca na mesma mão"
+    ],
+    "chips": 107,
+    "mult": 11,
+    "l_chips": 62,
+    "l_mult": 6,
+    "secret": false
+  },
+  {
+    "key": "mega_straight",
+    "name_en": "Mega Straight",
+    "name_pt": "Mega Sequência",
+    "desc_en": [
+      "A Straight containing 6 or more cards"
+    ],
+    "desc_pt": [
+      "Uma Sequência contendo 6 ou mais cartas"
+    ],
+    "chips": 82,
+    "mult": 8,
+    "l_chips": 53,
+    "l_mult": 5,
+    "secret": false
+  },
+  {
+    "key": "middle_hand",
+    "name_en": "Middle Hand",
+    "name_pt": "Mão do Meio",
+    "desc_en": [
+      "Four or more cards being only 7s or 8s"
+    ],
+    "desc_pt": [
+      "Quatro ou mais cartas sendo apenas 7s ou 8s"
+    ],
+    "chips": 31,
+    "mult": 3,
+    "l_chips": 22,
+    "l_mult": 2,
+    "secret": false
+  },
+  {
+    "key": "nine_of_a_kind",
+    "name_en": "Nine of a Kind",
+    "name_pt": "Nove de uma Classe",
+    "desc_en": [
+      "Nine cards with the same rank"
+    ],
+    "desc_pt": [
+      "Nove cartas com o mesmo valor numérico"
+    ],
+    "chips": 234,
+    "mult": 24,
+    "l_chips": 88,
+    "l_mult": 10,
+    "secret": false
+  },
+  {
+    "key": "number_hand",
+    "name_en": "Number Hand",
+    "name_pt": "Mão Numérica",
+    "desc_en": [
+      "Five numbered cards (2 through 10)"
+    ],
+    "desc_pt": [
+      "Cinco cartas numeradas (2 ao 10)"
+    ],
+    "chips": 22,
+    "mult": 2,
+    "l_chips": 17,
+    "l_mult": 2,
+    "secret": false
+  },
+  {
+    "key": "odd_hand",
+    "name_en": "Odd Hand",
+    "name_pt": "Mão Ímpar",
+    "desc_en": [
+      "Five cards with odd numerical ranks"
+    ],
+    "desc_pt": [
+      "Cinco cartas com valores numéricos ímpares"
+    ],
+    "chips": 26,
+    "mult": 2,
+    "l_chips": 17,
+    "l_mult": 2,
+    "secret": false
+  },
+  {
+    "key": "prime_hand",
+    "name_en": "Prime Hand",
+    "name_pt": "Mão Prima",
+    "desc_en": [
+      "Five cards with prime number ranks (2, 3, 5, 7, 11, 13)"
+    ],
+    "desc_pt": [
+      "Cinco cartas com valores numéricos primos (2, 3, 5, 7, 11, 13)"
+    ],
+    "chips": 47,
+    "mult": 5,
+    "l_chips": 31,
+    "l_mult": 3,
+    "secret": false
+  },
+  {
+    "key": "quadruple_pair",
+    "name_en": "Quadruple Pair",
+    "name_pt": "Quatro Pares",
+    "desc_en": [
+      "Four pairs of cards with different ranks"
+    ],
+    "desc_pt": [
+      "Quatro pares de cartas com valores diferentes"
+    ],
+    "chips": 69,
+    "mult": 7,
+    "l_chips": 43,
+    "l_mult": 4,
+    "secret": false
+  },
+  {
+    "key": "quintuple_pair",
+    "name_en": "Quintuple Pair",
+    "name_pt": "Cinco Pares",
+    "desc_en": [
+      "Five pairs of cards with different ranks"
+    ],
+    "desc_pt": [
+      "Cinco pares de cartas com valores diferentes"
+    ],
+    "chips": 87,
+    "mult": 9,
+    "l_chips": 50,
+    "l_mult": 5,
+    "secret": false
+  },
+  {
+    "key": "red_hand",
+    "name_en": "Red Hand",
+    "name_pt": "Mão Vermelha",
+    "desc_en": [
+      "Five cards of Hearts or Diamonds suits"
+    ],
+    "desc_pt": [
+      "Cinco cartas dos naipes Copas ou Ouros"
+    ],
+    "chips": 21,
+    "mult": 2,
+    "l_chips": 17,
+    "l_mult": 2,
+    "secret": false
+  },
+  {
+    "key": "royal_flush",
+    "name_en": "Royal Flush",
+    "name_pt": "Royal Flush",
+    "desc_en": [
+      "A Royal Flush (10, Jack, Queen, King, Ace) of a single suit"
+    ],
+    "desc_pt": [
+      "Uma Sequência Real (10, Valete, Dama, Rei, Ás) do mesmo naipe"
+    ],
+    "chips": 134,
+    "mult": 14,
+    "l_chips": 68,
+    "l_mult": 8,
+    "secret": false
+  },
+  {
+    "key": "seven_of_a_kind",
+    "name_en": "Seven of a Kind",
+    "name_pt": "Sete de uma Classe",
+    "desc_en": [
+      "Seven cards with the same rank"
+    ],
+    "desc_pt": [
+      "Sete cartas com o mesmo valor numérico"
+    ],
+    "chips": 157,
+    "mult": 17,
+    "l_chips": 84,
+    "l_mult": 10,
+    "secret": false
+  },
+  {
+    "key": "six_of_a_kind",
+    "name_en": "Six of a Kind",
+    "name_pt": "Seis de uma Classe",
+    "desc_en": [
+      "Six cards with the same rank"
+    ],
+    "desc_pt": [
+      "Seis cartas com o mesmo valor numérico"
+    ],
+    "chips": 123,
+    "mult": 13,
+    "l_chips": 82,
+    "l_mult": 10,
+    "secret": false
+  },
+  {
+    "key": "spectrum",
+    "name_en": "Spectrum",
+    "name_pt": "Espectro",
+    "desc_en": [
+      "A hand containing at least one card of each suit"
+    ],
+    "desc_pt": [
+      "Uma mão contendo pelo menos uma carta de cada naipe"
+    ],
+    "chips": 41,
+    "mult": 4,
+    "l_chips": 27,
+    "l_mult": 3,
+    "secret": false
+  },
+  {
+    "key": "super_royal_flush",
+    "name_en": "Super Royal Flush",
+    "name_pt": "Super Royal Flush",
+    "desc_en": [
+      "A Royal Flush (T-J-Q-K-A) extended to 6 or more cards"
+    ],
+    "desc_pt": [
+      "Uma Sequência Real (T-J-Q-K-A) estendida para 6 ou mais cartas"
+    ],
+    "chips": 267,
+    "mult": 27,
+    "l_chips": 143,
+    "l_mult": 15,
+    "secret": false
+  },
+  {
+    "key": "ten_of_a_kind",
+    "name_en": "Ten of a Kind",
+    "name_pt": "Dez de uma Classe",
+    "desc_en": [
+      "Ten cards with the same rank"
+    ],
+    "desc_pt": [
+      "Dez cartas com o mesmo valor numérico"
+    ],
+    "chips": 278,
+    "mult": 29,
+    "l_chips": 90,
+    "l_mult": 10,
+    "secret": false
+  },
+  {
+    "key": "triple_pair",
+    "name_en": "Triple Pair",
+    "name_pt": "Três Pares",
+    "desc_en": [
+      "Three pairs of cards with different ranks"
+    ],
+    "desc_pt": [
+      "Três pares de cartas com valores diferentes"
+    ],
+    "chips": 51,
+    "mult": 5,
+    "l_chips": 30,
+    "l_mult": 3,
+    "secret": false
+  },
+  {
+    "key": "ultimate_flush",
+    "name_en": "Ultimate Flush",
+    "name_pt": "Flush Ultimate",
+    "desc_en": [
+      "Eight or more cards representing all 4 suits in the deck"
+    ],
+    "desc_pt": [
+      "Oito ou mais cartas representando todos os 4 naipes do baralho"
+    ],
+    "chips": 350,
+    "mult": 35,
+    "l_chips": 220,
+    "l_mult": 22,
+    "secret": false
+  },
+  {
+    "key": "wrap_around_straight",
+    "name_en": "Wrap-around Straight",
+    "name_pt": "Sequência Envolvente",
+    "desc_en": [
+      "A Straight that wraps through the Ace (e.g. Q-K-A-2-3)"
+    ],
+    "desc_pt": [
+      "Uma Sequência que 'dá a volta' pelo Ás (ex: Q-K-A-2-3)"
+    ],
+    "chips": 33,
+    "mult": 4,
+    "l_chips": 22,
+    "l_mult": 2,
+    "secret": false
+  },
+  {
+    "key": "secret_hand_1",
+    "name_en": "Secret Hand 1",
+    "name_pt": "Mão Secreta 1",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 85,
+    "mult": 8,
+    "l_chips": 42,
+    "l_mult": 4,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_10",
+    "name_en": "Secret Hand 10",
+    "name_pt": "Mão Secreta 10",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 148,
+    "mult": 19,
+    "l_chips": 41,
+    "l_mult": 4,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_11",
+    "name_en": "Secret Hand 11",
+    "name_pt": "Mão Secreta 11",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 155,
+    "mult": 20,
+    "l_chips": 42,
+    "l_mult": 5,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_12",
+    "name_en": "Secret Hand 12",
+    "name_pt": "Mão Secreta 12",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 162,
+    "mult": 21,
+    "l_chips": 43,
+    "l_mult": 3,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_13",
+    "name_en": "Secret Hand 13",
+    "name_pt": "Mão Secreta 13",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 169,
+    "mult": 22,
+    "l_chips": 44,
+    "l_mult": 4,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_14",
+    "name_en": "Secret Hand 14",
+    "name_pt": "Mão Secreta 14",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 176,
+    "mult": 23,
+    "l_chips": 45,
+    "l_mult": 5,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_15",
+    "name_en": "Secret Hand 15",
+    "name_pt": "Mão Secreta 15",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 183,
+    "mult": 25,
+    "l_chips": 41,
+    "l_mult": 3,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_16",
+    "name_en": "Secret Hand 16",
+    "name_pt": "Mão Secreta 16",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 190,
+    "mult": 26,
+    "l_chips": 42,
+    "l_mult": 4,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_17",
+    "name_en": "Secret Hand 17",
+    "name_pt": "Mão Secreta 17",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 197,
+    "mult": 27,
+    "l_chips": 43,
+    "l_mult": 5,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_18",
+    "name_en": "Secret Hand 18",
+    "name_pt": "Mão Secreta 18",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 204,
+    "mult": 28,
+    "l_chips": 44,
+    "l_mult": 3,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_19",
+    "name_en": "Secret Hand 19",
+    "name_pt": "Mão Secreta 19",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 211,
+    "mult": 29,
+    "l_chips": 45,
+    "l_mult": 4,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_2",
+    "name_en": "Secret Hand 2",
+    "name_pt": "Mão Secreta 2",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 92,
+    "mult": 9,
+    "l_chips": 43,
+    "l_mult": 5,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_20",
+    "name_en": "Secret Hand 20",
+    "name_pt": "Mão Secreta 20",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 218,
+    "mult": 31,
+    "l_chips": 41,
+    "l_mult": 5,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_21",
+    "name_en": "Secret Hand 21",
+    "name_pt": "Mão Secreta 21",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 225,
+    "mult": 32,
+    "l_chips": 42,
+    "l_mult": 3,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_22",
+    "name_en": "Secret Hand 22",
+    "name_pt": "Mão Secreta 22",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 232,
+    "mult": 33,
+    "l_chips": 43,
+    "l_mult": 4,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_23",
+    "name_en": "Secret Hand 23",
+    "name_pt": "Mão Secreta 23",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 239,
+    "mult": 34,
+    "l_chips": 44,
+    "l_mult": 5,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_24",
+    "name_en": "Secret Hand 24",
+    "name_pt": "Mão Secreta 24",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 246,
+    "mult": 35,
+    "l_chips": 45,
+    "l_mult": 3,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_25",
+    "name_en": "Secret Hand 25",
+    "name_pt": "Mão Secreta 25",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 253,
+    "mult": 37,
+    "l_chips": 41,
+    "l_mult": 4,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_26",
+    "name_en": "Secret Hand 26",
+    "name_pt": "Mão Secreta 26",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 260,
+    "mult": 38,
+    "l_chips": 42,
+    "l_mult": 5,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_27",
+    "name_en": "Secret Hand 27",
+    "name_pt": "Mão Secreta 27",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 267,
+    "mult": 39,
+    "l_chips": 43,
+    "l_mult": 3,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_3",
+    "name_en": "Secret Hand 3",
+    "name_pt": "Mão Secreta 3",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 99,
+    "mult": 10,
+    "l_chips": 44,
+    "l_mult": 3,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_4",
+    "name_en": "Secret Hand 4",
+    "name_pt": "Mão Secreta 4",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 106,
+    "mult": 11,
+    "l_chips": 45,
+    "l_mult": 4,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_5",
+    "name_en": "Secret Hand 5",
+    "name_pt": "Mão Secreta 5",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 113,
+    "mult": 13,
+    "l_chips": 41,
+    "l_mult": 5,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_6",
+    "name_en": "Secret Hand 6",
+    "name_pt": "Mão Secreta 6",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 120,
+    "mult": 14,
+    "l_chips": 42,
+    "l_mult": 3,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_7",
+    "name_en": "Secret Hand 7",
+    "name_pt": "Mão Secreta 7",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 127,
+    "mult": 15,
+    "l_chips": 43,
+    "l_mult": 4,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_8",
+    "name_en": "Secret Hand 8",
+    "name_pt": "Mão Secreta 8",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 134,
+    "mult": 16,
+    "l_chips": 44,
+    "l_mult": 5,
+    "secret": true
+  },
+  {
+    "key": "secret_hand_9",
+    "name_en": "Secret Hand 9",
+    "name_pt": "Mão Secreta 9",
+    "desc_en": [
+      "?????"
+    ],
+    "desc_pt": [
+      "?????"
+    ],
+    "chips": 141,
+    "mult": 17,
+    "l_chips": 45,
+    "l_mult": 3,
+    "secret": true
+  }
+]

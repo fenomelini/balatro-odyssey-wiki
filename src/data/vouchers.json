@@ -1,0 +1,3332 @@
+[
+  {
+    "key": "ace_v",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_ace.png",
+    "name_en": "Ace",
+    "name_pt": "Ás",
+    "desc_en": [
+      "{C:attention}Aces{} give{}",
+      "{C:chips}+20{} Chips{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Ases{} dão{}",
+      "{C:chips}+20{} Fichas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "alchemist",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_alchemist.png",
+    "name_en": "Alchemist",
+    "name_pt": "Alquimista",
+    "desc_en": [
+      "Transmute cards to",
+      "{C:attention}Gold{}"
+    ],
+    "desc_pt": [
+      "Transmuta cartas em",
+      "{C:attention}Ouro{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "amulet",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_amulet.png",
+    "name_en": "Amulet",
+    "name_pt": "Amuleto",
+    "desc_en": [
+      "{C:attention}Lucky Cards{} give{}",
+      "{C:attention}2x{} more Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Sorte{} dão{}",
+      "{C:attention}2x{} mais Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "anvil",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_anvil.png",
+    "name_en": "Anvil",
+    "name_pt": "Bigorna",
+    "desc_en": [
+      "Improves {C:attention}Platinum{}",
+      "Card{} bonus"
+    ],
+    "desc_pt": [
+      "Melhora o bônus de",
+      "{C:attention}Cartas de Platina{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "apprentice",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_apprentice.png",
+    "name_en": "Apprentice",
+    "name_pt": "Aprendiz",
+    "desc_en": [
+      "{C:attention}+1{} Consumable Slot{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+1{} Espaço de{}",
+      "Consumível"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "archaeologist",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_archaeologist.png",
+    "name_en": "Archaeologist",
+    "name_pt": "Arqueólogo",
+    "desc_en": [
+      "Find buried items in",
+      "{C:attention}Blinds{}"
+    ],
+    "desc_pt": [
+      "Encontra itens enterrados nos",
+      "{C:attention}Blinds{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "artist",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_artist.png",
+    "name_en": "Artist",
+    "name_pt": "Artista",
+    "desc_en": [
+      "{C:attention}Joker Editions{} are{}",
+      "free"
+    ],
+    "desc_pt": [
+      "{C:attention}Edições de Curingas{}",
+      "são gratuitas"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "asteroid",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_asteroid.png",
+    "name_en": "Asteroid",
+    "name_pt": "Asteroide",
+    "desc_en": [
+      "{C:tarot}Tarot Cards{} appear{}",
+      "{C:attention}2X{} more frequently{}"
+    ],
+    "desc_pt": [
+      "Cartas de {C:tarot}Tarô{} aparecem{}",
+      "{C:attention}2X{} mais{}",
+      "frequentemente"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "astronomer",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_astronomer.png",
+    "name_en": "Astronomer",
+    "name_pt": "Astrônomo",
+    "desc_en": [
+      "{C:planet}Planets{} in shop are{}",
+      "free"
+    ],
+    "desc_pt": [
+      "{C:planet}Planetas{} na loja são{}",
+      "grátis"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "bank",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_bank.png",
+    "name_en": "Bank",
+    "name_pt": "Banco",
+    "desc_en": [
+      "Increased interest at end of round"
+    ],
+    "desc_pt": [
+      "Juros aumentados no final da rodada"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "bishop",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_bishop.png",
+    "name_en": "Bishop",
+    "name_pt": "Bispo",
+    "desc_en": [
+      "{C:attention}Face Cards{} give{}",
+      "{X:mult,C:white} X1.2 {} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Realeza{} dão{}",
+      "{X:mult,C:white} X1.2 {} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "black_market",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_black_market.png",
+    "name_en": "Black Market",
+    "name_pt": "Mercado Negro",
+    "desc_en": [
+      "{C:attention}Rare Jokers{}",
+      "{C:attention}2x{} more common{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Curingas Raros{}",
+      "{C:attention}2x{} mais comuns{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "blower",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_blower.png",
+    "name_en": "Blower",
+    "name_pt": "Soprador",
+    "desc_en": [
+      "{C:attention}Ceramic Cards{} don't{}",
+      "break"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Cerâmica{}",
+      "não quebram"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "card_v",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_card.png",
+    "name_en": "Card",
+    "name_pt": "Carta",
+    "desc_en": [
+      "{C:attention}+1{} Card Slot in Shop{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+1{} Slot de carta na{}",
+      "Loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "cartographer",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_cartographer.png",
+    "name_en": "Cartographer",
+    "name_pt": "Cartógrafo",
+    "desc_en": [
+      "Improves card quality in Shop"
+    ],
+    "desc_pt": [
+      "Melhora a qualidade das cartas na",
+      "Loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "casino",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_casino.png",
+    "name_en": "Casino",
+    "name_pt": "Cassino",
+    "desc_en": [
+      "Reduced {C:attention}Reroll{} cost{}"
+    ],
+    "desc_pt": [
+      "Custo de {C:attention}Reroll{}",
+      "reduzido"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "ceramic",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_ceramic.png",
+    "name_en": "Ceramic",
+    "name_pt": "Cerâmica",
+    "desc_en": [
+      "{C:attention}Ceramic Cards{} don't{}",
+      "break"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Cerâmica{}",
+      "não quebram"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "glass_2",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_glass_2.png",
+    "name_en": "Ceramic",
+    "name_pt": "Cerâmica",
+    "desc_en": [
+      "{C:attention}Ceramic Cards{} give{}",
+      "{X:mult,C:white} X2 {} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Cerâmica{} dão{}",
+      "{X:mult,C:white} X2 {} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "chip",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_chip.png",
+    "name_en": "Chip",
+    "name_pt": "Ficha",
+    "desc_en": [
+      "{C:chips}+50{} Base Chips{}"
+    ],
+    "desc_pt": [
+      "{C:chips}+50{} Fichas de bônus base{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "cloning",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_cloning.png",
+    "name_en": "Cloning",
+    "name_pt": "Clonagem",
+    "desc_en": [
+      "{C:attention}+1{} Card Slot in Shop{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+1{} Slot de carta na{}",
+      "Loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "cloth",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_cloth.png",
+    "name_en": "Cloth",
+    "name_pt": "Pano",
+    "desc_en": [
+      "{C:attention}Cloth Cards{} give{}",
+      "bonus"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Pano{} dão{}",
+      "bônus"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "collector",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_collector.png",
+    "name_en": "Collector",
+    "name_pt": "Colecionador",
+    "desc_en": [
+      "Increases {C:mult}Mult i{} based on{}",
+      "collection"
+    ],
+    "desc_pt": [
+      "Aumenta o {C:mult}Multi{} baseado{}",
+      "na coleção"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "comet_1",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_comet_1.png",
+    "name_en": "Comet",
+    "name_pt": "Cometa",
+    "desc_en": [
+      "{C:spectral}Spectral Cards{} can{}",
+      "now appear in the shop"
+    ],
+    "desc_pt": [
+      "Cartas {C:spectral}Espectrais{}",
+      "podem aparecer na loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "compass",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_compass.png",
+    "name_en": "Compass",
+    "name_pt": "Bússola",
+    "desc_en": [
+      "Reveal {C:attention}hidden cards{}"
+    ],
+    "desc_pt": [
+      "Revela {C:attention}cartas{}",
+      "ocultas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "coupon",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_coupon.png",
+    "name_en": "Coupon",
+    "name_pt": "Cupom",
+    "desc_en": [
+      "Shop items cost {C:attention}50%{}",
+      "less"
+    ],
+    "desc_pt": [
+      "Itens da Loja custam",
+      "{C:attention}50%{} a menos{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "dark_matter",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_dark_matter.png",
+    "name_en": "Dark Matter",
+    "name_pt": "Matéria Escura",
+    "desc_en": [
+      "{C:dark_edition}Negative Jokers{}",
+      "appear more often"
+    ],
+    "desc_pt": [
+      "{C:dark_edition}Curingas{}",
+      "Negativos{} aparecem mais",
+      "frequentemente"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "deep_space_obs",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_deep_space_obs.png",
+    "name_en": "Deep Space Obs.",
+    "name_pt": "Obs. do Espaço Profundo",
+    "desc_en": [
+      "{C:attention}+1{} Planet Slot in{}",
+      "Shop"
+    ],
+    "desc_pt": [
+      "{C:attention}+1{} Espaço de Planeta{}",
+      "na Loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "diamond_v",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_diamond.png",
+    "name_en": "Diamond Cards",
+    "name_pt": "Cartas de Diamante",
+    "desc_en": [
+      "Enable",
+      "{C:attention}Diamond-Infused{}",
+      "cards"
+    ],
+    "desc_pt": [
+      "Habilita {C:attention}Cartas{}",
+      "Infundidas com Diamante{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "dice_v",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_dice.png",
+    "name_en": "Dice",
+    "name_pt": "Dados",
+    "desc_en": [
+      "{C:attention}Reroll{} cost reduced{}",
+      "by {C:money}$1{}"
+    ],
+    "desc_pt": [
+      "Custo de {C:attention}Reroll{}",
+      "reduzido em {C:money}$1{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "dreamer",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_dreamer.png",
+    "name_en": "Dreamer",
+    "name_pt": "Sonhador",
+    "desc_en": [
+      "Gain bonus when",
+      "{C:attention}skipping{} round{}"
+    ],
+    "desc_pt": [
+      "Ganha bônus ao {C:attention}pular{}",
+      "rodada"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "earth",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_earth.png",
+    "name_en": "Earth",
+    "name_pt": "Terra",
+    "desc_en": [
+      "{C:attention}(2-10) rank{} give{}",
+      "{C:chips}+5{} Chips{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de rank 2-10{}",
+      "dão {C:chips}+5{} Fichas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "emerald",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_emerald.png",
+    "name_en": "Emerald Cards",
+    "name_pt": "Cartas de Esmeralda",
+    "desc_en": [
+      "Enable",
+      "{C:attention}Emerald-Infused{}",
+      "cards"
+    ],
+    "desc_pt": [
+      "Habilita {C:attention}Cartas{}",
+      "Infundidas com Esmeralda{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "feather",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_feather.png",
+    "name_en": "Feather",
+    "name_pt": "Pena",
+    "desc_en": [
+      "{C:blue}+1{} Discard per round{}"
+    ],
+    "desc_pt": [
+      "{C:blue}+1{} Descarte por rodada{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "fire",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_fire.png",
+    "name_en": "Fire",
+    "name_pt": "Fogo",
+    "desc_en": [
+      "{C:attention}Scored cards{} give{}",
+      "{C:mult}+2{} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas pontuadas{} dão{}",
+      "{C:mult}+2{} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "fuel_tank",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_fuel_tank.png",
+    "name_en": "Fuel Tank",
+    "name_pt": "Tanque de Combustível",
+    "desc_en": [
+      "{C:money}+$10{} Interest Cap{}"
+    ],
+    "desc_pt": [
+      "{C:money}+$10{} Limite de Juros{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "futurist",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_futurist.png",
+    "name_en": "Futurist",
+    "name_pt": "Futurista",
+    "desc_en": [
+      "Reduce {C:attention}Ante{} by{}",
+      "{C:attention}1{}"
+    ],
+    "desc_pt": [
+      "Reduz a {C:attention}Aposta{}",
+      "(Aposta){} em {C:attention}1{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "gambler",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_gambler.png",
+    "name_en": "Gambler",
+    "name_pt": "Jogador",
+    "desc_en": [
+      "{C:attention}Rerolls{} give chance{}",
+      "to gain {C:money}$5{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Rerolls{} dão chance{}",
+      "de ganhar {C:money}$5{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "gold_coupon",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_gold_coupon.png",
+    "name_en": "Gold Coupon",
+    "name_pt": "Cupom Dourado",
+    "desc_en": [
+      "Shop items cost {C:attention}50%{}",
+      "less"
+    ],
+    "desc_pt": [
+      "Itens da Loja custam",
+      "{C:attention}50%{} a menos{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "gold_plating",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_gold_plating.png",
+    "name_en": "Gold Plating",
+    "name_pt": "Folheado a Ouro",
+    "desc_en": [
+      "{C:attention}Platinum Cards{} give{}",
+      "bonuses"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Platina{}",
+      "dão bônus"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "ice",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_ice.png",
+    "name_en": "Ice",
+    "name_pt": "Gelo",
+    "desc_en": [
+      "{C:attention}Scored cards{} not{}",
+      "consumed"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas pontuadas{} não{}",
+      "são consumidas"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "insurance",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_insurance.png",
+    "name_en": "Insurance",
+    "name_pt": "Seguro",
+    "desc_en": [
+      "Forgives {C:money}$10{} debt in{}",
+      "Shop"
+    ],
+    "desc_pt": [
+      "Perdoa {C:money}$10{} de dívida na{}",
+      "Loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "investment",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_investment.png",
+    "name_en": "Investment",
+    "name_pt": "Investimento",
+    "desc_en": [
+      "Gain {C:money}$5{} when buying a{}",
+      "{C:attention}Joker{}"
+    ],
+    "desc_pt": [
+      "Ganha {C:money}$5{} ao comprar um{}",
+      "{C:attention}Curinga{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "jester_v",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_jester.png",
+    "name_en": "Jester",
+    "name_pt": "Bobo da Corte",
+    "desc_en": [
+      "{C:attention}Jokers{} give{}",
+      "{C:mult}+5{} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Curingas{} dão{}",
+      "{C:mult}+5{} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "joker_v",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_joker.png",
+    "name_en": "Joker",
+    "name_pt": "Curinga",
+    "desc_en": [
+      "{C:attention}+1{} Joker Slot{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+1{} Espaço de Curinga{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "juggler",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_juggler.png",
+    "name_en": "Juggler",
+    "name_pt": "Malabarista",
+    "desc_en": [
+      "{C:attention}+1{} Hand Size{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+1{} no Tamanho da Mão{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "key",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_key.png",
+    "name_en": "Key",
+    "name_pt": "Chave",
+    "desc_en": [
+      "Open locked {C:attention}chests{}"
+    ],
+    "desc_pt": [
+      "Abre {C:attention}baús{} trancados{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "laboratory",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_laboratory.png",
+    "name_en": "Laboratory",
+    "name_pt": "Laboratório",
+    "desc_en": [
+      "{C:attention}+1{} Spectral Slot in{}",
+      "Shop"
+    ],
+    "desc_pt": [
+      "{C:attention}+1{} Espaço de{}",
+      "Espectral na Loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "laser",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_laser.png",
+    "name_en": "Laser",
+    "name_pt": "Laser",
+    "desc_en": [
+      "{C:chips}+50{} Chips for each{}",
+      "{C:attention}Platinum Card{}"
+    ],
+    "desc_pt": [
+      "{C:chips}+50{} Fichas para cada{}",
+      "{C:attention}Carta de Platina{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "lens",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_lens.png",
+    "name_en": "Lens",
+    "name_pt": "Lente",
+    "desc_en": [
+      "See top of {C:attention}deck{}"
+    ],
+    "desc_pt": [
+      "Permite ver o topo do",
+      "{C:attention}baralho{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "library",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_library.png",
+    "name_en": "Library",
+    "name_pt": "Biblioteca",
+    "desc_en": [
+      "{C:attention}+1{} Tarot Slot in{}",
+      "Shop"
+    ],
+    "desc_pt": [
+      "{C:attention}+1{} Espaço de Tarô na{}",
+      "Loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "light",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_light.png",
+    "name_en": "Light",
+    "name_pt": "Luz",
+    "desc_en": [
+      "{C:attention}No-enhancement cards{}",
+      "give {C:chips}+5{} Chips{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas sem{}",
+      "aprimoramento{} dão {C:chips}+5{}",
+      "Fichas"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "lightning_v",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_lightning.png",
+    "name_en": "Lightning",
+    "name_pt": "Raio",
+    "desc_en": [
+      "Start with {C:attention}1 Energy{}"
+    ],
+    "desc_pt": [
+      "Começa com {C:attention}1 Energia{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "lock",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_lock.png",
+    "name_en": "Lock",
+    "name_pt": "Cadeado",
+    "desc_en": [
+      "Can lock {C:attention}Jokers{}"
+    ],
+    "desc_pt": [
+      "Pode trancar",
+      "{C:attention}Curingas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "magic_mirror",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_magic_mirror.png",
+    "name_en": "Magic Mirror",
+    "name_pt": "Espelho Mágico",
+    "desc_en": [
+      "Reflects negative effects"
+    ],
+    "desc_pt": [
+      "Reflete efeitos negativos"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "magician",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_magician.png",
+    "name_en": "Magician",
+    "name_pt": "Mago",
+    "desc_en": [
+      "Using a {C:tarot}Tarot card{} gives",
+      "{C:money}$1{} after use"
+    ],
+    "desc_pt": [
+      "Usar uma carta de {C:tarot}Tarô{}",
+      "dá {C:money}$1{} após o uso"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "magnet",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_magnet.png",
+    "name_en": "Magnet",
+    "name_pt": "Ímã",
+    "desc_en": [
+      "Attracts {C:attention}same cards{}",
+      "to hand"
+    ],
+    "desc_pt": [
+      "Atrai {C:attention}cartas iguais{}",
+      "para sua mão"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "map",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_map.png",
+    "name_en": "Map",
+    "name_pt": "Mapa",
+    "desc_en": [
+      "{C:attention}+1{} choice in{}",
+      "{C:attention}Packs{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+1{} escolha em{}",
+      "{C:attention}Pacotes{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "maximalist",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_maximalist.png",
+    "name_en": "Maximalist",
+    "name_pt": "Maximalista",
+    "desc_en": [
+      "{C:chips}+100{} Chips{}"
+    ],
+    "desc_pt": [
+      "{C:chips}+100{} Fichas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "mechanic",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_mechanic.png",
+    "name_en": "Mechanic",
+    "name_pt": "Mecânico",
+    "desc_en": [
+      "{C:attention}Enhanced cards{}",
+      "appear more often"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas Aprimoradas{}",
+      "aparecem mais"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "member",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_member.png",
+    "name_en": "Member",
+    "name_pt": "Membro",
+    "desc_en": [
+      "{C:money}$2{} discount in shop{}"
+    ],
+    "desc_pt": [
+      "Desconto de {C:money}$2{} na loja{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "metal",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_metal.png",
+    "name_en": "Metal",
+    "name_pt": "Metal",
+    "desc_en": [
+      "{C:attention}Platinum Cards{} give{}",
+      "{C:chips}+10{} Chips{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Platina{}",
+      "dão {C:chips}+10{} Fichas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "mimic",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_mimic.png",
+    "name_en": "Mimic",
+    "name_pt": "Mímico",
+    "desc_en": [
+      "Copy effect of first",
+      "{C:attention}Voucher{}"
+    ],
+    "desc_pt": [
+      "Copia o efeito do primeiro",
+      "{C:attention}Cupom{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "minimalist",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_minimalist.png",
+    "name_en": "Minimalist",
+    "name_pt": "Minimalista",
+    "desc_en": [
+      "{C:mult}+20{} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:mult}+20{} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "mult_v",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_mult.png",
+    "name_en": "Mult",
+    "name_pt": "Multi",
+    "desc_en": [
+      "{C:mult}+5{} Base Mult{}"
+    ],
+    "desc_pt": [
+      "{C:mult}+5{} Multi de bônus base{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "novice",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_novice.png",
+    "name_en": "Novice",
+    "name_pt": "Novato",
+    "desc_en": [
+      "Experience bonus"
+    ],
+    "desc_pt": [
+      "Bônus de experiência"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "optimist",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_optimist.png",
+    "name_en": "Optimist",
+    "name_pt": "Otimista",
+    "desc_en": [
+      "{C:green}Probabilities{} always in{}",
+      "your favor"
+    ],
+    "desc_pt": [
+      "{C:green}Probabilidades{} sempre a{}",
+      "seu favor"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "pack_v",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_pack.png",
+    "name_en": "Pack",
+    "name_pt": "Pacote",
+    "desc_en": [
+      "{C:attention}+1{} Pack Slot in Shop{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+1{} Slot de pacote na{}",
+      "Loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "paper",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_paper.png",
+    "name_en": "Paper",
+    "name_pt": "Papel",
+    "desc_en": [
+      "{C:attention}Paper Cards{} have{}",
+      "{C:attention}2x{} trigger chance{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Papel{} têm{}",
+      "{C:attention}2x{} chance de ativar{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "partner",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_partner.png",
+    "name_en": "Partner",
+    "name_pt": "Parceiro",
+    "desc_en": [
+      "Copying {C:attention}Jokers{} cost{}",
+      "{C:attention}50%{} less{}"
+    ],
+    "desc_pt": [
+      "Copiar {C:attention}Curingas{}",
+      "custa {C:attention}50%{} a menos{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "pawn_v",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_pawn.png",
+    "name_en": "Pawn",
+    "name_pt": "Peão",
+    "desc_en": [
+      "{C:attention}(2-5){} give{}",
+      "{C:chips}+10{} Chips{}"
+    ],
+    "desc_pt": [
+      "{C:attention}(2-5){} dão{}",
+      "{C:chips}+10{} Fichas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "pessimist",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_pessimist.png",
+    "name_en": "Pessimist",
+    "name_pt": "Pessimista",
+    "desc_en": [
+      "Enemies have {C:attention}25%{}",
+      "less health"
+    ],
+    "desc_pt": [
+      "Inimigos têm {C:attention}25%{}",
+      "menos vida"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "plastic",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_plastic.png",
+    "name_en": "Plastic",
+    "name_pt": "Plástico",
+    "desc_en": [
+      "{C:attention}Plastic Cards{} don't{}",
+      "break"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Plástico{}",
+      "não quebram"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "platinum_v",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_platinum.png",
+    "name_en": "Platinum Cards",
+    "name_pt": "Cartas de Platina",
+    "desc_en": [
+      "Enable",
+      "{C:attention}Platinum-Infused{}",
+      "cards"
+    ],
+    "desc_pt": [
+      "Habilita {C:attention}Cartas{}",
+      "Infundidas com Platina{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "prism_v",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_prism.png",
+    "name_en": "Prism",
+    "name_pt": "Prisma",
+    "desc_en": [
+      "All {C:attention}Suits{} give{}",
+      "{X:mult,C:white} X1.1 {} bonus{}"
+    ],
+    "desc_pt": [
+      "Todos os {C:attention}Naipes{} dão{}",
+      "bônus {X:mult,C:white} X1.1 {}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "propellant",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_propellant.png",
+    "name_en": "Propellant",
+    "name_pt": "Propelente",
+    "desc_en": [
+      "{C:blue}+1{} Discard per round{}"
+    ],
+    "desc_pt": [
+      "{C:blue}+1{} Descarte por rodada{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "quantum_bit",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_quantum_bit.png",
+    "name_en": "Quantum Bit",
+    "name_pt": "Bit Quântico",
+    "desc_en": [
+      "Chance to {C:attention}double{}",
+      "card effects"
+    ],
+    "desc_pt": [
+      "Chance de {C:attention}dobrar{}",
+      "efeitos de cartas"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "queen_v",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_queen.png",
+    "name_en": "Queen",
+    "name_pt": "Rainha",
+    "desc_en": [
+      "{C:attention}Face Cards{} give{}",
+      "{C:chips}+10{} Chips{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Realeza{} dão{}",
+      "{C:chips}+10{} Fichas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "realist",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_realist.png",
+    "name_en": "Realist",
+    "name_pt": "Realista",
+    "desc_en": [
+      "Shops always have what you need"
+    ],
+    "desc_pt": [
+      "Lojas sempre têm o que você precisa"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "recruiter",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_recruiter.png",
+    "name_en": "Recruiter",
+    "name_pt": "Recrutador",
+    "desc_en": [
+      "{C:attention}Uncommon Jokers{}",
+      "appear more"
+    ],
+    "desc_pt": [
+      "{C:attention}Curingas Incomuns{}",
+      "aparecem mais"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "recycler",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_recycler.png",
+    "name_en": "Recycler",
+    "name_pt": "Reciclador",
+    "desc_en": [
+      "Reduces cost of Reroll"
+    ],
+    "desc_pt": [
+      "Reduz o custo de Reroll"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "rocket",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_rocket.png",
+    "name_en": "Rocket",
+    "name_pt": "Foguete",
+    "desc_en": [
+      "{C:attention}+1{} Hand Size{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+1{} no tamanho da mão{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "rubber",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_rubber.png",
+    "name_en": "Rubber",
+    "name_pt": "Borracha",
+    "desc_en": [
+      "{C:attention}Rubber Cards{} give{}",
+      "{X:mult,C:white} X2.5 {} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Borracha{}",
+      "dão {X:mult,C:white} X2.5 {} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "ruby",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_ruby.png",
+    "name_en": "Ruby Cards",
+    "name_pt": "Cartas de Rubi",
+    "desc_en": [
+      "Enable {C:attention}Ruby-Infused{}",
+      "cards"
+    ],
+    "desc_pt": [
+      "Habilita {C:attention}Cartas{}",
+      "Infundidas com Rubi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "satellite",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_satellite.png",
+    "name_en": "Satellite",
+    "name_pt": "Satélite",
+    "desc_en": [
+      "{C:attention}+1{} Consumable slot{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+1{} Espaço de{}",
+      "consumível"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "scout",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_scout.png",
+    "name_en": "Scout",
+    "name_pt": "Batedor",
+    "desc_en": [
+      "Reveals next {C:attention}Boss{}",
+      "Blind{}"
+    ],
+    "desc_pt": [
+      "Revela o próximo {C:attention}Boss{}",
+      "Blind{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "seed",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_seed.png",
+    "name_en": "Seed",
+    "name_pt": "Semente",
+    "desc_en": [
+      "Plant cards that grow in",
+      "{C:attention}Editions{}"
+    ],
+    "desc_pt": [
+      "Planta cartas que crescem em",
+      "{C:attention}Edições{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "shadow_v",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_shadow.png",
+    "name_en": "Shadow",
+    "name_pt": "Sombra",
+    "desc_en": [
+      "{C:attention}Debuffed cards{} can{}",
+      "score"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas com Debuff{}",
+      "pontuam"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "shield",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_shield.png",
+    "name_en": "Shield",
+    "name_pt": "Escudo",
+    "desc_en": [
+      "Prevents {C:red}defeat{} once{}"
+    ],
+    "desc_pt": [
+      "Previne a {C:red}derrota{} uma vez{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "solar_panel",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_solar_panel.png",
+    "name_en": "Solar Panel",
+    "name_pt": "Painel Solar",
+    "desc_en": [
+      "{C:money}+$1{} per hand at end of{}",
+      "round"
+    ],
+    "desc_pt": [
+      "{C:money}+$1{} por mão ao final da{}",
+      "rodada"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "squire_v",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_squire.png",
+    "name_en": "Squire",
+    "name_pt": "Escudeiro",
+    "desc_en": [
+      "Gain {C:attention}Armor{} on win{}"
+    ],
+    "desc_pt": [
+      "Ganha {C:attention}Armadura{} ao{}",
+      "vencer"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "steelworks",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_steelworks.png",
+    "name_en": "Steelworks",
+    "name_pt": "Siderúrgica",
+    "desc_en": [
+      "{C:attention}Rubber Cards{} give{}",
+      "{X:mult,C:white} X2.5 {} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Borracha{}",
+      "dão {X:mult,C:white} X2.5 {} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "stone_2",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_stone_2.png",
+    "name_en": "Stone",
+    "name_pt": "Pedra",
+    "desc_en": [
+      "{C:attention}Stone Cards{} give{}",
+      "{C:chips}+10{} Chips{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Pedra{} dão{}",
+      "{C:chips}+10{} Fichas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "tax_haven",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_tax_haven.png",
+    "name_en": "Tax Haven",
+    "name_pt": "Paraíso Fiscal",
+    "desc_en": [
+      "{C:money}$10{} extra interest{}"
+    ],
+    "desc_pt": [
+      "{C:money}$10{} de juros extras{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "telescope",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_telescope.png",
+    "name_en": "Telescope",
+    "name_pt": "Telescópio",
+    "desc_en": [
+      "{C:planet}Planet Cards{} appear{}",
+      "{C:attention}2X{} more frequently{}"
+    ],
+    "desc_pt": [
+      "Cartas de {C:planet}Planeta{}",
+      "aparecem {C:attention}2X{} mais{}",
+      "frequentemente"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "time_capsule",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_time_capsule.png",
+    "name_en": "Time Capsule",
+    "name_pt": "Cápsula do Tempo",
+    "desc_en": [
+      "Allows revisiting past",
+      "{C:attention}Blinds{}"
+    ],
+    "desc_pt": [
+      "Permite revisitar",
+      "{C:attention}Blinds{} passados{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "warp_drive",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_warp_drive.png",
+    "name_en": "Warp Drive",
+    "name_pt": "Dobra Espacial",
+    "desc_en": [
+      "Ganha {C:money}$5{} on Skip{}",
+      "{C:attention}Blind{}"
+    ],
+    "desc_pt": [
+      "Ganha {C:money}$5{} ao pular{}",
+      "{C:attention}Blind{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "water_v",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_water.png",
+    "name_en": "Water",
+    "name_pt": "Água",
+    "desc_en": [
+      "{C:attention}Flushes{} give{}",
+      "{C:mult}+1{} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Flushes{} dão{}",
+      "{C:mult}+1{} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "wind",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_wind.png",
+    "name_en": "Wind",
+    "name_pt": "Vento",
+    "desc_en": [
+      "{C:attention}Discards{} shuffle{}",
+      "hand and give {C:money}$1{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Descartes{} baralham a{}",
+      "mão e dão {C:money}$1{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "wood",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_wood.png",
+    "name_en": "Wood",
+    "name_pt": "Madeira",
+    "desc_en": [
+      "{C:attention}Wooden Cards{} give{}",
+      "chance of {C:money}$1{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Madeira{}",
+      "dão chance de {C:money}$1{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "xmult_v",
+    "tier": 1,
+    "pair_key": null,
+    "sprite": "vouchers/odyssey_v_xmult.png",
+    "name_en": "Xmulti",
+    "name_pt": "Xmulti",
+    "desc_en": [
+      "{X:mult,C:white} X1.1 {} Base Mult{}"
+    ],
+    "desc_pt": [
+      "{X:mult,C:white} X1.1 {} Multi Base{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "absolute_zero_v",
+    "tier": 2,
+    "pair_key": "ice",
+    "sprite": "vouchers/odyssey_v_absolute_zero.png",
+    "name_en": "Absolute Zero",
+    "name_pt": "Zero Absoluto",
+    "desc_en": [
+      "{C:attention}Scored cards{} stay in{}",
+      "hand and grant {C:mult}+5{} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas pontuadas{}",
+      "ficam na mão e dão {C:mult}+5{}",
+      "Multi"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "accumulator",
+    "tier": 2,
+    "pair_key": "maximalist",
+    "sprite": "vouchers/odyssey_v_accumulator.png",
+    "name_en": "Accumulator",
+    "name_pt": "Acumulador",
+    "desc_en": [
+      "{C:chips}+200{} Chips{}"
+    ],
+    "desc_pt": [
+      "{C:chips}+200{} Fichas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "acrobat",
+    "tier": 2,
+    "pair_key": "juggler",
+    "sprite": "vouchers/odyssey_v_acrobat.png",
+    "name_en": "Acrobat",
+    "name_pt": "Acrobata",
+    "desc_en": [
+      "{C:attention}+2{} Hand Size{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+2{} no Tamanho da Mão{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "alloy",
+    "tier": 2,
+    "pair_key": "metal",
+    "sprite": "vouchers/odyssey_v_alloy.png",
+    "name_en": "Alloy",
+    "name_pt": "Liga",
+    "desc_en": [
+      "{C:attention}Platinum Cards{} give{}",
+      "{C:chips}+50{} Chips{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Platina{}",
+      "dão {C:chips}+50{} Fichas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "archives",
+    "tier": 2,
+    "pair_key": "library",
+    "sprite": "vouchers/odyssey_v_archives.png",
+    "name_en": "Archives",
+    "name_pt": "Arquivos",
+    "desc_en": [
+      "{C:attention}+2{} Tarot Slots in{}",
+      "Shop"
+    ],
+    "desc_pt": [
+      "{C:attention}+2{} Espaços de Tarô{}",
+      "na Loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "atlas_v",
+    "tier": 2,
+    "pair_key": "map",
+    "sprite": "vouchers/odyssey_v_atlas.png",
+    "name_en": "Atlas",
+    "name_pt": "Atlas",
+    "desc_en": [
+      "{C:attention}+2{} choices in{}",
+      "{C:attention}Packs{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+2{} escolhas em{}",
+      "{C:attention}Pacotes{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "bailout",
+    "tier": 2,
+    "pair_key": "insurance",
+    "sprite": "vouchers/odyssey_v_bailout.png",
+    "name_en": "Bailout",
+    "name_pt": "Fiança",
+    "desc_en": [
+      "Forgives {C:money}$20{} debt in{}",
+      "Shop"
+    ],
+    "desc_pt": [
+      "Perdoa {C:money}$20{} de dívida na{}",
+      "Loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "box",
+    "tier": 2,
+    "pair_key": "pack_v",
+    "sprite": "vouchers/odyssey_v_box.png",
+    "name_en": "Box",
+    "name_pt": "Caixa",
+    "desc_en": [
+      "{C:attention}+2{} Pack Slots in{}",
+      "Shop"
+    ],
+    "desc_pt": [
+      "{C:attention}+2{} Slots de pacotes{}",
+      "na Loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "circus",
+    "tier": 2,
+    "pair_key": "joker_v",
+    "sprite": "vouchers/odyssey_v_circus.png",
+    "name_en": "Circus",
+    "name_pt": "Circo",
+    "desc_en": [
+      "{C:attention}+2{} Joker Slots{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+2{} Espaços de{}",
+      "Curinga"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "contraband",
+    "tier": 2,
+    "pair_key": "black_market",
+    "sprite": "vouchers/odyssey_v_contraband.png",
+    "name_en": "Contraband",
+    "name_pt": "Contrabando",
+    "desc_en": [
+      "{C:green}1/100{} chance for{}",
+      "{C:attention}Legendary Jokers{}"
+    ],
+    "desc_pt": [
+      "{C:green}1 em 100{} de chance de{}",
+      "{C:attention}Curingas Lendários{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "converter",
+    "tier": 2,
+    "pair_key": "recycler",
+    "sprite": "vouchers/odyssey_v_converter.png",
+    "name_en": "Converter",
+    "name_pt": "Conversor",
+    "desc_en": [
+      "Reduces cost of Reroll by",
+      "{C:money}$2{}"
+    ],
+    "desc_pt": [
+      "Reduz o custo de Reroll em",
+      "{C:money}$2{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "core",
+    "tier": 2,
+    "pair_key": "fuel_tank",
+    "sprite": "vouchers/odyssey_v_core.png",
+    "name_en": "Core",
+    "name_pt": "Núcleo",
+    "desc_en": [
+      "{C:money}+$10{} Interest Cap{}"
+    ],
+    "desc_pt": [
+      "{C:money}+$10{} Limite de Juros{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "cosmologist",
+    "tier": 2,
+    "pair_key": "astronomer",
+    "sprite": "vouchers/odyssey_v_cosmologist.png",
+    "name_en": "Cosmologist",
+    "name_pt": "Cosmólogo",
+    "desc_en": [
+      "{C:planet}Planets{} can be used in{}",
+      "Shop"
+    ],
+    "desc_pt": [
+      "{C:planet}Planetas{} podem ser{}",
+      "usados na Loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "crystal_v",
+    "tier": 2,
+    "pair_key": "emerald",
+    "sprite": "vouchers/odyssey_v_crystal.png",
+    "name_en": "Crystal",
+    "name_pt": "Cristal",
+    "desc_en": [
+      "{C:attention}Emerald Cards{} grant{}",
+      "{C:chips}+50{} Chips{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Esmeralda{}",
+      "dão {C:chips}+50{} Fichas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "crystal_forge",
+    "tier": 2,
+    "pair_key": "blower",
+    "sprite": "vouchers/odyssey_v_crystal_forge.png",
+    "name_en": "Crystal Forge",
+    "name_pt": "Forja de Cristal",
+    "desc_en": [
+      "{C:attention}Ceramic Cards{} give{}",
+      "{X:mult,C:white} X3 {} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Cerâmica{}",
+      "dão {X:mult,C:white} X3 {} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "curator",
+    "tier": 2,
+    "pair_key": "collector",
+    "sprite": "vouchers/odyssey_v_curator.png",
+    "name_en": "Curator",
+    "name_pt": "Curador",
+    "desc_en": [
+      "Increases {C:mult}Mult i{} based on{}",
+      "collection"
+    ],
+    "desc_pt": [
+      "Aumenta o {C:mult}Multi{} baseado{}",
+      "na coleção"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "d20_v",
+    "tier": 2,
+    "pair_key": "dice_v",
+    "sprite": "vouchers/odyssey_v_d20.png",
+    "name_en": "D20",
+    "name_pt": "D20",
+    "desc_en": [
+      "{C:attention}Reroll{} cost reduced{}",
+      "by {C:money}$2{}"
+    ],
+    "desc_pt": [
+      "Custo de {C:attention}Reroll{}",
+      "reduzido em {C:money}$2{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "dark_energy",
+    "tier": 2,
+    "pair_key": "dark_matter",
+    "sprite": "vouchers/odyssey_v_dark_energy.png",
+    "name_en": "Dark Energy",
+    "name_pt": "Energia Escura",
+    "desc_en": [
+      "{C:dark_edition}Negative Jokers{}",
+      "appear {C:attention}4x{} more often{}"
+    ],
+    "desc_pt": [
+      "{C:dark_edition}Curingas{}",
+      "Negativos{} aparecem",
+      "{C:attention}4x{} mais{}",
+      "frequentemente"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "darkness",
+    "tier": 2,
+    "pair_key": "shadow_v",
+    "sprite": "vouchers/odyssey_v_darkness.png",
+    "name_en": "Darkness",
+    "name_pt": "Trevas",
+    "desc_en": [
+      "{C:dark_edition}Negative cards{}",
+      "give {X:mult,C:white} X1.5 {} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:dark_edition}Cartas Negativas{}",
+      "dão {X:mult,C:white} X1.5 {} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "deck_v",
+    "tier": 2,
+    "pair_key": "card_v",
+    "sprite": "vouchers/odyssey_v_deck.png",
+    "name_en": "Deck",
+    "name_pt": "Baralho",
+    "desc_en": [
+      "{C:attention}+2{} Card Slots in{}",
+      "Shop"
+    ],
+    "desc_pt": [
+      "{C:attention}+2{} Slots de cartas{}",
+      "na Loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "destroyer",
+    "tier": 2,
+    "pair_key": "laser",
+    "sprite": "vouchers/odyssey_v_destroyer.png",
+    "name_en": "Destroyer",
+    "name_pt": "Destruidor",
+    "desc_en": [
+      "{C:chips}+100{} Chips for each{}",
+      "{C:attention}Platinum Card{}"
+    ],
+    "desc_pt": [
+      "{C:chips}+100{} Fichas para cada{}",
+      "{C:attention}Carta de Platina{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "doppelganger",
+    "tier": 2,
+    "pair_key": "mimic",
+    "sprite": "vouchers/odyssey_v_doppelganger.png",
+    "name_en": "Doppelganger",
+    "name_pt": "Doppelganger",
+    "desc_en": [
+      "Copy effect of all",
+      "{C:attention}Vouchers{}"
+    ],
+    "desc_pt": [
+      "Copia o efeito de todos os",
+      "{C:attention}Cupons{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "dyson_sphere",
+    "tier": 2,
+    "pair_key": "solar_panel",
+    "sprite": "vouchers/odyssey_v_dyson_sphere.png",
+    "name_en": "Dyson Sphere",
+    "name_pt": "Esfera de Dyson",
+    "desc_en": [
+      "{C:money}+$1{} per hand at end of{}",
+      "round"
+    ],
+    "desc_pt": [
+      "{C:money}+$1{} por mão ao final da{}",
+      "rodada"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "distopian",
+    "tier": 2,
+    "pair_key": "pessimist",
+    "sprite": "vouchers/odyssey_v_distopian.png",
+    "name_en": "Dystopian",
+    "name_pt": "Distópico",
+    "desc_en": [
+      "Enemies have {C:attention}50%{}",
+      "less health"
+    ],
+    "desc_pt": [
+      "Inimigos têm {C:attention}50%{}",
+      "menos vida"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "electromagnet",
+    "tier": 2,
+    "pair_key": "magnet",
+    "sprite": "vouchers/odyssey_v_electromagnet.png",
+    "name_en": "Electromagnet",
+    "name_pt": "Eletroímã",
+    "desc_en": [
+      "Attracts {C:attention}same cards{}",
+      "to hand"
+    ],
+    "desc_pt": [
+      "Atrai {C:attention}cartas iguais{}",
+      "para sua mão"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "empress",
+    "tier": 2,
+    "pair_key": "queen_v",
+    "sprite": "vouchers/odyssey_v_empress.png",
+    "name_en": "Empress",
+    "name_pt": "Imperatriz",
+    "desc_en": [
+      "{C:attention}Face Cards{} give{}",
+      "{C:chips}+20{} Chips{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Realeza{} dão{}",
+      "{C:chips}+20{} Fichas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "engineer",
+    "tier": 2,
+    "pair_key": "mechanic",
+    "sprite": "vouchers/odyssey_v_engineer.png",
+    "name_en": "Engineer",
+    "name_pt": "Engenheiro",
+    "desc_en": [
+      "{C:attention}Jokers{} come with",
+      "{C:attention}Editions{} more often"
+    ],
+    "desc_pt": [
+      "{C:attention}Curingas{} vêm com{}",
+      "{C:attention}Edições{} mais{}",
+      "frequentemente"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "essentialist",
+    "tier": 2,
+    "pair_key": "minimalist",
+    "sprite": "vouchers/odyssey_v_essentialist.png",
+    "name_en": "Essentialist",
+    "name_pt": "Essencialista",
+    "desc_en": [
+      "{C:mult}+30{} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:mult}+30{} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "explorer",
+    "tier": 2,
+    "pair_key": "cartographer",
+    "sprite": "vouchers/odyssey_v_explorer.png",
+    "name_en": "Explorer",
+    "name_pt": "Explorador",
+    "desc_en": [
+      "Better {C:attention}Standard{}",
+      "cards{} in Shop"
+    ],
+    "desc_pt": [
+      "Cartas {C:attention}Standard{} na{}",
+      "Loja são melhores"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "falling_star",
+    "tier": 2,
+    "pair_key": "comet_1",
+    "sprite": "vouchers/odyssey_v_falling_star.png",
+    "name_en": "Falling Star",
+    "name_pt": "Estrela Cadente",
+    "desc_en": [
+      "{C:spectral}Spectral Cards{} appear{}",
+      "{C:attention}2X{} more frequently{}"
+    ],
+    "desc_pt": [
+      "Cartas {C:spectral}Espectrais{}",
+      "aparecem {C:attention}2X{} mais{}",
+      "frequentemente"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "fool_v",
+    "tier": 2,
+    "pair_key": "jester_v",
+    "sprite": "vouchers/odyssey_v_fool.png",
+    "name_en": "Fool",
+    "name_pt": "O Louco",
+    "desc_en": [
+      "{C:attention}Jokers{} give{}",
+      "{C:mult}+10{} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Curingas{} dão{}",
+      "{C:mult}+10{} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "force_field",
+    "tier": 2,
+    "pair_key": "shield",
+    "sprite": "vouchers/odyssey_v_force_field.png",
+    "name_en": "Force Field",
+    "name_pt": "Campo de Força",
+    "desc_en": [
+      "Prevents {C:red}defeat{} and gain{}",
+      "{C:money}$20{}"
+    ],
+    "desc_pt": [
+      "Previne a {C:red}derrota{} e ganha{}",
+      "{C:money}$20{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "forest",
+    "tier": 2,
+    "pair_key": "wood",
+    "sprite": "vouchers/odyssey_v_forest.png",
+    "name_en": "Forest",
+    "name_pt": "Floresta",
+    "desc_en": [
+      "{C:attention}Wooden Cards{} always{}",
+      "give {C:money}$1{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Madeira{}",
+      "sempre dão {C:money}$1{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "founder",
+    "tier": 2,
+    "pair_key": "member",
+    "sprite": "vouchers/odyssey_v_founder.png",
+    "name_en": "Founder",
+    "name_pt": "Fundador",
+    "desc_en": [
+      "{C:money}$5{} discount in shop{}"
+    ],
+    "desc_pt": [
+      "Desconto de {C:money}$5{} na loja{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "gps",
+    "tier": 2,
+    "pair_key": "compass",
+    "sprite": "vouchers/odyssey_v_gps.png",
+    "name_en": "GPS",
+    "name_pt": "GPS",
+    "desc_en": [
+      "Reveal everything in",
+      "{C:attention}deck{} and{}",
+      "{C:attention}shop{}"
+    ],
+    "desc_pt": [
+      "Revela tudo no",
+      "{C:attention}baralho{} e{}",
+      "{C:attention}loja{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "gem",
+    "tier": 2,
+    "pair_key": "ruby",
+    "sprite": "vouchers/odyssey_v_gem.png",
+    "name_en": "Gem",
+    "name_pt": "Gema",
+    "desc_en": [
+      "{C:attention}Ruby Cards{} give more{}",
+      "bonus"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Rubi{} dão{}",
+      "mais bônus"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "giga_mult",
+    "tier": 2,
+    "pair_key": "xmult_v",
+    "sprite": "vouchers/odyssey_v_giga_mult.png",
+    "name_en": "Giga Mult",
+    "name_pt": "Giga Multi",
+    "desc_en": [
+      "{X:mult,C:white} X1.5 {} Base Mult{}"
+    ],
+    "desc_pt": [
+      "{X:mult,C:white} X1.5 {} Multi Base{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "glow",
+    "tier": 2,
+    "pair_key": "light",
+    "sprite": "vouchers/odyssey_v_glow.png",
+    "name_en": "Glow",
+    "name_pt": "Brilho",
+    "desc_en": [
+      "{C:attention}No-enhancement cards{}",
+      "give {C:chips}+10{} Chips{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas sem{}",
+      "aprimoramento{} dão {C:chips}+10{}",
+      "Fichas"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "god",
+    "tier": 2,
+    "pair_key": "ace_v",
+    "sprite": "vouchers/odyssey_v_god.png",
+    "name_en": "God",
+    "name_pt": "Deus",
+    "desc_en": [
+      "{C:attention}Aces{} give{}",
+      "{X:mult,C:white} X2 {} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Ases{} dão{}",
+      "{X:mult,C:white} X2 {} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "gold_ticket",
+    "tier": 2,
+    "pair_key": "gold_coupon",
+    "sprite": "vouchers/odyssey_v_gold_ticket.png",
+    "name_en": "Gold Ticket",
+    "name_pt": "Bilhete Dourado",
+    "desc_en": [
+      "All shop items are {C:money}$1{}"
+    ],
+    "desc_pt": [
+      "Todos os itens da loja são",
+      "{C:money}$1{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "hammer",
+    "tier": 2,
+    "pair_key": "anvil",
+    "sprite": "vouchers/odyssey_v_hammer.png",
+    "name_en": "Hammer",
+    "name_pt": "Martelo",
+    "desc_en": [
+      "{C:attention}Platinum Cards{} give{}",
+      "{C:chips}+100{} Chips{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Platina{}",
+      "dão {C:chips}+100{} Fichas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "hedge_fund_v",
+    "tier": 2,
+    "pair_key": "investment",
+    "sprite": "vouchers/odyssey_v_hedge_fund.png",
+    "name_en": "Hedge Fund",
+    "name_pt": "Fundo de Risco",
+    "desc_en": [
+      "Gain {C:money}$10{} when buying a{}",
+      "{C:attention}Joker{}"
+    ],
+    "desc_pt": [
+      "Ganha {C:money}$10{} ao comprar um{}",
+      "{C:attention}Curinga{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "high_roller",
+    "tier": 2,
+    "pair_key": "casino",
+    "sprite": "vouchers/odyssey_v_high_roller.png",
+    "name_en": "High Roller",
+    "name_pt": "Apostador de Elite",
+    "desc_en": [
+      "Much reduced {C:attention}Reroll{}",
+      "cost"
+    ],
+    "desc_pt": [
+      "Custo de {C:attention}Reroll{}",
+      "muito reduzido"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "historian",
+    "tier": 2,
+    "pair_key": "archaeologist",
+    "sprite": "vouchers/odyssey_v_historian.png",
+    "name_en": "Historian",
+    "name_pt": "Historiador",
+    "desc_en": [
+      "{C:attention}Vintage items{} appear{}",
+      "more često"
+    ],
+    "desc_pt": [
+      "{C:attention}Itens antigos{}",
+      "(Vintage){} aparecem mais"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "hurricane",
+    "tier": 2,
+    "pair_key": "wind",
+    "sprite": "vouchers/odyssey_v_hurricane.png",
+    "name_en": "Hurricane",
+    "name_pt": "Furacão",
+    "desc_en": [
+      "{C:attention}Discards{} shuffle{}",
+      "entire deck"
+    ],
+    "desc_pt": [
+      "{C:attention}Descartes{} baralham o{}",
+      "baralho todo"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "hyperdrive",
+    "tier": 2,
+    "pair_key": "warp_drive",
+    "sprite": "vouchers/odyssey_v_hyperdrive.png",
+    "name_en": "Hyperdrive",
+    "name_pt": "Hiper-propulsão",
+    "desc_en": [
+      "Ganha {C:money}$10{} on Skip{}",
+      "{C:attention}Blind{}"
+    ],
+    "desc_pt": [
+      "Ganha {C:money}$10{} ao pular{}",
+      "{C:attention}Blind{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "illusionist",
+    "tier": 2,
+    "pair_key": "magician",
+    "sprite": "vouchers/odyssey_v_illusionist.png",
+    "name_en": "Illusionist",
+    "name_pt": "Ilusionista",
+    "desc_en": [
+      "{C:tarot}Tarot cards{} can be used{}",
+      "{C:attention}2{} times{}"
+    ],
+    "desc_pt": [
+      "Cartas de {C:tarot}Tarô{} podem ser{}",
+      "usadas {C:attention}2{} vezes{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "inferno",
+    "tier": 2,
+    "pair_key": "fire",
+    "sprite": "vouchers/odyssey_v_inferno.png",
+    "name_en": "Inferno",
+    "name_pt": "Inferno",
+    "desc_en": [
+      "{C:attention}Scored cards{} give{}",
+      "{C:mult}+5{} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas pontuadas{} dão{}",
+      "{C:mult}+5{} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "inkwell",
+    "tier": 2,
+    "pair_key": "feather",
+    "sprite": "vouchers/odyssey_v_inkwell.png",
+    "name_en": "Inkwell",
+    "name_pt": "Tinteiro",
+    "desc_en": [
+      "{C:blue}+1{} Discard per round{}"
+    ],
+    "desc_pt": [
+      "{C:blue}+1{} Descarte por rodada{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "iridium",
+    "tier": 2,
+    "pair_key": "platinum_v",
+    "sprite": "vouchers/odyssey_v_iridium.png",
+    "name_en": "Iridium",
+    "name_pt": "Irídio",
+    "desc_en": [
+      "{C:attention}Emerald Cards{} give{}",
+      "more bonus"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Esmeralda{}",
+      "dão mais bônus"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "jewelry",
+    "tier": 2,
+    "pair_key": "diamond_v",
+    "sprite": "vouchers/odyssey_v_jewelry.png",
+    "name_en": "Jewelry",
+    "name_pt": "Joalheria",
+    "desc_en": [
+      "{C:attention}Diamond Cards{} give{}",
+      "more bonus"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Diamante{}",
+      "dão mais bônus"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "king_v",
+    "tier": 2,
+    "pair_key": "bishop",
+    "sprite": "vouchers/odyssey_v_king.png",
+    "name_en": "King",
+    "name_pt": "Rei",
+    "desc_en": [
+      "{C:attention}(6-9){} give{}",
+      "{C:chips}+20{} Chips{}"
+    ],
+    "desc_pt": [
+      "{C:attention}(6-9){} dão{}",
+      "{C:chips}+20{} Fichas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "knight_v",
+    "tier": 2,
+    "pair_key": "squire_v",
+    "sprite": "vouchers/odyssey_v_knight.png",
+    "name_en": "Knight",
+    "name_pt": "Cavaleiro",
+    "desc_en": [
+      "Starts with {C:attention}Armor{}"
+    ],
+    "desc_pt": [
+      "Começa com {C:attention}Armadura{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "liquidation",
+    "tier": 2,
+    "pair_key": "coupon",
+    "sprite": "vouchers/odyssey_v_liquidation.png",
+    "name_en": "Liquidation",
+    "name_pt": "Liquidação",
+    "desc_en": [
+      "Shop items cost {C:attention}75%{}",
+      "less"
+    ],
+    "desc_pt": [
+      "Itens da Loja custam",
+      "{C:attention}75%{} a menos{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "lucid",
+    "tier": 2,
+    "pair_key": "dreamer",
+    "sprite": "vouchers/odyssey_v_lucid.png",
+    "name_en": "Lucid",
+    "name_pt": "Lúcido",
+    "desc_en": [
+      "Gain {C:attention}double bônus{}",
+      "when skipping"
+    ],
+    "desc_pt": [
+      "Ganha {C:attention}bônus dobrado{}",
+      "ao pular rodada"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "master",
+    "tier": 2,
+    "pair_key": "apprentice",
+    "sprite": "vouchers/odyssey_v_master.png",
+    "name_en": "Master",
+    "name_pt": "Mestre",
+    "desc_en": [
+      "{C:attention}+2{} Consumable Slots{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+2{} Espaços de{}",
+      "Consumível"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "master_key",
+    "tier": 2,
+    "pair_key": "key",
+    "sprite": "vouchers/odyssey_v_master_key.png",
+    "name_en": "Master Key",
+    "name_pt": "Chave Mestra",
+    "desc_en": [
+      "Open locked {C:attention}chests{}"
+    ],
+    "desc_pt": [
+      "Abre {C:attention}baús{} trancados{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "masterpiece",
+    "tier": 2,
+    "pair_key": "artist",
+    "sprite": "vouchers/odyssey_v_masterpiece.png",
+    "name_en": "Masterpiece",
+    "name_pt": "Obra-prima",
+    "desc_en": [
+      "All {C:attention}Shop Jokers{} have{}",
+      "Editions"
+    ],
+    "desc_pt": [
+      "Todos os {C:attention}Curingas{} da{}",
+      "Loja têm Edições"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "mega_mult",
+    "tier": 2,
+    "pair_key": "mult_v",
+    "sprite": "vouchers/odyssey_v_mega_mult.png",
+    "name_en": "Mega Mult",
+    "name_pt": "Mega Multi",
+    "desc_en": [
+      "{C:mult}+10{} Base Mult{}"
+    ],
+    "desc_pt": [
+      "{C:mult}+10{} Multi de bônus base{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "meteor",
+    "tier": 2,
+    "pair_key": "asteroid",
+    "sprite": "vouchers/odyssey_v_meteor.png",
+    "name_en": "Meteor",
+    "name_pt": "Meteoro",
+    "desc_en": [
+      "{C:tarot}Tarot Cards{} appear{}",
+      "{C:attention}4X{} more frequently{}"
+    ],
+    "desc_pt": [
+      "Cartas de {C:tarot}Tarô{} aparecem{}",
+      "{C:attention}4X{} mais{}",
+      "frequentemente"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "microscope",
+    "tier": 2,
+    "pair_key": "lens",
+    "sprite": "vouchers/odyssey_v_microscope.png",
+    "name_en": "Microscope",
+    "name_pt": "Microscópio",
+    "desc_en": [
+      "See next {C:attention}10{} cards{}"
+    ],
+    "desc_pt": [
+      "Permite ver as próximas",
+      "{C:attention}10{} cartas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "midas_touch",
+    "tier": 2,
+    "pair_key": "gold_plating",
+    "sprite": "vouchers/odyssey_v_midas_touch.png",
+    "name_en": "Midas Touch",
+    "name_pt": "Toque de Midas",
+    "desc_en": [
+      "{C:attention}Platinum Cards{} give{}",
+      "{C:money}$5{} when scored{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Platina{}",
+      "dão {C:money}$5{} ao pontuar{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "mountain",
+    "tier": 2,
+    "pair_key": "earth",
+    "sprite": "vouchers/odyssey_v_mountain.png",
+    "name_en": "Mountain",
+    "name_pt": "Montanha",
+    "desc_en": [
+      "{C:attention}(2-10) rank{} give{}",
+      "{C:chips}+10{} Chips{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de rank 2-10{}",
+      "dão {C:chips}+10{} Fichas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "observatory_1",
+    "tier": 2,
+    "pair_key": "telescope",
+    "sprite": "vouchers/odyssey_v_observatory_1.png",
+    "name_en": "Observatory",
+    "name_pt": "Observatório",
+    "desc_en": [
+      "{C:planet}Planet Cards{} appear{}",
+      "{C:attention}4X{} more frequently{}"
+    ],
+    "desc_pt": [
+      "Cartas de {C:planet}Planeta{}",
+      "aparecem {C:attention}4X{} mais{}",
+      "frequentemente"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "ocean",
+    "tier": 2,
+    "pair_key": "water_v",
+    "sprite": "vouchers/odyssey_v_ocean.png",
+    "name_en": "Ocean",
+    "name_pt": "Oceano",
+    "desc_en": [
+      "{C:attention}Flushes{} give{}",
+      "{C:mult}+5{} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Flushes{} dão{}",
+      "{C:mult}+5{} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "offshore",
+    "tier": 2,
+    "pair_key": "tax_haven",
+    "sprite": "vouchers/odyssey_v_offshore.png",
+    "name_en": "Offshore",
+    "name_pt": "Offshore",
+    "desc_en": [
+      "{C:money}$20{} extra interest{}"
+    ],
+    "desc_pt": [
+      "{C:money}$20{} de juros extras{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "origami",
+    "tier": 2,
+    "pair_key": "paper",
+    "sprite": "vouchers/odyssey_v_origami.png",
+    "name_en": "Origami",
+    "name_pt": "Origami",
+    "desc_en": [
+      "{C:attention}Paper Cards{} always{}",
+      "trigger"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Papel{}",
+      "sempre ativam"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "pathfinder",
+    "tier": 2,
+    "pair_key": "scout",
+    "sprite": "vouchers/odyssey_v_pathfinder.png",
+    "name_en": "Pathfinder",
+    "name_pt": "Desbravador",
+    "desc_en": [
+      "Reveals all {C:attention}Bosses{}",
+      "in Ante"
+    ],
+    "desc_pt": [
+      "Revela todos os",
+      "{C:attention}Bosses{} da Aposta{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "planetarium",
+    "tier": 2,
+    "pair_key": "deep_space_obs",
+    "sprite": "vouchers/odyssey_v_planetarium.png",
+    "name_en": "Planetarium",
+    "name_pt": "Planetário",
+    "desc_en": [
+      "{C:attention}+2{} Planet Slots in{}",
+      "Shop"
+    ],
+    "desc_pt": [
+      "{C:attention}+2{} Espaços de{}",
+      "Planeta na Loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "polymer",
+    "tier": 2,
+    "pair_key": "plastic",
+    "sprite": "vouchers/odyssey_v_polymer.png",
+    "name_en": "Polymer",
+    "name_pt": "Polímero",
+    "desc_en": [
+      "{C:attention}Plastic Cards{} give{}",
+      "{X:mult,C:white} X1.1 {} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Plástico{}",
+      "dão {X:mult,C:white} X1.1 {} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "portal",
+    "tier": 2,
+    "pair_key": "magic_mirror",
+    "sprite": "vouchers/odyssey_v_portal.png",
+    "name_en": "Portal",
+    "name_pt": "Portal",
+    "desc_en": [
+      "Skip to end of {C:attention}Ante{}"
+    ],
+    "desc_pt": [
+      "Pula para o final da",
+      "{C:attention}Aposta{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "pragmatic",
+    "tier": 2,
+    "pair_key": "realist",
+    "sprite": "vouchers/odyssey_v_pragmatic.png",
+    "name_en": "Pragmatic",
+    "name_pt": "Pragmático",
+    "desc_en": [
+      "Useless items removed from Shops"
+    ],
+    "desc_pt": [
+      "Itens inúteis removidos das Lojas"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "pro",
+    "tier": 2,
+    "pair_key": "gambler",
+    "sprite": "vouchers/odyssey_v_pro.png",
+    "name_en": "Pro",
+    "name_pt": "Pró",
+    "desc_en": [
+      "{C:attention}Rerolls{} give chance{}",
+      "to gain {C:attention}Jokers{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Rerolls{} dão chance{}",
+      "de ganhar {C:attention}Curingas{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "qubit",
+    "tier": 2,
+    "pair_key": "quantum_bit",
+    "sprite": "vouchers/odyssey_v_qubit.png",
+    "name_en": "Qubit",
+    "name_pt": "Qubit",
+    "desc_en": [
+      "Guaranteed {C:attention}double{}",
+      "effects"
+    ],
+    "desc_pt": [
+      "Garante efeitos",
+      "{C:attention}duplicados{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "rabbits_foot",
+    "tier": 2,
+    "pair_key": "amulet",
+    "sprite": "vouchers/odyssey_v_rabbits_foot.png",
+    "name_en": "Rabbit's Foot",
+    "name_pt": "Pé de Coelho",
+    "desc_en": [
+      "{C:attention}Lucky cards{} always{}",
+      "trigger"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Sorte{}",
+      "sempre ativam"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "replicator",
+    "tier": 2,
+    "pair_key": "cloning",
+    "sprite": "vouchers/odyssey_v_replicator.png",
+    "name_en": "Replicator",
+    "name_pt": "Replicador",
+    "desc_en": [
+      "{C:attention}+1{} Card Slot in Shop{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+1{} Slot de carta na{}",
+      "Loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "research_center",
+    "tier": 2,
+    "pair_key": "laboratory",
+    "sprite": "vouchers/odyssey_v_research_center.png",
+    "name_en": "Research Center",
+    "name_pt": "Centro de Pesquisa",
+    "desc_en": [
+      "{C:attention}+2{} Spectral Slots in{}",
+      "Shop"
+    ],
+    "desc_pt": [
+      "{C:attention}+2{} Espaços de{}",
+      "Espectral na Loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "rock",
+    "tier": 2,
+    "pair_key": "stone_2",
+    "sprite": "vouchers/odyssey_v_rock.png",
+    "name_en": "Rock",
+    "name_pt": "Rocha",
+    "desc_en": [
+      "{C:attention}Stone Cards{} give{}",
+      "{C:mult}+5{} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Pedra{} dão{}",
+      "{C:mult}+5{} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "rook",
+    "tier": 2,
+    "pair_key": "pawn_v",
+    "sprite": "vouchers/odyssey_v_rook.png",
+    "name_en": "Rook",
+    "name_pt": "Torre",
+    "desc_en": [
+      "{C:attention}(2-5){} give{}",
+      "{C:mult}+5{} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}(2-5){} dão{}",
+      "{C:mult}+5{} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "separation",
+    "tier": 2,
+    "pair_key": "propellant",
+    "sprite": "vouchers/odyssey_v_separation.png",
+    "name_en": "Separation",
+    "name_pt": "Separação",
+    "desc_en": [
+      "{C:blue}+1{} Discard per round{}"
+    ],
+    "desc_pt": [
+      "{C:blue}+1{} Descarte por rodada{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "shuttle",
+    "tier": 2,
+    "pair_key": "rocket",
+    "sprite": "vouchers/odyssey_v_shuttle.png",
+    "name_en": "Shuttle",
+    "name_pt": "Ônibus Espacial",
+    "desc_en": [
+      "{C:attention}+2{} Hand Size{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+2{} no tamanho da mão{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "space_station",
+    "tier": 2,
+    "pair_key": "satellite",
+    "sprite": "vouchers/odyssey_v_space_station.png",
+    "name_en": "Space Station",
+    "name_pt": "Estação Espacial",
+    "desc_en": [
+      "{C:attention}+2{} Consumable slots{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+2{} Espaços de{}",
+      "consumíveis"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "specter",
+    "tier": 2,
+    "pair_key": "prism_v",
+    "sprite": "vouchers/odyssey_v_specter.png",
+    "name_en": "Specter",
+    "name_pt": "Espectro",
+    "desc_en": [
+      "All {C:attention}Suits{} give{}",
+      "{X:mult,C:white} X1.25 {} bonus{}"
+    ],
+    "desc_pt": [
+      "Todos os {C:attention}Naipes{} dão{}",
+      "bônus {X:mult,C:white} X1.25 {}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "stack",
+    "tier": 2,
+    "pair_key": "chip",
+    "sprite": "vouchers/odyssey_v_stack.png",
+    "name_en": "Stack",
+    "name_pt": "Pilha",
+    "desc_en": [
+      "{C:chips}+100{} Base Chips{}"
+    ],
+    "desc_pt": [
+      "{C:chips}+100{} Fichas de bônus{}",
+      "base"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "storm_v",
+    "tier": 2,
+    "pair_key": "lightning_v",
+    "sprite": "vouchers/odyssey_v_storm.png",
+    "name_en": "Storm",
+    "name_pt": "Tempestade",
+    "desc_en": [
+      "Start with {C:attention}max{}",
+      "Energy{}"
+    ],
+    "desc_pt": [
+      "Começa com {C:attention}Energia{}",
+      "máxima{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "strongbox",
+    "tier": 2,
+    "pair_key": "lock",
+    "sprite": "vouchers/odyssey_v_strongbox.png",
+    "name_en": "Strongbox",
+    "name_pt": "Cofre Forte",
+    "desc_en": [
+      "Locked {C:attention}Jokers{} give{}",
+      "bonus"
+    ],
+    "desc_pt": [
+      "{C:attention}Curingas{} trancados{}",
+      "dão bônus"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "talent_scout",
+    "tier": 2,
+    "pair_key": "recruiter",
+    "sprite": "vouchers/odyssey_v_talent_scout.png",
+    "name_en": "Talent Scout",
+    "name_pt": "Caça-talentos",
+    "desc_en": [
+      "{C:attention}Rare Jokers{} appear{}",
+      "more"
+    ],
+    "desc_pt": [
+      "{C:attention}Curingas Raros{}",
+      "aparecem mais"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "tapestry",
+    "tier": 2,
+    "pair_key": "cloth",
+    "sprite": "vouchers/odyssey_v_tapestry.png",
+    "name_en": "Tapestry",
+    "name_pt": "Tapeçaria",
+    "desc_en": [
+      "{C:attention}Cloth Cards{} give{}",
+      "more bonus"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Tapeçaria{}",
+      "dão mais bônus"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "time_machine_v",
+    "tier": 2,
+    "pair_key": "time_capsule",
+    "sprite": "vouchers/odyssey_v_time_machine.png",
+    "name_en": "Time Machine",
+    "name_pt": "Máquina do Tempo",
+    "desc_en": [
+      "Re-play current",
+      "{C:attention}Blind{}",
+      "{C:attention}2{} extra times{}"
+    ],
+    "desc_pt": [
+      "Jogue o {C:attention}Blind{} atual{}",
+      "{C:attention}2{} vezes adicionais{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "tire",
+    "tier": 2,
+    "pair_key": "rubber",
+    "sprite": "vouchers/odyssey_v_tire.png",
+    "name_en": "Tire",
+    "name_pt": "Pneu",
+    "desc_en": [
+      "{C:attention}Rubber Cards{} give{}",
+      "{X:mult,C:white} X3 {} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Borracha{}",
+      "dão {X:mult,C:white} X3 {} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "titanium",
+    "tier": 2,
+    "pair_key": "steelworks",
+    "sprite": "vouchers/odyssey_v_titanium.png",
+    "name_en": "Titanium",
+    "name_pt": "Titânio",
+    "desc_en": [
+      "{C:attention}Rubber Cards{} give{}",
+      "{X:mult,C:white} X3 {} Mult i{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Borracha{}",
+      "dão {X:mult,C:white} X3 {} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "transmuter",
+    "tier": 2,
+    "pair_key": "alchemist",
+    "sprite": "vouchers/odyssey_v_transmuter.png",
+    "name_en": "Transmuter",
+    "name_pt": "Transmutador",
+    "desc_en": [
+      "Transmute cards to",
+      "{C:attention}Diamond{}"
+    ],
+    "desc_pt": [
+      "Transmuta cartas em",
+      "{C:attention}Diamante{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "tree",
+    "tier": 2,
+    "pair_key": "seed",
+    "sprite": "vouchers/odyssey_v_tree.png",
+    "name_en": "Tree",
+    "name_pt": "Árvore",
+    "desc_en": [
+      "Planted cards give",
+      "{C:dark_edition}Negative Jokers{}"
+    ],
+    "desc_pt": [
+      "Cartas plantadas dão",
+      "{C:dark_edition}Curingas{}",
+      "Negativos{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "utopian",
+    "tier": 2,
+    "pair_key": "optimist",
+    "sprite": "vouchers/odyssey_v_utopian.png",
+    "name_en": "Utopian",
+    "name_pt": "Utopista",
+    "desc_en": [
+      "{C:attention}Legendary Jokers{}",
+      "appear in Shop"
+    ],
+    "desc_pt": [
+      "{C:attention}Curingas Lendários{}",
+      "aparecem na Loja"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "vip",
+    "tier": 2,
+    "pair_key": "partner",
+    "sprite": "vouchers/odyssey_v_vip.png",
+    "name_en": "VIP",
+    "name_pt": "VIP",
+    "desc_en": [
+      "{C:attention}Booster Pack Rerolls{}",
+      "are free"
+    ],
+    "desc_pt": [
+      "{C:attention}Rerolls de Pacotes{}",
+      "são gratuitos"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "vase",
+    "tier": 2,
+    "pair_key": "ceramic",
+    "sprite": "vouchers/odyssey_v_vase.png",
+    "name_en": "Vase",
+    "name_pt": "Vaso",
+    "desc_en": [
+      "{C:attention}Ceramic Cards{} grant{}",
+      "{C:money}$1{} when scored{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Cerâmica{}",
+      "dão {C:money}$1{} ao pontuar{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "vault",
+    "tier": 2,
+    "pair_key": "bank",
+    "sprite": "vouchers/odyssey_v_vault.png",
+    "name_en": "Vault",
+    "name_pt": "Cofre",
+    "desc_en": [
+      "Earn {C:attention}15%{} interest{}",
+      "paid"
+    ],
+    "desc_pt": [
+      "Ganha {C:attention}15%{} de juros{}",
+      "pagos"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "veteran",
+    "tier": 2,
+    "pair_key": "novice",
+    "sprite": "vouchers/odyssey_v_veteran.png",
+    "name_en": "Veteran",
+    "name_pt": "Veterano",
+    "desc_en": [
+      "{C:attention}Blinds{} require{}",
+      "{C:attention}10%{} less score{}"
+    ],
+    "desc_pt": [
+      "{C:attention}Blinds{} precisam de{}",
+      "{C:attention}10%{} menos pontos{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "visionary",
+    "tier": 2,
+    "pair_key": "futurist",
+    "sprite": "vouchers/odyssey_v_visionary.png",
+    "name_en": "Visionary",
+    "name_pt": "Visionário",
+    "desc_en": [
+      "New {C:attention}Jokers{} give{}",
+      "{X:mult,C:white} X1.5 {} Mult i{}"
+    ],
+    "desc_pt": [
+      "Novos {C:attention}Curingas{} dão{}",
+      "{X:mult,C:white} X1.5 {} Multi{}"
+    ],
+    "cost": 10
+  },
+  {
+    "key": "window",
+    "tier": 2,
+    "pair_key": "glass_2",
+    "sprite": "vouchers/odyssey_v_window.png",
+    "name_en": "Window",
+    "name_pt": "Janela",
+    "desc_en": [
+      "{C:attention}Ceramic Cards{} don't{}",
+      "break"
+    ],
+    "desc_pt": [
+      "{C:attention}Cartas de Cerâmica{} não{}",
+      "quebram"
+    ],
+    "cost": 10
+  }
+]

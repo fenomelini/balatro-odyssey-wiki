@@ -1,0 +1,130 @@
+---
+// FilterBar — filters by group and rarity with i18n support
+// Used on the joker gallery page
+
+interface Props {
+  groups: string[];
+  currentGroup?: string;
+  currentRarity?: string;
+  basePath?: string;
+}
+
+const { groups, currentGroup = 'all', currentRarity = 'all', basePath = '/jokers' } = Astro.props;
+
+const GROUP_LABELS: Record<string, { en: string; pt: string }> = {
+  all:                { en: 'All Groups', pt: 'Todos os Grupos' },
+  singularity:        { en: 'Singularity', pt: 'Singularidade' },
+  quantum:            { en: 'Quantum', pt: 'Quântico' },
+  temporal:           { en: 'Temporal', pt: 'Temporal' },
+  dimensions:         { en: 'Dimensions', pt: 'Dimensões' },
+  corruption:         { en: 'Corruption', pt: 'Corrupção' },
+  chaos:              { en: 'Chaos', pt: 'Caos' },
+  economy:            { en: 'Economy', pt: 'Economia' },
+  transformations:    { en: 'Transformations', pt: 'Transformações' },
+  luck_and_probability:{ en: 'Luck & Probability', pt: 'Sorte e Probabilidade' },
+  pos:                { en: 'Positioning', pt: 'Posicionamento' },
+  hand_and_discard:   { en: 'Hand & Discard', pt: 'Mão e Descarte' },
+  elemental:          { en: 'Elemental', pt: 'Elemental' },
+  tribal:             { en: 'Tribal', pt: 'Tribal' },
+  social:             { en: 'Social', pt: 'Social' },
+  cond:               { en: 'Conditions', pt: 'Condições' },
+  time:               { en: 'Time', pt: 'Tempo' },
+  paradox:            { en: 'Paradoxes', pt: 'Paradoxos' },
+  celestial:          { en: 'Celestial', pt: 'Celestial' },
+  anomaly:            { en: 'Anomaly', pt: 'Anomalia' },
+  glitch:             { en: 'Glitch', pt: 'Glitch' },
+  professions:        { en: 'Professions', pt: 'Profissões' },
+  final:              { en: 'Final', pt: 'Final' },
+  probability:        { en: 'Luck & Probability', pt: 'Sorte e Probabilidade' },
+};
+---
+
+<div id="filter-bar" class="flex flex-wrap gap-3 items-center mb-6 p-4 rounded-xl bg-dark2 border border-[var(--border)]">
+  <!-- Group filter -->
+  <div class="flex items-center gap-2">
+    <label class="text-muted text-[0.8rem] font-semibold uppercase tracking-wide">
+      <span class="lang-en">Group</span>
+      <span class="lang-pt">Grupo</span>
+    </label>
+    <select
+      id="filter-group"
+      class="bg-dark3 border border-[var(--border)] text-white rounded-lg px-3 py-1.5 text-[0.85rem] cursor-pointer focus:border-primary outline-none"
+    >
+      <option value="all" selected={currentGroup === 'all'}>
+        All Groups
+      </option>
+      {groups.map(g => (
+        <option value={g} selected={currentGroup === g}>
+          {GROUP_LABELS[g]?.en ?? g.replace(/_/g, ' ')}
+        </option>
+      ))}
+    </select>
+  </div>
+
+  <!-- Rarity filter -->
+  <div class="flex items-center gap-2">
+    <label class="text-muted text-[0.8rem] font-semibold uppercase tracking-wide">
+      <span class="lang-en">Rarity</span>
+      <span class="lang-pt">Raridade</span>
+    </label>
+    <select
+      id="filter-rarity"
+      class="bg-dark3 border border-[var(--border)] text-white rounded-lg px-3 py-1.5 text-[0.85rem] cursor-pointer focus:border-primary outline-none"
+    >
+      <option value="all" selected={currentRarity === 'all'}>
+        <span class="lang-en">All Rarities</span>
+      </option>
+      <option value="1">Common / Comum</option>
+      <option value="2">Uncommon / Incomum</option>
+      <option value="3">Rare / Raro</option>
+      <option value="4">Legendary / Lendário</option>
+    </select>
+  </div>
+
+  <!-- Active filters indicator -->
+  <span id="filter-count" class="text-muted text-[0.82rem] hidden"></span>
+</div>
+
+<script>
+  const groupSel = document.getElementById('filter-group') as HTMLSelectElement;
+  const raritySel = document.getElementById('filter-rarity') as HTMLSelectElement;
+  const countEl = document.getElementById('filter-count')!;
+
+  function applyFilters() {
+    const group = groupSel.value;
+    const rarity = raritySel.value;
+    const lang = document.documentElement.getAttribute('data-lang') || 'en';
+    const searchQuery = (document.getElementById('search-input') as HTMLInputElement | null)?.value?.toLowerCase() ?? '';
+
+    let visible = 0;
+    document.querySelectorAll<HTMLElement>('.joker-card').forEach(card => {
+      const cardGroup = card.dataset.group ?? '';
+      const cardRarity = card.dataset.rarity ?? '';
+      const nameKey = lang === 'pt' ? 'namePt' : 'nameEn';
+      const descKey = lang === 'pt' ? 'descPt' : 'descEn';
+      const name = (card.dataset[nameKey === 'nameEn' ? 'nameEn' : 'namePt'] ?? card.dataset.nameEn ?? '');
+      const desc = (card.dataset[descKey === 'descEn' ? 'descEn' : 'descPt'] ?? card.dataset.descEn ?? '');
+
+      const groupMatch = group === 'all' || cardGroup === group;
+      const rarityMatch = rarity === 'all' || cardRarity === rarity;
+      const searchMatch = !searchQuery || name.includes(searchQuery) || desc.includes(searchQuery);
+
+      const show = groupMatch && rarityMatch && searchMatch;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    if (group !== 'all' || rarity !== 'all' || searchQuery) {
+      countEl.textContent = `${visible} shown`;
+      countEl.classList.remove('hidden');
+    } else {
+      countEl.classList.add('hidden');
+    }
+  }
+
+  groupSel?.addEventListener('change', applyFilters);
+  raritySel?.addEventListener('change', applyFilters);
+
+  // Also hook into search input if present
+  document.getElementById('search-input')?.addEventListener('input', applyFilters);
+</script>

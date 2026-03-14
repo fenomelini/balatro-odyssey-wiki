@@ -1,0 +1,64 @@
+---
+// SearchBox — client-side search that filters cards by name/description
+interface Props {
+  placeholder_en?: string;
+  placeholder_pt?: string;
+}
+const { placeholder_en = 'Search...', placeholder_pt = 'Buscar...' } = Astro.props;
+---
+
+<div class="relative mb-4">
+  <span class="absolute left-3 top-1/2 -translate-y-1/2 text-muted pointer-events-none">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.099zm-5.242 1.156a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11"/>
+    </svg>
+  </span>
+  <input
+    id="search-input"
+    type="search"
+    autocomplete="off"
+    class="w-full bg-dark3 border border-[var(--border)] text-white rounded-xl pl-9 pr-4 py-2.5 text-[0.9rem] focus:border-primary focus:outline-none transition-colors placeholder-muted"
+    placeholder={placeholder_en}
+    data-placeholder-en={placeholder_en}
+    data-placeholder-pt={placeholder_pt}
+  />
+</div>
+
+<script>
+  const input = document.getElementById('search-input') as HTMLInputElement;
+
+  function updatePlaceholder() {
+    const lang = document.documentElement.getAttribute('data-lang') || 'en';
+    input.placeholder = lang === 'pt'
+      ? (input.dataset.placeholderPt ?? 'Buscar...')
+      : (input.dataset.placeholderEn ?? 'Search...');
+  }
+
+  function applySearch() {
+    // Pages with custom filtering handle their own search logic — skip
+    if (document.querySelector('.joker-card') || document.querySelector('.voucher-card')) return;
+    const q = input.value.trim().toLowerCase();
+    const lang = document.documentElement.getAttribute('data-lang') || 'en';
+    const cards = document.querySelectorAll<HTMLElement>('[data-name-en]');
+    cards.forEach(card => {
+      const name = lang === 'pt'
+        ? (card.dataset.namePt ?? card.dataset.nameEn ?? '')
+        : (card.dataset.nameEn ?? '');
+      const desc = lang === 'pt'
+        ? (card.dataset.descPt ?? card.dataset.descEn ?? '')
+        : (card.dataset.descEn ?? '');
+      card.style.display = (!q || name.includes(q) || desc.includes(q)) ? '' : 'none';
+    });
+  }
+
+  input.addEventListener('input', applySearch);
+
+  // Re-apply search and update placeholder on lang change
+  const observer = new MutationObserver(() => {
+    updatePlaceholder();
+    if (input.value.trim()) applySearch();
+  });
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-lang'] });
+
+  updatePlaceholder();
+</script>

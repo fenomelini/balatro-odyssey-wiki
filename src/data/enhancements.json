@@ -1,0 +1,222 @@
+[
+  {
+    "key": "m_odyssey_ceramic",
+    "sprite": "enhancements/odyssey_e_ceramic.png",
+    "name_en": "Ceramic",
+    "name_pt": "Cerâmica",
+    "desc_en": [
+      "{X:mult,C:white} X1.5 {} Mult, but has a",
+      "{C:green}1 in 4{} chance to break"
+    ],
+    "desc_pt": [
+      "{X:mult,C:white} X1.5 {} Multi, mas tem chance de",
+      "{C:green}1 em 4{} de quebrar ao pontuar"
+    ]
+  },
+  {
+    "key": "m_odyssey_cloth",
+    "sprite": "enhancements/odyssey_e_cloth.png",
+    "name_en": "Cloth",
+    "name_pt": "Pano",
+    "desc_en": [
+      "{C:chips}+5 Chips{}, {C:mult}+2 Mult{}"
+    ],
+    "desc_pt": [
+      "{C:chips}+5 Fichas{} e {C:mult}+2 Multi{}"
+    ]
+  },
+  {
+    "key": "m_odyssey_diamond",
+    "sprite": "enhancements/odyssey_e_diamond.png",
+    "name_en": "Diamond",
+    "name_pt": "Diamante",
+    "desc_en": [
+      "Gains {C:money}$1{} when scored"
+    ],
+    "desc_pt": [
+      "Ganha {C:money}$1{} quando esta carta pontua"
+    ]
+  },
+  {
+    "key": "m_odyssey_emerald",
+    "sprite": "enhancements/odyssey_e_emerald.png",
+    "name_en": "Emerald",
+    "name_pt": "Esmeralda",
+    "desc_en": [
+      "{C:chips}+50 Chips{}"
+    ],
+    "desc_pt": [
+      "{C:chips}+50 Fichas{}"
+    ]
+  },
+  {
+    "key": "m_odyssey_light",
+    "sprite": "enhancements/odyssey_e_light.png",
+    "name_en": "Light",
+    "name_pt": "Luz",
+    "desc_en": [
+      "{C:green}1 in 4{} chance to",
+      "gain {C:money}$3{} when scored"
+    ],
+    "desc_pt": [
+      "Chance de {C:green}1 em 4{} de ganhar",
+      "{C:money}$3{} quando esta carta pontua"
+    ]
+  },
+  {
+    "key": "m_odyssey_paper",
+    "sprite": "enhancements/odyssey_e_paper.png",
+    "name_en": "Paper",
+    "name_pt": "Papel",
+    "desc_en": [
+      "{C:chips}+30 Chips{}, but has a",
+      "{C:green}1 in 6{} chance to break"
+    ],
+    "desc_pt": [
+      "{C:chips}+30 Fichas{}, mas tem chance de",
+      "{C:green}1 em 6{} de rasgar ao pontuar"
+    ]
+  },
+  {
+    "key": "m_odyssey_plastic",
+    "sprite": "enhancements/odyssey_e_plastic.png",
+    "name_en": "Plastic",
+    "name_pt": "Plástico",
+    "desc_en": [
+      "Gains {C:money}$3{} if held in hand",
+      "at end of round"
+    ],
+    "desc_pt": [
+      "Ganha {C:money}$3{} se estiver na mão",
+      "ao final da rodada"
+    ]
+  },
+  {
+    "key": "m_odyssey_rubber",
+    "sprite": "enhancements/odyssey_e_rubber.png",
+    "name_en": "Rubber",
+    "name_pt": "Borracha",
+    "desc_en": [
+      "Retrigger this card",
+      "{C:attention}1{} additional time"
+    ],
+    "desc_pt": [
+      "Reativa esta carta {C:attention}1{} vez adicional"
+    ]
+  },
+  {
+    "key": "m_odyssey_ruby",
+    "sprite": "enhancements/odyssey_e_ruby.png",
+    "name_en": "Ruby",
+    "name_pt": "Rubi",
+    "desc_en": [
+      "{C:mult}+10 Mult{}"
+    ],
+    "desc_pt": [
+      "{C:mult}+10 Multi{}"
+    ]
+  },
+  {
+    "key": "m_odyssey_shadow",
+    "sprite": "enhancements/odyssey_e_shadow.png",
+    "name_en": "Shadow",
+    "name_pt": "Sombra",
+    "desc_en": [
+      "{X:mult,C:white} X1.5 {} Mult"
+    ],
+    "desc_pt": [
+      "{X:mult,C:white} X1.5 {} Multi"
+    ]
+  },
+  {
+    "key": "m_odyssey_wood",
+    "sprite": "enhancements/odyssey_e_wood.png",
+    "name_en": "Wood",
+    "name_pt": "Madeira",
+    "desc_en": [
+      "{C:chips}+10 Chips{}, but has a",
+      "{C:green}1 in 8{} chance to break"
+    ],
+    "desc_pt": [
+      "{C:chips}+10 Fichas{}, mas tem chance de",
+      "{C:green}1 em 8{} de quebrar ao pontuar"
+    ]
+  },
+  {
+    "key": "m_odyssey_plant",
+    "sprite": "enhancements/odyssey_e_plant.png",
+    "name_en": "Plant",
+    "name_pt": "Planta",
+    "desc_en": [
+      "Gains {C:chips}+5 Chips{} permanently",
+      "when scored"
+    ],
+    "desc_pt": [
+      "Ganha {C:chips}+5 Fichas{} permanentemente",
+      "quando esta carta pontua"
+    ]
+  },
+  {
+    "key": "m_odyssey_holy",
+    "sprite": "enhancements/odyssey_e_holy.png",
+    "name_en": "Holy",
+    "name_pt": "Sagrada",
+    "desc_en": [
+      "{C:mult}+10 Mult{}, {C:chips}+30 Chips{}"
+    ],
+    "desc_pt": [
+      "Reativa esta carta {C:attention}2{} vezes adicionais"
+    ]
+  },
+  {
+    "key": "m_odyssey_undead",
+    "sprite": "enhancements/odyssey_e_undead.png",
+    "name_en": "Undead",
+    "name_pt": "Morta-Viva",
+    "desc_en": [
+      "{C:green}1 in 3{} chance to retrigger"
+    ],
+    "desc_pt": [
+      "Chance de {C:green}1 em 3{} de",
+      "reativar esta carta"
+    ]
+  },
+  {
+    "key": "m_odyssey_cursed",
+    "sprite": "enhancements/odyssey_e_cursed.png",
+    "name_en": "Cursed",
+    "name_pt": "Maldita",
+    "desc_en": [
+      "{X:mult,C:white} X2 {} Mult, {C:chips}-20 Chips{}"
+    ],
+    "desc_pt": [
+      "{X:mult,C:white} X2 {} Multi e {C:red}-20 Fichas{}"
+    ]
+  },
+  {
+    "key": "m_odyssey_magic",
+    "sprite": "enhancements/odyssey_e_magic.png",
+    "name_en": "Magic",
+    "name_pt": "Mágica",
+    "desc_en": [
+      "{C:green}1 in 6{} chance to create",
+      "a {C:tarot}Tarot{} card"
+    ],
+    "desc_pt": [
+      "Chance de {C:green}1 em 6{} de criar",
+      "um {C:tarot}Tarô{} ao pontuar"
+    ]
+  },
+  {
+    "key": "m_odyssey_platinum",
+    "sprite": "enhancements/odyssey_e_platinum.png",
+    "name_en": "Platinum",
+    "name_pt": "Platina",
+    "desc_en": [
+      "{C:chips}+100 Chips{}"
+    ],
+    "desc_pt": [
+      "{C:chips}+100 Fichas{}"
+    ]
+  }
+]

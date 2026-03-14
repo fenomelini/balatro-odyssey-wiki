@@ -1,0 +1,363 @@
+---
+import Layout from '../components/layout/Layout.astro';
+import jokers from '../data/jokers.json';
+import decks from '../data/decks.json';
+import tarots from '../data/tarots.json';
+import planets from '../data/planets.json';
+import spectrals from '../data/spectrals.json';
+import vouchers from '../data/vouchers.json';
+import blinds from '../data/blinds.json';
+import enhancements from '../data/enhancements.json';
+import { formatDescription } from '../utils/formatDescription';
+import fs from 'node:fs';
+
+// Hero background cards: 12 per side — jokers, tarots and spectrals
+// All tarot/spectral sprites are 100% valid; joker sprites pre-verified (>5KB)
+const LEFT_HERO = [
+  { src: 'jokers/odyssey_j_celestial_cosmic_entity.png',         rot: -22, top: 2,  pos: -3  },
+  { src: 'tarots/odyssey_tarot_3.png',                            rot:  -5, top: 14, pos:  9  },
+  { src: 'jokers/odyssey_j_chaos_azathoth.png',                  rot:  16, top:  1, pos: 17  },
+  { src: 'spectrals/odyssey_spectral_5.png',                     rot: -13, top: 26, pos:  2  },
+  { src: 'tarots/odyssey_tarot_8.png',                            rot:   6, top: 34, pos: 15  },
+  { src: 'jokers/odyssey_j_singularity_reverse_big_bang.png',    rot:  21, top: 45, pos: -2  },
+  { src: 'spectrals/odyssey_spectral_10.png',                    rot: -10, top: 53, pos: 12  },
+  { src: 'tarots/odyssey_tarot_15.png',                           rot:   8, top: 62, pos:  4  },
+  { src: 'jokers/odyssey_j_quantum_higher_planes.png',           rot: -19, top: 69, pos: 18  },
+  { src: 'spectrals/odyssey_spectral_20.png',                    rot:  13, top: 77, pos:  6  },
+  { src: 'tarots/odyssey_tarot_22.png',                           rot:  -4, top: 85, pos: 15  },
+  { src: 'jokers/odyssey_j_dimensions_master_of_space.png',      rot: -25, top: 90, pos:  0  },
+];
+const RIGHT_HERO = [
+  { src: 'jokers/odyssey_j_final_odyssey.png',                    rot:  20, top:  3, pos: -2  },
+  { src: 'tarots/odyssey_tarot_6.png',                            rot:   7, top: 16, pos:  9  },
+  { src: 'jokers/odyssey_j_economy_mammon.png',                  rot: -17, top:  4, pos: 18  },
+  { src: 'spectrals/odyssey_spectral_2.png',                     rot:  11, top: 28, pos:  3  },
+  { src: 'tarots/odyssey_tarot_14.png',                           rot:  -7, top: 37, pos: 16  },
+  { src: 'jokers/odyssey_j_temporal_double_hand.png',            rot: -22, top: 48, pos: -1  },
+  { src: 'spectrals/odyssey_spectral_18.png',                    rot:   9, top: 56, pos: 13  },
+  { src: 'tarots/odyssey_tarot_25.png',                           rot: -14, top: 63, pos:  5  },
+  { src: 'jokers/odyssey_j_elemental_avatar.png',                rot:  18, top: 72, pos: 19  },
+  { src: 'spectrals/odyssey_spectral_7.png',                     rot:  -6, top: 80, pos:  7  },
+  { src: 'tarots/odyssey_tarot_30.png',                           rot:  23, top: 87, pos: 16  },
+  { src: 'jokers/odyssey_j_luck_and_probability_fortuna.png',    rot: -12, top: 92, pos:  1  },
+];
+
+// One representative per group for the Groups section
+const GROUP_LABELS: Record<string, { en: string; pt: string; desc_en: string; desc_pt: string }> = {
+  // ── Part 1: Cosmic Themes ──────────────────────────────────────────────
+  singularity:          { en: 'Singularity',       pt: 'Singularidade',     desc_en: 'Manipulation of isolated states and "Black Holes" that consume resources to generate massive power.', desc_pt: 'Manipulação de estados isolados e "Buracos Negros" que consomem recursos para gerar poder massivo.' },
+  quantum:              { en: 'Quantum',            pt: 'Quântico',          desc_en: 'Superposition, uncertainty and quantum probability — effects that exist in multiple states at once.', desc_pt: 'Superposição, incerteza e probabilidade quântica — efeitos que existem em múltiplos estados ao mesmo tempo.' },
+  temporal:             { en: 'Temporal',           pt: 'Temporal',          desc_en: 'Control over the run\'s time — retriggering effects from past rounds and Ante manipulation.', desc_pt: 'Controle sobre o tempo da run — reativando efeitos de rodadas passadas e manipulação de Ante.' },
+  dimensions:           { en: 'Dimensions',         pt: 'Dimensões',         desc_en: 'Cross-dimensional powers interacting with parallel game states and alternate realities.', desc_pt: 'Poderes além de dimensões que interagem com estados de jogo paralelos e realidades alternativas.' },
+  celestial:            { en: 'Celestial',          pt: 'Celestial',         desc_en: 'Stars, galaxies and cosmic-scale effects — slow to build, but capable of astronomical scores.', desc_pt: 'Estrelas, galáxias e efeitos em escala cósmica — lentos de construir, mas capazes de pontuações astronômicas.' },
+  // ── Part 2: Anti-Pattern Mechanics ────────────────────────────────────
+  chaos:                { en: 'Chaos',              pt: 'Caos',              desc_en: 'Purely random and unpredictable — every hand can be a surprise, for better or worse.', desc_pt: 'Puramente aleatório e imprevisível — cada mão pode ser uma surpresa, para melhor ou pior.' },
+  corruption:           { en: 'Corruption',         pt: 'Corrupção',         desc_en: 'High-risk, high-reward mechanics that can "break" the UI or offer astronomical Mults in exchange for instability.', desc_pt: 'Mecânicas de alto risco e alta recompensa que podem "quebrar" a UI ou oferecer Mults astronômicos.' },
+  anomaly:              { en: 'Anomaly',             pt: 'Anomalia',          desc_en: 'Unusual, game-bending Jokers that break conventional rules and introduce unexpected mechanics.', desc_pt: 'Curingas incomuns que quebram regras convencionais e introduzem mecânicas inesperadas.' },
+  glitch:               { en: 'Glitch',              pt: 'Glitch',            desc_en: 'Digital glitches, game errors and corrupted data — unstable but extraordinarily powerful.', desc_pt: 'Glitches digitais, erros do jogo e dados corrompidos — instáveis, mas extraordinariamente poderosos.' },
+  paradox:              { en: 'Paradoxes',           pt: 'Paradoxos',         desc_en: 'Self-contradictory effects that bend game logic — impossibly strong under the right conditions.', desc_pt: 'Efeitos auto-contraditórios que dobram a lógica do jogo — incrivelmente fortes nas condições certas.' },
+  // ── Part 3: Specific Synergies ─────────────────────────────────────────
+  elemental:            { en: 'Elemental',           pt: 'Elemental',         desc_en: 'Fire, ice, lightning and elemental affinities that synergize with card suits and hand types.', desc_pt: 'Fogo, gelo, raio e afinidades elementais que fazem sinergia com naipes e tipos de mão.' },
+  tribal:               { en: 'Tribal',              pt: 'Tribal',            desc_en: 'Classes, professions and tribal synergies — power scales with how many of the same tribe you own.', desc_pt: 'Classes, profissões e sinergias tribais — o poder escala com quantos da mesma tribo você possui.' },
+  luck_and_probability: { en: 'Luck & Probability',  pt: 'Sorte e Probabilidade', desc_en: 'Chance-based triggers, lucky coin flips and probability manipulation mechanics.', desc_pt: 'Gatilhos baseados em chance, sorteios e mecânicas de manipulação de probabilidade.' },
+  // ── Part 4: Resource Manipulation ─────────────────────────────────────
+  economy:              { en: 'Economy',             pt: 'Economia',          desc_en: 'Money generation, interest mechanics, shop bonuses and gold-to-power conversions.', desc_pt: 'Geração de dinheiro, mecânicas de juros, bônus de loja e conversão de ouro em poder.' },
+  professions:          { en: 'Professions',         pt: 'Profissões',        desc_en: 'Real-world jobs and skill classes that each bring a unique playstyle to the table.', desc_pt: 'Profissões e classes do mundo real, cada uma trazendo um estilo de jogo único.' },
+  // ── Part 5: Temporal Mechanics ────────────────────────────────────────
+  time:                 { en: 'Time',                pt: 'Tempo',             desc_en: 'Round counters, Ante progression and clock mechanics that grow stronger over a long run.', desc_pt: 'Contadores de rodada, progressão de Ante e mecânicas de relógio que crescem em runs longas.' },
+  final:                { en: 'Final',               pt: 'Final',             desc_en: 'The most powerful game-ending Jokers in Odyssey — reserved for endgame moments of glory.', desc_pt: 'Os Curingas mais poderosos do fim de jogo no Odyssey — reservados para momentos de glória.' },
+  // ── Part 6: Transformations & Mutations ───────────────────────────────
+  transformations:      { en: 'Transformations',     pt: 'Transformações',    desc_en: 'Jokers that evolve, change or permanently transform other cards over time.', desc_pt: 'Curingas que evoluem, mudam ou transformam permanentemente outras cartas ao longo do tempo.' },
+  hand_and_discard:     { en: 'Hand & Discard',      pt: 'Mão e Descarte',    desc_en: 'Hand size, discard count, draw mechanics and card cycling strategies.', desc_pt: 'Tamanho da mão, quantidade de descarte, mecânicas de compra e estratégias de ciclo de cartas.' },
+  // ── Part 7: Social / Meta ──────────────────────────────────────────────
+  social:               { en: 'Social',              pt: 'Social',            desc_en: 'Effects that scale with the total number of Jokers you own — the bigger the crowd, the bigger the bonus.', desc_pt: 'Efeitos que escalam com o total de Curingas que você possui — quanto mais, melhor.' },
+  // ── Part 8: Positioning ────────────────────────────────────────────────
+  pos:                  { en: 'Positioning',         pt: 'Posicionamento',    desc_en: 'Card order, hand position and deck placement effects that reward precise play.', desc_pt: 'Ordem das cartas, posição na mão e efeitos de colocação que recompensam jogadas precisas.' },
+  // ── Part 9: Conditions & Triggers ─────────────────────────────────────
+  cond:                 { en: 'Conditions',          pt: 'Condições',         desc_en: 'Conditional bonuses that activate only under specific game states — high risk, high reward.', desc_pt: 'Bônus condicionais que ativam apenas em estados específicos do jogo — alto risco, alta recompensa.' },
+};
+
+// Select best representative per group: highest rarity first, skip blank placeholder sprites (<5KB)
+const groupReps: Record<string, typeof jokers[0]> = {};
+const jokersByRarityDesc = [...jokers].sort((a, b) => b.rarity - a.rarity);
+for (const j of jokersByRarityDesc) {
+  if (!groupReps[j.group]) {
+    try {
+      const stat = fs.statSync(`public/assets/${j.sprite}`);
+      if (stat.size > 5000) groupReps[j.group] = j;
+    } catch (_) { /* file missing */ }
+  }
+}
+const groupEntries = Object.entries(GROUP_LABELS)
+  .filter(([g]) => g !== 'probability' && groupReps[g])
+  .map(([g, labels]) => ({
+    group: g,
+    rep: groupReps[g],
+    labels,
+    count: jokers.filter(j => j.group === g || (g === 'luck_and_probability' && j.group === 'probability')).length,
+  }));
+
+const RARITY_LABEL: Record<number, string> = { 1: 'Common', 2: 'Uncommon', 3: 'Rare', 4: 'Legendary' };
+const RARITY_COLOR: Record<number, string> = { 1: '#60a5fa', 2: '#4ade80', 3: '#f87171', 4: '#facc15' };
+---
+
+<Layout title="Home" description="Your complete guide to the Balatro Odyssey mod — all Jokers, Decks, Consumables, Vouchers and Blinds.">
+
+  <!-- ── HERO ── -->
+  <section class="relative overflow-hidden min-h-[88vh] flex flex-col items-center justify-center text-center px-8 py-20"
+           style="background: radial-gradient(ellipse 90% 60% at 50% 0%, rgba(108,71,255,0.22) 0%, transparent 70%);">
+
+    <!-- Full-opacity card images on the sides  -->
+    <div class="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+      <!-- Left side -->
+      {LEFT_HERO.map((c) => (
+        <img
+          src={`/assets/${c.src}`}
+          alt="" width="142" height="190"
+          class="absolute w-[71px] h-[95px] md:w-[88px] md:h-[117px]"
+          style={`left:${c.pos}%;top:${c.top}%;transform:rotate(${c.rot}deg);filter:drop-shadow(0 6px 20px rgba(108,71,255,0.45));`}
+          loading="lazy" onerror="this.style.display='none'"
+        />
+      ))}
+      <!-- Right side -->
+      {RIGHT_HERO.map((c) => (
+        <img
+          src={`/assets/${c.src}`}
+          alt="" width="142" height="190"
+          class="absolute w-[71px] h-[95px] md:w-[88px] md:h-[117px]"
+          style={`right:${c.pos}%;top:${c.top}%;transform:rotate(${c.rot}deg);filter:drop-shadow(0 6px 20px rgba(0,212,170,0.35));`}
+          loading="lazy" onerror="this.style.display='none'"
+        />
+      ))}
+      <!-- Fade center for readability -->
+      <div class="absolute inset-0" style="background: radial-gradient(ellipse 52% 100% at 50% 50%, rgba(13,13,26,0.88) 25%, transparent 100%);"></div>
+    </div>
+
+    <!-- Content (above the overlay) -->
+    <div class="relative z-10 max-w-[700px]">
+      <span class="inline-block mb-5 px-4 py-1.5 rounded-full text-[0.8rem] font-bold uppercase tracking-widest text-accent"
+            style="background: rgba(0,212,170,0.12); border: 1px solid rgba(0,212,170,0.3);">
+        <span class="lang-en">✦ Complete Mod Reference — Alpha</span>
+        <span class="lang-pt">✦ Referência Completa do Mod — Alpha</span>
+      </span>
+
+      <h1 class="font-black leading-[1.12] mb-5"
+          style="font-size: clamp(2.4rem, 5vw, 4rem);">
+        <span class="lang-en">The Ultimate Guide to<br><span class="text-primary">Balatro Odyssey</span></span>
+        <span class="lang-pt">O Guia Definitivo de<br><span class="text-primary">Balatro Odyssey</span></span>
+      </h1>
+
+      <p class="text-muted text-[1.05rem] mb-4 leading-relaxed">
+        <span class="lang-en">A Total Cosmic Expansion for Balatro — transform your poker roguelike experience into an epic journey across the frontiers of space, time, and reality.</span>
+        <span class="lang-pt">Uma Expansão Cósmica Total para Balatro — transforme sua experiência no roguelike de pôquer em uma jornada épica pelos confins do espaço, tempo e realidade.</span>
+      </p>
+      <p class="text-muted/70 text-[0.85rem] mb-10 italic">
+        <span class="lang-en">Designed for players who have mastered the base game and seek unprecedented strategic depth.</span>
+        <span class="lang-pt">Projetado para jogadores que dominaram o jogo base e buscam profundidade estratégica sem precedentes.</span>
+      </p>
+
+      <div class="flex flex-wrap gap-3 justify-center mb-12">
+        <a href="/jokers" class="px-7 py-3 rounded-[10px] bg-primary text-white font-bold hover:bg-primary-dark hover:-translate-y-0.5 transition-all shadow-lg shadow-primary/30">
+          <span class="lang-en">Explore Jokers →</span>
+          <span class="lang-pt">Explorar Curingas →</span>
+        </a>
+        <a href="/decks" class="px-7 py-3 rounded-[10px] border border-[var(--border)] text-white font-semibold hover:bg-primary/10 hover:border-primary/50 transition-all">
+          <span class="lang-en">Browse Decks</span>
+          <span class="lang-pt">Ver Baralhos</span>
+        </a>
+      </div>
+
+      <!-- Stats row -->
+      <div class="flex flex-wrap justify-center gap-6">
+        {[
+          { en: '1,000', pt: '1.000', label_en: 'Jokers',    label_pt: 'Curingas',   href: '/jokers' },
+          { en: '100',   pt: '100',   label_en: 'Decks',      label_pt: 'Baralhos',   href: '/decks' },
+          { en: '200',   pt: '200',   label_en: 'Vouchers',   label_pt: 'Cupons',     href: '/vouchers' },
+          { en: '100+',  pt: '100+',  label_en: 'Consumables',label_pt: 'Consumíveis',href: '/tarots' },
+          { en: '100',   pt: '100',   label_en: 'Boss Blinds',label_pt: 'Boss Blinds',href: '/blinds' },
+          { en: '17',    pt: '17',    label_en: 'Enhancements',label_pt: 'Melhorias', href: '#' },
+        ].map(s => (
+          <a href={s.href} class="text-center no-underline group">
+            <div class="text-2xl font-black text-primary group-hover:text-white transition-colors">
+              <span class="lang-en">{s.en}</span><span class="lang-pt">{s.pt}</span>
+            </div>
+            <div class="text-muted text-[0.72rem] font-semibold uppercase tracking-wider mt-0.5 group-hover:text-white/80 transition-colors">
+              <span class="lang-en">{s.label_en}</span><span class="lang-pt">{s.label_pt}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── JOKER GROUPS ── -->
+  <section class="px-8 py-20 max-w-[1100px] mx-auto">
+    <div class="mb-14">
+      <p class="text-accent text-[0.78rem] font-bold uppercase tracking-[0.12em] mb-2">
+        <span class="lang-en">22 Unique Groups</span>
+        <span class="lang-pt">22 Grupos Únicos</span>
+      </p>
+      <h2 class="font-extrabold text-white mb-3" style="font-size: clamp(1.6rem, 3vw, 2.4rem);">
+        <span class="lang-en">Joker Groups</span>
+        <span class="lang-pt">Grupos de Curingas</span>
+      </h2>
+      <p class="text-muted max-w-[580px] text-[0.95rem] leading-relaxed">
+        <span class="lang-en">1,000 Jokers organized into 22 thematic categories, each with shared mechanics and playstyle identity. Mix groups to build powerful synergies.</span>
+        <span class="lang-pt">1.000 Curingas organizados em 22 categorias temáticas, cada uma com mecânicas e identidade de jogo próprias. Misture grupos para construir sinergias poderosas.</span>
+      </p>
+    </div>
+
+    <div class="space-y-0">
+      {groupEntries.map(({ group, rep, labels, count }, i) => {
+        const rarity = rep.rarity;
+        const rarityColor = RARITY_COLOR[rarity] || '#fff';
+        return (
+          <a href={`/jokers?group=${group}`}
+             class="group flex items-center gap-6 py-4 border-b border-transparent hover:border-[var(--border)] transition-all duration-200 no-underline"
+             style="border-bottom-color: rgba(108,71,255,0.12);">
+
+            <!-- Rank number -->
+            <span class="text-[0.75rem] font-bold text-muted w-6 text-right shrink-0 group-hover:text-accent transition-colors">
+              {String(i + 1).padStart(2, '0')}
+            </span>
+
+            <!-- Card image (natural 100% = 142×190) -->
+            <div class="shrink-0">
+              <img
+                src={`/assets/${rep.sprite}`}
+                alt={rep.name_en}
+                width="142" height="190"
+                loading="lazy"
+                class="transition-transform duration-200 group-hover:scale-105"
+                onerror="this.style.opacity='0.1'"
+              />
+            </div>
+
+            <!-- Info -->
+            <div class="flex-1 min-w-0">
+              <div class="flex items-baseline gap-3 mb-1 flex-wrap">
+                <h3 class="font-bold text-white text-[1.05rem] group-hover:text-accent transition-colors">
+                  <span class="lang-en">{labels.en}</span>
+                  <span class="lang-pt">{labels.pt}</span>
+                </h3>
+                <span class="text-[0.72rem] font-bold text-muted">
+                  {count} <span class="lang-en">jokers</span><span class="lang-pt">curingas</span>
+                </span>
+                <span class="text-[0.68rem] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded"
+                      style={`color: ${rarityColor}; background: ${rarityColor}20; border: 1px solid ${rarityColor}40;`}>
+                  {RARITY_LABEL[rarity]}
+                </span>
+              </div>
+              <p class="text-muted text-[0.85rem] leading-relaxed max-w-[500px]">
+                <span class="lang-en">{labels.desc_en}</span>
+                <span class="lang-pt">{labels.desc_pt}</span>
+              </p>
+            </div>
+
+            <!-- Arrow  -->
+            <span class="text-muted group-hover:text-accent group-hover:translate-x-1 transition-all shrink-0">→</span>
+          </a>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- ── CONTENT OVERVIEW ── -->
+  <section id="categories" class="px-8 py-20 border-t border-[var(--border)]"
+           style="background: linear-gradient(180deg, rgba(108,71,255,0.06) 0%, transparent 100%);">
+    <div class="max-w-[1100px] mx-auto">
+      <div class="mb-12">
+        <p class="text-accent text-[0.78rem] font-bold uppercase tracking-[0.12em] mb-2">
+          <span class="lang-en">Browse by Category</span>
+          <span class="lang-pt">Navegar por Categoria</span>
+        </p>
+        <h2 class="font-extrabold text-white mb-3" style="font-size: clamp(1.6rem, 3vw, 2.4rem);">
+          <span class="lang-en">Everything in the Mod</span>
+          <span class="lang-pt">Tudo no Mod</span>
+        </h2>
+        <p class="text-muted text-[0.95rem]">
+          <span class="lang-en">Balatro Odyssey replaces and expands almost every aspect of the original game with cosmic, paradoxical and transcendental mechanics.</span>
+          <span class="lang-pt">Balatro Odyssey substitui e expande quase todos os aspectos do jogo original com mecânicas cósmicas, paradoxais e transcendentais.</span>
+        </p>
+      </div>
+
+      <div class="space-y-0">
+        {[
+          {
+            href: '/jokers', icon: '🃏',
+            label_en: 'Jokers', label_pt: 'Curingas',
+            count_en: '1,000', count_pt: '1.000',
+            desc_en: 'The heart of the mod. 1,000 Jokers divided into 22 thematic groups — Singularity, Quantum, Celestial, Glitch, and more. Each group has a unique playstyle with passive and active effects that interact with cards, economy, and hand types.',
+            desc_pt: 'O coração do mod. 1.000 Curingas divididos em 22 grupos temáticos — Singularidade, Quântico, Celestial, Glitch e mais. Cada grupo tem um estilo de jogo único com efeitos passivos e ativos que interagem com cartas, economia e tipos de mão.',
+          },
+          {
+            href: '/decks', icon: '🎴',
+            label_en: 'Decks', label_pt: 'Baralhos',
+            count_en: '100', count_pt: '100',
+            desc_en: '100 unique Decks that each fundamentally change how you approach a run. From decks that manipulate black holes to others based on quantum probability or elemental affinities — every deck provides a completely different starting strategy.',
+            desc_pt: '100 Baralhos únicos que mudam fundamentalmente a abordagem de cada run. De baralhos que manipulam buracos negros a outros baseados em probabilidade quântica — cada baralho oferece uma estratégia inicial completamente diferente.',
+          },
+          {
+            href: '/vouchers', icon: '🏷️',
+            label_en: 'Vouchers', label_pt: 'Cupons',
+            count_en: '200', count_pt: '200',
+            desc_en: '200 Vouchers in 100 pairs — each pair has a base voucher and a powerful upgrade. Permanent shop purchases that redefine your run\'s economy, unlock new slot types, alter card probabilities, and grant unique persistent bonuses.',
+            desc_pt: '200 Cupons em 100 pares — cada par tem um cupom base e uma melhoria poderosa. Compras permanentes de loja que redefinem a economia da run, desbloqueiam novos tipos de slots, alteram probabilidades e concedem bônus persistentes únicos.',
+          },
+          {
+            href: '/tarots', icon: '🌙',
+            label_en: 'Tarot Cards', label_pt: 'Tarôs',
+            count_en: '100', count_pt: '100',
+            desc_en: '100 Tarot cards — arcana that bend the rules of luck. Tarots provide immediate powerful effects: enhancing cards, generating money, upgrading hand types, and manipulating the deck state. Consumed on use.',
+            desc_pt: '100 cartas de Tarô — arcana que dobram as regras da sorte. Tarôs fornecem efeitos imediatos e poderosos: melhorando cartas, gerando dinheiro, evoluindo tipos de mão e manipulando o estado do baralho. Consumidos ao usar.',
+          },
+          {
+            href: '/planets', icon: '🪐',
+            label_en: 'Planet Cards', label_pt: 'Planetas',
+            count_en: '100', count_pt: '100',
+            desc_en: '100 Planet cards for astronomical hand upgrades. Each Planet levels up a specific poker hand type, increasing its base Chips and Mult multipliers. Some planets target multiple hands or apply bonus effects beyond the standard upgrade.',
+            desc_pt: '100 cartas de Planeta para evoluções astronômicas de mãos. Cada Planeta sobe o nível de um tipo específico de mão de pôquer. Alguns planetas afetam múltiplas mãos ou aplicam efeitos além da melhoria padrão.',
+          },
+          {
+            href: '/spectrals', icon: '👻',
+            label_en: 'Spectral Cards', label_pt: 'Espectrais',
+            count_en: '100', count_pt: '100',
+            desc_en: '100 Spectral cards — chaotic powers that demand high sacrifices. Spectrals offer transformative, often run-altering effects: duplicating Jokers, permanently enhancing entire decks, shifting hand levels, or granting unique passive mechanics.',
+            desc_pt: '100 cartas Espectrais — poderes caóticos que exigem grandes sacrifícios. Espectrais oferecem efeitos transformadores que podem alterar completamente a run: duplicar Curingas, melhorar baralhos inteiros, mudar níveis de mão.',
+          },
+          {
+            href: '/blinds', icon: '🎯',
+            label_en: 'Boss Blinds', label_pt: 'Boss Blinds',
+            count_en: '100', count_pt: '100',
+            desc_en: '100 Boss Blinds with unique cosmic abilities that test every aspect of your build. Each boss applies a special rule for the blind — debuffing suit types, randomizing cards, imposing score conditions, or activating punishing penalties.',
+            desc_pt: '100 Boss Blinds com habilidades cósmicas únicas que testam todos os aspectos da sua build. Cada boss aplica uma regra especial — debuffando tipos de naipes, randomizando cartas, impondo condições de pontuação.',
+          },
+        ].map(cat => (
+          <a href={cat.href}
+             class="group flex items-start gap-6 py-6 border-b border-transparent hover:bg-dark2/40 transition-all duration-200 no-underline rounded-xl px-4 -mx-4"
+             style="border-bottom-color: rgba(108,71,255,0.12);">
+            <div class="text-3xl mt-0.5 shrink-0 w-10 text-center">{cat.icon}</div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-baseline gap-3 mb-1.5 flex-wrap">
+                <h3 class="font-bold text-white text-[1.05rem] group-hover:text-primary transition-colors">
+                  <span class="lang-en">{cat.label_en}</span>
+                  <span class="lang-pt">{cat.label_pt}</span>
+                </h3>
+                <span class="text-primary font-black text-[1.1rem]">
+                  <span class="lang-en">{cat.count_en}</span>
+                  <span class="lang-pt">{cat.count_pt}</span>
+                </span>
+              </div>
+              <p class="text-muted text-[0.88rem] leading-relaxed">
+                <span class="lang-en">{cat.desc_en}</span>
+                <span class="lang-pt">{cat.desc_pt}</span>
+              </p>
+            </div>
+            <span class="text-muted group-hover:text-primary group-hover:translate-x-1 transition-all shrink-0 mt-1">→</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</Layout>

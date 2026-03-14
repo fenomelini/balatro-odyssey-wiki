@@ -1,0 +1,209 @@
+---
+import Layout from '../../components/layout/Layout.astro';
+import RarityBadge from '../../components/ui/RarityBadge.astro';
+import { formatDescription } from '../../utils/formatDescription';
+import { getRarityStyle } from '../../utils/rarityColors';
+import allJokers from '../../data/jokers.json';
+
+export async function getStaticPaths() {
+  return allJokers.map(joker => ({
+    params: { key: joker.key },
+    props: { joker },
+  }));
+}
+
+interface Props {
+  joker: typeof allJokers[0];
+}
+
+const { joker } = Astro.props;
+const jokerVars = (joker as any).vars as (number | string | null)[] | undefined;
+const descEnHtml = formatDescription(joker.desc_en, jokerVars);
+const descPtHtml = formatDescription(joker.desc_pt, jokerVars);
+
+const GROUP_LABELS: Record<string, { en: string; pt: string }> = {
+  singularity:          { en: 'Singularity', pt: 'Singularidade' },
+  quantum:              { en: 'Quantum', pt: 'Quântico' },
+  temporal:             { en: 'Temporal', pt: 'Temporal' },
+  dimensions:           { en: 'Dimensions', pt: 'Dimensões' },
+  corruption:           { en: 'Corruption', pt: 'Corrupção' },
+  chaos:                { en: 'Chaos', pt: 'Caos' },
+  economy:              { en: 'Economy', pt: 'Economia' },
+  transformations:      { en: 'Transformations', pt: 'Transformações' },
+  luck_and_probability: { en: 'Luck & Probability', pt: 'Sorte e Probabilidade' },
+  pos:                  { en: 'Positioning', pt: 'Posicionamento' },
+  hand_and_discard:     { en: 'Hand & Discard', pt: 'Mão e Descarte' },
+  elemental:            { en: 'Elemental', pt: 'Elemental' },
+  tribal:               { en: 'Tribal', pt: 'Tribal' },
+  social:               { en: 'Social', pt: 'Social' },
+  cond:                 { en: 'Conditions', pt: 'Condições' },
+  time:                 { en: 'Time', pt: 'Tempo' },
+  paradox:              { en: 'Paradoxes', pt: 'Paradoxos' },
+  celestial:            { en: 'Celestial', pt: 'Celestial' },
+  anomaly:              { en: 'Anomaly', pt: 'Anomalia' },
+  glitch:               { en: 'Glitch', pt: 'Glitch' },
+  professions:          { en: 'Professions', pt: 'Profissões' },
+  final:                { en: 'Final', pt: 'Final' },
+};
+
+const groupLabel = GROUP_LABELS[joker.group] ?? { en: joker.group, pt: joker.group };
+// Same-group jokers (up to 6, excluding self)
+const sameGroup = allJokers
+  .filter(j => j.group === joker.group && j.key !== joker.key)
+  .slice(0, 6);
+---
+
+<Layout title={joker.name_en} description={joker.desc_en.join(' ')}>
+  <div class="px-[5%] py-12 max-w-[900px] mx-auto">
+    <!-- Back -->
+    <a href="/jokers" class="inline-flex items-center gap-2 text-muted hover:text-white transition-colors mb-8 text-[0.9rem]">
+      ← <span class="lang-en">Back to Jokers</span>
+      <span class="lang-pt">Voltar aos Curingas</span>
+    </a>
+
+    <div class="flex flex-col md:flex-row gap-10">
+      <!-- Sprite (large) -->
+      <div class="flex-shrink-0 flex flex-col items-center gap-4">
+        <img
+          src={`/assets/${joker.sprite}`}
+          alt={joker.name_en}
+          width="142"
+          height="190"
+          class="drop-shadow-[0_8px_24px_rgba(108,71,255,0.5)]"
+          onerror="this.classList.add('sprite-error')"
+        />
+        <span class="text-accent text-[0.72rem] font-bold uppercase tracking-wide px-3 py-1 rounded bg-accent/10">
+          {groupLabel.en}
+        </span>
+      </div>
+
+      <!-- Details -->
+      <div class="flex-1">
+        <!-- Name -->
+        <h1 class="font-black text-white mb-1" style="font-size: clamp(1.6rem, 3vw, 2.2rem);">
+          <span class="lang-en">{joker.name_en}</span>
+          <span class="lang-pt">{joker.name_pt}</span>
+        </h1>
+
+        <!-- Group label (localized) -->
+        <p class="text-muted text-[0.9rem] mb-4">
+          <span class="lang-en">{groupLabel.en} Group</span>
+          <span class="lang-pt">Grupo {groupLabel.pt}</span>
+        </p>
+
+        <!-- Description -->
+        <div class="rounded-xl p-4 bg-dark2 border border-[var(--border)] mb-2 text-[0.95rem] leading-relaxed">
+          <div class="lang-en" set:html={descEnHtml} />
+          <div class="lang-pt" set:html={descPtHtml} />
+        </div>
+        <!-- ? placeholder note -->
+        {(joker.desc_en.some(l => l.includes('#')) || joker.desc_pt.some(l => l.includes('#'))) && (
+          <p class="text-muted text-[0.78rem] mb-6 px-1">
+            <span class="lang-en">
+              <span class="text-yellow-300 font-bold">?</span> = Dynamic value — changes based on game state.
+            </span>
+            <span class="lang-pt">
+              <span class="text-yellow-300 font-bold">?</span> = Valor dinâmico — muda conforme o estado do jogo.
+            </span>
+          </p>
+        )}
+        {!(joker.desc_en.some(l => l.includes('#')) || joker.desc_pt.some(l => l.includes('#'))) && (
+          <div class="mb-6" />
+        )}
+
+        <!-- Metadata grid -->
+        <div class="grid grid-cols-2 gap-4 text-[0.9rem]">
+          <div class="rounded-xl p-4 bg-dark2 border border-[var(--border)]">
+            <p class="text-muted text-[0.75rem] uppercase tracking-wide mb-1">
+              <span class="lang-en">Rarity</span>
+              <span class="lang-pt">Raridade</span>
+            </p>
+            <RarityBadge rarity={joker.rarity} />
+          </div>
+
+          <div class="rounded-xl p-4 bg-dark2 border border-[var(--border)]">
+            <p class="text-muted text-[0.75rem] uppercase tracking-wide mb-1">
+              <span class="lang-en">Cost</span>
+              <span class="lang-pt">Custo</span>
+            </p>
+            <span class="text-yellow-400 font-bold text-[1.1rem]">${joker.cost}</span>
+          </div>
+
+          <div class="rounded-xl p-4 bg-dark2 border border-[var(--border)]">
+            <p class="text-muted text-[0.75rem] uppercase tracking-wide mb-2">Blueprint</p>
+            <span class:list={['font-semibold', joker.blueprint_compat ? 'text-green-400' : 'text-red-400']}>
+              <span class="lang-en">{joker.blueprint_compat ? '✓ Compatible' : '✗ Not Compatible'}</span>
+              <span class="lang-pt">{joker.blueprint_compat ? '✓ Compatível' : '✗ Incompatível'}</span>
+            </span>
+            <p class="text-muted text-[0.75rem] mt-2 leading-snug">
+              <span class="lang-en">Can be copied by the Blueprint joker to duplicate its effect.</span>
+              <span class="lang-pt">Pode ser copiado pelo Curinga Blueprint para duplicar seu efeito.</span>
+            </p>
+          </div>
+
+          <div class="rounded-xl p-4 bg-dark2 border border-[var(--border)]">
+            <p class="text-muted text-[0.75rem] uppercase tracking-wide mb-2">
+              <span class="lang-en">Eternal</span>
+              <span class="lang-pt">Eterno</span>
+            </p>
+            <span class:list={['font-semibold', joker.eternal_compat ? 'text-green-400' : 'text-red-400']}>
+              <span class="lang-en">{joker.eternal_compat ? '✓ Compatible' : '✗ Not Compatible'}</span>
+              <span class="lang-pt">{joker.eternal_compat ? '✓ Compatível' : '✗ Incompatível'}</span>
+            </span>
+            <p class="text-muted text-[0.75rem] mt-2 leading-snug">
+              <span class="lang-en">Can receive the Eternal seal — makes it impossible to sell or destroy.</span>
+              <span class="lang-pt">Pode receber o selo Eterno — torna impossível vender ou destruir.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Same Group -->
+    {sameGroup.length > 0 && (
+      <div class="mt-12">
+        <div class="flex items-center gap-3 mb-5">
+          <h2 class="text-white font-bold text-[1.1rem]">
+            <span class="lang-en">More from</span>
+            <span class="lang-pt">Mais de</span>
+          </h2>
+          <span class="text-accent text-[0.8rem] font-bold uppercase tracking-wide px-3 py-1 rounded bg-accent/10">
+            <span class="lang-en">{groupLabel.en}</span>
+            <span class="lang-pt">{groupLabel.pt}</span>
+          </span>
+          <a href={`/jokers?group=${joker.group}`} class="text-muted text-[0.82rem] hover:text-primary transition-colors ml-auto">
+            <span class="lang-en">See all →</span>
+            <span class="lang-pt">Ver todos →</span>
+          </a>
+        </div>
+        <div class="grid gap-4" style="grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));">
+          {sameGroup.map(j => {
+            const s = getRarityStyle(j.rarity);
+            return (
+              <a href={`/jokers/${j.key}`}
+                class:list={['block rounded-2xl p-3 border transition-all duration-200 no-underline bg-card hover:-translate-y-1', s.border, j.rarity === 4 ? 'legendary-glow' : 'hover:border-primary']}>
+                <div class="flex justify-center mb-3">
+                  <img src={`/assets/${j.sprite}`} alt={j.name_en}
+                    width="142" height="190"
+                    loading="lazy"
+                    class="drop-shadow-[0_4px_12px_rgba(108,71,255,0.3)]"
+                    onerror="this.style.opacity='0.15'" />
+                </div>
+                <div class="text-center">
+                  <span class="lang-en block text-[0.85rem] font-bold text-white leading-tight">{j.name_en}</span>
+                  <span class="lang-pt block text-[0.85rem] font-bold text-white leading-tight">{j.name_pt}</span>
+                </div>
+                <div class="flex justify-center mt-2">
+                  <span class:list={['text-[0.68rem] px-2 py-0.5 rounded-full border font-bold', s.border, s.text, s.bg]}>
+                    <span class="lang-en">{s.label_en}</span>
+                    <span class="lang-pt">{s.label_pt}</span>
+                  </span>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    )}
+  </div>
+</Layout>

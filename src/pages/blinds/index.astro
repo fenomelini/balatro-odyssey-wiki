@@ -1,0 +1,97 @@
+---
+import Layout from '../../components/layout/Layout.astro';
+import blindsRaw from '../../data/blinds.json';
+import SearchBox from '../../components/ui/SearchBox.astro';
+import { stripDescription } from '../../utils/formatDescription';
+
+const blinds = blindsRaw.map(b => ({ ...b, isStandard: b.id === 1 || b.id === 2 }));
+const bossBlindsCount = blinds.length - 2;
+---
+
+<Layout title="Blinds" description="Browse all Balatro Odyssey Boss Blinds.">
+  <div class="px-[5%] py-12 max-w-[1400px] mx-auto">
+    <div class="mb-8">
+      <p class="text-accent text-[0.8rem] font-bold uppercase tracking-[0.1em] mb-2">Browse</p>
+      <h1 class="font-extrabold text-white mb-1" style="font-size: clamp(1.8rem, 3vw, 2.6rem);">Blinds</h1>
+      <p class="text-muted">
+        <span class="lang-en">{bossBlindsCount} Boss Blinds + 2 Standard Blinds</span>
+        <span class="lang-pt">{bossBlindsCount} Boss Blinds + 2 Blinds Padrão</span>
+      </p>
+    </div>
+
+    <!-- Note about standard blinds -->
+    <div class="mb-6 p-4 rounded-xl bg-dark2 border border-[var(--border)] text-[0.85rem] text-muted">
+      <span class="text-yellow-300 font-bold">ℹ</span>
+      <span class="lang-en ml-2">
+        <strong class="text-white">Small Blind</strong> and <strong class="text-white">Big Blind</strong> (#1 and #2) are the standard base-game antes from Balatro — they are included here for reference. The remaining {bossBlindsCount} are new Boss Blinds added exclusively by the Odyssey mod.
+      </span>
+      <span class="lang-pt ml-2">
+        <strong class="text-white">Small Blind</strong> e <strong class="text-white">Big Blind</strong> (#1 e #2) são os antes padrão do Balatro base — incluídos aqui para referência. Os demais {bossBlindsCount} são novos Boss Blinds adicionados exclusivamente pelo mod Odyssey.
+      </span>
+    </div>
+
+    <SearchBox placeholder_en="Search blinds..." placeholder_pt="Buscar blinds..." />
+
+    <div id="blind-grid" class="grid gap-4" style="grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));">
+      {blinds.map(blind => {
+        const isStandard = blind.isStandard;
+        return (
+          <div
+            class:list={[
+              'blind-card rounded-2xl p-2 border border-transparent bg-transparent transition-all duration-200',
+              isStandard
+                ? 'hover:bg-card hover:border-blue-400/60 opacity-75'
+                : 'hover:bg-card hover:border-red-400 hover:-translate-y-1'
+            ]}
+            data-name-en={blind.name_en.toLowerCase()}
+            data-name-pt={blind.name_pt.toLowerCase()}
+          >
+            <div class="flex justify-center mb-3">
+              <img
+                src={`/assets/${blind.sprite}`}
+                alt={blind.name_en}
+                width="142"
+                height="190"
+                loading="lazy"
+                class:list={['drop-shadow-[0_4px_12px_rgba(239,68,68,0.4)]', isStandard ? 'grayscale opacity-60' : '']}
+                onerror="this.classList.add('sprite-error')"
+              />
+            </div>
+            <div class="flex justify-center mb-2">
+              {isStandard ? (
+                <span class="text-[0.7rem] font-bold uppercase tracking-wide px-2 py-0.5 rounded text-blue-400 bg-blue-400/10">
+                  <span class="lang-en">Standard Blind</span>
+                  <span class="lang-pt">Blind Padrão</span>
+                </span>
+              ) : (
+                <span class="text-[0.72rem] font-bold uppercase tracking-wide px-2 py-0.5 rounded text-red-400 bg-red-400/10">
+                  #{blind.id}
+                </span>
+              )}
+            </div>
+            <div class="text-center mb-2 flex flex-col justify-center min-h-[2.5rem]">
+              <span class="lang-en block text-[1rem] font-bold text-white leading-tight">{blind.name_en}</span>
+              <span class="lang-pt block text-[1rem] font-bold text-white leading-tight">{blind.name_pt}</span>
+            </div>
+            <div class="rounded-lg p-3 bg-dark3/70 border border-[rgba(108,71,255,0.15)] text-[0.82rem] text-muted leading-snug">
+              <span class="lang-en">{stripDescription(blind.desc_en)}</span>
+              <span class="lang-pt">{stripDescription(blind.desc_pt)}</span>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+
+  <script>
+    const si = document.getElementById('search-input') as HTMLInputElement | null;
+    si?.addEventListener('input', () => {
+      const q = si.value.toLowerCase();
+      const lang = document.documentElement.getAttribute('data-lang') || 'en';
+      document.querySelectorAll<HTMLElement>('.blind-card').forEach(card => {
+        const name = (lang === 'pt' ? card.dataset.namePt : card.dataset.nameEn) ?? '';
+        card.style.display = !q || name.includes(q) ? '' : 'none';
+      });
+    });
+  </script>
+</Layout>

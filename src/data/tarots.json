@@ -1,0 +1,1542 @@
+[
+  {
+    "id": 1,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_1.png",
+    "name_en": "The Fool",
+    "name_pt": "O Louco",
+    "desc_en": [
+      "Creates the last {C:tarot}Tarot{} or",
+      "{C:planet}Planet{} card used.",
+      "{C:inactive}(Last: #1#){}"
+    ],
+    "desc_pt": [
+      "Cria o último {C:tarot}Tarô{} ou",
+      "{C:planet}Planeta{} usado.",
+      "{C:inactive}(Último: #1#){}"
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 2,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_2.png",
+    "name_en": "The Magician",
+    "name_pt": "O Mago",
+    "desc_en": [
+      "Creates 2 random enhanced cards."
+    ],
+    "desc_pt": [
+      "Cria 2 cartas com aprimoramento",
+      "aleatório."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 3,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_3.png",
+    "name_en": "The High Priestess",
+    "name_pt": "A Sacerdotisa",
+    "desc_en": [
+      "Creates 2 random Planet cards."
+    ],
+    "desc_pt": [
+      "Cria 2 cartas de Planeta",
+      "aleatórias."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 4,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_4.png",
+    "name_en": "The Empress",
+    "name_pt": "A Imperatriz",
+    "desc_en": [
+      "Enhances 2 selected cards to",
+      "Ruby cards."
+    ],
+    "desc_pt": [
+      "Aprimora 2 cartas selecionadas",
+      "para Cartas de Rubi."
+    ],
+    "max_hand": 2
+  },
+  {
+    "id": 5,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_5.png",
+    "name_en": "The Emperor",
+    "name_pt": "O Imperador",
+    "desc_en": [
+      "Creates 2 random Tarot cards."
+    ],
+    "desc_pt": [
+      "Cria 2 cartas de Tarô",
+      "aleatórias."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 6,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_6.png",
+    "name_en": "The Hierophant",
+    "name_pt": "O Hierofante",
+    "desc_en": [
+      "Enhances 2 selected cards to",
+      "Emerald cards."
+    ],
+    "desc_pt": [
+      "Aprimora 2 cartas selecionadas",
+      "para Cartas de Esmeralda."
+    ],
+    "max_hand": 2
+  },
+  {
+    "id": 7,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_7.png",
+    "name_en": "The Lovers",
+    "name_pt": "Os Amantes",
+    "desc_en": [
+      "Enhances 1 selected card to a",
+      "Cloth card."
+    ],
+    "desc_pt": [
+      "Aprimora 1 carta selecionada",
+      "para Carta de Tecido."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 8,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_8.png",
+    "name_en": "The Chariot",
+    "name_pt": "A Carruagem",
+    "desc_en": [
+      "Enhances 1 selected card to a",
+      "Rubber card."
+    ],
+    "desc_pt": [
+      "Aprimora 1 carta selecionada",
+      "para Carta de Borracha."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 9,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_9.png",
+    "name_en": "Justice",
+    "name_pt": "A Justiça",
+    "desc_en": [
+      "Enhances 1 selected card to a",
+      "Ceramic card."
+    ],
+    "desc_pt": [
+      "Aprimora 1 carta selecionada",
+      "para Carta de Cerâmica."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 10,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_10.png",
+    "name_en": "The Hermit",
+    "name_pt": "O Eremita",
+    "desc_en": [
+      "Doubles your money (Max $20)."
+    ],
+    "desc_pt": [
+      "Dobra seu dinheiro (Máximo de",
+      "$20)."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 11,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_11.png",
+    "name_en": "The Wheel of Fortune",
+    "name_pt": "A Roda da Fortuna",
+    "desc_en": [
+      "1 in 4 chance to add Foil, Holo,",
+      "or Poly edition to a random",
+      "Joker."
+    ],
+    "desc_pt": [
+      "1 em 4 chance de adicionar",
+      "Edição Holográfica,",
+      "Policromática ou Brilhante a um",
+      "Curinga aleatório."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 12,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_12.png",
+    "name_en": "Strength",
+    "name_pt": "A Força",
+    "desc_en": [
+      "Increases rank of up to 2",
+      "selected cards by 1."
+    ],
+    "desc_pt": [
+      "Aumenta o Rank de até 2 cartas",
+      "selecionadas em 1."
+    ],
+    "max_hand": 2
+  },
+  {
+    "id": 13,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_13.png",
+    "name_en": "The Hanged Man",
+    "name_pt": "O Enforcado",
+    "desc_en": [
+      "Destroys up to 2 selected cards."
+    ],
+    "desc_pt": [
+      "Remove até 2 cartas selecionadas",
+      "do baralho."
+    ],
+    "max_hand": 2
+  },
+  {
+    "id": 14,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_14.png",
+    "name_en": "Death",
+    "name_pt": "A Morte",
+    "desc_en": [
+      "Transforms the left selected",
+      "card into the right selected",
+      "card."
+    ],
+    "desc_pt": [
+      "Transforma a carta à esquerda na",
+      "carta à direita (Selecionar 2)."
+    ],
+    "max_hand": 2
+  },
+  {
+    "id": 15,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_15.png",
+    "name_en": "Temperance",
+    "name_pt": "A Temperança",
+    "desc_en": [
+      "Gives total sell value of all",
+      "Jokers (Max $50)."
+    ],
+    "desc_pt": [
+      "Dá o valor de venda total de",
+      "todos os Curingas (Máximo de",
+      "$50)."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 16,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_16.png",
+    "name_en": "The Devil",
+    "name_pt": "O Diabo",
+    "desc_en": [
+      "Enhances 1 selected card to a",
+      "Diamond card."
+    ],
+    "desc_pt": [
+      "Aprimora 1 carta selecionada",
+      "para Carta de Diamante."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 17,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_17.png",
+    "name_en": "The Tower",
+    "name_pt": "A Torre",
+    "desc_en": [
+      "Enhances 1 selected card to a",
+      "Platinum card."
+    ],
+    "desc_pt": [
+      "Aprimora 1 carta selecionada",
+      "para Carta de Platina."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 18,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_18.png",
+    "name_en": "The Star",
+    "name_pt": "A Estrela",
+    "desc_en": [
+      "Converts up to 3 selected cards",
+      "to Diamonds."
+    ],
+    "desc_pt": [
+      "Converte até 3 cartas",
+      "selecionadas para o naipe de",
+      "Ouros."
+    ],
+    "max_hand": 3
+  },
+  {
+    "id": 19,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_19.png",
+    "name_en": "The Moon",
+    "name_pt": "A Lua",
+    "desc_en": [
+      "Converts up to 3 selected cards",
+      "to Clubs."
+    ],
+    "desc_pt": [
+      "Converte até 3 cartas",
+      "selecionadas para o naipe de",
+      "Paus."
+    ],
+    "max_hand": 3
+  },
+  {
+    "id": 20,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_20.png",
+    "name_en": "The Sun",
+    "name_pt": "O Sol",
+    "desc_en": [
+      "Converts up to 3 selected cards",
+      "to Hearts."
+    ],
+    "desc_pt": [
+      "Converte até 3 cartas",
+      "selecionadas para o naipe de",
+      "Copas."
+    ],
+    "max_hand": 3
+  },
+  {
+    "id": 21,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_21.png",
+    "name_en": "Judgement",
+    "name_pt": "O Julgamento",
+    "desc_en": [
+      "Creates a random Joker card."
+    ],
+    "desc_pt": [
+      "Cria um Curinga aleatório."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 22,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_22.png",
+    "name_en": "The World",
+    "name_pt": "O Mundo",
+    "desc_en": [
+      "Converts up to 3 selected cards",
+      "to Spades."
+    ],
+    "desc_pt": [
+      "Converte até 3 cartas",
+      "selecionadas para o naipe de",
+      "Espadas."
+    ],
+    "max_hand": 3
+  },
+  {
+    "id": 23,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_23.png",
+    "name_en": "The Aeon",
+    "name_pt": "O Eon",
+    "desc_en": [
+      "Resets the current Ante."
+    ],
+    "desc_pt": [
+      "Reinicia o Aposta atual."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 24,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_24.png",
+    "name_en": "The Universe",
+    "name_pt": "O Universo",
+    "desc_en": [
+      "Creates 1 Planet card for each",
+      "poker hand type."
+    ],
+    "desc_pt": [
+      "Cria 1 carta de Planeta para",
+      "cada tipo de mão de pôquer."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 25,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_25.png",
+    "name_en": "The Void",
+    "name_pt": "O Vazio",
+    "desc_en": [
+      "Destroys up to 3 cards and adds",
+      "$10."
+    ],
+    "desc_pt": [
+      "Destrói 3 cartas e ganha $10."
+    ],
+    "max_hand": 3
+  },
+  {
+    "id": 26,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_26.png",
+    "name_en": "The Singularity",
+    "name_pt": "A Singularidade",
+    "desc_en": [
+      "Merges 2 selected cards into",
+      "one."
+    ],
+    "desc_pt": [
+      "Funde 2 cartas em 1."
+    ],
+    "max_hand": 2
+  },
+  {
+    "id": 27,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_27.png",
+    "name_en": "The Quantum",
+    "name_pt": "O Quantum",
+    "desc_en": [
+      "Rerolls rank and suit of 3",
+      "selected cards."
+    ],
+    "desc_pt": [
+      "Rerola Rank e Naipe de 3 cartas",
+      "selecionadas."
+    ],
+    "max_hand": 3
+  },
+  {
+    "id": 28,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_28.png",
+    "name_en": "The Time",
+    "name_pt": "O Tempo",
+    "desc_en": [
+      "+1 Hand."
+    ],
+    "desc_pt": [
+      "+1 Mão."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 29,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_29.png",
+    "name_en": "The Space",
+    "name_pt": "O Espaço",
+    "desc_en": [
+      "+1 Hand Size."
+    ],
+    "desc_pt": [
+      "+1 Tamanho de Mão."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 30,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_30.png",
+    "name_en": "Matter",
+    "name_pt": "A Matéria",
+    "desc_en": [
+      "Creates 2 {C:attention}Emerald{} cards"
+    ],
+    "desc_pt": [
+      "Cria 2 Cartas de {C:attention}Esmeralda{}"
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 31,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_31.png",
+    "name_en": "Energy",
+    "name_pt": "A Energia",
+    "desc_en": [
+      "Creates 2 {C:attention}Plastic{} cards"
+    ],
+    "desc_pt": [
+      "Cria 2 Cartas de {C:attention}Plástico{}"
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 32,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_32.png",
+    "name_en": "The Soul",
+    "name_pt": "A Alma",
+    "desc_en": [
+      "Creates a random Legendary",
+      "Joker."
+    ],
+    "desc_pt": [
+      "Cria um Curinga Lendário",
+      "aleatório."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 33,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_33.png",
+    "name_en": "The Spirit",
+    "name_pt": "O Espírito",
+    "desc_en": [
+      "Creates a random Spectral card."
+    ],
+    "desc_pt": [
+      "Cria uma carta Espectral",
+      "aleatória."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 34,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_34.png",
+    "name_en": "The Mind",
+    "name_pt": "A Mente",
+    "desc_en": [
+      "Gives all cards in hand",
+      "a permanent {C:chips}+10 Chips{} bonus."
+    ],
+    "desc_pt": [
+      "Dá {C:chips}+10 Fichas{} permanentes",
+      "a todas as cartas na mão."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 35,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_35.png",
+    "name_en": "The Body",
+    "name_pt": "O Corpo",
+    "desc_en": [
+      "Adds +50 Chips to 2 selected",
+      "cards."
+    ],
+    "desc_pt": [
+      "Adiciona +50 Fichas a 2 cartas",
+      "selecionadas."
+    ],
+    "max_hand": 2
+  },
+  {
+    "id": 36,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_36.png",
+    "name_en": "The Heart",
+    "name_pt": "O Coração",
+    "desc_en": [
+      "Adds +10 Mult to 2 selected",
+      "cards."
+    ],
+    "desc_pt": [
+      "Adiciona +10 Multi a 2 cartas",
+      "selecionadas."
+    ],
+    "max_hand": 2
+  },
+  {
+    "id": 37,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_37.png",
+    "name_en": "The Shadow",
+    "name_pt": "A Sombra",
+    "desc_en": [
+      "Enhances 1 selected card to a",
+      "Shadow card."
+    ],
+    "desc_pt": [
+      "Aprimora 1 carta para Carta de",
+      "Sombra."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 38,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_38.png",
+    "name_en": "The Light",
+    "name_pt": "A Luz",
+    "desc_en": [
+      "Enhances 1 selected card to a",
+      "Light card."
+    ],
+    "desc_pt": [
+      "Aprimora 1 carta para Carta de",
+      "Luz."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 39,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_39.png",
+    "name_en": "The Chaos",
+    "name_pt": "O Caos",
+    "desc_en": [
+      "Randomizes Rank and Suit",
+      "of all cards in hand"
+    ],
+    "desc_pt": [
+      "Randomiza Rank e Naipe",
+      "de todas as cartas na mão"
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 40,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_40.png",
+    "name_en": "The Order",
+    "name_pt": "A Ordem",
+    "desc_en": [
+      "Sorts your hand by {C:attention}Suit{}.",
+      "All cards in hand gain {C:chips}+10 Chips{} permanently."
+    ],
+    "desc_pt": [
+      "Organiza sua mão. Todas as cartas na sua",
+      "mão ganham {C:chips}+10 Fichas{} permanentemente"
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 41,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_41.png",
+    "name_en": "The Balance",
+    "name_pt": "O Equilíbrio",
+    "desc_en": [
+      "Sets your money to $25."
+    ],
+    "desc_pt": [
+      "Define seu dinheiro para $25."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 42,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_42.png",
+    "name_en": "The Infinity",
+    "name_pt": "O Infinito",
+    "desc_en": [
+      "Adds Polychrome edition to a",
+      "random Joker."
+    ],
+    "desc_pt": [
+      "Adiciona Edição Policromática a",
+      "um Curinga aleatório."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 43,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_43.png",
+    "name_en": "The Zero",
+    "name_pt": "O Zero",
+    "desc_en": [
+      "Removes Edition from a Joker and",
+      "gives $20."
+    ],
+    "desc_pt": [
+      "Remove a edição de um Curinga e",
+      "ganha $20."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 44,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_44.png",
+    "name_en": "The One",
+    "name_pt": "O Um",
+    "desc_en": [
+      "Sets rank of selected cards to",
+      "Ace."
+    ],
+    "desc_pt": [
+      "Define o Rank das cartas",
+      "selecionadas para Ás."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 45,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_45.png",
+    "name_en": "The Many",
+    "name_pt": "Os Muitos",
+    "desc_en": [
+      "Triplicates a selected card."
+    ],
+    "desc_pt": [
+      "Triplica uma carta selecionada."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 46,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_46.png",
+    "name_en": "The Past",
+    "name_pt": "O Passado",
+    "desc_en": [
+      "Creates a random Vintage Joker."
+    ],
+    "desc_pt": [
+      "Cria um Curinga Vintage",
+      "aleatório."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 47,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_47.png",
+    "name_en": "The Future",
+    "name_pt": "O Futuro",
+    "desc_en": [
+      "Creates a random Futuristic",
+      "Joker."
+    ],
+    "desc_pt": [
+      "Cria um Curinga Futurista",
+      "aleatório."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 48,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_48.png",
+    "name_en": "The Present",
+    "name_pt": "O Presente",
+    "desc_en": [
+      "Creates a random Modern Joker."
+    ],
+    "desc_pt": [
+      "Cria um Curinga Atual aleatório."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 49,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_49.png",
+    "name_en": "The Unknown",
+    "name_pt": "O Desconhecido",
+    "desc_en": [
+      "Random effect."
+    ],
+    "desc_pt": [
+      "Efeito aleatório."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 50,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_50.png",
+    "name_en": "The Truth",
+    "name_pt": "A Verdade",
+    "desc_en": [
+      "Reveals all cards in your deck."
+    ],
+    "desc_pt": [
+      "Revela as cartas do seu baralho."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 51,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_51.png",
+    "name_en": "The Lie",
+    "name_pt": "A Mentira",
+    "desc_en": [
+      "Hides all cards in hand and gives",
+      "{C:money}$5{}."
+    ],
+    "desc_pt": [
+      "Oculta todas as cartas na mão e ganha {C:money}$5{}."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 52,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_52.png",
+    "name_en": "The Dream",
+    "name_pt": "O Sonho",
+    "desc_en": [
+      "Creates a random {C:tarot}Tarot{} card."
+    ],
+    "desc_pt": [
+      "Cria uma {C:tarot}Carta de Tarô{} aleatória."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 53,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_53.png",
+    "name_en": "The Nightmare",
+    "name_pt": "O Pesadelo",
+    "desc_en": [
+      "Creates a random {C:spectral}Spectral{} card."
+    ],
+    "desc_pt": [
+      "Cria uma {C:spectral}Carta Espectral{} aleatória."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 54,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_54.png",
+    "name_en": "The Hope",
+    "name_pt": "A Esperança",
+    "desc_en": [
+      "Skips to the next Ante."
+    ],
+    "desc_pt": [
+      "Pula para o próximo Aposta."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 55,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_55.png",
+    "name_en": "The Despair",
+    "name_pt": "O Desespero",
+    "desc_en": [
+      "Goes back one Ante."
+    ],
+    "desc_pt": [
+      "Volta uma Aposta."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 56,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_56.png",
+    "name_en": "The Love",
+    "name_pt": "O Amor",
+    "desc_en": [
+      "Duplicates all Hearts in hand."
+    ],
+    "desc_pt": [
+      "Duplica todas as Copas na mão."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 57,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_57.png",
+    "name_en": "The Hate",
+    "name_pt": "O Ódio",
+    "desc_en": [
+      "Destroys all Spades in hand."
+    ],
+    "desc_pt": [
+      "Destrói todas as Espadas na mão."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 58,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_58.png",
+    "name_en": "The War",
+    "name_pt": "A Guerra",
+    "desc_en": [
+      "Destroys all {C:attention}Face cards{} in hand",
+      "and gain {C:money}$2{} for each card destroyed."
+    ],
+    "desc_pt": [
+      "Destrói todas as {C:attention}Figuras{} na mão",
+      "e ganha {C:money}$2{} por carta destruída."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 59,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_59.png",
+    "name_en": "The Peace",
+    "name_pt": "A Paz",
+    "desc_en": [
+      "Converts cards to the most",
+      "common suit in deck."
+    ],
+    "desc_pt": [
+      "Converte para o naipe mais",
+      "comum."
+    ],
+    "max_hand": 3
+  },
+  {
+    "id": 60,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_60.png",
+    "name_en": "The Life",
+    "name_pt": "A Vida",
+    "desc_en": [
+      "Revives the last destroyed",
+      "Joker."
+    ],
+    "desc_pt": [
+      "Revive o último Curinga",
+      "destruído."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 61,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_61.png",
+    "name_en": "The Death II",
+    "name_pt": "A Morte II",
+    "desc_en": [
+      "Destroys a selected Joker and",
+      "gives 2X sell value."
+    ],
+    "desc_pt": [
+      "Destrói um Curinga (Ganha 2x o",
+      "valor de venda)."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 62,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_62.png",
+    "name_en": "The King",
+    "name_pt": "O Rei",
+    "desc_en": [
+      "Creates 2 Kings."
+    ],
+    "desc_pt": [
+      "Cria 2 Reis."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 63,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_63.png",
+    "name_en": "The Queen",
+    "name_pt": "A Rainha",
+    "desc_en": [
+      "Creates 2 Queens."
+    ],
+    "desc_pt": [
+      "Cria 2 Damas."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 64,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_64.png",
+    "name_en": "The Jack",
+    "name_pt": "O Valete",
+    "desc_en": [
+      "Creates 2 Jacks."
+    ],
+    "desc_pt": [
+      "Cria 2 Valetes."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 65,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_65.png",
+    "name_en": "The Ace",
+    "name_pt": "O Ás",
+    "desc_en": [
+      "Creates 2 Aces."
+    ],
+    "desc_pt": [
+      "Cria 2 Ases."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 66,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_66.png",
+    "name_en": "The Joker",
+    "name_pt": "O Curinga",
+    "desc_en": [
+      "Creates a random Joker card."
+    ],
+    "desc_pt": [
+      "Cria uma carta de Curinga",
+      "aleatória."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 67,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_67.png",
+    "name_en": "The Merchant",
+    "name_pt": "O Mercador",
+    "desc_en": [
+      "Rerolls the shop."
+    ],
+    "desc_pt": [
+      "Rerrola a Loja."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 68,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_68.png",
+    "name_en": "The Thief",
+    "name_pt": "O Ladrão",
+    "desc_en": [
+      "Steals a random item from",
+      "the shop. Requires available",
+      "inventory space."
+    ],
+    "desc_pt": [
+      "Rouba um item aleatório da",
+      "loja. Requer espaço no",
+      "inventário correspondente."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 69,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_69.png",
+    "name_en": "The Guardian",
+    "name_pt": "O Guarda",
+    "desc_en": [
+      "Protects a selected card from",
+      "destruction."
+    ],
+    "desc_pt": [
+      "Protege uma carta da destruição."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 70,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_70.png",
+    "name_en": "The Sage",
+    "name_pt": "O Sábio",
+    "desc_en": [
+      "Levels up a random poker hand."
+    ],
+    "desc_pt": [
+      "Sobe o nível de uma mão de",
+      "pôquer."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 71,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_71.png",
+    "name_en": "The Fool II",
+    "name_pt": "O Louco II",
+    "desc_en": [
+      "Copies the last {C:tarot}Tarot{} or",
+      "{C:planet}Planet{} card used.",
+      "{C:inactive}(Last: #1#){}"
+    ],
+    "desc_pt": [
+      "Copia o último {C:tarot}Tarô{} ou",
+      "{C:planet}Planeta{} usado.",
+      "{C:inactive}(Último: #1#){}"
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 72,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_72.png",
+    "name_en": "The Architect",
+    "name_pt": "O Arquiteto",
+    "desc_en": [
+      "+1 Hand Slot."
+    ],
+    "desc_pt": [
+      "Adiciona um slot de mão."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 73,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_73.png",
+    "name_en": "The Builder",
+    "name_pt": "O Construtor",
+    "desc_en": [
+      "+1 Discard Slot."
+    ],
+    "desc_pt": [
+      "Adiciona um slot de descarte."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 74,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_74.png",
+    "name_en": "The Destroyer",
+    "name_pt": "O Destruidor",
+    "desc_en": [
+      "Removes a Hand Slot and gives",
+      "$20."
+    ],
+    "desc_pt": [
+      "Remove um slot de mão (Ganha",
+      "$20)."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 75,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_75.png",
+    "name_en": "The Creator",
+    "name_pt": "O Criador",
+    "desc_en": [
+      "Creates a random card."
+    ],
+    "desc_pt": [
+      "Cria uma carta aleatória."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 76,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_76.png",
+    "name_en": "The Observer",
+    "name_pt": "O Observador",
+    "desc_en": [
+      "Reveals the current Boss Blind."
+    ],
+    "desc_pt": [
+      "Revela o próximo Boss."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 77,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_77.png",
+    "name_en": "The Traveler",
+    "name_pt": "O Viajante",
+    "desc_en": [
+      "Changes the current Boss Blind."
+    ],
+    "desc_pt": [
+      "Muda o Boss atual."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 78,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_78.png",
+    "name_en": "The Pilgrim",
+    "name_pt": "O Peregrino",
+    "desc_en": [
+      "Changes the current Tag."
+    ],
+    "desc_pt": [
+      "Muda a Tag atual."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 79,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_79.png",
+    "name_en": "The Monk",
+    "name_pt": "O Monge",
+    "desc_en": [
+      "Removes Debuffs from all cards",
+      "in hand."
+    ],
+    "desc_pt": [
+      "Remove o efeito de Debuff das",
+      "cartas."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 80,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_80.png",
+    "name_en": "The Warrior",
+    "name_pt": "O Guerreiro",
+    "desc_en": [
+      "Add {C:chips}+100{} permanent bonus",
+      "to up to {C:attention}2{} selected cards."
+    ],
+    "desc_pt": [
+      "Adiciona {C:chips}+100{} de bônus permanente",
+      "a até {C:attention}2{} cartas selecionadas."
+    ],
+    "max_hand": 2
+  },
+  {
+    "id": 81,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_81.png",
+    "name_en": "The Magician II",
+    "name_pt": "O Mago II",
+    "desc_en": [
+      "+20 Mult this round."
+    ],
+    "desc_pt": [
+      "+20 Multi nesta rodada."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 82,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_82.png",
+    "name_en": "The Rogue",
+    "name_pt": "O Ladino",
+    "desc_en": [
+      "X2 Mult this round."
+    ],
+    "desc_pt": [
+      "X2 Multi nesta rodada."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 83,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_83.png",
+    "name_en": "The Bard",
+    "name_pt": "O Bardo",
+    "desc_en": [
+      "Retrigger all played cards",
+      "this round."
+    ],
+    "desc_pt": [
+      "Reativa todas as cartas",
+      "jogadas nesta rodada."
+    ],
+    "max_hand": 0
+  },
+  {
+    "id": 84,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_84.png",
+    "name_en": "The Druid",
+    "name_pt": "O Druida",
+    "desc_en": [
+      "Enhances 1 selected card to a",
+      "Plant card."
+    ],
+    "desc_pt": [
+      "Aprimora 1 carta para Carta de",
+      "Planta."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 85,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_85.png",
+    "name_en": "The Paladin",
+    "name_pt": "O Paladino",
+    "desc_en": [
+      "Enhances 1 selected card to a",
+      "Holy card."
+    ],
+    "desc_pt": [
+      "Aprimora 1 carta para Carta",
+      "Sagrada."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 86,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_86.png",
+    "name_en": "The Necromancer",
+    "name_pt": "O Necromante",
+    "desc_en": [
+      "Enhances 1 selected card to an",
+      "Undead card."
+    ],
+    "desc_pt": [
+      "Aprimora 1 carta para Carta",
+      "Morta-Viva."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 87,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_87.png",
+    "name_en": "The Warlock",
+    "name_pt": "O Bruxo",
+    "desc_en": [
+      "Enhances 1 selected card to a",
+      "Cursed card."
+    ],
+    "desc_pt": [
+      "Aprimora 1 carta para Carta",
+      "Maldita."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 88,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_88.png",
+    "name_en": "The Sorcerer",
+    "name_pt": "O Feiticeiro",
+    "desc_en": [
+      "Enhances 1 selected card to a",
+      "Magic card."
+    ],
+    "desc_pt": [
+      "Aprimora 1 carta para Carta",
+      "Mágica."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 89,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_89.png",
+    "name_en": "The Alchemist II",
+    "name_pt": "O Alquimista II",
+    "desc_en": [
+      "Enhances 2 selected cards to",
+      "Diamond cards."
+    ],
+    "desc_pt": [
+      "Transforma uma carta em Carta de",
+      "Diamante."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 90,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_90.png",
+    "name_en": "The Smith",
+    "name_pt": "O Ferreiro",
+    "desc_en": [
+      "Enhances {C:attention}1{} selected card to",
+      "a {C:attention}Paper card{}"
+    ],
+    "desc_pt": [
+      "Transforma uma carta em Carta de",
+      "{C:attention}Papel{}"
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 91,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_91.png",
+    "name_en": "The Potter",
+    "name_pt": "O Vidreiro",
+    "desc_en": [
+      "Enhances 2 selected cards to",
+      "Ceramic cards."
+    ],
+    "desc_pt": [
+      "Transforma uma carta em Carta de",
+      "Cerâmica."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 92,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_92.png",
+    "name_en": "The Stonemason",
+    "name_pt": "O Pedreiro",
+    "desc_en": [
+      "Enhances 2 selected cards to",
+      "Platinum cards."
+    ],
+    "desc_pt": [
+      "Transforma uma carta em Carta de",
+      "Platina."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 93,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_93.png",
+    "name_en": "The Lucky One",
+    "name_pt": "O Sortudo",
+    "desc_en": [
+      "Enhances 2 selected cards to",
+      "Wood cards."
+    ],
+    "desc_pt": [
+      "Transforma uma carta em Carta de",
+      "Madeira."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 94,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_94.png",
+    "name_en": "The Wild One",
+    "name_pt": "O Selvagem",
+    "desc_en": [
+      "Enhances 2 selected cards to",
+      "Cloth cards."
+    ],
+    "desc_pt": [
+      "Transforma uma carta em Carta de",
+      "Tecido."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 95,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_95.png",
+    "name_en": "The Mult iplier",
+    "name_pt": "O Multi plicador",
+    "desc_en": [
+      "Enhances 2 selected cards to",
+      "Ruby cards."
+    ],
+    "desc_pt": [
+      "Transforma uma carta em Carta",
+      "Multi."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 96,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_96.png",
+    "name_en": "The Bonus",
+    "name_pt": "O Bônus",
+    "desc_en": [
+      "Enhances 2 selected cards to",
+      "Emerald cards."
+    ],
+    "desc_pt": [
+      "Transforma uma carta em Carta de",
+      "Esmeralda."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 97,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_97.png",
+    "name_en": "The Duplicator",
+    "name_pt": "O Duplicador",
+    "desc_en": [
+      "Duplicates a selected card."
+    ],
+    "desc_pt": [
+      "Duplica uma carta selecionada."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 98,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_98.png",
+    "name_en": "The Remover",
+    "name_pt": "O Removedor",
+    "desc_en": [
+      "Removes a selected card from",
+      "your deck."
+    ],
+    "desc_pt": [
+      "Remove uma carta do baralho."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 99,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_99.png",
+    "name_en": "The Transformer",
+    "name_pt": "O Transformador",
+    "desc_en": [
+      "Transforms a selected card into",
+      "another."
+    ],
+    "desc_pt": [
+      "Transforma uma carta selecionada",
+      "em outra aleatória."
+    ],
+    "max_hand": 1
+  },
+  {
+    "id": 100,
+    "type": "tarot",
+    "sprite": "tarots/odyssey_tarot_100.png",
+    "name_en": "The Enhancer",
+    "name_pt": "O Melhorador",
+    "desc_en": [
+      "Enhances a selected card with a",
+      "random modification."
+    ],
+    "desc_pt": [
+      "Aplica um aprimoramento",
+      "aleatório a uma carta",
+      "selecionada."
+    ],
+    "max_hand": 1
+  }
+]

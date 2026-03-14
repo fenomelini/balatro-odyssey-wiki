@@ -1,0 +1,20 @@
+---
+import { getRarityStyle } from '../../utils/rarityColors';
+
+interface Props {
+  rarity: number;
+}
+
+const { rarity } = Astro.props;
+const style = getRarityStyle(rarity);
+---
+
+<span class:list={[
+  'inline-flex items-center px-2.5 py-0.5 rounded-full text-[0.75rem] font-bold border',
+  style.border,
+  style.text,
+  style.bg,
+]}>
+  <span class="lang-en">{style.label_en}</span>
+  <span class="lang-pt">{style.label_pt}</span>
+</span>

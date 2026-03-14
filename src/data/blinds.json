@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 1,
+    "sprite": "blinds/odyssey_blind_1.png",
+    "name_en": "Small Blind",
+    "name_pt": "Small Blind",
+    "desc_en": [
+      "No effect."
+    ],
+    "desc_pt": [
+      "Sem efeito."
+    ]
+  },
+  {
+    "id": 2,
+    "sprite": "blinds/odyssey_blind_2.png",
+    "name_en": "Big Blind",
+    "name_pt": "Big Blind",
+    "desc_en": [
+      "No effect."
+    ],
+    "desc_pt": [
+      "Sem efeito."
+    ]
+  },
+  {
+    "id": 3,
+    "sprite": "blinds/odyssey_blind_3.png",
+    "name_en": "The Hook",
+    "name_pt": "O Gancho",
+    "desc_en": [
+      "Discards 2 random cards."
+    ],
+    "desc_pt": [
+      "Descarta 2 cartas aleatórias."
+    ]
+  },
+  {
+    "id": 4,
+    "sprite": "blinds/odyssey_blind_4.png",
+    "name_en": "The Ox",
+    "name_pt": "O Boi",
+    "desc_en": [
+      "Playing your most played hand results in $0."
+    ],
+    "desc_pt": [
+      "Jogar mão mais odyssey_jogada = $0."
+    ]
+  },
+  {
+    "id": 5,
+    "sprite": "blinds/odyssey_blind_5.png",
+    "name_en": "The House",
+    "name_pt": "A Casa",
+    "desc_en": [
+      "First hand is played face down."
+    ],
+    "desc_pt": [
+      "Primeira mão virada para baixo."
+    ]
+  },
+  {
+    "id": 6,
+    "sprite": "blinds/odyssey_blind_6.png",
+    "name_en": "The Wall",
+    "name_pt": "A Muralha",
+    "desc_en": [
+      "Very high score requirement."
+    ],
+    "desc_pt": [
+      "Pontuação muito alta."
+    ]
+  },
+  {
+    "id": 7,
+    "sprite": "blinds/odyssey_blind_7.png",
+    "name_en": "The Wheel",
+    "name_pt": "A Roda",
+    "desc_en": [
+      "1 in 7 cards are dealt face down."
+    ],
+    "desc_pt": [
+      "1 em 7 cartas viradas para baixo."
+    ]
+  },
+  {
+    "id": 8,
+    "sprite": "blinds/odyssey_blind_8.png",
+    "name_en": "The Arm",
+    "name_pt": "O Braço",
+    "desc_en": [
+      "Decreases level of played hand."
+    ],
+    "desc_pt": [
+      "Diminui nível da mão jogada."
+    ]
+  },
+  {
+    "id": 9,
+    "sprite": "blinds/odyssey_blind_9.png",
+    "name_en": "The Club",
+    "name_pt": "O Paus",
+    "desc_en": [
+      "All Club cards are debuffed."
+    ],
+    "desc_pt": [
+      "Todas as cartas de Paus debuffadas."
+    ]
+  },
+  {
+    "id": 10,
+    "sprite": "blinds/odyssey_blind_10.png",
+    "name_en": "The Fish",
+    "name_pt": "O Peixe",
+    "desc_en": [
+      "Drawn cards are face down."
+    ],
+    "desc_pt": [
+      "Cartas compradas viradas para baixo."
+    ]
+  },
+  {
+    "id": 11,
+    "sprite": "blinds/odyssey_blind_11.png",
+    "name_en": "The Psychic",
+    "name_pt": "O Psíquico",
+    "desc_en": [
+      "Must play 5 cards."
+    ],
+    "desc_pt": [
+      "Deve jogar 5 cartas."
+    ]
+  },
+  {
+    "id": 12,
+    "sprite": "blinds/odyssey_blind_12.png",
+    "name_en": "The Goad",
+    "name_pt": "O Aguilhão",
+    "desc_en": [
+      "All Spade cards are debuffed."
+    ],
+    "desc_pt": [
+      "Cartas de Espadas debuffadas."
+    ]
+  },
+  {
+    "id": 13,
+    "sprite": "blinds/odyssey_blind_13.png",
+    "name_en": "The Water",
+    "name_pt": "A Água",
+    "desc_en": [
+      "0 Discards."
+    ],
+    "desc_pt": [
+      "0 Descartes."
+    ]
+  },
+  {
+    "id": 14,
+    "sprite": "blinds/odyssey_blind_14.png",
+    "name_en": "The Window",
+    "name_pt": "A Janela",
+    "desc_en": [
+      "All Diamond cards are debuffed."
+    ],
+    "desc_pt": [
+      "Cartas de Ouros debuffadas."
+    ]
+  },
+  {
+    "id": 15,
+    "sprite": "blinds/odyssey_blind_15.png",
+    "name_en": "The Manacle",
+    "name_pt": "A Algema",
+    "desc_en": [
+      "-1 Hand Size."
+    ],
+    "desc_pt": [
+      "-1 Tamanho de Mão."
+    ]
+  },
+  {
+    "id": 16,
+    "sprite": "blinds/odyssey_blind_16.png",
+    "name_en": "The Eye",
+    "name_pt": "O Olho",
+    "desc_en": [
+      "Cannot repeat poker hand types."
+    ],
+    "desc_pt": [
+      "Não pode repetir tipo de mão."
+    ]
+  },
+  {
+    "id": 17,
+    "sprite": "blinds/odyssey_blind_17.png",
+    "name_en": "The Mouth",
+    "name_pt": "A Boca",
+    "desc_en": [
+      "Must play only one hand type this round."
+    ],
+    "desc_pt": [
+      "Deve jogar apenas 1 tipo de mão."
+    ]
+  },
+  {
+    "id": 18,
+    "sprite": "blinds/odyssey_blind_18.png",
+    "name_en": "The Plant",
+    "name_pt": "A Planta",
+    "desc_en": [
+      "All Face cards are debuffed."
+    ],
+    "desc_pt": [
+      "Cartas de Figura debuffadas."
+    ]
+  },
+  {
+    "id": 19,
+    "sprite": "blinds/odyssey_blind_19.png",
+    "name_en": "The Serpent",
+    "name_pt": "A Serpente",
+    "desc_en": [
+      "Draw 3 cards when playing or discarding."
+    ],
+    "desc_pt": [
+      "Compre 3 cartas ao jogar/descartar."
+    ]
+  },
+  {
+    "id": 20,
+    "sprite": "blinds/odyssey_blind_20.png",
+    "name_en": "The Pillar",
+    "name_pt": "O Pilar",
+    "desc_en": [
+      "Cards played this Ante are debuffed."
+    ],
+    "desc_pt": [
+      "Cartas jogadas neste Aposta debuffadas."
+    ]
+  },
+  {
+    "id": 21,
+    "sprite": "blinds/odyssey_blind_21.png",
+    "name_en": "The Steel Wall",
+    "name_pt": "A Muralha de Aço",
+    "desc_en": [
+      "Extremely high score requirement."
+    ],
+    "desc_pt": [
+      "Pontuação extremamente alta."
+    ]
+  },
+  {
+    "id": 22,
+    "sprite": "blinds/odyssey_blind_22.png",
+    "name_en": "The Vampire",
+    "name_pt": "O Vampiro",
+    "desc_en": [
+      "Drains $1 for every 10,000 chips scored."
+    ],
+    "desc_pt": [
+      "Drena $1 para cada 10.000 pontos marcados."
+    ]
+  },
+  {
+    "id": 23,
+    "sprite": "blinds/odyssey_blind_23.png",
+    "name_en": "The Guillotine",
+    "name_pt": "A Guilhotina",
+    "desc_en": [
+      "Destroys the first card played."
+    ],
+    "desc_pt": [
+      "Destrói a primeira carta jogada."
+    ]
+  },
+  {
+    "id": 24,
+    "sprite": "blinds/odyssey_blind_24.png",
+    "name_en": "The Labyrinth",
+    "name_pt": "O Labirinto",
+    "desc_en": [
+      "Hands must have exactly 3 cards."
+    ],
+    "desc_pt": [
+      "Mãos devem ter exatamente 3 cartas."
+    ]
+  },
+  {
+    "id": 25,
+    "sprite": "blinds/odyssey_blind_25.png",
+    "name_en": "The Fog",
+    "name_pt": "A Névoa",
+    "desc_en": [
+      "Cannot see cards' chip values."
+    ],
+    "desc_pt": [
+      "Não pode ver os pontos das cartas."
+    ]
+  },
+  {
+    "id": 26,
+    "sprite": "blinds/odyssey_blind_26.png",
+    "name_en": "The Broken Mirror",
+    "name_pt": "O Espelho Quebrado",
+    "desc_en": [
+      "Played hands invert ranks (A becomes 2, K becomes 3...)."
+    ],
+    "desc_pt": [
+      "Mãos jogadas invertem o rank (A vira 2, K vira 3...)."
+    ]
+  },
+  {
+    "id": 27,
+    "sprite": "blinds/odyssey_blind_27.png",
+    "name_en": "The Quicksand",
+    "name_pt": "A Areia Movediça",
+    "desc_en": [
+      "-1 Hand for every $10 you own."
+    ],
+    "desc_pt": [
+      "-1 Mão para cada $10 que você possui."
+    ]
+  },
+  {
+    "id": 28,
+    "sprite": "blinds/odyssey_blind_28.png",
+    "name_en": "The Black Hole",
+    "name_pt": "O Buraco Negro",
+    "desc_en": [
+      "-3 Hand Size."
+    ],
+    "desc_pt": [
+      "-3 Tamanho de Mão."
+    ]
+  },
+  {
+    "id": 29,
+    "sprite": "blinds/odyssey_blind_29.png",
+    "name_en": "The Supernova",
+    "name_pt": "A Supernova",
+    "desc_en": [
+      "Discards cost $5."
+    ],
+    "desc_pt": [
+      "Descartes custam $5."
+    ]
+  },
+  {
+    "id": 30,
+    "sprite": "blinds/odyssey_blind_30.png",
+    "name_en": "The Quasar",
+    "name_pt": "O Quasar",
+    "desc_en": [
+      "Hands cost $5."
+    ],
+    "desc_pt": [
+      "Mãos custam $5."
+    ]
+  },
+  {
+    "id": 31,
+    "sprite": "blinds/odyssey_blind_31.png",
+    "name_en": "The Pulsar",
+    "name_pt": "O Pulsar",
+    "desc_en": [
+      "Played cards are permanently debuffed."
+    ],
+    "desc_pt": [
+      "Cartas jogadas são debuffadas permanentemente."
+    ]
+  },
+  {
+    "id": 32,
+    "sprite": "blinds/odyssey_blind_32.png",
+    "name_en": "The Magnet",
+    "name_pt": "O Ímã",
+    "desc_en": [
+      "Only one suit allowed (others are debuffed)."
+    ],
+    "desc_pt": [
+      "Apenas um naipe permitido (outros debuffados)."
+    ]
+  },
+  {
+    "id": 33,
+    "sprite": "blinds/odyssey_blind_33.png",
+    "name_en": "The Prism",
+    "name_pt": "O Prisma",
+    "desc_en": [
+      "Only one rank allowed (others are debuffed)."
+    ],
+    "desc_pt": [
+      "Apenas um rank permitido (outros debuffados)."
+    ]
+  },
+  {
+    "id": 34,
+    "sprite": "blinds/odyssey_blind_34.png",
+    "name_en": "The Void",
+    "name_pt": "O Vazio",
+    "desc_en": [
+      "Jokers disabled for 1 round per hand played."
+    ],
+    "desc_pt": [
+      "Curingas desativados por 1 rodada a cada mão."
+    ]
+  },
+  {
+    "id": 35,
+    "sprite": "blinds/odyssey_blind_35.png",
+    "name_en": "The Time",
+    "name_pt": "O Tempo",
+    "desc_en": [
+      "10 seconds to play each hand."
+    ],
+    "desc_pt": [
+      "10 segundos para jogar cada mão."
+    ]
+  },
+  {
+    "id": 36,
+    "sprite": "blinds/odyssey_blind_36.png",
+    "name_en": "The Space",
+    "name_pt": "O Espaço",
+    "desc_en": [
+      "Hand Size 10, but only 1 Hand."
+    ],
+    "desc_pt": [
+      "Tamanho de Mão 10, mas apenas 1 Mão."
+    ]
+  },
+  {
+    "id": 37,
+    "sprite": "blinds/odyssey_blind_37.png",
+    "name_en": "The Matter",
+    "name_pt": "A Matéria",
+    "desc_en": [
+      "Cards cannot be moved/rearranged."
+    ],
+    "desc_pt": [
+      "Cartas não podem ser movidas."
+    ]
+  },
+  {
+    "id": 38,
+    "sprite": "blinds/odyssey_blind_38.png",
+    "name_en": "The Energy",
+    "name_pt": "A Energia",
+    "desc_en": [
+      "Cards burn (are destroyed) after scoring."
+    ],
+    "desc_pt": [
+      "Cartas queimam (são destruídas) após pontuar."
+    ]
+  },
+  {
+    "id": 39,
+    "sprite": "blinds/odyssey_blind_39.png",
+    "name_en": "The Entropy",
+    "name_pt": "A Entropia",
+    "desc_en": [
+      "Ranks change randomly after each discard."
+    ],
+    "desc_pt": [
+      "Ranks mudam aleatoriamente após cada descarte."
+    ]
+  },
+  {
+    "id": 40,
+    "sprite": "blinds/odyssey_blind_40.png",
+    "name_en": "The Chaos",
+    "name_pt": "O Caos",
+    "desc_en": [
+      "Suits change randomly after each discard."
+    ],
+    "desc_pt": [
+      "Naipes mudam aleatoriamente após cada descarte."
+    ]
+  },
+  {
+    "id": 41,
+    "sprite": "blinds/odyssey_blind_41.png",
+    "name_en": "The Fortress",
+    "name_pt": "A Fortaleza",
+    "desc_en": [
+      "Massive score requirement."
+    ],
+    "desc_pt": [
+      "Pontuação massiva."
+    ]
+  },
+  {
+    "id": 42,
+    "sprite": "blinds/odyssey_blind_42.png",
+    "name_en": "The Titan",
+    "name_pt": "O Titã",
+    "desc_en": [
+      "Must score 10% of total in a single hand."
+    ],
+    "desc_pt": [
+      "Deve fazer 10% da pontuação em uma única mão."
+    ]
+  },
+  {
+    "id": 43,
+    "sprite": "blinds/odyssey_blind_43.png",
+    "name_en": "The Colossus",
+    "name_pt": "O Colosso",
+    "desc_en": [
+      "Low rank cards (2-9) do not score."
+    ],
+    "desc_pt": [
+      "Cartas de rank baixo (2-9) não pontuam."
+    ]
+  },
+  {
+    "id": 44,
+    "sprite": "blinds/odyssey_blind_44.png",
+    "name_en": "The Hydra",
+    "name_pt": "A Hidra",
+    "desc_en": [
+      "Each discard adds a junk card to your deck."
+    ],
+    "desc_pt": [
+      "Cada descarte adiciona uma carta ruim ao baralho."
+    ]
+  },
+  {
+    "id": 45,
+    "sprite": "blinds/odyssey_blind_45.png",
+    "name_en": "The Basilisk",
+    "name_pt": "O Basilisco",
+    "desc_en": [
+      "Playing Face cards debuffs the rest of the hand."
+    ],
+    "desc_pt": [
+      "Jogar cartas de Figura petrifica (debuffa) o resto da mão."
+    ]
+  },
+  {
+    "id": 46,
+    "sprite": "blinds/odyssey_blind_46.png",
+    "name_en": "The Chimera",
+    "name_pt": "A Quimera",
+    "desc_en": [
+      "Suits alternate every hand (Hearts -> Spades -> ...)."
+    ],
+    "desc_pt": [
+      "Naipes alternam a cada mão (Copas -> Espadas -> ...)."
+    ]
+  },
+  {
+    "id": 47,
+    "sprite": "blinds/odyssey_blind_47.png",
+    "name_en": "The Griffin",
+    "name_pt": "O Grifo",
+    "desc_en": [
+      "Cannot play the same hand type twice in a row."
+    ],
+    "desc_pt": [
+      "Não pode jogar a mesma mão duas vezes seguidas."
+    ]
+  },
+  {
+    "id": 48,
+    "sprite": "blinds/odyssey_blind_48.png",
+    "name_en": "The Kraken",
+    "name_pt": "O Kraken",
+    "desc_en": [
+      "Tentacles hold 2 Joker slots (Disabled)."
+    ],
+    "desc_pt": [
+      "Tentáculos seguram 2 slots de Joker (Desativados)."
+    ]
+  },
+  {
+    "id": 49,
+    "sprite": "blinds/odyssey_blind_49.png",
+    "name_en": "The Leviathan",
+    "name_pt": "O Leviatã",
+    "desc_en": [
+      "5-card hands are forbidden."
+    ],
+    "desc_pt": [
+      "Mãos de 5 cartas são proibidas."
+    ]
+  },
+  {
+    "id": 50,
+    "sprite": "blinds/odyssey_blind_50.png",
+    "name_en": "The Behemoth",
+    "name_pt": "O Behemoth",
+    "desc_en": [
+      "Hands with fewer than 5 cards are forbidden."
+    ],
+    "desc_pt": [
+      "Mãos de menos de 5 cartas são proibidas."
+    ]
+  },
+  {
+    "id": 51,
+    "sprite": "blinds/odyssey_blind_51.png",
+    "name_en": "The Sphinx",
+    "name_pt": "A Esfinge",
+    "desc_en": [
+      "Must solve a riddle (play a specific hand) or lose."
+    ],
+    "desc_pt": [
+      "Deve resolver um enigma (Jogar mão específica) ou perde."
+    ]
+  },
+  {
+    "id": 52,
+    "sprite": "blinds/odyssey_blind_52.png",
+    "name_en": "The Pharaoh",
+    "name_pt": "O Faraó",
+    "desc_en": [
+      "All cards face down and shuffled."
+    ],
+    "desc_pt": [
+      "Todas as cartas viradas para baixo e embaralhadas."
+    ]
+  },
+  {
+    "id": 53,
+    "sprite": "blinds/odyssey_blind_53.png",
+    "name_en": "The Mummy",
+    "name_pt": "A Múmia",
+    "desc_en": [
+      "Cannot use Tarot or Planet cards."
+    ],
+    "desc_pt": [
+      "Não pode usar cartas de Tarô ou Planeta."
+    ]
+  },
+  {
+    "id": 54,
+    "sprite": "blinds/odyssey_blind_54.png",
+    "name_en": "The Scarab",
+    "name_pt": "O Escaravelho",
+    "desc_en": [
+      "Money set to $0 upon entering."
+    ],
+    "desc_pt": [
+      "Dinheiro é zerado ao entrar."
+    ]
+  },
+  {
+    "id": 55,
+    "sprite": "blinds/odyssey_blind_55.png",
+    "name_en": "The Oasis",
+    "name_pt": "O Oásis",
+    "desc_en": [
+      "Hands heal the Boss (Negative score if too low)."
+    ],
+    "desc_pt": [
+      "Mãos curam o Boss (Pontuação negativa se baixa)."
+    ]
+  },
+  {
+    "id": 56,
+    "sprite": "blinds/odyssey_blind_56.png",
+    "name_en": "The Sandstorm",
+    "name_pt": "A Tempestade de Areia",
+    "desc_en": [
+      "Blinds all Jokers (debuff) except one."
+    ],
+    "desc_pt": [
+      "Cega todos os Jokers (Debuff) exceto 1."
+    ]
+  },
+  {
+    "id": 57,
+    "sprite": "blinds/odyssey_blind_57.png",
+    "name_en": "The Mirage",
+    "name_pt": "A Miragem",
+    "desc_en": [
+      "Boss changes ability every hand."
+    ],
+    "desc_pt": [
+      "Boss muda de habilidade a cada mão."
+    ]
+  },
+  {
+    "id": 58,
+    "sprite": "blinds/odyssey_blind_58.png",
+    "name_en": "The Djinn",
+    "name_pt": "O Djinn",
+    "desc_en": [
+      "Grants 3 wishes (Tags), but requires high score."
+    ],
+    "desc_pt": [
+      "Concede 3 desejos (Tags), mas requer pontuação alta."
+    ]
+  },
+  {
+    "id": 59,
+    "sprite": "blinds/odyssey_blind_59.png",
+    "name_en": "The Sultan",
+    "name_pt": "O Sultão",
+    "desc_en": [
+      "Entry fee: $20 (or Game Over)."
+    ],
+    "desc_pt": [
+      "Taxa de entrada: $20 (ou Game Over)."
+    ]
+  },
+  {
+    "id": 60,
+    "sprite": "blinds/odyssey_blind_60.png",
+    "name_en": "The Nomad",
+    "name_pt": "O Nômade",
+    "desc_en": [
+      "Swaps your deck for a random one during the fight."
+    ],
+    "desc_pt": [
+      "Troca seu baralho por um aleatório durante a luta."
+    ]
+  },
+  {
+    "id": 61,
+    "sprite": "blinds/odyssey_blind_61.png",
+    "name_en": "The Great Attractor",
+    "name_pt": "O Grande Atrator",
+    "desc_en": [
+      "All cards attracted (Ranks gravitate to average)."
+    ],
+    "desc_pt": [
+      "Todas as cartas são atraídas (Rank vira média)."
+    ]
+  },
+  {
+    "id": 62,
+    "sprite": "blinds/odyssey_blind_62.png",
+    "name_en": "The Singularity",
+    "name_pt": "A Singularidade",
+    "desc_en": [
+      "Hand odyssey_Size = 1. (Requires card-generating Jokers)."
+    ],
+    "desc_pt": [
+      "Tamanho de Mão = 1. (Requer Jokers que geram cartas)"
+    ]
+  },
+  {
+    "id": 63,
+    "sprite": "blinds/odyssey_blind_63.png",
+    "name_en": "The Event Horizon",
+    "name_pt": "O Horizonte de Eventos",
+    "desc_en": [
+      "Jokers give no Chips (Only Mult/XMult)."
+    ],
+    "desc_pt": [
+      "Jokers não dão Fichas (Apenas Multi/XMult)."
+    ]
+  },
+  {
+    "id": 64,
+    "sprite": "blinds/odyssey_blind_64.png",
+    "name_en": "The Spaghettification",
+    "name_pt": "A Espaguetificação",
+    "desc_en": [
+      "Jokers give no Mult (Only Chips/XMult)."
+    ],
+    "desc_pt": [
+      "Jokers não dão Multi (Apenas Fichas/XMult)."
+    ]
+  },
+  {
+    "id": 65,
+    "sprite": "blinds/odyssey_blind_65.png",
+    "name_en": "The Hawking Radiation",
+    "name_pt": "A Radiação Hawking",
+    "desc_en": [
+      "Jokers lose power with every hand played."
+    ],
+    "desc_pt": [
+      "Jokers perdem potência a cada mão jogada."
+    ]
+  },
+  {
+    "id": 66,
+    "sprite": "blinds/odyssey_blind_66.png",
+    "name_en": "The Big Bang",
+    "name_pt": "O Big Bang",
+    "desc_en": [
+      "Score requirement resets every hand (Cumulative does not work)."
+    ],
+    "desc_pt": [
+      "Pontuação necessária reseta a cada mão (Cumulativo não funciona)."
+    ]
+  },
+  {
+    "id": 67,
+    "sprite": "blinds/odyssey_blind_67.png",
+    "name_en": "The Cosmic Inflation",
+    "name_pt": "A Inflação Cósmica",
+    "desc_en": [
+      "Score requirement doubles every second."
+    ],
+    "desc_pt": [
+      "Pontuação necessária dobra a cada segundo."
+    ]
+  },
+  {
+    "id": 68,
+    "sprite": "blinds/odyssey_blind_68.png",
+    "name_en": "The Dark Matter",
+    "name_pt": "A Matéria Escura",
+    "desc_en": [
+      "Joker XMult is ignored."
+    ],
+    "desc_pt": [
+      "XMulti dos Jokers é ignorado."
+    ]
+  },
+  {
+    "id": 69,
+    "sprite": "blinds/odyssey_blind_69.png",
+    "name_en": "The Dark Energy",
+    "name_pt": "A Energia Escura",
+    "desc_en": [
+      "Joker Chips are ignored."
+    ],
+    "desc_pt": [
+      "Fichas dos Jokers são ignorados."
+    ]
+  },
+  {
+    "id": 70,
+    "sprite": "blinds/odyssey_blind_70.png",
+    "name_en": "The Quantum Vacuum",
+    "name_pt": "O Vácuo Quântico",
+    "desc_en": [
+      "Probabilities are 1 in 1,000,000."
+    ],
+    "desc_pt": [
+      "Probabilidades são 1 em 1.000.000."
+    ]
+  },
+  {
+    "id": 71,
+    "sprite": "blinds/odyssey_blind_71.png",
+    "name_en": "The Multiverse",
+    "name_pt": "O Multiverso",
+    "desc_en": [
+      "Must win 3 times in a row (3 phases)."
+    ],
+    "desc_pt": [
+      "Deve vencer 3 vezes seguidas (3 fases)."
+    ]
+  },
+  {
+    "id": 72,
+    "sprite": "blinds/odyssey_blind_72.png",
+    "name_en": "The Sacred Timeline",
+    "name_pt": "A Linha do Tempo Sagrada",
+    "desc_en": [
+      "If not won in 1 hand, resets the Ante."
+    ],
+    "desc_pt": [
+      "Se não vencer em 1 mão, reseta o Aposta."
+    ]
+  },
+  {
+    "id": 73,
+    "sprite": "blinds/odyssey_blind_73.png",
+    "name_en": "The Fermi Paradox",
+    "name_pt": "O Paradoxo de Fermi",
+    "desc_en": [
+      "If you have Jokers, they won't work. (Sell everything?)."
+    ],
+    "desc_pt": [
+      "Se tiver Jokers, eles não funcionam. (Venda tudo?)"
+    ]
+  },
+  {
+    "id": 74,
+    "sprite": "blinds/odyssey_blind_74.png",
+    "name_en": "The Schrodinger's Cat",
+    "name_pt": "O Gato de Schrodinger",
+    "desc_en": [
+      "50% chance for the hand score to be 0."
+    ],
+    "desc_pt": [
+      "50% de chance da pontuação ser 0."
+    ]
+  },
+  {
+    "id": 75,
+    "sprite": "blinds/odyssey_blind_75.png",
+    "name_en": "The Maxwell's Demon",
+    "name_pt": "O Demônio de Maxwell",
+    "desc_en": [
+      "Must sort cards perfectly to score."
+    ],
+    "desc_pt": [
+      "Deve ordenar as cartas perfeitamente para pontuar."
+    ]
+  },
+  {
+    "id": 76,
+    "sprite": "blinds/odyssey_blind_76.png",
+    "name_en": "The Maximum Entropy",
+    "name_pt": "A Entropia Máxima",
+    "desc_en": [
+      "Everything is randomized (Rank, Suit, Joker, Level)."
+    ],
+    "desc_pt": [
+      "Tudo é aleatório (Rank, Naipe, Joker, Nível)."
+    ]
+  },
+  {
+    "id": 77,
+    "sprite": "blinds/odyssey_blind_77.png",
+    "name_en": "The Heat Death",
+    "name_pt": "A Morte Térmica",
+    "desc_en": [
+      "Each hand played reduces poker hand level."
+    ],
+    "desc_pt": [
+      "Cada mão jogada reduz o nível da mão de poker."
+    ]
+  },
+  {
+    "id": 78,
+    "sprite": "blinds/odyssey_blind_78.png",
+    "name_en": "The Big Crunch",
+    "name_pt": "O Big Crunch",
+    "desc_en": [
+      "Hand size reduces by 1 every hand played."
+    ],
+    "desc_pt": [
+      "Tamanho de Mão reduz em 1 a cada mão jogada."
+    ]
+  },
+  {
+    "id": 79,
+    "sprite": "blinds/odyssey_blind_79.png",
+    "name_en": "The Big Rip",
+    "name_pt": "O Big Rip",
+    "desc_en": [
+      "Destroys 1 Joker every hand played."
+    ],
+    "desc_pt": [
+      "Destrói 1 Joker a cada mão jogada."
+    ]
+  },
+  {
+    "id": 80,
+    "sprite": "blinds/odyssey_blind_80.png",
+    "name_en": "The False Vacuum",
+    "name_pt": "O Falso Vácuo",
+    "desc_en": [
+      "Instant Game Over if you play High Card."
+    ],
+    "desc_pt": [
+      "Game Over instantâneo se jogar High Card."
+    ]
+  },
+  {
+    "id": 81,
+    "sprite": "blinds/odyssey_blind_81.png",
+    "name_en": "The Creator",
+    "name_pt": "O Criador",
+    "desc_en": [
+      "Face the Developer. He deletes your cards."
+    ],
+    "desc_pt": [
+      "Você enfrenta o Desenvolvedor. Ele deleta suas cartas."
+    ]
+  },
+  {
+    "id": 82,
+    "sprite": "blinds/odyssey_blind_82.png",
+    "name_en": "The Destroyer",
+    "name_pt": "O Destruidor",
+    "desc_en": [
+      "Negates all Edition effects (Poly, Holo, etc)."
+    ],
+    "desc_pt": [
+      "Anula todos os efeitos de Edição (Poly, Holo, etc)."
+    ]
+  },
+  {
+    "id": 83,
+    "sprite": "blinds/odyssey_blind_83.png",
+    "name_en": "The Observer",
+    "name_pt": "O Observador",
+    "desc_en": [
+      "If you look at your cards, they lose value."
+    ],
+    "desc_pt": [
+      "Se você olhar suas cartas, elas perdem valor."
+    ]
+  },
+  {
+    "id": 84,
+    "sprite": "blinds/odyssey_blind_84.png",
+    "name_en": "The Architect",
+    "name_pt": "O Arquiteto",
+    "desc_en": [
+      "Rebuilds the Blind every hand (Regeneration)."
+    ],
+    "desc_pt": [
+      "Reconstrói o Blind a cada mão (Regeneração)."
+    ]
+  },
+  {
+    "id": 85,
+    "sprite": "blinds/odyssey_blind_85.png",
+    "name_en": "The Guardian",
+    "name_pt": "O Guardião",
+    "desc_en": [
+      "Immune to Retriggers."
+    ],
+    "desc_pt": [
+      "Imune a Retriggers."
+    ]
+  },
+  {
+    "id": 86,
+    "sprite": "blinds/odyssey_blind_86.png",
+    "name_en": "The Truth",
+    "name_pt": "A Verdade",
+    "desc_en": [
+      "Reveals your Jokers are illusions (Disabled)."
+    ],
+    "desc_pt": [
+      "Revela que seus Jokers são ilusões (Desativados)."
+    ]
+  },
+  {
+    "id": 87,
+    "sprite": "blinds/odyssey_blind_87.png",
+    "name_en": "The Lie",
+    "name_pt": "A Mentira",
+    "desc_en": [
+      "Displayed score is false (You don't know your progress)."
+    ],
+    "desc_pt": [
+      "Pontuação exibida é falsa (Você não sabe quanto fez)."
+    ]
+  },
+  {
+    "id": 88,
+    "sprite": "blinds/odyssey_blind_88.png",
+    "name_en": "The Infinity",
+    "name_pt": "O Infinito",
+    "desc_en": [
+      "**Singularity**"
+    ],
+    "desc_pt": [
+      "**Singularidade**"
+    ]
+  },
+  {
+    "id": 89,
+    "sprite": "blinds/odyssey_blind_89.png",
+    "name_en": "The Zero",
+    "name_pt": "O Zero",
+    "desc_en": [
+      "**Nullity**"
+    ],
+    "desc_pt": [
+      "**Nulidade**"
+    ]
+  },
+  {
+    "id": 90,
+    "sprite": "blinds/odyssey_blind_90.png",
+    "name_en": "Alpha & Omega",
+    "name_pt": "Alfa & Ômega",
+    "desc_en": [
+      "The First and the Last. (Dual Boss)."
+    ],
+    "desc_pt": [
+      "O Primeiro e o Último. (Boss Duplo)."
+    ]
+  },
+  {
+    "id": 91,
+    "sprite": "blinds/odyssey_blind_91.png",
+    "name_en": "The Code",
+    "name_pt": "O Código",
+    "desc_en": [
+      "Alters game code (Glitch effects)."
+    ],
+    "desc_pt": [
+      "Altera o código do jogo (Glitch Effects)."
+    ]
+  },
+  {
+    "id": 92,
+    "sprite": "blinds/odyssey_blind_92.png",
+    "name_en": "The Matrix",
+    "name_pt": "A Matriz",
+    "desc_en": [
+      "You are in a simulation (Matrix effects)."
+    ],
+    "desc_pt": [
+      "Você está na simulação. (Tela Verde/Matrix)."
+    ]
+  },
+  {
+    "id": 93,
+    "sprite": "blinds/odyssey_blind_93.png",
+    "name_en": "The Error",
+    "name_pt": "O Erro",
+    "desc_en": [
+      "**Glitch**"
+    ],
+    "desc_pt": [
+      "**Glitch**"
+    ]
+  },
+  {
+    "id": 94,
+    "sprite": "blinds/odyssey_blind_94.png",
+    "name_en": "The Crash",
+    "name_pt": "O Crash",
+    "desc_en": [
+      "Attempts to close the game (Fake Crash)."
+    ],
+    "desc_pt": [
+      "Tenta fechar o jogo (Fake Crash)."
+    ]
+  },
+  {
+    "id": 95,
+    "sprite": "blinds/odyssey_blind_95.png",
+    "name_en": "The Blue Screen",
+    "name_pt": "A Tela Azul",
+    "desc_en": [
+      "BSOD (Blue Screen of Death)."
+    ],
+    "desc_pt": [
+      "Tela Azul da Morte (BSOD)."
+    ]
+  },
+  {
+    "id": 96,
+    "sprite": "blinds/odyssey_blind_96.png",
+    "name_en": "The Virus",
+    "name_pt": "O Vírus",
+    "desc_en": [
+      "Infects your Jokers (they become debuffs)."
+    ],
+    "desc_pt": [
+      "Infecta seus Jokers (Eles viram debuffs)."
+    ]
+  },
+  {
+    "id": 97,
+    "sprite": "blinds/odyssey_blind_97.png",
+    "name_en": "The Antivirus",
+    "name_pt": "O Antivírus",
+    "desc_en": [
+      "Deletes your 'Hacked' (Modded) Jokers."
+    ],
+    "desc_pt": [
+      "Deleta seus Jokers 'Hackeados' (Modded)."
+    ]
+  },
+  {
+    "id": 98,
+    "sprite": "blinds/odyssey_blind_98.png",
+    "name_en": "The Firewall",
+    "name_pt": "O Firewall",
+    "desc_en": [
+      "Blocks scores above a certain limit."
+    ],
+    "desc_pt": [
+      "Bloqueia pontuações acima de um limite."
+    ]
+  },
+  {
+    "id": 99,
+    "sprite": "blinds/odyssey_blind_99.png",
+    "name_en": "The Hacker",
+    "name_pt": "O Hacker",
+    "desc_en": [
+      "Steals your money and your Jokers."
+    ],
+    "desc_pt": [
+      "Rouba seu dinheiro e seus Jokers."
+    ]
+  },
+  {
+    "id": 100,
+    "sprite": "blinds/odyssey_blind_100.png",
+    "name_en": "The Final Odyssey",
+    "name_pt": "A Odisseia Final",
+    "desc_en": [
+      "The final challenge. All mechanics combined."
+    ],
+    "desc_pt": [
+      "O desafio final. Todas as mecânicas juntas."
+    ]
+  }
+]

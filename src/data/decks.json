@@ -1,0 +1,1404 @@
+[
+  {
+    "key": "alien",
+    "sprite": "decks/odyssey_d_alien.png",
+    "name_en": "Alien Deck",
+    "name_pt": "Baralho Alien",
+    "desc_en": [
+      "Suits are replaced by",
+      "alien symbols (4 new",
+      "suits)."
+    ],
+    "desc_pt": [
+      "Naipes são substituídos por",
+      "símbolos alienígenas (4 novos",
+      "naipes)."
+    ]
+  },
+  {
+    "key": "alpha",
+    "sprite": "decks/odyssey_d_alpha.png",
+    "name_en": "Alpha Deck",
+    "name_pt": "Baralho Alfa",
+    "desc_en": [
+      "Only A, 2, 3, 4, 5."
+    ],
+    "desc_pt": [
+      "Apenas A, 2, 3, 4, 5."
+    ]
+  },
+  {
+    "key": "antimatter",
+    "sprite": "decks/odyssey_d_antimatter.png",
+    "name_en": "Antimatter Deck",
+    "name_pt": "Baralho Antimatéria",
+    "desc_en": [
+      "Start with a",
+      "{C:attention}Negative Tag{}"
+    ],
+    "desc_pt": [
+      "Começa com uma",
+      "{C:attention}Tag Negativa{}"
+    ]
+  },
+  {
+    "key": "arcane",
+    "sprite": "decks/odyssey_d_arcane.png",
+    "name_en": "Arcane Deck",
+    "name_pt": "Baralho Arcano",
+    "desc_en": [
+      "Arcana Packs are free."
+    ],
+    "desc_pt": [
+      "Arcana Packs são grátis."
+    ]
+  },
+  {
+    "key": "ascensao",
+    "sprite": "decks/odyssey_d_ascension.png",
+    "name_en": "Ascension Deck",
+    "name_pt": "Baralho da Ascensão",
+    "desc_en": [
+      "Blinds require {C:attention}2x{} points{}",
+      "All hands score {X:mult,C:white} X2 {} Mult{}"
+    ],
+    "desc_pt": [
+      "Blinds requerem {C:attention}2x{} mais pontos{}",
+      "Todas as mãos pontuam {X:mult,C:white} X2 Multi{}"
+    ]
+  },
+  {
+    "key": "behemoth",
+    "sprite": "decks/odyssey_d_behemoth.png",
+    "name_en": "Behemoth Deck",
+    "name_pt": "Baralho Behemoth",
+    "desc_en": [
+      "1-card hands give X5 Mult."
+    ],
+    "desc_pt": [
+      "Mãos de 1 carta dão X5 Mult."
+    ]
+  },
+  {
+    "key": "buffoon",
+    "sprite": "decks/odyssey_d_buffoon.png",
+    "name_en": "Buffoon Deck",
+    "name_pt": "Baralho Buffoon",
+    "desc_en": [
+      "Buffoon Packs are free."
+    ],
+    "desc_pt": [
+      "Buffoon Packs são grátis."
+    ]
+  },
+  {
+    "key": "celestial",
+    "sprite": "decks/odyssey_d_celestial.png",
+    "name_en": "Celestial Deck",
+    "name_pt": "Baralho Celestial",
+    "desc_en": [
+      "Planet Packs are free."
+    ],
+    "desc_pt": [
+      "Planet Packs são grátis."
+    ]
+  },
+  {
+    "key": "ceramic",
+    "sprite": "decks/odyssey_d_ceramic.png",
+    "name_en": "Ceramic Deck",
+    "name_pt": "Baralho de Cerâmica",
+    "desc_en": [
+      "All cards in starting",
+      "deck are enhanced to",
+      "{C:attention}Ceramic Cards{}"
+    ],
+    "desc_pt": [
+      "Todas as cartas do",
+      "baralho inicial são",
+      "aprimoradas para {C:attention}Cerâmica{}"
+    ]
+  },
+  {
+    "key": "chaos",
+    "sprite": "decks/odyssey_d_chaos.png",
+    "name_en": "Chaos Deck",
+    "name_pt": "Baralho do Caos",
+    "desc_en": [
+      "Starting deck has",
+      "{C:attention}randomized{} suits and ranks{}"
+    ],
+    "desc_pt": [
+      "O baralho inicial tem",
+      "naipes e ranks",
+      "{C:attention}totalmente aleatórios{}"
+    ]
+  },
+  {
+    "key": "chaotic_ii",
+    "sprite": "decks/odyssey_d_chaotic_ii.png",
+    "name_en": "Chaotic II Deck",
+    "name_pt": "Baralho Caótico II",
+    "desc_en": [
+      "Boss Blinds have doubled",
+      "effects. X2 Score."
+    ],
+    "desc_pt": [
+      "Boss Blinds têm efeitos",
+      "dobrados. X2 Pontuação."
+    ]
+  },
+  {
+    "key": "chimera",
+    "sprite": "decks/odyssey_d_chimera.png",
+    "name_en": "Chimera Deck",
+    "name_pt": "Baralho Quimera",
+    "desc_en": [
+      "Mixed deck of 4 different decks."
+    ],
+    "desc_pt": [
+      "Baralho misto de 4 baralhos",
+      "diferentes."
+    ]
+  },
+  {
+    "key": "clone",
+    "sprite": "decks/odyssey_d_clone.png",
+    "name_en": "Clone Deck",
+    "name_pt": "Baralho Clone",
+    "desc_en": [
+      "Starts with 52 Aces of",
+      "Spades."
+    ],
+    "desc_pt": [
+      "Começa com 52 Ases de",
+      "Espadas."
+    ]
+  },
+  {
+    "key": "cyborg",
+    "sprite": "decks/odyssey_d_cyborg.png",
+    "name_en": "Cyborg Deck",
+    "name_pt": "Baralho Ciborgue",
+    "desc_en": [
+      "Starts with 2 'Bot' Jokers",
+      "(Automated)."
+    ],
+    "desc_pt": [
+      "Começa com 2 Coringas 'Bot'",
+      "(Automatizados)."
+    ]
+  },
+  {
+    "key": "dark_energy",
+    "sprite": "decks/odyssey_d_dark_energy.png",
+    "name_en": "Dark Energy Deck",
+    "name_pt": "Baralho Energia Escura",
+    "desc_en": [
+      "{C:dark_edition}Negative{} Jokers appear{}",
+      "{C:attention}4x{} more often in shop{}"
+    ],
+    "desc_pt": [
+      "Curingas {C:dark_edition}Negativos{} aparecem{}",
+      "{C:attention}4x{} mais frequentemente na loja{}"
+    ]
+  },
+  {
+    "key": "diamond",
+    "sprite": "decks/odyssey_d_diamond.png",
+    "name_en": "Diamond Deck",
+    "name_pt": "Baralho de Diamante",
+    "desc_en": [
+      "All cards in starting",
+      "deck are enhanced to",
+      "{C:attention}Diamond Cards{}"
+    ],
+    "desc_pt": [
+      "Todas as cartas do",
+      "baralho inicial são",
+      "aprimoradas para {C:attention}Diamante{}"
+    ]
+  },
+  {
+    "key": "dimensional",
+    "sprite": "decks/odyssey_d_dimensional.png",
+    "name_en": "Dimensional Deck",
+    "name_pt": "Baralho Dimensional",
+    "desc_en": [
+      "Starting deck has {C:attention}78{} cards{}",
+      "(52 standard + 26 random)"
+    ],
+    "desc_pt": [
+      "Baralho inicial tem {C:attention}78{} cartas{}",
+      "(52 padrão + 26 aleatórias)"
+    ]
+  },
+  {
+    "key": "duplo",
+    "sprite": "decks/odyssey_d_double.png",
+    "name_en": "Double Deck",
+    "name_pt": "Baralho Duplo",
+    "desc_en": [
+      "Starting deck has {C:attention}104{} cards{}",
+      "(2 copies of each standard card)"
+    ],
+    "desc_pt": [
+      "Baralho inicial tem {C:attention}104{} cartas{}",
+      "(2 cópias de cada carta padrão)"
+    ]
+  },
+  {
+    "key": "dragon",
+    "sprite": "decks/odyssey_d_dragon.png",
+    "name_en": "Dragon Deck",
+    "name_pt": "Baralho Dragão",
+    "desc_en": [
+      "Bosses have 10x HP. You",
+      "breathe fire (X10 Mult)."
+    ],
+    "desc_pt": [
+      "Bosses têm 10x HP. Você cospe",
+      "fogo (X10 Mult)."
+    ]
+  },
+  {
+    "key": "electrons",
+    "sprite": "decks/odyssey_d_electrons.png",
+    "name_en": "Electron Deck",
+    "name_pt": "Baralho de Elétrons",
+    "desc_en": [
+      "{C:red}+1{} Discards{}",
+      "per round"
+    ],
+    "desc_pt": [
+      "{C:red}+1{} Descarte{}",
+      "por rodada"
+    ]
+  },
+  {
+    "key": "bonus",
+    "sprite": "decks/odyssey_d_emerald.png",
+    "name_en": "Emerald Deck",
+    "name_pt": "Baralho de Esmeralda",
+    "desc_en": [
+      "All cards in the",
+      "starting deck are",
+      "enhanced to {C:attention}Emerald{}"
+    ],
+    "desc_pt": [
+      "Todas as cartas do",
+      "baralho inicial são",
+      "aprimoradas para {C:attention}Esmeralda{}"
+    ]
+  },
+  {
+    "key": "inveja",
+    "sprite": "decks/odyssey_d_envy.png",
+    "name_en": "Envy Deck",
+    "name_pt": "Baralho da Inveja",
+    "desc_en": [
+      "Starts with",
+      "{C:attention}Mime{} Joker{}"
+    ],
+    "desc_pt": [
+      "Começa com o Curinga",
+      "{C:attention}Mímico{}"
+    ]
+  },
+  {
+    "key": "ethereal",
+    "sprite": "decks/odyssey_d_ethereal.png",
+    "name_en": "Ethereal Deck",
+    "name_pt": "Baralho Etéreo",
+    "desc_en": [
+      "Spectral cards appear",
+      "in the shop normally."
+    ],
+    "desc_pt": [
+      "Cartas espectrais aparecem na",
+      "loja normalmente."
+    ]
+  },
+  {
+    "key": "event_horizon",
+    "sprite": "decks/odyssey_d_event_horizon.png",
+    "name_en": "Event Horizon Deck",
+    "name_pt": "Baralho Horizonte de Eventos",
+    "desc_en": [
+      "Destroying cards grants",
+      "{C:mult}+0.5{} Mult permanent Mult{}"
+    ],
+    "desc_pt": [
+      "Destruir cartas concede",
+      "{C:mult}+0.5Multi permanente{}"
+    ]
+  },
+  {
+    "key": "queda",
+    "sprite": "decks/odyssey_d_fall.png",
+    "name_en": "Fall Deck",
+    "name_pt": "Baralho da Queda",
+    "desc_en": [
+      "Blinds require {C:attention}0.5x{} points{}",
+      "All hands score {X:mult,C:white} X0.5x {} Mult{}"
+    ],
+    "desc_pt": [
+      "Blinds requerem {C:attention}0.5x{} pontos{}",
+      "Todas as mãos pontuam {X:mult,C:white} X0.5x Multi{}"
+    ]
+  },
+  {
+    "key": "fibonacci",
+    "sprite": "decks/odyssey_d_fibonacci.png",
+    "name_en": "Fibonacci Deck",
+    "name_pt": "Baralho Fibonacci",
+    "desc_en": [
+      "Only 1, 2, 3, 5, 8."
+    ],
+    "desc_pt": [
+      "Apenas 1, 2, 3, 5, 8."
+    ]
+  },
+  {
+    "key": "laminado",
+    "sprite": "decks/odyssey_d_foil.png",
+    "name_en": "Foil Deck",
+    "name_pt": "Baralho Laminado",
+    "desc_en": [
+      "Starts with a random",
+      "{C:dark_edition}Foil{} Joker{}",
+      "(Common Rarity)"
+    ],
+    "desc_pt": [
+      "Começa com um Curinga",
+      "{C:dark_edition}Laminado{} aleatório{}",
+      "(Raridade Comum)"
+    ]
+  },
+  {
+    "key": "fractal",
+    "sprite": "decks/odyssey_d_fractal.png",
+    "name_en": "Fractal Deck",
+    "name_pt": "Baralho Fractal",
+    "desc_en": [
+      "Playing 5 identical cards",
+      "creates a copy in the deck."
+    ],
+    "desc_pt": [
+      "Ao jogar 5 cartas iguais,",
+      "cria uma cópia no baralho."
+    ]
+  },
+  {
+    "key": "frozen",
+    "sprite": "decks/odyssey_d_frozen.png",
+    "name_en": "Frozen Deck",
+    "name_pt": "Baralho Congelado",
+    "desc_en": [
+      "First hand is always",
+      "debuffed. +2 Hands."
+    ],
+    "desc_pt": [
+      "Primeira mão sempre",
+      "debuffada. +2 Mãos."
+    ]
+  },
+  {
+    "key": "ghost",
+    "sprite": "decks/odyssey_d_ghost.png",
+    "name_en": "Ghost Deck",
+    "name_pt": "Baralho Fantasma",
+    "desc_en": [
+      "Played cards are not discarded",
+      "(return to hand). -2 Hands."
+    ],
+    "desc_pt": [
+      "Cartas jogadas não são",
+      "descartadas (voltam para mão).",
+      "-2 Mãos."
+    ]
+  },
+  {
+    "key": "gula",
+    "sprite": "decks/odyssey_d_gluttony.png",
+    "name_en": "Gluttony Deck",
+    "name_pt": "Baralho da Gula",
+    "desc_en": [
+      "{C:attention}+2{} Joker Slots{}",
+      "{C:red}-2{} Consumable Slots{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+2{} Slots de Curinga{}",
+      "{C:red}-2{} Slots de Consumível{}"
+    ]
+  },
+  {
+    "key": "gnome",
+    "sprite": "decks/odyssey_d_gnome.png",
+    "name_en": "Gnome Deck",
+    "name_pt": "Baralho Gnomo",
+    "desc_en": [
+      "Start with {C:attention}+3{} hand size",
+      "and {C:attention}+1{} Joker slot."
+    ],
+    "desc_pt": [
+      "Começa com {C:attention}+3{} slots de mão",
+      "e {C:attention}+1{} slot de Curinga."
+    ]
+  },
+  {
+    "key": "gravitational",
+    "sprite": "decks/odyssey_d_gravitational.png",
+    "name_en": "Gravitational Deck",
+    "name_pt": "Baralho Gravitacional",
+    "desc_en": [
+      "First played card",
+      "of each hand is",
+      "{C:attention}retrigged{} 1 time{}"
+    ],
+    "desc_pt": [
+      "A primeira carta jogada",
+      "em cada mão é",
+      "{C:attention}reativada{} 1 vez{}"
+    ]
+  },
+  {
+    "key": "avareza",
+    "sprite": "decks/odyssey_d_avarice.png",
+    "name_en": "Greed Deck",
+    "name_pt": "Baralho da Avareza",
+    "desc_en": [
+      "Gain {C:money}$10{} flat at end of round{}",
+      "Interest disabled"
+    ],
+    "desc_pt": [
+      "Ganha {C:money}$10{} fixos ao final da rodada{}",
+      "Juros desativados"
+    ]
+  },
+  {
+    "key": "griffin",
+    "sprite": "decks/odyssey_d_griffin.png",
+    "name_en": "Griffin Deck",
+    "name_pt": "Baralho Grifo",
+    "desc_en": [
+      "Flies over Small Blinds",
+      "(Skip automatically)."
+    ],
+    "desc_pt": [
+      "Voa sobre Small Blinds (Pula",
+      "automaticamente)."
+    ]
+  },
+  {
+    "key": "holografico",
+    "sprite": "decks/odyssey_d_holographic.png",
+    "name_en": "Holographic Deck",
+    "name_pt": "Baralho Holográfico",
+    "desc_en": [
+      "Starts with a random",
+      "{C:attention}Holographic{} Joker{}",
+      "(Common Rarity)"
+    ],
+    "desc_pt": [
+      "Começa com um Curinga",
+      "{C:attention}Holográfico{} aleatório{}",
+      "(Raridade Comum)"
+    ]
+  },
+  {
+    "key": "selvagem",
+    "sprite": "decks/odyssey_d_holy.png",
+    "name_en": "Holy Deck",
+    "name_pt": "Baralho Sagrado",
+    "desc_en": [
+      "All cards in the",
+      "starting deck are",
+      "enhanced to {C:attention}Holy{}"
+    ],
+    "desc_pt": [
+      "Todas as cartas do",
+      "baralho inicial são",
+      "aprimoradas para {C:attention}Sagrada{}"
+    ]
+  },
+  {
+    "key": "hydra",
+    "sprite": "decks/odyssey_d_hydra.png",
+    "name_en": "Hydra Deck",
+    "name_pt": "Baralho Hidra",
+    "desc_en": [
+      "Cut a head (Win a Blind)",
+      "and grow 2 new ones",
+      "(extra Blinds)."
+    ],
+    "desc_pt": [
+      "Cortar uma cabeça (Vencer",
+      "Blind) gera 2 novas (Blinds",
+      "extras)."
+    ]
+  },
+  {
+    "key": "investor",
+    "sprite": "decks/odyssey_d_investor.png",
+    "name_en": "Investor Deck",
+    "name_pt": "Baralho Investidor",
+    "desc_en": [
+      "Interest has no limit."
+    ],
+    "desc_pt": [
+      "Juros não tem limite."
+    ]
+  },
+  {
+    "key": "invisible",
+    "sprite": "decks/odyssey_d_invisible.png",
+    "name_en": "Invisible Deck",
+    "name_pt": "Baralho Invisível",
+    "desc_en": [
+      "Cards are played face",
+      "down. X4 Mult."
+    ],
+    "desc_pt": [
+      "Cartas são jogadas viradas",
+      "para baixo. X4 Mult."
+    ]
+  },
+  {
+    "key": "arthur",
+    "sprite": "decks/odyssey_d_arthur.png",
+    "name_en": "King Arthur Deck",
+    "name_pt": "Baralho Rei Arthur",
+    "desc_en": [
+      "Starts with Excalibur",
+      "(Legendary Joker)."
+    ],
+    "desc_pt": [
+      "Começa com Excalibur (Joker",
+      "Lendário)."
+    ]
+  },
+  {
+    "key": "midas",
+    "sprite": "decks/odyssey_d_midas.png",
+    "name_en": "King Midas Deck",
+    "name_pt": "Baralho Rei Midas",
+    "desc_en": [
+      "Everything turns to Gold",
+      "(Cards, Jokers)."
+    ],
+    "desc_pt": [
+      "Tudo vira Ouro (Cartas,",
+      "Jokers)."
+    ]
+  },
+  {
+    "key": "kraken",
+    "sprite": "decks/odyssey_d_kraken.png",
+    "name_en": "Kraken Deck",
+    "name_pt": "Baralho Kraken",
+    "desc_en": [
+      "Tentacles (Jokers) hold",
+      "you (Cannot sell Jokers)."
+    ],
+    "desc_pt": [
+      "Tentáculos (Jokers) te",
+      "agarram (Não pode vender",
+      "Jokers)."
+    ]
+  },
+  {
+    "key": "leviathan",
+    "sprite": "decks/odyssey_d_leviathan.png",
+    "name_en": "Leviathan Deck",
+    "name_pt": "Baralho Leviatã",
+    "desc_en": [
+      "5-card hands give {C:chips}+1000{}",
+      "{C:chips}Chips{}."
+    ],
+    "desc_pt": [
+      "Mãos de 5 cartas dão +1000",
+      "Fichas."
+    ]
+  },
+  {
+    "key": "lucky_ii",
+    "sprite": "decks/odyssey_d_lucky_ii.png",
+    "name_en": "Lucky II Deck",
+    "name_pt": "Baralho Sortudo II",
+    "desc_en": [
+      "Probabilities are always 1 in 1",
+      "(always hits). Enemies 4x Points."
+    ],
+    "desc_pt": [
+      "Probabilidades são sempre 1",
+      "em 1 (Sempre acerta). Inimigos",
+      "4x Pontos."
+    ]
+  },
+  {
+    "key": "lunar",
+    "sprite": "decks/odyssey_d_lunar.png",
+    "name_en": "Lunar Deck",
+    "name_pt": "Baralho Lunar",
+    "desc_en": [
+      "Moon phases affect scoring",
+      "(4 round cycle)."
+    ],
+    "desc_pt": [
+      "Fases da lua afetam pontuação",
+      "(Ciclo de 4 rodadas)."
+    ]
+  },
+  {
+    "key": "lust",
+    "sprite": "decks/odyssey_d_lust.png",
+    "name_en": "Lust Deck",
+    "name_pt": "Baralho Luxúria",
+    "desc_en": [
+      "Hearts give X1.2 Mult."
+    ],
+    "desc_pt": [
+      "Copas dão X1.2 Mult."
+    ]
+  },
+  {
+    "key": "sorte",
+    "sprite": "decks/odyssey_d_magic.png",
+    "name_en": "Magic Deck",
+    "name_pt": "Baralho Mágico",
+    "desc_en": [
+      "All cards in the",
+      "starting deck are",
+      "enhanced to {C:attention}Magic{}"
+    ],
+    "desc_pt": [
+      "Todas as cartas do",
+      "baralho inicial são",
+      "aprimoradas para {C:attention}Mágica{}"
+    ]
+  },
+  {
+    "key": "magnetic",
+    "sprite": "decks/odyssey_d_magnetic.png",
+    "name_en": "Magnetic Deck",
+    "name_pt": "Baralho Magnético",
+    "desc_en": [
+      "Cards of same rank attract",
+      "(always bought together)."
+    ],
+    "desc_pt": [
+      "Cartas de mesmo rank se",
+      "atraem (sempre compradas",
+      "juntas)."
+    ]
+  },
+  {
+    "key": "maximalist_ii",
+    "sprite": "decks/odyssey_d_maximalist_ii.png",
+    "name_en": "Maximalist II Deck",
+    "name_pt": "Baralho Maximalista II",
+    "desc_en": [
+      "Hand size 10. 0 Discards."
+    ],
+    "desc_pt": [
+      "Mão tamanho 10. 0 Descartes."
+    ]
+  },
+  {
+    "key": "mercenary",
+    "sprite": "decks/odyssey_d_mercenary.png",
+    "name_en": "Mercenary Deck",
+    "name_pt": "Baralho Mercenário",
+    "desc_en": [
+      "Does not earn money from blinds.",
+      "Earn $5 per sold Joker."
+    ],
+    "desc_pt": [
+      "Não ganha dinheiro de blinds.",
+      "Ganha $5 por Joker vendido."
+    ]
+  },
+  {
+    "key": "merlin",
+    "sprite": "decks/odyssey_d_merlin.png",
+    "name_en": "Merlin Deck",
+    "name_pt": "Baralho Merlin",
+    "desc_en": [
+      "Starts with 3 Potions",
+      "(Consumables)."
+    ],
+    "desc_pt": [
+      "Começa com 3 Poções",
+      "(Consumíveis)."
+    ]
+  },
+  {
+    "key": "minimalist_ii",
+    "sprite": "decks/odyssey_d_minimalist_ii.png",
+    "name_en": "Minimalist II Deck",
+    "name_pt": "Baralho Minimalista II",
+    "desc_en": [
+      "Hand size 3. X5 Mult."
+    ],
+    "desc_pt": [
+      "Mão tamanho 3. X5 Mult."
+    ]
+  },
+  {
+    "key": "mirror",
+    "sprite": "decks/odyssey_d_mirror.png",
+    "name_en": "Mirror Deck",
+    "name_pt": "Baralho Espelho",
+    "desc_en": [
+      "Hands played right to left",
+      "score double."
+    ],
+    "desc_pt": [
+      "Mãos jogadas da direita para",
+      "esquerda pontuam dobro."
+    ]
+  },
+  {
+    "key": "mutant",
+    "sprite": "decks/odyssey_d_mutant.png",
+    "name_en": "Mutant Deck",
+    "name_pt": "Baralho Mutante",
+    "desc_en": [
+      "Suits change each round."
+    ],
+    "desc_pt": [
+      "Naipes mudam a cada rodada."
+    ]
+  },
+  {
+    "key": "mystic",
+    "sprite": "decks/odyssey_d_mystic.png",
+    "name_en": "Mystic Deck",
+    "name_pt": "Baralho Místico",
+    "desc_en": [
+      "Starts with 5 random",
+      "Tarot cards."
+    ],
+    "desc_pt": [
+      "Começa com 5 cartas de Tarô",
+      "aleatórias."
+    ]
+  },
+  {
+    "key": "nebula_deck",
+    "sprite": "decks/odyssey_d_nebula.png",
+    "name_en": "Nebula Deck",
+    "name_pt": "Baralho Nebulosa",
+    "desc_en": [
+      "Starts with the",
+      "{C:attention}Telescope{} Voucher{}"
+    ],
+    "desc_pt": [
+      "Começa com o Cupom",
+      "{C:attention}Telescópio{}"
+    ]
+  },
+  {
+    "key": "negativo",
+    "sprite": "decks/odyssey_d_negative.png",
+    "name_en": "Negative Deck",
+    "name_pt": "Baralho Negativo",
+    "desc_en": [
+      "Starts with a random",
+      "{C:dark_edition}Negative{} Joker{}",
+      "(Common Rarity)"
+    ],
+    "desc_pt": [
+      "Começa com um Curinga",
+      "{C:dark_edition}Negativo{} aleatório{}",
+      "(Raridade Comum)"
+    ]
+  },
+  {
+    "key": "neutrons",
+    "sprite": "decks/odyssey_d_neutrons.png",
+    "name_en": "Neutron Deck",
+    "name_pt": "Baralho de Nêutrons",
+    "desc_en": [
+      "No {C:attention}Face Cards{}",
+      "in starting deck",
+      "{C:attention}+2{} Joker Slots{}"
+    ],
+    "desc_pt": [
+      "Sem cartas de {C:attention}Figura{}",
+      "no baralho inicial",
+      "{C:attention}+2{} Slots de Curinga{}"
+    ]
+  },
+  {
+    "key": "oceanic",
+    "sprite": "decks/odyssey_d_oceanic.png",
+    "name_en": "Oceanic Deck",
+    "name_pt": "Baralho Oceânico",
+    "desc_en": [
+      "Only Black suits. Flush scores 2x."
+    ],
+    "desc_pt": [
+      "Apenas naipes Pretos. Flush",
+      "vale 2x."
+    ]
+  },
+  {
+    "key": "odyssey",
+    "sprite": "decks/odyssey_d_odyssey.png",
+    "name_en": "Odyssey Deck",
+    "name_pt": "Baralho Odisseia",
+    "desc_en": [
+      "Starts with Legendary Joker",
+      "'The Odyssey'."
+    ],
+    "desc_pt": [
+      "Começa com Lendário 'A",
+      "Odisseia'."
+    ]
+  },
+  {
+    "key": "omega",
+    "sprite": "decks/odyssey_d_omega.png",
+    "name_en": "Omega Deck",
+    "name_pt": "Baralho Ômega",
+    "desc_en": [
+      "Only 10, J, Q, K, A."
+    ],
+    "desc_pt": [
+      "Apenas 10, J, Q, K, A."
+    ]
+  },
+  {
+    "key": "order",
+    "sprite": "decks/odyssey_d_order.png",
+    "name_en": "Order Deck",
+    "name_pt": "Baralho da Ordem",
+    "desc_en": [
+      "Starting deck is {C:attention}perfectly sorted{}",
+      "Play cards in rank order to give",
+      "{X:mult,C:white} X2 {} Mult"
+    ],
+    "desc_pt": [
+      "Baralho inicial {C:attention}perfeitamente ordenado{}",
+      "Jogue cartas em ordem de classe para dar",
+      "{X:mult,C:white} X2 {} Multi"
+    ]
+  },
+  {
+    "key": "ordered_ii",
+    "sprite": "decks/odyssey_d_ordered_ii.png",
+    "name_en": "Ordered II Deck",
+    "name_pt": "Baralho Ordenado II",
+    "desc_en": [
+      "Boss Blinds have no effect.",
+      "0.5x Score."
+    ],
+    "desc_pt": [
+      "Boss Blinds não têm efeito.",
+      "0.5x Pontuação."
+    ]
+  },
+  {
+    "key": "paradox",
+    "sprite": "decks/odyssey_d_paradox.png",
+    "name_en": "Paradox Deck",
+    "name_pt": "Baralho do Paradoxo",
+    "desc_en": [
+      "Starts at {C:attention}Ante 0{}",
+      "Blinds scale faster"
+    ],
+    "desc_pt": [
+      "Começa no {C:attention}Aposta 0{}",
+      "Blinds escalam mais rápido"
+    ]
+  },
+  {
+    "key": "parallel",
+    "sprite": "decks/odyssey_d_parallel.png",
+    "name_en": "Parallel Deck",
+    "name_pt": "Baralho Paralelo",
+    "desc_en": [
+      "{C:blue}+2{} Hands{}",
+      "{C:red}-2{} Discards{}"
+    ],
+    "desc_pt": [
+      "{C:blue}+2{} Mãos{}",
+      "{C:red}-2{} Descartes{}"
+    ]
+  },
+  {
+    "key": "phoenix",
+    "sprite": "decks/odyssey_d_phoenix.png",
+    "name_en": "Phoenix Deck",
+    "name_pt": "Baralho Fênix",
+    "desc_en": [
+      "If you die, reborn at Ante 1",
+      "with everything kept (once)."
+    ],
+    "desc_pt": [
+      "Se morrer, renasce no Aposta 1",
+      "com tudo mantido (1 vez)."
+    ]
+  },
+  {
+    "key": "photons",
+    "sprite": "decks/odyssey_d_photons.png",
+    "name_en": "Photon Deck",
+    "name_pt": "Baralho de Fótons",
+    "desc_en": [
+      "All cards in the",
+      "starting deck are",
+      "enhanced to {C:attention}Gold{}"
+    ],
+    "desc_pt": [
+      "Todas as cartas do",
+      "baralho inicial são",
+      "aprimoradas para {C:attention}Diamante{}"
+    ]
+  },
+  {
+    "key": "platinum",
+    "sprite": "decks/odyssey_d_platinum.png",
+    "name_en": "Platinum Deck",
+    "name_pt": "Baralho de Platina",
+    "desc_en": [
+      "All cards in starting",
+      "deck are enhanced to",
+      "{C:attention}Platinum Cards{}"
+    ],
+    "desc_pt": [
+      "Todas as cartas do",
+      "baralho inicial são",
+      "aprimoradas para {C:attention}Platina{}"
+    ]
+  },
+  {
+    "key": "policromatico",
+    "sprite": "decks/odyssey_d_polychrome.png",
+    "name_en": "Polychrome Deck",
+    "name_pt": "Baralho Policromático",
+    "desc_en": [
+      "Starts with a random",
+      "{C:dark_edition}Polychrome{} Joker{}",
+      "(Common Rarity)"
+    ],
+    "desc_pt": [
+      "Começa com um Curinga",
+      "{C:dark_edition}Policromático{} aleatório{}",
+      "(Raridade Comum)"
+    ]
+  },
+  {
+    "key": "pobreza",
+    "sprite": "decks/odyssey_d_poverty.png",
+    "name_en": "Poverty Deck",
+    "name_pt": "Baralho da Pobreza",
+    "desc_en": [
+      "Start with {C:money}$0{} {}",
+      "Max interest increased to {C:money}$10{} {}",
+      "(with {C:money}$50{} ){}"
+    ],
+    "desc_pt": [
+      "Começa com {C:money}$0{} {}",
+      "Juros máximos aumentados para {C:money}$10{} {}",
+      "(com {C:money}$50{} ){}"
+    ]
+  },
+  {
+    "key": "pride",
+    "sprite": "decks/odyssey_d_pride.png",
+    "name_en": "Pride Deck",
+    "name_pt": "Baralho Orgulho",
+    "desc_en": [
+      "Face cards give +30 Chips."
+    ],
+    "desc_pt": [
+      "Figuras dão +30 Fichas."
+    ]
+  },
+  {
+    "key": "prime",
+    "sprite": "decks/odyssey_d_prime.png",
+    "name_en": "Prime Deck",
+    "name_pt": "Baralho Primo",
+    "desc_en": [
+      "Only 2, 3, 5, 7, J, K."
+    ],
+    "desc_pt": [
+      "Apenas 2, 3, 5, 7, J, K."
+    ]
+  },
+  {
+    "key": "primitive",
+    "sprite": "decks/odyssey_d_primitive.png",
+    "name_en": "Primitive Deck",
+    "name_pt": "Baralho Primitivo",
+    "desc_en": [
+      "No shops. Earn double",
+      "Blind rewards."
+    ],
+    "desc_pt": [
+      "Sem lojas. Ganha blind",
+      "rewards dobrados."
+    ]
+  },
+  {
+    "key": "protons",
+    "sprite": "decks/odyssey_d_protons.png",
+    "name_en": "Proton Deck",
+    "name_pt": "Baralho de Prótons",
+    "desc_en": [
+      "{C:attention}+1{} Hand Size{}"
+    ],
+    "desc_pt": [
+      "{C:attention}+1{} Tamanho de Mão{}"
+    ]
+  },
+  {
+    "key": "quasar",
+    "sprite": "decks/odyssey_d_quasar.png",
+    "name_en": "Quasar Deck",
+    "name_pt": "Baralho Quasar",
+    "desc_en": [
+      "Starts with {C:mult}+20{} MultBase Mult{}",
+      "Earn no {C:attention}Interest{}"
+    ],
+    "desc_pt": [
+      "Começa com {C:mult}+20 Multi Base{}",
+      "Não ganha {C:attention}Juros{}"
+    ]
+  },
+  {
+    "key": "radioactive",
+    "sprite": "decks/odyssey_d_radioactive.png",
+    "name_en": "Radioactive Deck",
+    "name_pt": "Baralho Radioativo",
+    "desc_en": [
+      "Cards in hand decay",
+      "(change rank) each round."
+    ],
+    "desc_pt": [
+      "Cartas na mão decaem (mudam",
+      "rank) a cada rodada."
+    ]
+  },
+  {
+    "key": "rubber",
+    "sprite": "decks/odyssey_d_rubber.png",
+    "name_en": "Rubber Deck",
+    "name_pt": "Baralho de Borracha",
+    "desc_en": [
+      "All cards in starting",
+      "deck are enhanced to",
+      "{C:attention}Rubber Cards{}"
+    ],
+    "desc_pt": [
+      "Todas as cartas do",
+      "baralho inicial são",
+      "aprimoradas para {C:attention}Borracha{}"
+    ]
+  },
+  {
+    "key": "multiplicador",
+    "sprite": "decks/odyssey_d_ruby.png",
+    "name_en": "Ruby Deck",
+    "name_pt": "Baralho de Rubi",
+    "desc_en": [
+      "All cards in the",
+      "starting deck are",
+      "enhanced to {C:attention}Ruby{}"
+    ],
+    "desc_pt": [
+      "Todas as cartas do",
+      "baralho inicial são",
+      "aprimoradas para {C:attention}Rubi{}"
+    ]
+  },
+  {
+    "key": "sloth",
+    "sprite": "decks/odyssey_d_sloth.png",
+    "name_en": "Sloth Deck",
+    "name_pt": "Baralho Preguiça",
+    "desc_en": [
+      "1 Hand/round. 0 Discards. X3 Mult."
+    ],
+    "desc_pt": [
+      "1 Mão/rodada. 0 Descartes. X3",
+      "Mult."
+    ]
+  },
+  {
+    "key": "solar",
+    "sprite": "decks/odyssey_d_solar.png",
+    "name_en": "Solar Deck",
+    "name_pt": "Baralho Solar",
+    "desc_en": [
+      "Only Red suits.",
+      "Flush scores 2x."
+    ],
+    "desc_pt": [
+      "Apenas naipes Vermelhos.",
+      "Flush vale 2x."
+    ]
+  },
+  {
+    "key": "spectral",
+    "sprite": "decks/odyssey_d_spectral.png",
+    "name_en": "Spectral Deck",
+    "name_pt": "Baralho Espectral",
+    "desc_en": [
+      "Spectral Packs are free."
+    ],
+    "desc_pt": [
+      "Spectral Packs são grátis."
+    ]
+  },
+  {
+    "key": "standard",
+    "sprite": "decks/odyssey_d_standard.png",
+    "name_en": "Standard Deck",
+    "name_pt": "Baralho Standard",
+    "desc_en": [
+      "Standard Packs are free."
+    ],
+    "desc_pt": [
+      "Standard Packs são grátis."
+    ]
+  },
+  {
+    "key": "stellar",
+    "sprite": "decks/odyssey_d_stellar.png",
+    "name_en": "Stellar Deck",
+    "name_pt": "Baralho Estelar",
+    "desc_en": [
+      "Starts with 5 random",
+      "Planet cards."
+    ],
+    "desc_pt": [
+      "Começa com 5 cartas de",
+      "Planeta aleatórias."
+    ]
+  },
+  {
+    "key": "string_theory",
+    "sprite": "decks/odyssey_d_string_theory.png",
+    "name_en": "String Theory Deck",
+    "name_pt": "Baralho Teoria das Cordas",
+    "desc_en": [
+      "Ranks can connect with",
+      "gaps of 1 (ex: 2 connects with 4)"
+    ],
+    "desc_pt": [
+      "Ranks podem conectar com",
+      "lacunas de 1 (ex: 2 conecta com 4)"
+    ]
+  },
+  {
+    "key": "supernova_deck",
+    "sprite": "decks/odyssey_d_supernova.png",
+    "name_en": "Supernova Deck",
+    "name_pt": "Baralho Supernova",
+    "desc_en": [
+      "If money exceeds {C:money}$50{} , {}",
+      "it resets to {C:money}$0{} , but you{}",
+      "gain {X:mult,C:white} X3 {} Mult permanently{}"
+    ],
+    "desc_pt": [
+      "Se o dinheiro exceder {C:money}$50{} ,",
+      "ele reseta para {C:money}$0{} , mas você",
+      "ganha {X:mult,C:white} X3 {} Multi permanentemente"
+    ]
+  },
+  {
+    "key": "tech",
+    "sprite": "decks/odyssey_d_tech.png",
+    "name_en": "Tech Deck",
+    "name_pt": "Baralho Tecnológico",
+    "desc_en": [
+      "Starts with $100.",
+      "Shops are 2x more expensive."
+    ],
+    "desc_pt": [
+      "Começa com $100. Lojas são 2x",
+      "mais caras."
+    ]
+  },
+  {
+    "key": "the_creator",
+    "sprite": "decks/odyssey_d_the_creator.png",
+    "name_en": "The Creator Deck",
+    "name_pt": "Baralho O Criador",
+    "desc_en": [
+      "Start with the Legendary Joker",
+      "{C:attention}The Creator{}."
+    ],
+    "desc_pt": [
+      "Começa com o Curinga Lendário",
+      "{C:attention}O Criador{}."
+    ]
+  },
+  {
+    "key": "timeline",
+    "sprite": "decks/odyssey_d_timeline.png",
+    "name_en": "Timeline Deck",
+    "name_pt": "Baralho da Linha do Tempo",
+    "desc_en": [
+      "{C:attention}10%{} of previous hand{}",
+      "score is added to current hand"
+    ],
+    "desc_pt": [
+      "{C:attention}10%{} da pontuação da mão{}",
+      "anterior é adicionada à mão atual"
+    ]
+  },
+  {
+    "key": "minusculo",
+    "sprite": "decks/odyssey_d_tiny.png",
+    "name_en": "Tiny Deck",
+    "name_pt": "Baralho Minúsculo",
+    "desc_en": [
+      "Starting deck has {C:attention}26{} cards{}",
+      "(Only {C:red}Red{} Suits){}"
+    ],
+    "desc_pt": [
+      "Baralho inicial tem {C:attention}26{} cartas{}",
+      "(Apenas Naipes {C:red}Vermelhos{}){}"
+    ]
+  },
+  {
+    "key": "titan",
+    "sprite": "decks/odyssey_d_titan.png",
+    "name_en": "Titan Deck",
+    "name_pt": "Baralho Titã",
+    "desc_en": [
+      "Giant cards (occupy 2 hand slots)."
+    ],
+    "desc_pt": [
+      "Cartas gigantes (ocupam 2",
+      "slots de mão)."
+    ]
+  },
+  {
+    "key": "unicorn",
+    "sprite": "decks/odyssey_d_unicorn.png",
+    "name_en": "Unicorn Deck",
+    "name_pt": "Baralho Unicórnio",
+    "desc_en": [
+      "Starts with Joker 'Unicorn'."
+    ],
+    "desc_pt": [
+      "Começa com Joker 'Pureza'."
+    ]
+  },
+  {
+    "key": "unlucky",
+    "sprite": "decks/odyssey_d_unlucky.png",
+    "name_en": "Unlucky Deck",
+    "name_pt": "Baralho Azarado",
+    "desc_en": [
+      "Odds are 1 in 1000.",
+      "Enemies 0.25x Points."
+    ],
+    "desc_pt": [
+      "Probabilidades são 1 em 1000.",
+      "Inimigos 0.25x Pontos."
+    ]
+  },
+  {
+    "key": "vacuum",
+    "sprite": "decks/odyssey_d_vacuum.png",
+    "name_en": "Vacuum Deck",
+    "name_pt": "Baralho Vácuo",
+    "desc_en": [
+      "Shops have no {C:attention}Rerolls{}",
+      "Shops have {C:attention}6{} card slots{}"
+    ],
+    "desc_pt": [
+      "Lojas não têm {C:attention}Reroll{}",
+      "Lojas têm {C:attention}6{} slots de cartas{}"
+    ]
+  },
+  {
+    "key": "vampire",
+    "sprite": "decks/odyssey_d_vampire.png",
+    "name_en": "Vampire Deck",
+    "name_pt": "Baralho Vampiro",
+    "desc_en": [
+      "Destroys played cards to",
+      "gain permanent Mult."
+    ],
+    "desc_pt": [
+      "Destrói cartas jogadas para",
+      "ganhar Mult permanente."
+    ]
+  },
+  {
+    "key": "volcanic",
+    "sprite": "decks/odyssey_d_volcanic.png",
+    "name_en": "Volcanic Deck",
+    "name_pt": "Baralho Vulcânico",
+    "desc_en": [
+      "Discards entire hand after",
+      "playing. +$5 per hand."
+    ],
+    "desc_pt": [
+      "Descarta mão inteira após",
+      "jogar. +$5 por mão."
+    ]
+  },
+  {
+    "key": "wormhole",
+    "sprite": "decks/odyssey_d_wormhole.png",
+    "name_en": "Wormhole Deck",
+    "name_pt": "Baralho Buraco de Minhoca",
+    "desc_en": [
+      "Skipping a Blind grants",
+      "an extra {C:attention}Double Tag{}"
+    ],
+    "desc_pt": [
+      "Pular um Blind concede",
+      "uma {C:attention}Tag Dupla{} adicional{}"
+    ]
+  },
+  {
+    "key": "wrath",
+    "sprite": "decks/odyssey_d_wrath.png",
+    "name_en": "Wrath Deck",
+    "name_pt": "Baralho Ira",
+    "desc_en": [
+      "Discards cost $1. Hands give $1."
+    ],
+    "desc_pt": [
+      "Descartes custam $1. Mãos dão",
+      "$1."
+    ]
+  },
+  {
+    "key": "zero",
+    "sprite": "decks/odyssey_d_zero.png",
+    "name_en": "Zero Deck",
+    "name_pt": "Baralho Zero",
+    "desc_en": [
+      "Only 2-9."
+    ],
+    "desc_pt": [
+      "Apenas 2-9."
+    ]
+  },
+  {
+    "key": "zombie",
+    "sprite": "decks/odyssey_d_zombie.png",
+    "name_en": "Zombie Deck",
+    "name_pt": "Baralho Zumbi",
+    "desc_en": [
+      "Can play discarded cards",
+      "(once per round)."
+    ],
+    "desc_pt": [
+      "Pode jogar cartas descartadas",
+      "(uma vez por rodada)."
+    ]
+  }
+]

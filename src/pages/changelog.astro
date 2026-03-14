@@ -1,0 +1,53 @@
+---
+import Layout from '../components/layout/Layout.astro';
+import { readFileSync, existsSync } from 'fs';
+import { resolve } from 'path';
+
+// Read CHANGELOG.md from mod repo at build time
+const changelogPath = resolve(process.cwd(), '../balatro-odyssey/CHANGELOG.md');
+let changelogContent = '';
+let parseError = false;
+
+if (existsSync(changelogPath)) {
+  changelogContent = readFileSync(changelogPath, 'utf-8');
+} else {
+  parseError = true;
+}
+
+// Basic Markdown to HTML conversion (headings + paragraphs)
+function mdToHtml(md: string): string {
+  return md
+    .replace(/^### (.+)$/gm, '<h3 class="text-[1.1rem] font-bold text-white mt-6 mb-2">$1</h3>')
+    .replace(/^## (.+)$/gm, '<h2 class="text-[1.4rem] font-extrabold text-primary mt-10 mb-3 border-b border-[var(--border)] pb-2">$1</h2>')
+    .replace(/^# (.+)$/gm, '<h1 class="text-[1.8rem] font-black text-white mb-6">$1</h1>')
+    .replace(/^\- (.+)$/gm, '<li class="text-muted ml-4 list-disc">$1</li>')
+    .replace(/(<li[^>]*>.*<\/li>\n?)+/g, (m) => `<ul class="mb-4">${m}</ul>`)
+    .replace(/\*\*(.+?)\*\*/g, '<strong class="text-white">$1</strong>')
+    .replace(/`(.+?)`/g, '<code class="bg-dark3 px-1 py-0.5 rounded text-accent text-[0.85rem]">$1</code>')
+    .replace(/^\n+/gm, '\n')
+    .replace(/\n\n+/g, '\n\n');
+}
+
+const htmlContent = parseError ? '' : mdToHtml(changelogContent);
+---
+
+<Layout title="Changelog" description="Balatro Odyssey mod changelog.">
+  <div class="px-[5%] py-12 max-w-[900px] mx-auto">
+    <div class="mb-8">
+      <p class="text-accent text-[0.8rem] font-bold uppercase tracking-[0.1em] mb-2">Mod Updates</p>
+      <h1 class="font-extrabold text-white" style="font-size: clamp(1.8rem, 3vw, 2.6rem);">Changelog</h1>
+    </div>
+
+    {parseError ? (
+      <div class="rounded-xl p-6 bg-dark2 border border-[var(--border)] text-muted">
+        <span class="lang-en">Changelog file not found. Make sure the mod repo is at <code>../balatro-odyssey/</code>.</span>
+        <span class="lang-pt">Arquivo de changelog não encontrado. Certifique-se de que o mod repo está em <code>../balatro-odyssey/</code>.</span>
+      </div>
+    ) : (
+      <div
+        class="prose-odyssey rounded-xl p-8 bg-dark2 border border-[var(--border)] leading-relaxed"
+        set:html={htmlContent}
+      />
+    )}
+  </div>
+</Layout>

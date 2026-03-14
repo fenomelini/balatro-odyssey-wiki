@@ -1,0 +1,76 @@
+---
+import LangToggle from '../ui/LangToggle.astro';
+---
+<nav class="sticky top-0 z-50 h-16 flex items-center justify-between px-[5%] border-b border-[var(--border)]"
+     style="background: rgba(13,13,26,0.92); backdrop-filter: blur(12px);">
+
+  <!-- Logo -->
+  <a href="/" class="flex items-center gap-2 font-black text-lg text-white no-underline hover:text-[var(--accent)] transition-colors">
+    <span class="text-[var(--primary)]">✦</span>
+    <span>Balatro Odyssey Wiki</span>
+  </a>
+
+  <!-- Nav links (hidden on mobile) -->
+  <ul class="hidden md:flex items-center gap-6 list-none text-[0.95rem]">
+    <li>
+      <a href="/jokers" class="text-muted hover:text-white transition-colors">
+        <span class="lang-en">Jokers</span>
+        <span class="lang-pt">Curingas</span>
+      </a>
+    </li>
+    <li>
+      <a href="/decks" class="text-muted hover:text-white transition-colors">
+        <span class="lang-en">Decks</span>
+        <span class="lang-pt">Baralhos</span>
+      </a>
+    </li>
+    <li>
+      <a href="/tarots" class="text-muted hover:text-white transition-colors">
+        <span class="lang-en">Tarots</span>
+        <span class="lang-pt">Tarôs</span>
+      </a>
+    </li>
+    <li>
+      <a href="/planets" class="text-muted hover:text-white transition-colors">
+        <span class="lang-en">Planets</span>
+        <span class="lang-pt">Planetas</span>
+      </a>
+    </li>
+    <li>
+      <a href="/spectrals" class="text-muted hover:text-white transition-colors">
+        <span class="lang-en">Spectrals</span>
+        <span class="lang-pt">Espectrais</span>
+      </a>
+    </li>
+    <li>
+      <a href="/vouchers" class="text-muted hover:text-white transition-colors">
+        <span class="lang-en">Vouchers</span>
+        <span class="lang-pt">Cupons</span>
+      </a>
+    </li>
+    <li>
+      <a href="/blinds" class="text-muted hover:text-white transition-colors">Blinds</a>
+    </li>
+    <li>
+      <a href="/hands" class="text-muted hover:text-white transition-colors">
+        <span class="lang-en">Hands</span>
+        <span class="lang-pt">Mãos</span>
+      </a>
+    </li>
+    <li class="flex items-center gap-1.5">
+      <span class="text-muted opacity-40 cursor-not-allowed select-none">Tags</span>
+      <span class="text-[0.6rem] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded border border-[var(--border)] text-muted opacity-50">
+        <span class="lang-en">Soon</span>
+        <span class="lang-pt">Em Breve</span>
+      </span>
+    </li>
+    <li>
+      <a href="/changelog" class="text-muted hover:text-white transition-colors">Changelog</a>
+    </li>
+  </ul>
+
+  <!-- Right side: Lang toggle -->
+  <div class="flex items-center gap-3">
+    <LangToggle />
+  </div>
+</nav>

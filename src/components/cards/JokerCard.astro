@@ -1,0 +1,69 @@
+---
+import { getRarityStyle } from '../../utils/rarityColors';
+import { stripDescription } from '../../utils/formatDescription';
+
+interface Props {
+  joker: {
+    key: string;
+    group: string;
+    rarity: number;
+    cost: number;
+    sprite: string;
+    name_en: string;
+    name_pt: string;
+    desc_en: string[];
+    desc_pt: string[];
+    blueprint_compat: boolean;
+    eternal_compat: boolean;
+    vars?: (number | string | null)[];
+  };
+}
+
+const { joker } = Astro.props;
+const style = getRarityStyle(joker.rarity);
+const descEn = stripDescription(joker.desc_en);
+const descPt = stripDescription(joker.desc_pt);
+---
+
+<a
+  href={`/jokers/${joker.key}`}
+  class="joker-card block rounded-2xl p-4 border border-transparent bg-transparent hover:bg-card hover:border-primary hover:-translate-y-1 transition-all duration-200 cursor-pointer no-underline"
+  data-name-en={joker.name_en.toLowerCase()}
+  data-name-pt={joker.name_pt.toLowerCase()}
+  data-desc-en={joker.desc_en.join(' ').toLowerCase()}
+  data-desc-pt={joker.desc_pt.join(' ').toLowerCase()}
+  data-group={joker.group}
+  data-rarity={joker.rarity}
+>
+  <div class="flex justify-center mb-3">
+    <img
+      src={`/assets/${joker.sprite}`}
+      alt={joker.name_en}
+      width="142"
+      height="190"
+      loading="lazy"
+      class="drop-shadow-[0_4px_12px_rgba(108,71,255,0.3)]"
+      onerror="this.classList.add('sprite-error')"
+    />
+  </div>
+  <div class="flex justify-center mb-2">
+    <span class="text-[0.72rem] font-bold uppercase tracking-wide px-2 py-0.5 rounded bg-accent/10 text-accent">
+      {joker.group.replace(/_/g, ' ')}
+    </span>
+  </div>
+  <div class="text-center mb-2 flex flex-col justify-center min-h-[2.5rem]">
+    <span class="lang-en block text-[1rem] font-bold text-white leading-tight">{joker.name_en}</span>
+    <span class="lang-pt block text-[1rem] font-bold text-white leading-tight">{joker.name_pt}</span>
+  </div>
+  <div class="rounded-lg p-3 bg-dark3/70 border border-[rgba(108,71,255,0.15)] text-[0.82rem] text-muted leading-snug mb-4">
+    <span class="lang-en">{descEn}</span>
+    <span class="lang-pt">{descPt}</span>
+  </div>
+  <div class="flex items-center justify-between">
+    <span class:list={['text-[0.75rem] font-bold px-2 py-0.5 rounded-full border', style.border, style.text, style.bg]}>
+      <span class="lang-en">{style.label_en}</span>
+      <span class="lang-pt">{style.label_pt}</span>
+    </span>
+    <span class="text-muted text-[0.82rem] font-bold">${joker.cost}</span>
+  </div>
+</a>

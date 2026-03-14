@@ -1,0 +1,257 @@
+---
+import Layout from '../../components/layout/Layout.astro';
+import allJokersRaw from '../../data/jokers.json';
+
+const allJokers = [...allJokersRaw].sort((a, b) => {
+  if (a.rarity !== b.rarity) return b.rarity - a.rarity; // DESC: 4→1 (Legendary first)
+  if (a.group !== b.group) return a.group.localeCompare(b.group);
+  return a.key.localeCompare(b.key);
+});
+
+const allGroups = [...new Set(allJokers.map((j: any) => j.group))].sort();
+
+const GROUP_LABELS: Record<string, { en: string; pt: string }> = {
+  singularity:          { en: 'Singularity', pt: 'Singularidade' },
+  quantum:              { en: 'Quantum', pt: 'Quântico' },
+  temporal:             { en: 'Temporal', pt: 'Temporal' },
+  dimensions:           { en: 'Dimensions', pt: 'Dimensões' },
+  corruption:           { en: 'Corruption', pt: 'Corrupção' },
+  chaos:                { en: 'Chaos', pt: 'Caos' },
+  economy:              { en: 'Economy', pt: 'Economia' },
+  transformations:      { en: 'Transformations', pt: 'Transformações' },
+  luck_and_probability: { en: 'Luck & Probability', pt: 'Sorte e Probabilidade' },
+  pos:                  { en: 'Positioning', pt: 'Posicionamento' },
+  hand_and_discard:     { en: 'Hand & Discard', pt: 'Mão e Descarte' },
+  elemental:            { en: 'Elemental', pt: 'Elemental' },
+  tribal:               { en: 'Tribal', pt: 'Tribal' },
+  social:               { en: 'Social', pt: 'Social' },
+  cond:                 { en: 'Conditions', pt: 'Condições' },
+  time:                 { en: 'Time', pt: 'Tempo' },
+  paradox:              { en: 'Paradoxes', pt: 'Paradoxos' },
+  celestial:            { en: 'Celestial', pt: 'Celestial' },
+  anomaly:              { en: 'Anomaly', pt: 'Anomalia' },
+  glitch:               { en: 'Glitch', pt: 'Glitch' },
+  professions:          { en: 'Professions', pt: 'Profissões' },
+  final:                { en: 'Final', pt: 'Final' },
+  probability:          { en: 'Luck & Probability', pt: 'Sorte e Probabilidade' },
+};
+---
+
+<Layout title="Jokers" description="Browse all 1,000 Balatro Odyssey Jokers.">
+  <div class="px-[5%] py-12 max-w-[1400px] mx-auto">
+    <!-- Header -->
+    <div class="mb-8">
+      <p class="text-accent text-[0.8rem] font-bold uppercase tracking-[0.1em] mb-2">
+        <span class="lang-en">Browse</span>
+        <span class="lang-pt">Explorar</span>
+      </p>
+      <h1 class="font-extrabold text-white mb-1" style="font-size: clamp(1.8rem, 3vw, 2.6rem);">
+        <span class="lang-en">Jokers</span>
+        <span class="lang-pt">Curingas</span>
+      </h1>
+      <p class="text-muted" id="result-count">
+        <span class="lang-en">1,000 total — scroll to load more</span>
+        <span class="lang-pt">1.000 no total — role para carregar mais</span>
+      </p>
+    </div>
+
+    <!-- Search -->
+    <div class="relative mb-4">
+      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-muted pointer-events-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.099zm-5.242 1.156a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11"/>
+        </svg>
+      </span>
+      <input id="search-input" type="search" autocomplete="off"
+        class="w-full bg-dark3 border border-[var(--border)] text-white rounded-xl pl-9 pr-4 py-2.5 text-[0.9rem] focus:border-primary focus:outline-none transition-colors"
+        data-placeholder-en="Search jokers by name or description..."
+        data-placeholder-pt="Buscar curingas por nome ou descrição..."
+        placeholder="Search jokers by name or description..." />
+    </div>
+
+    <!-- Filters -->
+    <div class="flex flex-wrap gap-3 items-center mb-6 p-4 rounded-xl bg-dark2 border border-[var(--border)]">
+      <div class="flex items-center gap-2">
+        <label class="text-muted text-[0.8rem] font-semibold uppercase tracking-wide">
+          <span class="lang-en">Group</span><span class="lang-pt">Grupo</span>
+        </label>
+        <select id="filter-group"
+          class="bg-dark3 border border-[var(--border)] text-white rounded-lg px-3 py-1.5 text-[0.85rem] cursor-pointer focus:border-primary outline-none">
+          <option value="all">All Groups</option>
+          {allGroups.map((g: string) => (
+            <option value={g}>{GROUP_LABELS[g]?.en ?? g.replace(/_/g, ' ')}</option>
+          ))}
+        </select>
+      </div>
+      <div class="flex items-center gap-2">
+        <label class="text-muted text-[0.8rem] font-semibold uppercase tracking-wide">
+          <span class="lang-en">Rarity</span><span class="lang-pt">Raridade</span>
+        </label>
+        <select id="filter-rarity"
+          class="bg-dark3 border border-[var(--border)] text-white rounded-lg px-3 py-1.5 text-[0.85rem] cursor-pointer focus:border-primary outline-none">
+          <option value="all">All Rarities</option>
+          <option value="1">Common / Comum</option>
+          <option value="2">Uncommon / Incomum</option>
+          <option value="3">Rare / Raro</option>
+          <option value="4">Legendary / Lendário</option>
+        </select>
+      </div>
+      <span id="filter-info" class="text-muted text-[0.82rem] hidden"></span>
+    </div>
+
+    <!-- Grid (rendered client-side for full filtering across all jokers) -->
+    <div id="joker-grid" class="grid gap-2"
+      style="grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));"></div>
+
+    <p id="no-results" class="hidden text-center text-muted py-16 text-[1.1rem]">
+      <span class="lang-en">No jokers found.</span>
+      <span class="lang-pt">Nenhum curinga encontrado.</span>
+    </p>
+
+    <div id="load-sentinel" class="h-8 mt-4"></div>
+  </div>
+
+  <script define:vars={{ jokers: allJokers, groupLabels: GROUP_LABELS }}>
+    const BATCH = 80;
+    let filtered = jokers;
+    let rendered = 0;
+    const lang = () => document.documentElement.getAttribute('data-lang') || 'en';
+
+    const grid      = document.getElementById('joker-grid');
+    const noRes     = document.getElementById('no-results');
+    const countEl   = document.getElementById('result-count');
+    const filterInfo = document.getElementById('filter-info');
+    const searchInput = document.getElementById('search-input');
+    const groupSel   = document.getElementById('filter-group');
+    const raritySel  = document.getElementById('filter-rarity');
+
+    const RB = { 1:'border-blue-400', 2:'border-green-400', 3:'border-red-400', 4:'border-legendary' };
+    const RT = { 1:'text-blue-300',   2:'text-green-400',   3:'text-red-400',   4:'text-legendary' };
+    const RBG= { 1:'bg-blue-400/10',  2:'bg-green-400/10',  3:'bg-red-400/10',  4:'bg-legendary/10' };
+    const RE = { 1:'Common',   2:'Uncommon',  3:'Rare',  4:'Legendary' };
+    const RP = { 1:'Comum',    2:'Incomum',   3:'Raro',  4:'Lendário' };
+
+    function esc(s) {
+      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    function stripDesc(lines, vars) {
+      return lines.map(l => {
+        let s = l.replace(/\{[^}]*\}/g,'');
+        s = s.replace(/#(\d+)#/g, (_, n) => {
+          const v = vars && vars[parseInt(n, 10) - 1];
+          return (v !== undefined && v !== null) ? String(v) : '?';
+        });
+        return s;
+      }).join(' ');
+    }
+
+    function cardHTML(j) {
+      const rb = RB[j.rarity]||'border-gray-400';
+      const rt = RT[j.rarity]||'text-gray-400';
+      const bg = RBG[j.rarity]||'bg-gray-400/10';
+      const re = RE[j.rarity]||'';
+      const rp = RP[j.rarity]||'';
+      const glowCls = '';
+      const descEn = esc(stripDesc(j.desc_en, j.vars));
+      const descPt = esc(stripDesc(j.desc_pt, j.vars));
+      const groupLabel = esc((j.group||'').replace(/_/g,' '));
+      return `<a href="/jokers/${esc(j.key)}"
+        class="joker-card block rounded-2xl p-4 border border-transparent bg-transparent hover:bg-card hover:border-primary hover:-translate-y-1 transition-all duration-200 no-underline"
+        data-group="${esc(j.group)}" data-rarity="${j.rarity}">
+        <div class="flex justify-center mb-2">
+          <img src="/assets/${esc(j.sprite)}" alt="${esc(j.name_en)}"
+            width="142" height="190"
+            loading="lazy"
+            onerror="this.style.opacity='0.15'"/>
+        </div>
+        <div class="flex justify-center mb-1">
+          <span class="text-[0.68rem] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded bg-accent/10 text-accent">${groupLabel}</span>
+        </div>
+        <div class="text-center px-1 mb-1 flex flex-col justify-center min-h-[2.25rem]">
+          <span class="lang-en block text-[0.9rem] font-bold text-white leading-tight">${esc(j.name_en)}</span>
+          <span class="lang-pt block text-[0.9rem] font-bold text-white leading-tight">${esc(j.name_pt)}</span>
+        </div>
+        <div class="mb-3 rounded-lg p-3 bg-dark3/70 border border-[rgba(108,71,255,0.15)] text-[0.82rem] text-muted leading-snug">
+          <span class="lang-en">${descEn}</span>
+          <span class="lang-pt">${descPt}</span>
+        </div>
+        <div class="flex items-center justify-between px-1">
+          <span class="${rt} ${bg} ${rb} text-[0.62rem] font-bold px-1.5 py-0.5 rounded-full border">
+            <span class="lang-en">${re}</span><span class="lang-pt">${rp}</span>
+          </span>
+          <span class="text-yellow-400 text-[0.68rem] font-bold">$${j.cost}</span>
+        </div>
+      </a>`;
+    }
+
+    function renderBatch() {
+      const batch = filtered.slice(rendered, rendered + BATCH);
+      if (!batch.length) return;
+      grid.insertAdjacentHTML('beforeend', batch.map(cardHTML).join(''));
+      rendered += batch.length;
+    }
+
+    function applyFilters() {
+      const group  = groupSel.value;
+      const rarity = raritySel.value;
+      const l      = lang();
+      const q      = (searchInput.value || '').trim().toLowerCase();
+
+      filtered = jokers.filter(j => {
+        if (group  !== 'all' && j.group !== group) return false;
+        if (rarity !== 'all' && String(j.rarity) !== rarity) return false;
+        if (!q) return true;
+        const name = (l === 'pt' ? j.name_pt : j.name_en).toLowerCase();
+        const desc = (l === 'pt' ? j.desc_pt : j.desc_en).join(' ').toLowerCase();
+        return name.includes(q) || desc.includes(q);
+      });
+
+      grid.innerHTML = '';
+      rendered = 0;
+      renderBatch();
+
+      const isFiltered = group !== 'all' || rarity !== 'all' || q;
+      noRes.style.display = filtered.length === 0 ? 'block' : 'none';
+      filterInfo.textContent = isFiltered
+        ? (l === 'pt' ? `${filtered.length} resultados` : `${filtered.length} results`)
+        : '';
+      isFiltered ? filterInfo.classList.remove('hidden') : filterInfo.classList.add('hidden');
+    }
+
+    // Infinite scroll via IntersectionObserver
+    const io = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting && rendered < filtered.length) renderBatch();
+    }, { rootMargin: '500px' });
+    io.observe(document.getElementById('load-sentinel'));
+
+    groupSel.addEventListener('change', applyFilters);
+    raritySel.addEventListener('change', applyFilters);
+    searchInput.addEventListener('input', applyFilters);
+
+    // Re-filter on lang change (to use correct language for search)
+    new MutationObserver(() => {
+      const l = lang();
+      searchInput.placeholder = l === 'pt'
+        ? searchInput.dataset.placeholderPt
+        : searchInput.dataset.placeholderEn;
+      if ((searchInput.value || '').trim()) applyFilters();
+    }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-lang'] });
+
+    // Initial render — apply URL params if present
+    const _params = new URLSearchParams(location.search);
+    const _pg = _params.get('group');
+    const _pr = _params.get('rarity');
+    if (_pg && groupSel) groupSel.value = _pg;
+    if (_pr && raritySel) raritySel.value = _pr;
+    if (_pg || _pr) {
+      applyFilters();
+    } else {
+      renderBatch();
+    }
+  </script>
+
+  <style is:global>
+    .joker-card:hover { filter: brightness(1.07); }
+  </style>
+</Layout>

@@ -1,0 +1,73 @@
+---
+import Layout from '../../components/layout/Layout.astro';
+import VoucherCard from '../../components/cards/VoucherCard.astro';
+import SearchBox from '../../components/ui/SearchBox.astro';
+import vouchers from '../../data/vouchers.json';
+
+const tier1 = vouchers.filter(v => v.tier === 1);
+const tier2 = vouchers.filter(v => v.tier === 2);
+---
+
+<Layout title="Vouchers" description="Browse all Balatro Odyssey Vouchers.">
+  <div class="px-[5%] py-12 max-w-[1400px] mx-auto">
+    <div class="mb-8">
+      <p class="text-accent text-[0.8rem] font-bold uppercase tracking-[0.1em] mb-2">Browse</p>
+      <h1 class="font-extrabold text-white mb-1" style="font-size: clamp(1.8rem, 3vw, 2.6rem);">
+        <span class="lang-en">Vouchers</span>
+        <span class="lang-pt">Cupons</span>
+      </h1>
+      <p class="text-muted">{vouchers.length} <span class="lang-en">vouchers total ({tier1.length} base, {tier2.length} upgrades)</span><span class="lang-pt">cupons no total ({tier1.length} base, {tier2.length} melhorias)</span></p>
+    </div>
+
+    <SearchBox placeholder_en="Search vouchers..." placeholder_pt="Buscar cupons..." />
+
+    <!-- Tier filter -->
+    <div class="flex gap-3 mb-6">
+      <button id="tier-all" class="tier-btn px-4 py-1.5 rounded-full border border-primary bg-primary text-white text-[0.82rem] font-bold cursor-pointer">
+        <span class="lang-en">All</span><span class="lang-pt">Todos</span>
+      </button>
+      <button id="tier-1" class="tier-btn px-4 py-1.5 rounded-full border border-[var(--border)] text-muted text-[0.82rem] font-bold cursor-pointer hover:border-primary transition-colors">
+        <span class="lang-en">Base</span><span class="lang-pt">Base</span>
+      </button>
+      <button id="tier-2" class="tier-btn px-4 py-1.5 rounded-full border border-[var(--border)] text-muted text-[0.82rem] font-bold cursor-pointer hover:border-primary transition-colors">
+        <span class="lang-en">Upgrades</span><span class="lang-pt">Melhorias</span>
+      </button>
+    </div>
+
+    <div id="voucher-grid" class="grid gap-4" style="grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));">
+      {vouchers.map(v => <VoucherCard voucher={v} />)}
+    </div>
+  </div>
+
+  <script>
+    let activeTier = 'all';
+
+    function applyTierFilter() {
+      const nameSearch = (document.getElementById('search-input') as HTMLInputElement | null)?.value?.toLowerCase() ?? '';
+      const lang = document.documentElement.getAttribute('data-lang') || 'en';
+      document.querySelectorAll<HTMLElement>('.voucher-card').forEach(card => {
+        const tier = card.dataset.tier ?? '';
+        const name = (lang === 'pt' ? card.dataset.namePt : card.dataset.nameEn) ?? card.dataset.nameEn ?? '';
+        const tierMatch = activeTier === 'all' || tier === activeTier;
+        const nameMatch = !nameSearch || name.includes(nameSearch);
+        card.style.display = tierMatch && nameMatch ? '' : 'none';
+      });
+
+      // Highlight active button
+      document.querySelectorAll('.tier-btn').forEach(btn => {
+        (btn as HTMLElement).style.background = '';
+        (btn as HTMLElement).style.color = '';
+        (btn as HTMLElement).style.borderColor = '';
+      });
+      const active = document.getElementById(`tier-${activeTier}`)!;
+      active.style.background = 'var(--primary)';
+      active.style.color = '#fff';
+      active.style.borderColor = 'var(--primary)';
+    }
+
+    document.getElementById('tier-all')?.addEventListener('click', () => { activeTier = 'all'; applyTierFilter(); });
+    document.getElementById('tier-1')?.addEventListener('click', () => { activeTier = '1'; applyTierFilter(); });
+    document.getElementById('tier-2')?.addEventListener('click', () => { activeTier = '2'; applyTierFilter(); });
+    document.getElementById('search-input')?.addEventListener('input', applyTierFilter);
+  </script>
+</Layout>
