@@ -5,14 +5,12 @@
     "name_en": "Alien Deck",
     "name_pt": "Baralho Alien",
     "desc_en": [
-      "Suits are replaced by",
-      "alien symbols (4 new",
-      "suits)."
+      "Starting suits are random.",
+      "Flush scores {X:mult,C:white} X2 {} Mult."
     ],
     "desc_pt": [
-      "Naipes são substituídos por",
-      "símbolos alienígenas (4 novos",
-      "naipes)."
+      "Naipes iniciais são aleatórios.",
+      "Flush vale {X:mult,C:white} X2 {} Multi."
     ]
   },
   {
@@ -157,8 +155,9 @@
       "Mixed deck of 4 different decks."
     ],
     "desc_pt": [
-      "Baralho misto de 4 baralhos",
-      "diferentes."
+      "Baralho misto: {C:attention}Borracha{},",
+      "{C:attention}Cerâmica{}, {C:attention}Sagrado{}",
+      "e {C:attention}Mágico{} (13 de cada)."
     ]
   },
   {
@@ -276,7 +275,7 @@
     ]
   },
   {
-    "key": "bonus",
+    "key": "emerald_deck",
     "sprite": "decks/odyssey_d_emerald.png",
     "name_en": "Emerald Deck",
     "name_pt": "Baralho de Esmeralda",
@@ -311,12 +310,12 @@
     "name_en": "Ethereal Deck",
     "name_pt": "Baralho Etéreo",
     "desc_en": [
-      "Spectral cards appear",
-      "in the shop normally."
+      "At the start of each Ante,",
+      "receive {C:spectral}1 free Spectral{} card."
     ],
     "desc_pt": [
-      "Cartas espectrais aparecem na",
-      "loja normalmente."
+      "No início de cada Aposta,",
+      "recebe {C:spectral}1 carta Espectral{} grátis."
     ]
   },
   {
@@ -366,13 +365,11 @@
     "name_pt": "Baralho Laminado",
     "desc_en": [
       "Starts with a random",
-      "{C:dark_edition}Foil{} Joker{}",
-      "(Common Rarity)"
+      "{C:dark_edition}Foil{} Joker{}"
     ],
     "desc_pt": [
       "Começa com um Curinga",
-      "{C:dark_edition}Laminado{} aleatório{}",
-      "(Raridade Comum)"
+      "{C:dark_edition}Laminado{} aleatório{}"
     ]
   },
   {
@@ -497,17 +494,15 @@
     "name_pt": "Baralho Holográfico",
     "desc_en": [
       "Starts with a random",
-      "{C:attention}Holographic{} Joker{}",
-      "(Common Rarity)"
+      "{C:attention}Holographic{} Joker{}"
     ],
     "desc_pt": [
       "Começa com um Curinga",
-      "{C:attention}Holográfico{} aleatório{}",
-      "(Raridade Comum)"
+      "{C:attention}Holográfico{} aleatório{}"
     ]
   },
   {
-    "key": "selvagem",
+    "key": "holy_deck",
     "sprite": "decks/odyssey_d_holy.png",
     "name_en": "Holy Deck",
     "name_pt": "Baralho Sagrado",
@@ -528,14 +523,12 @@
     "name_en": "Hydra Deck",
     "name_pt": "Baralho Hidra",
     "desc_en": [
-      "Cut a head (Win a Blind)",
-      "and grow 2 new ones",
-      "(extra Blinds)."
+      "Each Blind beaten grants",
+      "{C:mult}+2 permanent Mult{}."
     ],
     "desc_pt": [
-      "Cortar uma cabeça (Vencer",
-      "Blind) gera 2 novas (Blinds",
-      "extras)."
+      "A cada blind vencido,",
+      "ganhe {C:mult}+2 Multi{} permanente."
     ]
   },
   {
@@ -646,8 +639,9 @@
       "(4 round cycle)."
     ],
     "desc_pt": [
-      "Fases da lua afetam pontuação",
-      "(Ciclo de 4 rodadas)."
+      "Ciclo de 4 blinds: Lua Nova",
+      "(1x) → Crescente (1.5x) →",
+      "Lua Cheia (2x) → Minguante (0.5x)."
     ]
   },
   {
@@ -663,7 +657,7 @@
     ]
   },
   {
-    "key": "sorte",
+    "key": "magic_deck",
     "sprite": "decks/odyssey_d_magic.png",
     "name_en": "Magic Deck",
     "name_pt": "Baralho Mágico",
@@ -684,13 +678,14 @@
     "name_en": "Magnetic Deck",
     "name_pt": "Baralho Magnético",
     "desc_en": [
-      "Cards of same rank attract",
-      "(always bought together)."
+      "Cards of same rank are",
+      "grouped in the deck",
+      "(drawn together)."
     ],
     "desc_pt": [
-      "Cartas de mesmo rank se",
-      "atraem (sempre compradas",
-      "juntas)."
+      "Cartas de mesmo rank ficam",
+      "agrupadas no baralho",
+      "(saem juntas ao comprar)."
     ]
   },
   {
@@ -806,13 +801,11 @@
     "name_pt": "Baralho Negativo",
     "desc_en": [
       "Starts with a random",
-      "{C:dark_edition}Negative{} Joker{}",
-      "(Common Rarity)"
+      "{C:dark_edition}Negative{} Joker{}"
     ],
     "desc_pt": [
       "Começa com um Curinga",
-      "{C:dark_edition}Negativo{} aleatório{}",
-      "(Raridade Comum)"
+      "{C:dark_edition}Negativo{} aleatório{}"
     ]
   },
   {
@@ -981,13 +974,11 @@
     "name_pt": "Baralho Policromático",
     "desc_en": [
       "Starts with a random",
-      "{C:dark_edition}Polychrome{} Joker{}",
-      "(Common Rarity)"
+      "{C:dark_edition}Polychrome{} Joker{}"
     ],
     "desc_pt": [
       "Começa com um Curinga",
-      "{C:dark_edition}Policromático{} aleatório{}",
-      "(Raridade Comum)"
+      "{C:dark_edition}Policromático{} aleatório{}"
     ]
   },
   {
@@ -1036,12 +1027,12 @@
     "name_en": "Primitive Deck",
     "name_pt": "Baralho Primitivo",
     "desc_en": [
-      "No shops. Earn double",
-      "Blind rewards."
+      "Shops are inaccessible.",
+      "{C:attention}Blind{} rewards are worth {C:money}2x{}."
     ],
     "desc_pt": [
-      "Sem lojas. Ganha blind",
-      "rewards dobrados."
+      "Lojas inacessíveis.",
+      "Recompensas de {C:attention}Blind{} valem {C:money}2x{}."
     ]
   },
   {
@@ -1101,7 +1092,7 @@
     ]
   },
   {
-    "key": "multiplicador",
+    "key": "ruby_deck",
     "sprite": "decks/odyssey_d_ruby.png",
     "name_en": "Ruby Deck",
     "name_pt": "Baralho de Rubi",
@@ -1276,8 +1267,8 @@
       "Giant cards (occupy 2 hand slots)."
     ],
     "desc_pt": [
-      "Cartas gigantes (ocupam 2",
-      "slots de mão)."
+      "Cartas gigantes (cada uma ocupa",
+      "2 slots). Tamanho de mão: {C:attention}4{}."
     ]
   },
   {
@@ -1393,12 +1384,14 @@
     "name_en": "Zombie Deck",
     "name_pt": "Baralho Zumbi",
     "desc_en": [
-      "Can play discarded cards",
-      "(once per round)."
+      "Once per round, the 1st",
+      "discarded card returns",
+      "to hand automatically."
     ],
     "desc_pt": [
-      "Pode jogar cartas descartadas",
-      "(uma vez por rodada)."
+      "Uma vez por rodada, a 1ª",
+      "carta descartada retorna",
+      "à mão automaticamente."
     ]
   }
 ]

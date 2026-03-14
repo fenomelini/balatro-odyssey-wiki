@@ -1,7 +1,7 @@
 ---
 import Layout from '../../components/layout/Layout.astro';
 import RarityBadge from '../../components/ui/RarityBadge.astro';
-import { formatDescription } from '../../utils/formatDescription';
+import { formatDescription, stripDescription } from '../../utils/formatDescription';
 import { getRarityStyle } from '../../utils/rarityColors';
 import allJokers from '../../data/jokers.json';
 import { loreChapters, groupToChapter } from '../../data/lore';
@@ -66,9 +66,20 @@ const loreChapter = loreChapters.find(c => c.id === chapterId);
 const sameGroup = allJokers
   .filter(j => j.group === joker.group && j.key !== joker.key)
   .slice(0, 6);
+const siteOrigin = 'https://fenomelini.github.io';
+const jokerMetaDescription = stripDescription(joker.desc_en, jokerVars).slice(0, 155);
+const jokerBreadcrumb: Record<string, unknown> = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Balatro Odyssey Wiki", item: siteOrigin + base + '/' },
+    { "@type": "ListItem", position: 2, name: "Jokers", item: siteOrigin + base + '/jokers' },
+    { "@type": "ListItem", position: 3, name: joker.name_en, item: siteOrigin + base + '/jokers/' + joker.key },
+  ]
+};
 ---
 
-<Layout title={joker.name_en} description={joker.desc_en.join(' ')}>
+<Layout title={joker.name_en} description={jokerMetaDescription} jsonld={jokerBreadcrumb}>
   <div class="px-[5%] py-12 max-w-[900px] mx-auto">
     <!-- Back -->
     <a href={base + '/jokers'} class="inline-flex items-center gap-2 text-muted hover:text-white transition-colors mb-8 text-[0.9rem]">

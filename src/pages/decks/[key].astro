@@ -1,6 +1,6 @@
 ---
 import Layout from '../../components/layout/Layout.astro';
-import { formatDescription } from '../../utils/formatDescription';
+import { formatDescription, stripDescription } from '../../utils/formatDescription';
 import allDecks from '../../data/decks.json';
 
 export async function getStaticPaths() {
@@ -18,9 +18,20 @@ const { deck } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const descEnHtml = formatDescription(deck.desc_en);
 const descPtHtml = formatDescription(deck.desc_pt);
+const siteOrigin = 'https://fenomelini.github.io';
+const deckMetaDescription = stripDescription(deck.desc_en).slice(0, 155);
+const deckBreadcrumb: Record<string, unknown> = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Balatro Odyssey Wiki", item: siteOrigin + base + '/' },
+    { "@type": "ListItem", position: 2, name: "Decks", item: siteOrigin + base + '/decks' },
+    { "@type": "ListItem", position: 3, name: deck.name_en, item: siteOrigin + base + '/decks/' + deck.key },
+  ]
+};
 ---
 
-<Layout title={deck.name_en} description={deck.desc_en.join(' ')}>
+<Layout title={deck.name_en} description={deckMetaDescription} jsonld={deckBreadcrumb}>
   <div class="px-[5%] py-12 max-w-[900px] mx-auto">
     <a href={base + '/decks'} class="inline-flex items-center gap-2 text-muted hover:text-white transition-colors mb-8 text-[0.9rem]">
       ← <span class="lang-en">Back to Decks</span>
