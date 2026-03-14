@@ -16,7 +16,7 @@ The goal of this site is to give players a beautiful, fast, searchable reference
 | Styling | **Tailwind CSS** |
 | Language | **TypeScript** |
 | Interactivity | Vanilla JS or minimal Preact islands (only where needed) |
-| Deployment | **Netlify** |
+| Deployment | **GitHub Pages** |
 | Data | Extracted JSON from the mod's Lua localization files |
 
 **NEVER use heavy frameworks (Next.js, Nuxt, SvelteKit) — this is a static site.**
@@ -86,7 +86,9 @@ balatro-odyssey-wiki/
 │       └── rarityColors.ts       # Maps rarity int → CSS class
 ├── scripts/
 │   └── extract_data.py           # Parses mod Lua files → generates src/data/*.json
-├── netlify.toml
+├── .github/
+│   └── workflows/
+│       └── deploy.yml            # GitHub Actions workflow — builds and deploys to gh-pages branch
 ├── astro.config.mjs
 ├── tailwind.config.mjs
 └── package.json
@@ -761,23 +763,75 @@ border-top: 1px solid var(--border);
 
 ---
 
-## Netlify Configuration
+## GitHub Pages Configuration
 
-```toml
-# netlify.toml
-[build]
-  command = "python3 scripts/extract_data.py && npm run build"
-  publish = "dist"
+O site é hospedado via **GitHub Pages** usando o branch `gh-pages`, gerado automaticamente pelo GitHub Actions a cada push em `main`.
 
-[build.environment]
-  NODE_VERSION = "20"
-  PYTHON_VERSION = "3.11"
+### Workflow de Deploy (`.github/workflows/deploy.yml`)
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+```yaml
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
 ```
+
+### Configuração do `astro.config.mjs`
+
+Se o repositório não estiver na raiz do domínio (ex: `fenomelini.github.io/balatro-odyssey-wiki`), configure o `base`:
+
+```js
+export default defineConfig({
+  site: 'https://fenomelini.github.io',
+  base: '/balatro-odyssey-wiki',
+});
+```
+
+Se usar domínio customizado (ex: `wiki.balatrodyssey.com`), remova o `base` e use apenas `site`.
+
+### Como funciona o deploy
+
+1. Push para `main` → GitHub Actions dispara automaticamente
+2. Actions instala Node 20 + Python 3.11, roda `npm run build`
+3. O diretório `dist/` é publicado no branch `gh-pages`
+4. GitHub Pages serve o conteúdo do branch `gh-pages`
+
+Nunca edite o branch `gh-pages` manualmente — ele é gerado automaticamente.
 
 ---
 
