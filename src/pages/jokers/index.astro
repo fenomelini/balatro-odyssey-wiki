@@ -111,7 +111,7 @@ const GROUP_LABELS: Record<string, { en: string; pt: string }> = {
     <div id="load-sentinel" class="h-8 mt-4"></div>
   </div>
 
-  <script define:vars={{ jokers: allJokers, groupLabels: GROUP_LABELS }}>
+  <script define:vars={{ jokers: allJokers, groupLabels: GROUP_LABELS, base: import.meta.env.BASE_URL.replace(/\/$/, '') }}>
     const BATCH = 80;
     let filtered = jokers;
     let rendered = 0;
@@ -156,11 +156,11 @@ const GROUP_LABELS: Record<string, { en: string; pt: string }> = {
       const descEn = esc(stripDesc(j.desc_en, j.vars));
       const descPt = esc(stripDesc(j.desc_pt, j.vars));
       const groupLabel = esc((j.group||'').replace(/_/g,' '));
-      return `<a href="/jokers/${esc(j.key)}"
+      return `<a href="${base}/jokers/${esc(j.key)}"
         class="joker-card block rounded-2xl p-4 border border-transparent bg-transparent hover:bg-card hover:border-primary hover:-translate-y-1 transition-all duration-200 no-underline"
         data-group="${esc(j.group)}" data-rarity="${j.rarity}">
         <div class="flex justify-center mb-2">
-          <img src="/assets/${esc(j.sprite)}" alt="${esc(j.name_en)}"
+          <img src="${base}/assets/${esc(j.sprite)}" alt="${esc(j.name_en)}"
             width="142" height="190"
             loading="lazy"
             onerror="this.style.opacity='0.15'"/>

@@ -47,6 +47,7 @@ const GROUP_LABELS: Record<string, { en: string; pt: string }> = {
 };
 
 const groupLabel = GROUP_LABELS[joker.group] ?? { en: joker.group, pt: joker.group };
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 // Same-group jokers (up to 6, excluding self)
 const sameGroup = allJokers
   .filter(j => j.group === joker.group && j.key !== joker.key)
@@ -56,7 +57,7 @@ const sameGroup = allJokers
 <Layout title={joker.name_en} description={joker.desc_en.join(' ')}>
   <div class="px-[5%] py-12 max-w-[900px] mx-auto">
     <!-- Back -->
-    <a href="/jokers" class="inline-flex items-center gap-2 text-muted hover:text-white transition-colors mb-8 text-[0.9rem]">
+    <a href={base + '/jokers'} class="inline-flex items-center gap-2 text-muted hover:text-white transition-colors mb-8 text-[0.9rem]">
       ← <span class="lang-en">Back to Jokers</span>
       <span class="lang-pt">Voltar aos Curingas</span>
     </a>
@@ -65,7 +66,7 @@ const sameGroup = allJokers
       <!-- Sprite (large) -->
       <div class="flex-shrink-0 flex flex-col items-center gap-4">
         <img
-          src={`/assets/${joker.sprite}`}
+          src={`${base}/assets/${joker.sprite}`}
           alt={joker.name_en}
           width="142"
           height="190"
@@ -171,7 +172,7 @@ const sameGroup = allJokers
             <span class="lang-en">{groupLabel.en}</span>
             <span class="lang-pt">{groupLabel.pt}</span>
           </span>
-          <a href={`/jokers?group=${joker.group}`} class="text-muted text-[0.82rem] hover:text-primary transition-colors ml-auto">
+          <a href={`${base}/jokers?group=${joker.group}`} class="text-muted text-[0.82rem] hover:text-primary transition-colors ml-auto">
             <span class="lang-en">See all →</span>
             <span class="lang-pt">Ver todos →</span>
           </a>
@@ -180,10 +181,10 @@ const sameGroup = allJokers
           {sameGroup.map(j => {
             const s = getRarityStyle(j.rarity);
             return (
-              <a href={`/jokers/${j.key}`}
+              <a href={`${base}/jokers/${j.key}`}
                 class:list={['block rounded-2xl p-3 border transition-all duration-200 no-underline bg-card hover:-translate-y-1', s.border, j.rarity === 4 ? 'legendary-glow' : 'hover:border-primary']}>
                 <div class="flex justify-center mb-3">
-                  <img src={`/assets/${j.sprite}`} alt={j.name_en}
+                  <img src={`${base}/assets/${j.sprite}`} alt={j.name_en}
                     width="142" height="190"
                     loading="lazy"
                     class="drop-shadow-[0_4px_12px_rgba(108,71,255,0.3)]"

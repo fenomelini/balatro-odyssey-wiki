@@ -16,6 +16,7 @@ interface Props {
 }
 
 const { voucher } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const descEn = stripDescription(voucher.desc_en);
 const descPt = stripDescription(voucher.desc_pt);
 const tierColor = voucher.tier === 2 ? 'text-yellow-400 bg-yellow-400/10 border-yellow-400' : 'text-blue-300 bg-blue-400/10 border-blue-400';
@@ -30,7 +31,7 @@ const tierColor = voucher.tier === 2 ? 'text-yellow-400 bg-yellow-400/10 border-
   <!-- Sprite -->
   <div class="flex justify-center mb-3">
     <img
-      src={`/assets/${voucher.sprite}`}
+      src={`${base}/assets/${voucher.sprite}`}
       alt={voucher.name_en}
       width="142"
       height="190"

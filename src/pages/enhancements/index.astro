@@ -5,6 +5,7 @@ import enhancements from '../../data/enhancements.json';
 
 // Sort alphabetically by EN name
 const sorted = [...enhancements].sort((a, b) => a.name_en.localeCompare(b.name_en));
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <Layout title="Enhancements" description="Browse all 17 card enhancements added by Balatro Odyssey.">
@@ -39,7 +40,7 @@ const sorted = [...enhancements].sort((a, b) => a.name_en.localeCompare(b.name_e
             <!-- Sprite -->
             <div class="flex items-center justify-center">
               <img
-                src={`/assets/${enh.sprite}`}
+                src={`${base}/assets/${enh.sprite}`}
                 width="142"
                 height="190"
                 alt={enh.name_en}

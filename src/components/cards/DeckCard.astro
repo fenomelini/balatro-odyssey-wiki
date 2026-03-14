@@ -14,20 +14,21 @@ interface Props {
 }
 
 const { deck, linkable = true } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const descEn = stripDescription(deck.desc_en);
 const descPt = stripDescription(deck.desc_pt);
 ---
 
 {linkable ? (
   <a
-    href={`/decks/${deck.key}`}
+    href={`${base}/decks/${deck.key}`}
     class="deck-card block rounded-2xl p-2 border border-transparent bg-transparent hover:bg-card hover:border-primary hover:-translate-y-1 transition-all duration-200 no-underline cursor-pointer"
     data-name-en={deck.name_en.toLowerCase()}
     data-name-pt={deck.name_pt.toLowerCase()}
   >
     <div class="flex justify-center mb-3">
       <img
-        src={`/assets/${deck.sprite}`}
+        src={`${base}/assets/${deck.sprite}`}
         alt={deck.name_en}
         width="142"
         height="190"
@@ -53,7 +54,7 @@ const descPt = stripDescription(deck.desc_pt);
   >
     <div class="flex justify-center mb-3">
       <img
-        src={`/assets/${deck.sprite}`}
+        src={`${base}/assets/${deck.sprite}`}
         alt={deck.name_en}
         width="142"
         height="190"

@@ -1,11 +1,12 @@
 ---
 import LangToggle from '../ui/LangToggle.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 <nav class="sticky top-0 z-50 h-16 flex items-center justify-between px-[5%] border-b border-[var(--border)]"
      style="background: rgba(13,13,26,0.92); backdrop-filter: blur(12px);">
 
   <!-- Logo -->
-  <a href="/" class="flex items-center gap-2 font-black text-lg text-white no-underline hover:text-[var(--accent)] transition-colors">
+  <a href={base + '/'} class="flex items-center gap-2 font-black text-lg text-white no-underline hover:text-[var(--accent)] transition-colors">
     <span class="text-[var(--primary)]">✦</span>
     <span>Balatro Odyssey Wiki</span>
   </a>
@@ -13,46 +14,46 @@ import LangToggle from '../ui/LangToggle.astro';
   <!-- Nav links (hidden on mobile) -->
   <ul class="hidden md:flex items-center gap-6 list-none text-[0.95rem]">
     <li>
-      <a href="/jokers" class="text-muted hover:text-white transition-colors">
+      <a href={base + '/jokers'} class="text-muted hover:text-white transition-colors">
         <span class="lang-en">Jokers</span>
         <span class="lang-pt">Curingas</span>
       </a>
     </li>
     <li>
-      <a href="/decks" class="text-muted hover:text-white transition-colors">
+      <a href={base + '/decks'} class="text-muted hover:text-white transition-colors">
         <span class="lang-en">Decks</span>
         <span class="lang-pt">Baralhos</span>
       </a>
     </li>
     <li>
-      <a href="/tarots" class="text-muted hover:text-white transition-colors">
+      <a href={base + '/tarots'} class="text-muted hover:text-white transition-colors">
         <span class="lang-en">Tarots</span>
         <span class="lang-pt">Tarôs</span>
       </a>
     </li>
     <li>
-      <a href="/planets" class="text-muted hover:text-white transition-colors">
+      <a href={base + '/planets'} class="text-muted hover:text-white transition-colors">
         <span class="lang-en">Planets</span>
         <span class="lang-pt">Planetas</span>
       </a>
     </li>
     <li>
-      <a href="/spectrals" class="text-muted hover:text-white transition-colors">
+      <a href={base + '/spectrals'} class="text-muted hover:text-white transition-colors">
         <span class="lang-en">Spectrals</span>
         <span class="lang-pt">Espectrais</span>
       </a>
     </li>
     <li>
-      <a href="/vouchers" class="text-muted hover:text-white transition-colors">
+      <a href={base + '/vouchers'} class="text-muted hover:text-white transition-colors">
         <span class="lang-en">Vouchers</span>
         <span class="lang-pt">Cupons</span>
       </a>
     </li>
     <li>
-      <a href="/blinds" class="text-muted hover:text-white transition-colors">Blinds</a>
+      <a href={base + '/blinds'} class="text-muted hover:text-white transition-colors">Blinds</a>
     </li>
     <li>
-      <a href="/hands" class="text-muted hover:text-white transition-colors">
+      <a href={base + '/hands'} class="text-muted hover:text-white transition-colors">
         <span class="lang-en">Hands</span>
         <span class="lang-pt">Mãos</span>
       </a>
@@ -65,7 +66,7 @@ import LangToggle from '../ui/LangToggle.astro';
       </span>
     </li>
     <li>
-      <a href="/changelog" class="text-muted hover:text-white transition-colors">Changelog</a>
+      <a href={base + '/changelog'} class="text-muted hover:text-white transition-colors">Changelog</a>
     </li>
   </ul>
 

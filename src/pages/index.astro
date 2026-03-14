@@ -99,6 +99,7 @@ const groupEntries = Object.entries(GROUP_LABELS)
 
 const RARITY_LABEL: Record<number, string> = { 1: 'Common', 2: 'Uncommon', 3: 'Rare', 4: 'Legendary' };
 const RARITY_COLOR: Record<number, string> = { 1: '#60a5fa', 2: '#4ade80', 3: '#f87171', 4: '#facc15' };
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <Layout title="Home" description="Your complete guide to the Balatro Odyssey mod — all Jokers, Decks, Consumables, Vouchers and Blinds.">
@@ -112,7 +113,7 @@ const RARITY_COLOR: Record<number, string> = { 1: '#60a5fa', 2: '#4ade80', 3: '#
       <!-- Left side -->
       {LEFT_HERO.map((c) => (
         <img
-          src={`/assets/${c.src}`}
+          src={`${base}/assets/${c.src}`}
           alt="" width="142" height="190"
           class="absolute w-[71px] h-[95px] md:w-[88px] md:h-[117px]"
           style={`left:${c.pos}%;top:${c.top}%;transform:rotate(${c.rot}deg);filter:drop-shadow(0 6px 20px rgba(108,71,255,0.45));`}
@@ -122,7 +123,7 @@ const RARITY_COLOR: Record<number, string> = { 1: '#60a5fa', 2: '#4ade80', 3: '#
       <!-- Right side -->
       {RIGHT_HERO.map((c) => (
         <img
-          src={`/assets/${c.src}`}
+          src={`${base}/assets/${c.src}`}
           alt="" width="142" height="190"
           class="absolute w-[71px] h-[95px] md:w-[88px] md:h-[117px]"
           style={`right:${c.pos}%;top:${c.top}%;transform:rotate(${c.rot}deg);filter:drop-shadow(0 6px 20px rgba(0,212,170,0.35));`}
@@ -157,11 +158,11 @@ const RARITY_COLOR: Record<number, string> = { 1: '#60a5fa', 2: '#4ade80', 3: '#
       </p>
 
       <div class="flex flex-wrap gap-3 justify-center mb-12">
-        <a href="/jokers" class="px-7 py-3 rounded-[10px] bg-primary text-white font-bold hover:bg-primary-dark hover:-translate-y-0.5 transition-all shadow-lg shadow-primary/30">
+        <a href={base + '/jokers'} class="px-7 py-3 rounded-[10px] bg-primary text-white font-bold hover:bg-primary-dark hover:-translate-y-0.5 transition-all shadow-lg shadow-primary/30">
           <span class="lang-en">Explore Jokers →</span>
           <span class="lang-pt">Explorar Curingas →</span>
         </a>
-        <a href="/decks" class="px-7 py-3 rounded-[10px] border border-[var(--border)] text-white font-semibold hover:bg-primary/10 hover:border-primary/50 transition-all">
+        <a href={base + '/decks'} class="px-7 py-3 rounded-[10px] border border-[var(--border)] text-white font-semibold hover:bg-primary/10 hover:border-primary/50 transition-all">
           <span class="lang-en">Browse Decks</span>
           <span class="lang-pt">Ver Baralhos</span>
         </a>
@@ -170,11 +171,11 @@ const RARITY_COLOR: Record<number, string> = { 1: '#60a5fa', 2: '#4ade80', 3: '#
       <!-- Stats row -->
       <div class="flex flex-wrap justify-center gap-6">
         {[
-          { en: '1,000', pt: '1.000', label_en: 'Jokers',    label_pt: 'Curingas',   href: '/jokers' },
-          { en: '100',   pt: '100',   label_en: 'Decks',      label_pt: 'Baralhos',   href: '/decks' },
-          { en: '200',   pt: '200',   label_en: 'Vouchers',   label_pt: 'Cupons',     href: '/vouchers' },
-          { en: '100+',  pt: '100+',  label_en: 'Consumables',label_pt: 'Consumíveis',href: '/tarots' },
-          { en: '100',   pt: '100',   label_en: 'Boss Blinds',label_pt: 'Boss Blinds',href: '/blinds' },
+          { en: '1,000', pt: '1.000', label_en: 'Jokers',    label_pt: 'Curingas',   href: base + '/jokers' },
+          { en: '100',   pt: '100',   label_en: 'Decks',      label_pt: 'Baralhos',   href: base + '/decks' },
+          { en: '200',   pt: '200',   label_en: 'Vouchers',   label_pt: 'Cupons',     href: base + '/vouchers' },
+          { en: '100+',  pt: '100+',  label_en: 'Consumables',label_pt: 'Consumíveis',href: base + '/tarots' },
+          { en: '100',   pt: '100',   label_en: 'Boss Blinds',label_pt: 'Boss Blinds',href: base + '/blinds' },
           { en: '17',    pt: '17',    label_en: 'Enhancements',label_pt: 'Melhorias', href: '#' },
         ].map(s => (
           <a href={s.href} class="text-center no-underline group">
@@ -212,7 +213,7 @@ const RARITY_COLOR: Record<number, string> = { 1: '#60a5fa', 2: '#4ade80', 3: '#
         const rarity = rep.rarity;
         const rarityColor = RARITY_COLOR[rarity] || '#fff';
         return (
-          <a href={`/jokers?group=${group}`}
+          <a href={`${base}/jokers?group=${group}`}
              class="group flex items-center gap-6 py-4 border-b border-transparent hover:border-[var(--border)] transition-all duration-200 no-underline"
              style="border-bottom-color: rgba(108,71,255,0.12);">
 
@@ -224,7 +225,7 @@ const RARITY_COLOR: Record<number, string> = { 1: '#60a5fa', 2: '#4ade80', 3: '#
             <!-- Card image (natural 100% = 142×190) -->
             <div class="shrink-0">
               <img
-                src={`/assets/${rep.sprite}`}
+                src={`${base}/assets/${rep.sprite}`}
                 alt={rep.name_en}
                 width="142" height="190"
                 loading="lazy"

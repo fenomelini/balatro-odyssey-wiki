@@ -25,6 +25,7 @@ interface Props {
 }
 
 const { page, totalPages, jokers } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 // All unique groups for the filter
 const allGroups = [...new Set(allJokers.map(j => j.group))].sort();
@@ -74,7 +75,7 @@ const allGroups = [...new Set(allJokers.map(j => j.group))].sort();
     <!-- Pagination -->
     <nav class="flex items-center justify-center gap-4 mt-12">
       {page > 1 ? (
-        <a href={`/jokers/page/${page - 1}`}
+        <a href={`${base}/jokers/page/${page - 1}`}
            class="px-5 py-2 rounded-lg border border-[var(--border)] text-white font-semibold hover:bg-primary/10 transition-colors">
           <span class="lang-en">← Previous</span>
           <span class="lang-pt">← Anterior</span>
@@ -92,7 +93,7 @@ const allGroups = [...new Set(allJokers.map(j => j.group))].sort();
       </span>
 
       {page < totalPages ? (
-        <a href={`/jokers/page/${page + 1}`}
+        <a href={`${base}/jokers/page/${page + 1}`}
            class="px-5 py-2 rounded-lg border border-[var(--border)] text-white font-semibold hover:bg-primary/10 transition-colors">
           <span class="lang-en">Next →</span>
           <span class="lang-pt">Próxima →</span>

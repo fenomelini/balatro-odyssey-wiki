@@ -15,13 +15,14 @@ interface Props {
 }
 
 const { deck } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const descEnHtml = formatDescription(deck.desc_en);
 const descPtHtml = formatDescription(deck.desc_pt);
 ---
 
 <Layout title={deck.name_en} description={deck.desc_en.join(' ')}>
   <div class="px-[5%] py-12 max-w-[900px] mx-auto">
-    <a href="/decks" class="inline-flex items-center gap-2 text-muted hover:text-white transition-colors mb-8 text-[0.9rem]">
+    <a href={base + '/decks'} class="inline-flex items-center gap-2 text-muted hover:text-white transition-colors mb-8 text-[0.9rem]">
       ← <span class="lang-en">Back to Decks</span>
       <span class="lang-pt">Voltar aos Baralhos</span>
     </a>
@@ -29,7 +30,7 @@ const descPtHtml = formatDescription(deck.desc_pt);
     <div class="flex flex-col md:flex-row gap-10">
       <div class="flex-shrink-0 flex justify-center">
         <img
-          src={`/assets/${deck.sprite}`}
+          src={`${base}/assets/${deck.sprite}`}
           alt={deck.name_en}
           width="142"
           height="190"

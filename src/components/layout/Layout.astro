@@ -7,26 +7,27 @@ interface Props {
 }
 
 const { title = 'Balatro Odyssey Wiki', description = 'Your complete guide to the Balatro Odyssey mod.' } = Astro.props;
-const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://balatro-odyssey-wiki.netlify.app');
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://fenomelini.github.io');
 const path = Astro.url.pathname;
 
 const navItems = [
-  { href: '/',           icon: '✦',  label_en: 'Home',       label_pt: 'Início',     count: '' },
-  { href: '/jokers',     icon: '🃏', label_en: 'Jokers',     label_pt: 'Curingas',   count: '1,000' },
-  { href: '/decks',      icon: '🎴', label_en: 'Decks',      label_pt: 'Baralhos',   count: '100' },
-  { href: '/tarots',     icon: '🌙', label_en: 'Tarots',     label_pt: 'Tarôs',      count: '100' },
-  { href: '/planets',    icon: '🪐', label_en: 'Planets',    label_pt: 'Planetas',   count: '100' },
-  { href: '/spectrals',  icon: '👻', label_en: 'Spectrals',  label_pt: 'Espectrais', count: '100' },
-  { href: '/vouchers',   icon: '🏷️', label_en: 'Vouchers',   label_pt: 'Cupons',     count: '200' },
-  { href: '/blinds',     icon: '🎯', label_en: 'Blinds',     label_pt: 'Blinds',     count: '100' },
-  { href: '/hands',        icon: '🖐️', label_en: 'Hands',        label_pt: 'Mãos',           count: '67' },
-  { href: '/enhancements', icon: '✨', label_en: 'Enhancements', label_pt: 'Aprimoramentos', count: '17' },
-  { href: null,            icon: '🏷️', label_en: 'Tags',         label_pt: 'Tags',           count: '', disabled: true, soon: true },
-  { href: '/changelog',  icon: '📋', label_en: 'Changelog',  label_pt: 'Changelog',  count: '' },
+  { href: base + '/',            icon: '✦',  label_en: 'Home',       label_pt: 'Início',     count: '' },
+  { href: base + '/jokers',      icon: '🃏', label_en: 'Jokers',     label_pt: 'Curingas',   count: '1,000' },
+  { href: base + '/decks',       icon: '🎴', label_en: 'Decks',      label_pt: 'Baralhos',   count: '100' },
+  { href: base + '/tarots',      icon: '🌙', label_en: 'Tarots',     label_pt: 'Tarôs',      count: '100' },
+  { href: base + '/planets',     icon: '🪐', label_en: 'Planets',    label_pt: 'Planetas',   count: '100' },
+  { href: base + '/spectrals',   icon: '👻', label_en: 'Spectrals',  label_pt: 'Espectrais', count: '100' },
+  { href: base + '/vouchers',    icon: '🏷️', label_en: 'Vouchers',   label_pt: 'Cupons',     count: '200' },
+  { href: base + '/blinds',      icon: '🎯', label_en: 'Blinds',     label_pt: 'Blinds',     count: '100' },
+  { href: base + '/hands',         icon: '🖐️', label_en: 'Hands',        label_pt: 'Mãos',           count: '67' },
+  { href: base + '/enhancements',  icon: '✨', label_en: 'Enhancements', label_pt: 'Aprimoramentos', count: '17' },
+  { href: null,                    icon: '🏷️', label_en: 'Tags',         label_pt: 'Tags',           count: '', disabled: true, soon: true },
+  { href: base + '/changelog',   icon: '📋', label_en: 'Changelog',  label_pt: 'Changelog',  count: '' },
 ];
 
 function isActive(href: string) {
-  if (href === '/') return path === '/';
+  if (href === base + '/') return path === href || path === base;
   return path.startsWith(href);
 }
 ---
@@ -138,7 +139,7 @@ function isActive(href: string) {
   <!-- Mobile top bar -->
   <div id="mobile-topbar" class="fixed top-0 left-0 right-0 z-50 h-14 hidden items-center justify-between px-4 border-b border-[var(--border)]"
        style="background: rgba(13,13,26,0.96); backdrop-filter: blur(12px);">
-    <a href="/" class="font-black text-white flex items-center gap-1.5 no-underline text-sm">
+    <a href={base + '/'} class="font-black text-white flex items-center gap-1.5 no-underline text-sm">
       <span class="text-primary">✦</span>
       <span>Balatro Odyssey Wiki</span>
     </a>
@@ -161,7 +162,7 @@ function isActive(href: string) {
   <aside id="sidebar">
     <!-- Logo -->
     <div class="flex items-center gap-2.5 px-5 h-16 border-b border-[var(--border)] shrink-0">
-      <a href="/" class="font-black text-white flex items-center gap-2 no-underline hover:text-accent transition-colors">
+      <a href={base + '/'} class="font-black text-white flex items-center gap-2 no-underline hover:text-accent transition-colors">
         <span class="text-primary text-xl leading-none">✦</span>
         <span class="text-sm leading-tight">Balatro<br><span class="text-accent">Odyssey</span> Wiki</span>
       </a>

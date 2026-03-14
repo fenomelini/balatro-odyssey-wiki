@@ -17,6 +17,7 @@ interface Props {
 }
 
 const { item } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const planetVars = item.type === 'planet' && item.hand ? [item.hand] : undefined;
 const descEn = stripDescription(item.desc_en, planetVars);
 const descPt = stripDescription(item.desc_pt, planetVars);
@@ -43,7 +44,7 @@ const spriteGlow: Record<string, string> = {
   <!-- Sprite -->
   <div class="flex justify-center mb-3">
     <img
-      src={`/assets/${item.sprite}`}
+      src={`${base}/assets/${item.sprite}`}
       alt={item.name_en}
       width="142"
       height="190"
