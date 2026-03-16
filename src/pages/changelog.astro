@@ -3,13 +3,16 @@ import Layout from '../components/layout/Layout.astro';
 import { readFileSync, existsSync } from 'fs';
 import { resolve } from 'path';
 
-// Read CHANGELOG.md from mod repo at build time
-const changelogPath = resolve(process.cwd(), '../balatro-odyssey/CHANGELOG.md');
+// Read CHANGELOG.md — prefer the committed copy in src/data/, fall back to mod repo
+const localPath = resolve(process.cwd(), 'src/data/CHANGELOG.md');
+const modRepoPath = resolve(process.cwd(), '../balatro-odyssey/CHANGELOG.md');
 let changelogContent = '';
 let parseError = false;
 
-if (existsSync(changelogPath)) {
-  changelogContent = readFileSync(changelogPath, 'utf-8');
+if (existsSync(localPath)) {
+  changelogContent = readFileSync(localPath, 'utf-8');
+} else if (existsSync(modRepoPath)) {
+  changelogContent = readFileSync(modRepoPath, 'utf-8');
 } else {
   parseError = true;
 }
