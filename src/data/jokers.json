@@ -9031,30 +9031,6 @@
     ]
   },
   {
-    "key": "j_glitch_debug_mode",
-    "group": "glitch",
-    "rarity": 2,
-    "cost": 6,
-    "sprite": "jokers/odyssey_j_glitch_debug_mode.png",
-    "name_en": "Debug Mode",
-    "name_pt": "Debug Mode",
-    "desc_en": [
-      "{C:mult}+10{} Mult.{}",
-      "Allows you to see the",
-      "next card in the deck"
-    ],
-    "desc_pt": [
-      "{C:mult}+10 Multi.{}",
-      "Permite ver a próxima",
-      "carta do baralho"
-    ],
-    "blueprint_compat": true,
-    "eternal_compat": false,
-    "vars": [
-      10
-    ]
-  },
-  {
     "key": "j_glitch_digital_singularity",
     "group": "glitch",
     "rarity": 4,
@@ -9084,30 +9060,6 @@
     ]
   },
   {
-    "key": "j_glitch_duplication_glitch",
-    "group": "glitch",
-    "rarity": 2,
-    "cost": 7,
-    "sprite": "jokers/odyssey_j_glitch_duplication_glitch.png",
-    "name_en": "Duplication Glitch",
-    "name_pt": "Glitch de Duplicação",
-    "desc_en": [
-      "{C:green}1 in #1#{} chance to{}",
-      "create a {C:attention}copy{} of a{}",
-      "played card in your hand"
-    ],
-    "desc_pt": [
-      "{C:green}1 em #1#{} chance de{}",
-      "criar uma {C:attention}cópia{} de uma{}",
-      "carta jogada na sua mão"
-    ],
-    "blueprint_compat": true,
-    "eternal_compat": false,
-    "vars": [
-      5
-    ]
-  },
-  {
     "key": "j_glitch_error_404",
     "group": "glitch",
     "rarity": 1,
@@ -9133,50 +9085,6 @@
     ]
   },
   {
-    "key": "j_glitch_exploit",
-    "group": "glitch",
-    "rarity": 2,
-    "cost": 6,
-    "sprite": "jokers/odyssey_j_glitch_exploit.png",
-    "name_en": "Exploit",
-    "name_pt": "Exploit",
-    "desc_en": [
-      "{X:mult,C:white} X#1# {} Mult if played hand{}",
-      "contains a {C:attention}Debuffed{} card{}"
-    ],
-    "desc_pt": [
-      "{X:mult,C:white} X#1# {} Multi se a mão jogada{}",
-      "contiver uma carta {C:attention}Debuffada{}"
-    ],
-    "blueprint_compat": true,
-    "eternal_compat": false,
-    "vars": [
-      2
-    ]
-  },
-  {
-    "key": "j_glitch_firewall",
-    "group": "glitch",
-    "rarity": 2,
-    "cost": 6,
-    "sprite": "jokers/odyssey_j_glitch_firewall.png",
-    "name_en": "Firewall",
-    "name_pt": "Firewall",
-    "desc_en": [
-      "{X:mult,C:white} X#1# {} Mult against{}",
-      "{C:attention}Boss Blinds{}"
-    ],
-    "desc_pt": [
-      "{X:mult,C:white} X#1# {} Multi contra{}",
-      "{C:attention}Boss Blinds{}"
-    ],
-    "blueprint_compat": true,
-    "eternal_compat": false,
-    "vars": [
-      2
-    ]
-  },
-  {
     "key": "j_glitch_game_breaker",
     "group": "glitch",
     "rarity": 3,
@@ -9195,50 +9103,6 @@
     "blueprint_compat": false,
     "eternal_compat": false,
     "vars": []
-  },
-  {
-    "key": "j_glitch_god_mode",
-    "group": "glitch",
-    "rarity": 2,
-    "cost": 8,
-    "sprite": "jokers/odyssey_j_glitch_god_mode.png",
-    "name_en": "God Mode",
-    "name_pt": "God Mode",
-    "desc_en": [
-      "Prevents death {C:attention}once{}.{}",
-      "Destroys this Joker when triggered"
-    ],
-    "desc_pt": [
-      "Previne a morte {C:attention}uma vez{}.{}",
-      "Destrói este Joker ao ativar"
-    ],
-    "blueprint_compat": false,
-    "eternal_compat": false,
-    "vars": []
-  },
-  {
-    "key": "j_glitch_hacker",
-    "group": "glitch",
-    "rarity": 2,
-    "cost": 7,
-    "sprite": "jokers/odyssey_j_glitch_hacker.png",
-    "name_en": "Hacker",
-    "name_pt": "Hacker",
-    "desc_en": [
-      "{X:mult,C:white} X#1# {} Mult.{}",
-      "Temporarily increases",
-      "played hand {C:attention}level{}"
-    ],
-    "desc_pt": [
-      "{X:mult,C:white} X#1# {} Multi.{}",
-      "Aumenta o {C:attention}nível{} da mão{}",
-      "jogada temporariamente"
-    ],
-    "blueprint_compat": true,
-    "eternal_compat": false,
-    "vars": [
-      1.5
-    ]
   },
   {
     "key": "j_glitch_hex_editor",
@@ -9427,28 +9291,6 @@
     ]
   },
   {
-    "key": "j_glitch_noclip",
-    "group": "glitch",
-    "rarity": 2,
-    "cost": 6,
-    "sprite": "jokers/odyssey_j_glitch_noclip.png",
-    "name_en": "Noclip",
-    "name_pt": "Noclip",
-    "desc_en": [
-      "{C:attention}Face{} cards count{}",
-      "as any suit",
-      "({C:attention}Wild Cards{}){}"
-    ],
-    "desc_pt": [
-      "Cartas de {C:attention}Figura{} contam{}",
-      "como qualquer naipe",
-      "({C:attention}Cartas Coringa{}){}"
-    ],
-    "blueprint_compat": false,
-    "eternal_compat": false,
-    "vars": []
-  },
-  {
     "key": "j_glitch_overflow",
     "group": "glitch",
     "rarity": 1,
@@ -9520,31 +9362,6 @@
     ]
   },
   {
-    "key": "j_glitch_phishing",
-    "group": "glitch",
-    "rarity": 2,
-    "cost": 5,
-    "sprite": "jokers/odyssey_j_glitch_phishing.png",
-    "name_en": "Phishing",
-    "name_pt": "Phishing",
-    "desc_en": [
-      "{C:green}1 in #1#{} chance to{}",
-      "steal {C:money}$#2#{} when discarding{}",
-      "a {C:attention}Face{} card{}"
-    ],
-    "desc_pt": [
-      "{C:green}1 em #1#{} chance de{}",
-      "roubar {C:money}$#2#{} ao descartar{}",
-      "uma carta de {C:attention}Figura{}"
-    ],
-    "blueprint_compat": true,
-    "eternal_compat": false,
-    "vars": [
-      3,
-      1
-    ]
-  },
-  {
     "key": "j_glitch_root_access",
     "group": "glitch",
     "rarity": 3,
@@ -9584,78 +9401,6 @@
     "eternal_compat": false,
     "vars": [
       5
-    ]
-  },
-  {
-    "key": "j_glitch_softlock",
-    "group": "glitch",
-    "rarity": 2,
-    "cost": 6,
-    "sprite": "jokers/odyssey_j_glitch_softlock.png",
-    "name_en": "Softlock",
-    "name_pt": "Softlock",
-    "desc_en": [
-      "{X:mult,C:white} X#1# {} Mult if you{}",
-      "have no {C:red}discards{}",
-      "and no {C:money}$money{} {}"
-    ],
-    "desc_pt": [
-      "{X:mult,C:white} X#1# {} Multi se você{}",
-      "ficar sem {C:red}descartes{}",
-      "e sem {C:money}$dinheiro{} {}"
-    ],
-    "blueprint_compat": true,
-    "eternal_compat": false,
-    "vars": [
-      3
-    ]
-  },
-  {
-    "key": "j_glitch_source_code",
-    "group": "glitch",
-    "rarity": 2,
-    "cost": 6,
-    "sprite": "jokers/odyssey_j_glitch_source_code.png",
-    "name_en": "Source Code",
-    "name_pt": "Código Fonte",
-    "desc_en": [
-      "Creates a {C:attention}Stone Card{}",
-      "in hand when selecting Blind.",
-      "{C:mult}+#1#{} Mult if you have a Stone Card{}"
-    ],
-    "desc_pt": [
-      "Cria uma {C:attention}Carta de Platina{}",
-      "na mão ao selecionar o Blind.",
-      "{C:mult}+#1#{} Multi se tiver uma Carta de Platina{}"
-    ],
-    "blueprint_compat": true,
-    "eternal_compat": false,
-    "vars": [
-      20
-    ]
-  },
-  {
-    "key": "j_glitch_speedrun",
-    "group": "glitch",
-    "rarity": 2,
-    "cost": 5,
-    "sprite": "jokers/odyssey_j_glitch_speedrun.png",
-    "name_en": "Speedrun",
-    "name_pt": "Speedrun",
-    "desc_en": [
-      "{C:mult}+#1#{} Mult on the{}",
-      "{C:attention}first hand{}",
-      "of the round"
-    ],
-    "desc_pt": [
-      "{C:mult}+#1#{} Multi na{}",
-      "{C:attention}primeira mão{}",
-      "da rodada"
-    ],
-    "blueprint_compat": true,
-    "eternal_compat": false,
-    "vars": [
-      50
     ]
   },
   {
@@ -9728,34 +9473,6 @@
     ]
   },
   {
-    "key": "j_glitch_trojan",
-    "group": "glitch",
-    "rarity": 2,
-    "cost": 6,
-    "sprite": "jokers/odyssey_j_glitch_trojan.png",
-    "name_en": "Trojan",
-    "name_pt": "Trojan",
-    "desc_en": [
-      "{C:mult}+#1#{} Mult.{}",
-      "After {C:attention}#2#{} rounds,{}",
-      "reveals to be {X:mult,C:white} X#3# {} Mult{}",
-      "{C:inactive}(#4# remaining){}"
-    ],
-    "desc_pt": [
-      "{C:mult}+#1#{} Multi.{}",
-      "Após {C:attention}#2#{} rodadas,{}",
-      "revela ser {X:mult,C:white} X#3# {} Multi{}",
-      "{C:inactive}(Restam #4#){}"
-    ],
-    "blueprint_compat": true,
-    "eternal_compat": false,
-    "vars": [
-      4,
-      3,
-      3
-    ]
-  },
-  {
     "key": "j_glitch_underflow",
     "group": "glitch",
     "rarity": 1,
@@ -9781,28 +9498,6 @@
     ]
   },
   {
-    "key": "j_glitch_virus",
-    "group": "glitch",
-    "rarity": 2,
-    "cost": 6,
-    "sprite": "jokers/odyssey_j_glitch_virus.png",
-    "name_en": "Virus",
-    "name_pt": "Vírus",
-    "desc_en": [
-      "When playing a hand, transforms",
-      "a random card in hand to",
-      "the {C:attention}suit{} of first played card{}"
-    ],
-    "desc_pt": [
-      "Ao jogar uma mão, transforma",
-      "uma carta aleatória da mão",
-      "no {C:attention}naipe{} da primeira carta jogada{}"
-    ],
-    "blueprint_compat": true,
-    "eternal_compat": false,
-    "vars": []
-  },
-  {
     "key": "j_glitch_visual_bug",
     "group": "glitch",
     "rarity": 1,
@@ -9826,30 +9521,6 @@
     "eternal_compat": true,
     "vars": [
       10
-    ]
-  },
-  {
-    "key": "j_glitch_zero_day",
-    "group": "glitch",
-    "rarity": 2,
-    "cost": 5,
-    "sprite": "jokers/odyssey_j_glitch_zero_day.png",
-    "name_en": "Zero Day",
-    "name_pt": "Dia Zero",
-    "desc_en": [
-      "{X:mult,C:white} X#1# {} Mult on{}",
-      "first hand of the",
-      "{C:attention}first Ante{}"
-    ],
-    "desc_pt": [
-      "{X:mult,C:white} X#1# {} Multi na{}",
-      "primeira mão da",
-      "{C:attention}primeira Aposta{}"
-    ],
-    "blueprint_compat": true,
-    "eternal_compat": false,
-    "vars": [
-      2.5
     ]
   },
   {
@@ -14828,7 +14499,7 @@
     "blueprint_compat": true,
     "eternal_compat": true,
     "vars": [
-      null,
+      0,
       5,
       100
     ]
@@ -15074,8 +14745,7 @@
     "blueprint_compat": true,
     "eternal_compat": true,
     "vars": [
-      3,
-      2
+      100
     ]
   },
   {
@@ -15099,7 +14769,8 @@
     "blueprint_compat": true,
     "eternal_compat": true,
     "vars": [
-      10
+      15,
+      5
     ]
   },
   {
@@ -15124,7 +14795,7 @@
     "eternal_compat": true,
     "vars": [
       30,
-      null,
+      0,
       3
     ]
   },
@@ -15411,7 +15082,7 @@
     "blueprint_compat": true,
     "eternal_compat": true,
     "vars": [
-      25,
+      20,
       100,
       5,
       4
@@ -16492,7 +16163,7 @@
     "blueprint_compat": true,
     "eternal_compat": true,
     "vars": [
-      10
+      5
     ]
   },
   {
@@ -18040,7 +17711,7 @@
     "blueprint_compat": true,
     "eternal_compat": true,
     "vars": [
-      null,
+      0,
       3
     ]
   },
